@@ -55,9 +55,10 @@ entity Venue {
 entity Ticket {
     Id : int
     ---
+    Price : int
     Row : int
     Seat : int
-    State : enum
+    Status : enum
 }
 
 entity Order {
@@ -77,7 +78,7 @@ entity Address {
     City : string
 }
 
-User ||..|| Address
+User |o..|| Address
 User ||..o{ Order
 Performance }o..|| Play
 Performance }o..|| Venue
