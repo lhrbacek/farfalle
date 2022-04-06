@@ -1,0 +1,89 @@
+@startuml farfalle
+title Farfalle
+
+hide circle
+
+skinparam ClassBackgroundColor AntiqueWhite
+skinparam ClassBorderColor RosyBrown
+skinparam ArrowColor Maroon
+
+skinparam Shadowing false
+
+skinparam Linetype ortho
+
+entity Admin {
+    Id : int
+    ---
+    Username : string
+    PasswordHash : string
+    Email : string
+}
+
+entity User {
+    Id : int
+    ---
+    Name : string
+    Surname : string
+    Email : string
+    PasswordHash : string
+}
+
+entity Play {
+    Id : int
+    ---
+    Name : string
+    Description : string
+    ImageUrl : string
+    LengthMinutes : int
+    Director : string
+}
+
+entity Performance {
+    Id : int
+    ---
+    DateTime : dateTime
+}
+
+entity Venue {
+    Id : int
+    ---
+    Name : string
+    Rows : int
+    Seats : int
+}
+
+entity Ticket {
+    Id : int
+    ---
+    Price : int
+    Row : int
+    Seat : int
+    Status : enum
+}
+
+entity Order {
+    Id : int
+    ---
+    Status : enum
+    Email : string
+}
+
+entity Address {
+    Id : int
+    ---
+    Name : string
+    Street : string
+    Number : int
+    ZipCode : int
+    City : string
+}
+
+User |o..|| Address
+User |o..o{ Order
+Performance }o..|| Play
+Performance }o..|| Venue
+Performance ||..|{ Ticket
+Ticket }|..o| Order
+Order }o..|| Address
+
+@enduml
