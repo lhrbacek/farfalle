@@ -79,7 +79,7 @@ entity Address {
 }
 
 User |o..|| Address
-User ||..o{ Order
+User |o..o{ Order
 Performance }o..|| Play
 Performance }o..|| Venue
 Performance ||..|{ Ticket
