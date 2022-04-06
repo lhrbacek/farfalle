@@ -1,5 +1,8 @@
 # Minutes
 
+## Time plan
+* 31.5 final
+
 ## Meeting 6.4.
 * rozdělení backend/frontend:
     1. **backend** - Adél, Kika -- C#
