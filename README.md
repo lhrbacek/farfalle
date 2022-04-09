@@ -11,7 +11,7 @@ V rámci systému pro divadlo nabízíte různá představení. Při prodeji lí
 * CRUD _(Create, Read, Update, Delete)_
     * představení
     * uživatelé
-    * léstky
+    * lístky
 
 ### Nepřihlášený uživatel
 * zobrazit představení
@@ -25,3 +25,27 @@ V rámci systému pro divadlo nabízíte různá představení. Při prodeji lí
 
 ### Čas
 * připomenout představení → nepřihlášený uživatel, přihlášený uživatel
+
+---
+## Stack
+
+### Backend
+* C#/.NET
+* PostgreSQL databáze
+* Adminer
+* ORM pomocí Entity Frameworku 6 (Npgsql.EntityFrameworkCore.PostgreSQL)
+* API pomocí ASP.NET frameworku
+
+### Frontend
+* React
+* TBD
+
+### Tools
+* Docker
+* TBD
+
+---
+
+## Databáze
+
+![database](/Models/ERD.png)
