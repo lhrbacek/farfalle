@@ -30,6 +30,33 @@ model Address {
   user    User?  @relation("UserHasAddress")
 }
 
+model Play {
+  id            Int     @default(autoincrement()) @id
+  name          String
+  description   String
+  imageURL      String
+  lengthMinutes Int
+  director      String
+  performances  Performance[]
+}
+
+model Performance {
+  id        Int     @default(autoincrement()) @id
+  dateTime  String
+  play      Play    @relation(fields: [playId], references: [id])
+  playId    Int
+  venue     Venue   @relation(fields: [venueId], references: [id])
+  venueId   Int
+}
+
+model Venue {
+  id          Int     @default(autoincrement()) @id
+  name        String
+  rows        Int
+  cols        Int
+  performances Performance[]
+}
+
 model Ticket { 
   id               Int @id @default(autoincrement())
   price            Int

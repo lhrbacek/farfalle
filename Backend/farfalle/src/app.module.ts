@@ -1,11 +1,19 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+<<<<<<< HEAD
 import { TicketsModule } from './tickets/tickets.module';
 import { UserModule } from './user/user.module';
 
 @Module({
   imports: [UserModule, TicketsModule],
+=======
+import { PlaysModule } from './plays/plays.module';
+import { UserModule } from './user/user.module';
+
+@Module({
+  imports: [UserModule, PlaysModule],
+>>>>>>> Add BE for plays and performances
   controllers: [AppController],
   providers: [AppService],
 })
