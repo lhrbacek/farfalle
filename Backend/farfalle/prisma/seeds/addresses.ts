@@ -1,0 +1,58 @@
+export const addresses = [
+    {
+        id: 1,
+        name: "Eugenio Gutiérrez",
+        street: "Calle de Lagasca",
+        number: 67,
+        zip: 28001,
+        city: "Madrid",
+    },
+    {
+        id: 2,
+        name: "Luis Martínez",
+        street: "C/ de Fernán González",
+        number: 27,
+        zip: 28009,
+        city: "Madrid",
+    },
+    {
+        id: 3,
+        name: "Apartamento Madrid Mendez Alvaro",
+        street: "Calle del Tejo",
+        number: 14,
+        zip: 28045,
+        city: "Madrid",
+    },
+    {
+        id: 4,
+        name: "Noelia Guerrero",
+        street: "C. Cuatro Santos",
+        number: 29,
+        zip: 30202,
+        city: "Cartagena",
+    },
+    {
+        id: 5,
+        name: "Fabiola Méndez",
+        street: "Colonia de San Conrado",
+        number: 20,
+        zip: 18008,
+        city: "Granada",
+    },
+    {
+        id: 6,
+        name: "Daniel Montero",
+        street: "Rambla de la Llibertat",
+        number: 33,
+        zip: 17004,
+        city: "Girona",
+    },
+    {
+        id: 7,
+        name: "El Soldadito de Plomo",
+        street: "C. Principe de Vergara",
+        number: 1,
+        zip: 30202,
+        city: "Cartagena",
+    }
+]

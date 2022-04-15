@@ -32,7 +32,11 @@ lerna-debug.log*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+<<<<<<< HEAD
 !.vscode/extensions.json
 
 # prisma
 .env
+=======
+!.vscode/extensions.json
+>>>>>>> Add BE User and Address
