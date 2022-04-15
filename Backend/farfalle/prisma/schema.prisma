@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Ticket { 
+  id               Int @id @default(autoincrement())
+  price            Int
+  row              Int
+  seat             Int
+  status           StatusTicket
+  order            Order? @relation(fields: [orderId], references: [id])
+  orderId          Int?
+  //performance    Performance @relation(fields: [performanceId], references: [id])
+  //performanceId  Int?
+}
+
+enum StatusTicket {
+  SOLD
+  NOTSOLD
+}
+
+model Order {
+  id         Int @id @default(autoincrement())
+  status     StatusOrder
+  email      String
+  createdAt  DateTime @default(now())
+  ticket     Ticket[]
+  //adress   Address @relation(fields: [adressId], references: [id])
+  //adressId Int
+  //user     User? @relation(fields: [userId], references: [id])
+  //userId   Int? 
+}
+
+enum StatusOrder {
+  PAID
+  NOTPAID
+}
