@@ -52,6 +52,9 @@ $ npx prisma db seed
 # studio
 $ npx prisma studio
 
+# reset database
+$ npx prisma migrate reset
+
 # env
 DATABASE_URL="postgresql://postgres:DynoveKoreniJeDynovymKorenimZivota@localhost:5432/farfalle?schema=public"
 ```
