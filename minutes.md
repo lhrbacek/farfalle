@@ -39,3 +39,27 @@ ToDo:
     * entity v db
 * Backend API
 * Frontend návrh
+
+## Meeting 22.4.
+### Aktuální stav:
+- Prisma hotová
+- Services +- hotové, budeme přidávat podle controllerů
+- Databáze + Docker + Adminer hotové
+
+### Potřeba udělat:
+- Dodělat seeding (adresář prisma/seeding) - Kika
+- Prokonzultovat controllery s Danem - Aďa
+- Udělat controllery - Aďa, Luba
+- Autentizace (JWT) - Kika
+- Navrhnout FE - Veru
+
+### Controllery
+- Správa uživatele
+    - adresy, uživatelé, koupené lístky, autentizace?
+- Založení hry a představení:
+    - play, performance, readonly venue, generování lístků
+- Admin:
+    - CRUD všeho
+    - Controller : Service -> 1 : 1
+- Kupování lístků
+    - uživatelé, adresy, lístky
