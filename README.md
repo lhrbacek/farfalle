@@ -22,6 +22,7 @@ V rámci systému pro divadlo nabízíte různá představení. Při prodeji lí
 * kupovat lístky
 * zobrazit koupené lístky
 * spravovat koupené lístky
+* spravovat profil
 
 ### Čas
 * připomenout představení → nepřihlášený uživatel, přihlášený uživatel
@@ -30,19 +31,21 @@ V rámci systému pro divadlo nabízíte různá představení. Při prodeji lí
 ## Stack
 
 ### Backend
-* C#/.NET
+* NestJS
 * PostgreSQL databáze
 * Adminer
-* ORM pomocí Entity Frameworku 6 (Npgsql.EntityFrameworkCore.PostgreSQL)
-* API pomocí ASP.NET frameworku
+* ORM Prisma
 
 ### Frontend
+* Storybook
+* Figma
+    * Wireframes & komponenty https://www.figma.com/file/te9KrmUzuT5MvRqMWNgLSV/Wireframes?node-id=0%3A1
 * React
-* TBD
+    * Mantine/Next.js
+* HTML, CSS
 
 ### Tools
 * Docker
-* TBD
 
 ---
 
