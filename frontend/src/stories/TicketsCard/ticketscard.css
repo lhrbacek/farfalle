@@ -1,8 +1,0 @@
-.seat-table {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.seat-chosen {
-    background-color: brown;
-}
