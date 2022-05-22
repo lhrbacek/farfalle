@@ -1,16 +1,38 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { UserService } from './user.service';
 import { Prisma, User as UserModel } from '@prisma/client';
+import { CreateUserDto } from './dto/create-user.dto';
+import { CreateUserWithAddressDto } from './dto/create-user-with-address.dto';
+import { AddressService } from 'src/address/address.service';
 
 @Controller('user')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(
+    private readonly userService: UserService,
+    private readonly addressService: AddressService,
+  ) {}
 
   @Post()
   async create(
-    @Body() data: Prisma.UserCreateInput,
+    @Body() createUserWithAddressDto: CreateUserWithAddressDto,
   ): Promise<UserModel> {
-    return this.userService.create(data);
+    const address = await this.addressService.create({
+      ...createUserWithAddressDto,
+      name: createUserWithAddressDto.addressName,
+    });
+
+    return await this.userService.create({
+      ...createUserWithAddressDto,
+      address: address.id,
+    });
   }
 
   @Get()
@@ -19,8 +41,8 @@ export class UserController {
   }
 
   @Get(':id')
-  async findOne(@Param('id') id: string): Promise<UserModel> {
-    return this.userService.findOne({ id: Number(id) });
+  async findOne(@Param('id') id: number): Promise<UserModel> {
+    return this.userService.findOne(id);
   }
 
   // @Patch(':id')
@@ -29,7 +51,7 @@ export class UserController {
   // }
 
   @Delete(':id')
-  async delete(@Param('id') id: string): Promise<UserModel> {
-    return this.userService.delete({ id: Number(id) });
+  async delete(@Param('id') id: number): Promise<UserModel> {
+    return this.userService.delete(id);
   }
 }
