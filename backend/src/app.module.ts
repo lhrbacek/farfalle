@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { PlaysModule } from './plays/plays.module';
-import { TicketsModule } from './tickets/tickets.module';
+import { PlaysModule } from './play/play.module';
+import { TicketsModule } from './ticket/ticket.module';
 import { UserModule } from './user/user.module';
 
 @Module({

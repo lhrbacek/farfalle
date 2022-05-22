@@ -3,21 +3,23 @@ import { PrismaService } from '../prisma.service';
 import { Venue, Prisma } from '@prisma/client';
 
 @Injectable()
-export class VenuesService {
+export class VenueService {
   constructor(private prisma: PrismaService) {}
 
   async create(data: Prisma.VenueCreateInput): Promise<Venue> {
     return this.prisma.venue.create({
-      data
+      data,
     });
   }
 
   async findAll(): Promise<Venue[]> {
-    return this.prisma.venue.findMany({ });
+    return this.prisma.venue.findMany({});
   }
 
-  async findOne(venueWhereUniqueInput: Prisma.VenueWhereUniqueInput,): Promise<Venue | null> {
-    return this.prisma.venue.findUnique({where: venueWhereUniqueInput,});
+  async findOne(
+    venueWhereUniqueInput: Prisma.VenueWhereUniqueInput,
+  ): Promise<Venue | null> {
+    return this.prisma.venue.findUnique({ where: venueWhereUniqueInput });
   }
 
   async update(params: {

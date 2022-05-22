@@ -13,7 +13,7 @@ export class AddressService {
       where: addressWhereUniqueInput,
     });
   }
-  
+
   async findAll(params: {
     skip?: number;
     take?: number;

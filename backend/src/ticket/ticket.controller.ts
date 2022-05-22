@@ -1,24 +1,32 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { TicketsService } from './tickets.service';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
+import { TicketService } from './ticket.service';
 import { Ticket as TicketModel } from '@prisma/client';
 
 @Controller('tickets')
-export class TicketsController {
-  constructor(private readonly ticketsService: TicketsService) {}
+export class TicketController {
+  constructor(private readonly ticketService: TicketService) {}
 
   @Post()
   async create(@Body() createTicket: TicketModel): Promise<TicketModel> {
-    return this.ticketsService.create(createTicket);
+    return this.ticketService.create(createTicket);
   }
 
   @Get()
   async findAll(): Promise<TicketModel[]> {
-   return this.ticketsService.findAll();
+    return this.ticketService.findAll();
   }
 
   @Get(':id')
   async findOne(@Param('id') id: string): Promise<TicketModel> {
-    return this.ticketsService.findOne({ id: Number(id) });
+    return this.ticketService.findOne({ id: Number(id) });
   }
 
   // @Patch(':id')
@@ -28,6 +36,6 @@ export class TicketsController {
 
   @Delete(':id')
   async delete(@Param('id') id: string): Promise<TicketModel> {
-    return this.ticketsService.delete({ id: Number(id) });
+    return this.ticketService.delete({ id: Number(id) });
   }
 }

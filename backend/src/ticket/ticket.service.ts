@@ -3,11 +3,11 @@ import { PrismaService } from '../prisma.service';
 import { Ticket, Prisma } from '@prisma/client';
 
 @Injectable()
-export class TicketsService {
+export class TicketService {
   constructor(private prisma: PrismaService) {}
 
   async create(data: Prisma.TicketCreateInput): Promise<Ticket> {
-    return this.prisma.ticket.create({data});
+    return this.prisma.ticket.create({ data });
   }
 
   async findAll(): Promise<Ticket[]> {
@@ -15,14 +15,17 @@ export class TicketsService {
   }
 
   async findOne(data: Prisma.TicketWhereUniqueInput): Promise<Ticket | null> {
-    return this.prisma.ticket.findUnique({where: data})
+    return this.prisma.ticket.findUnique({ where: data });
   }
 
-  async update(where: Prisma.TicketWhereUniqueInput, data: Prisma.TicketUpdateInput): Promise<Ticket> {
-    return this.prisma.ticket.update({data, where});
+  async update(
+    where: Prisma.TicketWhereUniqueInput,
+    data: Prisma.TicketUpdateInput,
+  ): Promise<Ticket> {
+    return this.prisma.ticket.update({ data, where });
   }
 
   async delete(where: Prisma.TicketWhereUniqueInput): Promise<Ticket> {
-    return this.prisma.ticket.delete({where});
+    return this.prisma.ticket.delete({ where });
   }
 }
