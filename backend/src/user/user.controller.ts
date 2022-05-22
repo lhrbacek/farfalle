@@ -8,10 +8,10 @@ import {
   Delete,
 } from '@nestjs/common';
 import { UserService } from './user.service';
-import { Prisma, User as UserModel } from '@prisma/client';
-import { CreateUserDto } from './dto/create-user.dto';
+import { User as UserModel } from '@prisma/client';
 import { CreateUserWithAddressDto } from './dto/create-user-with-address.dto';
 import { AddressService } from 'src/address/address.service';
+import { UpdateUserDto } from './dto/update-user.dto';
 
 @Controller('user')
 export class UserController {
@@ -37,21 +37,24 @@ export class UserController {
 
   @Get()
   async findAll(): Promise<UserModel[]> {
-    return this.userService.findAll({});
+    return await this.userService.findAll({});
   }
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<UserModel> {
-    return this.userService.findOne(id);
+    return await this.userService.findOne(id);
   }
 
-  // @Patch(':id')
-  // update(@Param('id') id: string, @Body() data: UserModel): Promise<UserModel> {
-  //   return this.userService.update(+id, {data});
-  // }
+  @Patch(':id')
+  update(
+    @Param('id') id: number,
+    @Body() updateUserDto: UpdateUserDto,
+  ): Promise<UserModel> {
+    return this.userService.update(id, updateUserDto);
+  }
 
   @Delete(':id')
   async delete(@Param('id') id: number): Promise<UserModel> {
-    return this.userService.delete(id);
+    return await this.userService.delete(id);
   }
 }

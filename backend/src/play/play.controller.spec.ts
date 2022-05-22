@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { PlayController } from './play.controller';
 import { PlayService } from './play.service';
 
-describe('PlaysController', () => {
+describe('PlayController', () => {
   let controller: PlayController;
 
   beforeEach(async () => {

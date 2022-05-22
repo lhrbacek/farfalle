@@ -1,41 +1,33 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
-import { Venue, Prisma } from '@prisma/client';
+import { Venue } from '@prisma/client';
+import { CreateVenueDto } from './dto/create-venue.dto';
+import { UpdateVenueDto } from './dto/update-venue.dto';
 
 @Injectable()
 export class VenueService {
   constructor(private prisma: PrismaService) {}
 
-  async create(data: Prisma.VenueCreateInput): Promise<Venue> {
-    return this.prisma.venue.create({
-      data,
-    });
+  async create(createVenueDto: CreateVenueDto): Promise<Venue> {
+    return await this.prisma.venue.create({ data: { ...createVenueDto } });
   }
 
   async findAll(): Promise<Venue[]> {
-    return this.prisma.venue.findMany({});
+    return await this.prisma.venue.findMany({});
   }
 
-  async findOne(
-    venueWhereUniqueInput: Prisma.VenueWhereUniqueInput,
-  ): Promise<Venue | null> {
-    return this.prisma.venue.findUnique({ where: venueWhereUniqueInput });
+  async findOne(id: number): Promise<Venue | null> {
+    return await this.prisma.venue.findUnique({ where: { id: id } });
   }
 
-  async update(params: {
-    where: Prisma.VenueWhereUniqueInput;
-    data: Prisma.VenueUpdateInput;
-  }): Promise<Venue> {
-    const { where, data } = params;
-    return this.prisma.venue.update({
-      data,
-      where,
+  async update(id: number, updateVenueDto: UpdateVenueDto): Promise<Venue> {
+    return await this.prisma.venue.update({
+      where: { id: id },
+      data: { ...updateVenueDto },
     });
   }
 
-  async delete(where: Prisma.VenueWhereUniqueInput): Promise<Venue> {
-    return this.prisma.venue.delete({
-      where,
-    });
+  async delete(id: number): Promise<Venue> {
+    return await this.prisma.venue.delete({ where: { id: id } });
   }
 }
