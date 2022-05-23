@@ -1,12 +1,14 @@
-import { Card, Group, Button, Text, createStyles } from '@mantine/core';
+import { Card, Group, Text, createStyles } from '@mantine/core';
 import React from 'react';
 import { Ticket } from 'tabler-icons-react';
 
-export interface PerformanceItemProps {
+export interface PurchasedTicketProps {
+    play: string,
     date: string,
     time: string,
     venue: string,
-    price: number
+    row: number,
+    seat: number,
 }
 
 const useStyles = createStyles((theme) => ({
@@ -46,23 +48,21 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function PerformanceItem({date, time, venue, price}: PerformanceItemProps) {
+export function PurchasedTicket({play, date, time, venue}: PurchasedTicketProps) {
   const { classes } = useStyles();
 
   return (
     <Card shadow="sm" p="sm" className={classes.card}>
       <Group position="apart" className={classes.group}>
         <Group className={classes.innerGroup}>
-          <Text size="lg">{date}</Text>
-          <Text size="lg">{time}</Text>
+        <Text size="lg">{play}</Text>
+          <Text size="md">{date}</Text>
+          <Text size="md">{time}</Text>
           <Text size="sm">{venue}</Text>
         </Group>
-        <Button className={classes.button} leftIcon={<Ticket size={16} />}>
-          {price}€
-        </Button>
       </Group>
     </Card>
   );
 }
 
-export default PerformanceItem;
+export default PurchasedTicket;

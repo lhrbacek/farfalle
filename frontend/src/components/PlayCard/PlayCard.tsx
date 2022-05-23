@@ -1,4 +1,6 @@
+import { Container, Grid, Image, AspectRatio, Stack, Title, Text, Group, SimpleGrid, Center, Space } from '@mantine/core';
 import React from 'react';
+// import { AspectRatio, Stack } from 'tabler-icons-react';
 import { performances } from '../../data/performances';
 import PerformanceItem, { PerformanceItemProps } from './PerformanceItem';
 
@@ -14,31 +16,32 @@ export interface PlayCardProps {
 
 export function PlayCard({title, header, director, premiere, length, mainPhoto, description}: PlayCardProps) {
   return (
-    <div className="play-card">
-        <div className="main-play-photo">
-            <img className="play-photo" src={mainPhoto} alt="mainPhoto" />
-        </div>
-        <div className="text">
-            <h1>{title}</h1>
-            <h2>{header}</h2>
-            <div className="info">
-                <div className="play-info-titles">
-                    <div className="play-info__title">Director</div>
-                    <div className="play-info__title">Premiere</div>
-                    <div className="play-info__title">Minutes</div>
-                </div>
-                <div className="play-info-values">
-                    <div className="play-info__value">{director}</div>
-                    <div className="play-info__value">{premiere}</div>
-                    <div className="play-info__value">{length}</div>
-                </div>
-            </div>
-            <div className="description">{description}</div>
-            <div className='performance-list'>
-                {performances.map((a: PerformanceItemProps) => <PerformanceItem {...a}/> )}
-            </div>
-        </div>
-    </div>
+    <Container>
+        <Grid grow columns={10} align="flex-start">
+            <Grid.Col span={4}>
+                <Center>
+                    <Image src={mainPhoto} alt={title} />
+                </Center>
+            </Grid.Col>
+            <Grid.Col span={6}>
+                <Title>{title}</Title>
+                <Text size="lg">{header}</Text>
+                <Space h="md" />
+                <Text>{description}</Text>
+                <Space h="md" />
+                <Group position="apart">
+                    <Text size="sm">Director: {director}</Text>
+                    <Text size="sm">Length: {length} minutes</Text>
+                    <Text size="sm">Premiere: {premiere}</Text>
+                </Group>
+            </Grid.Col>
+            <Grid.Col span={6}>
+                <Stack justify="space-between">
+                    {performances.map((performance: PerformanceItemProps) => <PerformanceItem {...performance}/> )}
+                </Stack>
+            </Grid.Col>
+        </Grid>
+    </Container>
   );
 }
 
