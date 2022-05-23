@@ -1,5 +1,4 @@
 import React from 'react';
-import './playcard.css';
 
 export interface PerformanceItemProps {
     date: string,

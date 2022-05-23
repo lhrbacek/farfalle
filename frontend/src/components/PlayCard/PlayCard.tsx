@@ -1,6 +1,5 @@
 import React from 'react';
-import './playcard.css';
-import { performances } from '../data/performances';
+import { performances } from '../../data/performances';
 import PerformanceItem, { PerformanceItemProps } from './PerformanceItem';
 
 export interface PlayCardProps {

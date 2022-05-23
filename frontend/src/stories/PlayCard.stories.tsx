@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { PlayCard } from './PlayCard';
+import { PlayCard } from '../components/PlayCard/PlayCard';
 
 export default {
   title: 'Farfalle/PlayCard',
