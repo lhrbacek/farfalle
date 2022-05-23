@@ -3,11 +3,8 @@ import React from 'react';
 import { TicketProps } from '../types/ticket';
 import OrderTicketItem from './OrderTicketItem';
 import { ChevronRight, Trash, Home } from 'tabler-icons-react';
-
-interface CartCardProps {
-  tickets: TicketProps[]
-}
-
+import { Link } from 'react-router-dom';
+import { CartCardProps } from './OrderPlacement';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -39,16 +36,20 @@ export function CartCard({tickets}: CartCardProps) {
       </Group>
       <Group position="apart">
         <Group>
-          <Button  color="gray" rightIcon={<Home size={14} />}>
-            Home
+          <Button 
+            component={Link}
+            to="/home"
+            color="gray"
+            rightIcon={<Home size={14} />}
+          >
+              Home
           </Button>
-          <Button  color="red" rightIcon={<Trash size={14} />}>
+          {/*TODO: Delete cart content*/ }
+          <Button color="red" rightIcon={<Trash size={14} />}> 
             Delete
           </Button>
         </Group>
-        <Button rightIcon={<ChevronRight size={14} />}>
-          Next
-        </Button>
+
       </Group>
     </Container>
   );

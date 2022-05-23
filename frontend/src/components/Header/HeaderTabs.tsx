@@ -1,15 +1,13 @@
-import { Tabs, createStyles, Container, Group, Image, Text, Menu, Burger, UnstyledButton, Divider, Avatar } from '@mantine/core';
-import React, { useState } from 'react';
+import { createStyles, Container, Group, Image, Text, Menu, Burger, UnstyledButton, Divider, Avatar, Button } from '@mantine/core';
+import { useState } from 'react';
 import { useBooleanToggle } from '@mantine/hooks';
+import { Link, useLocation } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   header: {
     paddingTop: theme.spacing.sm,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3],
-    borderBottom: `1px solid ${
-      theme.colorScheme === 'dark' ? 'transparent' : theme.colors.gray[4]
-    }`,
-    marginBottom: 120,
+    marginBottom: 20,
   },
 
   mainSection: {
@@ -43,30 +41,21 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
   },
 
-  tabs: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
-    },
-  },
-
-  tabsList: {
-    borderBottom: '0 !important',
-  },
-
-  tabControl: {
-    fontWeight: 500,
-    height: 38,
-
+  menuButton: {
+    color: theme.colors.gray[8],
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2],
     },
   },
 
-  tabControlActive: {
-    borderColor: `${
-      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[2]
-    } !important`,
-  },
+  menuButtonClicked: {
+    color: theme.black,
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+    '&:hover': {
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1],
+    },
+  }
+
 }));
 
 interface HeaderTabsProps {
@@ -78,8 +67,7 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
   const { classes, theme, cx } = useStyles();
   const [opened, toggleOpened] = useBooleanToggle(false);
   const [userMenuOpened, setUserMenuOpened] = useState(false);
-
-  const items = tabs.map((tab) => <Tabs.Tab label={tab} key={tab} />);
+  const location = useLocation();
 
   return (
     <div className={classes.header}>
@@ -90,9 +78,9 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
               width={50}
               radius="md"
               src="src\data\farfalle.png"
-              alt="Random unsplash image"
+              alt="Farfalle Logo"
             />
-            <Text size="xl" weight={700}>
+            <Text component={Link} to="/home" size="xl" weight={700}>
               Farfalle
             </Text>
           </Group>
@@ -145,17 +133,38 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
         </Group>
       </Container>
       <Container>
-        <Tabs
-          variant="outline"
-          classNames={{
-            root: classes.tabs,
-            tabsListWrapper: classes.tabsList,
-            tabControl: classes.tabControl,
-            tabActive: classes.tabControlActive,
-          }}
+        <Button
+          className={location.pathname == "/home" ? classes.menuButtonClicked : classes.menuButton}
+          component={Link}
+          to="/home"
+          variant="subtle"
         >
-          {items}
-        </Tabs>
+          Home
+        </Button>
+        <Button
+          className={location.pathname == "/about" ? classes.menuButtonClicked : classes.menuButton}
+          component={Link}
+          to="/about"
+          variant="subtle"
+        >
+          About
+        </Button>
+        <Button
+          className={location.pathname == "/program" ? classes.menuButtonClicked : classes.menuButton}
+          component={Link}
+          to="/program"
+          variant="subtle"
+        >
+          Program
+        </Button>
+        <Button
+          className={location.pathname == "/cart" ? classes.menuButtonClicked : classes.menuButton}
+          component={Link}
+          to="/cart"
+          variant="subtle"
+        >
+          Cart
+        </Button>
       </Container>
     </div>
   );

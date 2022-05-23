@@ -1,5 +1,4 @@
 import { Button, Group, Title, Text, createStyles, Card } from '@mantine/core';
-import React from 'react';
 import { PerformanceProps } from '../types/performance';
 import {
   Ticket
@@ -48,7 +47,7 @@ export function LongPerformanceItem({name, date, time, venue, price}: Performanc
     <Card shadow="sm" p="lg" className={classes.card}>
       <Group position="apart" className={classes.group}>
         <Group className={classes.innerGroup}>
-          <Title order={1} >{name}</Title>
+          <Title order={2} >{name}</Title>
           <Text size="sm">{date}</Text>
           <Text size="sm">{time}</Text>
           <Text size="lg">{venue}</Text>

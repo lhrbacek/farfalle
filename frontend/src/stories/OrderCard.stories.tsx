@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import OrderCard from '../components/OrderCard/CartCard';
+import OrderCard from '../components/OrderPlacement/CartCard';
 import { tickets } from '../data/tickets';
 
 export default {
