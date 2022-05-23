@@ -63,3 +63,25 @@ ToDo:
     - Controller : Service -> 1 : 1
 - Kupování lístků
     - uživatelé, adresy, lístky
+
+---
+
+## Meeting 23.5.
+### Aktuální stav
+- CRUD backend API hotové
+- nahozený frontend
+    - základní layout
+    - komponenta na program
+
+### Plán
+- Adél:
+    - dodělá controller na order
+    - podívat se na frontend - vybrat si cokoliv a udělat v mantine
+- Kika:
+    - autentizace
+- Luba:
+    - komponeny na FE
+    - začne řešit routing
+- Verča:
+    - vyřešit order + výběr lístků + form na FE
+    - routing
