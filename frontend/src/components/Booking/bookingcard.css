@@ -1,13 +1,7 @@
-.booking-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .seat {
     height: 2rem;
     width: 2rem;
+    padding: 0.1rem;
 }
 
 .seat__free {
@@ -15,18 +9,9 @@
 }
 
 .seat__chosen {
-
-    background-color: red;
+    background-color: pink;
 }
 
 .seat__full {
-
     background-color: grey;
-}
-
-.seats-summary {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
