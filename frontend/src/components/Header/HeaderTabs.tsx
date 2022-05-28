@@ -150,7 +150,7 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
           About
         </Button>
         <Button
-          className={location.pathname == "/program" ? classes.menuButtonClicked : classes.menuButton}
+          className={location.pathname.startsWith("/program") ? classes.menuButtonClicked : classes.menuButton}
           component={Link}
           to="/program"
           variant="subtle"
@@ -158,7 +158,7 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
           Program
         </Button>
         <Button
-          className={location.pathname == "/cart" ? classes.menuButtonClicked : classes.menuButton}
+          className={location.pathname.startsWith("/cart") ? classes.menuButtonClicked : classes.menuButton}
           component={Link}
           to="/cart"
           variant="subtle"
