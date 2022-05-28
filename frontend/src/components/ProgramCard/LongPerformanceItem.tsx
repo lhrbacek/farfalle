@@ -3,6 +3,7 @@ import { PerformanceProps } from '../types/performance';
 import {
   Ticket
 } from 'tabler-icons-react';
+import { Link } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -20,28 +21,25 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'baseline',
   },
 
-  button: {
+  buttonAbout: {
     borderRadius: 0,
-
-    '&:not(:first-of-type)': {
-      borderLeftWidth: 0,
-    },
-
-    '&:first-of-type': {
-      borderTopLeftRadius: theme.radius.sm,
-      borderBottomLeftRadius: theme.radius.sm,
-    },
-
-    '&:last-of-type': {
-      borderTopRightRadius: theme.radius.sm,
-      borderBottomRightRadius: theme.radius.sm,
-      backgroundColor: theme.colors.dark[5]
-    },
+    borderTopLeftRadius: theme.radius.sm,
+    borderBottomLeftRadius: theme.radius.sm,
+    backgroundColor: 'white'
   },
+
+  buttonTicket: {
+    borderRadius: 0,
+    borderTopRightRadius: theme.radius.sm,
+    borderBottomRightRadius: theme.radius.sm,
+    backgroundColor: theme.colors.dark[5]
+  }
 }));
 
 export function LongPerformanceItem({name, date, time, venue, price}: PerformanceProps) {
   const { classes } = useStyles();
+  const idPlay = 1; //TODO: id of the performance --> goes to play page
+  const idPerformance = 1; //TODO: id of the performance --> goes to booking page
 
   return (
     <Card shadow="sm" p="lg" className={classes.card}>
@@ -53,12 +51,17 @@ export function LongPerformanceItem({name, date, time, venue, price}: Performanc
           <Text size="lg">{venue}</Text>
         </Group>
         <Group spacing={0}>
-          <Button variant="default" className={classes.button}>
-            About play
-          </Button>
-          <Button className={classes.button} leftIcon={<Ticket size={16} />}>
-            {price}€
-          </Button>
+          <Link to={`${idPlay}`}>
+            <Button variant="default" className={classes.buttonAbout}>
+              About play
+            </Button>
+          </Link>
+
+          <Link to={`booking/${idPerformance}`}>
+            <Button className={classes.buttonTicket} leftIcon={<Ticket size={16} />}>
+              {price}€
+            </Button>
+          </Link>
         </Group>
       </Group>
     </Card>
