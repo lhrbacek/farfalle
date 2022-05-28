@@ -1,39 +1,27 @@
 import { Container, Grid, Image, AspectRatio, Stack, Title, Text, Group, SimpleGrid, Center, Space } from '@mantine/core';
 import React from 'react';
-// import { AspectRatio, Stack } from 'tabler-icons-react';
-import { performances } from '../../data/performances';
+import { play, performances } from '../../data/performances';
 import PerformanceItem, { PerformanceItemProps } from './PerformanceItem';
 
-export interface PlayCardProps {
-    title: string,
-    header: string,
-    director: string,
-    premiere: string,
-    length: string,
-    mainPhoto: string,
-    description: string
-}
 
-export function PlayCard({title, header, director, premiere, length, mainPhoto, description}: PlayCardProps) {
+export function PlayCard() {
   return (
     <Container>
         <Grid grow columns={10} align="flex-start">
             <Grid.Col span={4}>
                 <Center>
-                    <Image src={mainPhoto} alt={title} />
+                    <Image src={play.mainPhoto} alt={play.title} />
                 </Center>
             </Grid.Col>
             <Grid.Col span={6}>
-                <Title>{title}</Title>
-                <Text size="lg">{header}</Text>
+                <Title>{play.title}</Title>
+                <Text size="lg">{play.header}</Text>
                 <Space h="md" />
-                <Text>{description}</Text>
+                <Text>{play.description}</Text>
                 <Space h="md" />
-                <Group position="apart">
-                    <Text size="sm">Director: {director}</Text>
-                    <Text size="sm">Length: {length} minutes</Text>
-                    <Text size="sm">Premiere: {premiere}</Text>
-                </Group>
+                <Text size="sm">Director: {play.director}</Text>
+                <Text size="sm">Length: {length} minutes</Text>
+                <Text size="sm">Premiere: {play.premiere}</Text>
             </Grid.Col>
             <Grid.Col span={6}>
                 <Stack justify="space-between">

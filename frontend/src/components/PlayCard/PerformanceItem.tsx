@@ -1,5 +1,6 @@
 import { Card, Group, Button, Text, createStyles } from '@mantine/core';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Ticket } from 'tabler-icons-react';
 
 export interface PerformanceItemProps {
@@ -48,6 +49,7 @@ const useStyles = createStyles((theme) => ({
 
 export function PerformanceItem({date, time, venue, price}: PerformanceItemProps) {
   const { classes } = useStyles();
+  const idPerformance = 1;
 
   return (
     <Card shadow="sm" p="sm" className={classes.card}>
@@ -57,9 +59,11 @@ export function PerformanceItem({date, time, venue, price}: PerformanceItemProps
           <Text size="lg">{time}</Text>
           <Text size="sm">{venue}</Text>
         </Group>
-        <Button className={classes.button} leftIcon={<Ticket size={16} />}>
-          {price}€
-        </Button>
+        <Link to={`/program/booking/${idPerformance}`}>
+          <Button className={classes.button} leftIcon={<Ticket size={16} />}>
+            {price}€
+          </Button>
+        </Link>
       </Group>
     </Card>
   );
