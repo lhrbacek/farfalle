@@ -14,8 +14,23 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function OrderTicketItem(ticket: TicketProps) {
+interface OrderTicketItemProps {
+  ticket: TicketProps;
+  removable: boolean;
+}
+
+export function OrderTicketItem(props: OrderTicketItemProps) {
   const { classes } = useStyles();
+  const ticket = props.ticket;
+
+  const removeButton = (removable: boolean) => {
+    if (removable == true) {
+      return (
+        <ActionIcon variant="hover"><CircleMinus size="md" color="red" /></ActionIcon>
+      );
+    }
+    return (<></>);
+  }
 
   return (
     <div className={classes.wrapper}>
@@ -29,7 +44,7 @@ export function OrderTicketItem(ticket: TicketProps) {
           <Text color="gray">Seat: {ticket.col}</Text>
         </Group>
         <Group>
-          <ActionIcon variant="hover"><CircleMinus size="md" color="red" /></ActionIcon>
+          {removeButton(props.removable)}
         </Group>
       </Group>
     </div>

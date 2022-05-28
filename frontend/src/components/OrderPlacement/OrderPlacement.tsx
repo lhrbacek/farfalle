@@ -1,53 +1,62 @@
 import { Button, Container, Group, Stepper } from "@mantine/core";
 import { useState } from "react";
-import { TicketProps } from "../types/ticket";
+import { Link } from "react-router-dom";
 import CartCard from "./CartCard";
+import ConfirmationCard from "./ConfirmationCard";
+import SummaryCard from "./SummaryCard";
 import UserForm from "./UserForm";
 
-export interface CartCardProps {
-  tickets: TicketProps[]
+export interface StepProps {
+  prevStep: Function;
+  nextStep: Function;
 }
 
-export const OrderPlacement = ({tickets}: CartCardProps) => {
-  // const [step, setStep] = useState<number>(0);
+export interface UserInfo {
+  email: string;
+  name: string;
+  surname: string;
+  street: string;
+  streetNo: string;
+  city: string;
+  zip: string;
+  phone: string;
+  termsOfService: boolean;
+}
 
-  // switch (step) {
-  //   case 0:
-  //       return (
-  //         <CartCard tickets={tickets}/>
-  //       );
-  //   case 1:
-  //       return (
-  //         <UserForm />
-  //       );
-  // }
-  // return (<></>);
-
+export const OrderPlacement = () => {
   const [active, setActive] = useState(0);
+  const [userInfo, setUserInfo] = useState<UserInfo>({
+    email: "",
+    name: "",
+    surname: "",
+    street: "",
+    streetNo: "",
+    city: "",
+    zip: "",
+    phone: "",
+    termsOfService: false,
+});
+
+
   const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));
   const prevStep = () => setActive((current) => (current > 0 ? current - 1 : current));
 
   return (
-    <Container className='wrapper'>
+    <Container>
       <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
-        <Stepper.Step label="First step" description="Cart Summary" >
-          <CartCard tickets={tickets} />
+        <Stepper.Step allowStepSelect={active > 0} label="First step" description="Cart Summary" >
+          <CartCard nextStep={nextStep} prevStep={prevStep} />
         </Stepper.Step>
-        <Stepper.Step label="Second step" description="Fill Persoal information">
-          <UserForm />
+        <Stepper.Step allowStepSelect={active > 1} label="Second step" description="Fill Personal information">
+          <UserForm nextStep={nextStep} prevStep={prevStep} setUserInfo={setUserInfo} />
         </Stepper.Step>
-        <Stepper.Step label="Final step" description="Final Order">
-          Step 3: Check Whole Order
+        <Stepper.Step allowStepSelect={active > 2} label="Final step" description="Order Summary">
+          <SummaryCard nextStep={nextStep} prevStep={prevStep} userInfo={userInfo} />
         </Stepper.Step>
         <Stepper.Completed>
-          Completed, click back button to get to previous step
+          <ConfirmationCard {...userInfo.email} />
         </Stepper.Completed>
       </Stepper>
-
-      <Group position="center" mt="xl">
-        <Button variant="default" onClick={prevStep}>Back</Button>
-        <Button onClick={nextStep}>Next step</Button>
-      </Group>
     </Container>
   );
 };
