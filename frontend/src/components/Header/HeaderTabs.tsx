@@ -1,7 +1,7 @@
-import { createStyles, Container, Group, Image, Text, Menu, Burger, UnstyledButton, Divider, Avatar, Button } from '@mantine/core';
-import { useState } from 'react';
-import { useBooleanToggle } from '@mantine/hooks';
+import { createStyles, Container, Group, Image, Text, Button } from '@mantine/core';
 import { Link, useLocation } from 'react-router-dom';
+import UserMenu from './UserMenu';
+import UnknownMenu from './UnknownMenu';
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -58,16 +58,21 @@ const useStyles = createStyles((theme) => ({
 
 }));
 
-interface HeaderTabsProps {
-  user: { name: string, image: string};
-  tabs: string[];
-}
 
-export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
-  const { classes, theme, cx } = useStyles();
-  const [opened, toggleOpened] = useBooleanToggle(false);
-  const [userMenuOpened, setUserMenuOpened] = useState(false);
+export function HeaderTabs() {
+  const { classes } = useStyles();
   const location = useLocation();
+
+  const userLogged = true; // TODO set according to global state
+  const userCard = (logged: boolean) => {
+    if (logged == true) {
+      return (
+        <UserMenu />
+      );
+    }
+
+    return (<UnknownMenu />);
+  }
 
   return (
     <div className={classes.header}>
@@ -85,50 +90,7 @@ export function HeaderTabs({ user, tabs }: HeaderTabsProps) {
             </Text>
           </Group>
 
-          <Burger
-            opened={opened}
-            onClick={() => toggleOpened()}
-            className={classes.burger}
-            size="sm"
-          />
-
-          <Menu
-            size={260}
-            placement="end"
-            transition="pop-top-right"
-            className={classes.userMenu}
-            onClose={() => setUserMenuOpened(false)}
-            onOpen={() => setUserMenuOpened(true)}
-            control={
-              <UnstyledButton
-                className={cx(classes.user, { [classes.userActive]: userMenuOpened })}
-              >
-                <Group spacing={7}>
-                <Avatar src={user.image} alt={user.name} radius="xl" size={20} />
-                  <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3}>
-                    {user.name}
-                  </Text>
-                </Group>
-              </UnstyledButton>
-            }
-          >
-            <Menu.Item >
-              Tickets
-            </Menu.Item>
-
-            <Divider />
-
-            <Menu.Label>Profile</Menu.Label>
-            <Menu.Item >
-              Account
-            </Menu.Item>
-            <Menu.Item >
-              Delete account
-            </Menu.Item>
-            <Menu.Item >
-              Sign out
-            </Menu.Item>
-          </Menu>
+          {userCard(userLogged)}
 
         </Group>
       </Container>
