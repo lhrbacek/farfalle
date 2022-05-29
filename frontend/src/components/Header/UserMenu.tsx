@@ -56,7 +56,7 @@ function UserMenu() {
       </Menu.Item>
 
       <Divider />
-      <Menu.Item >
+      <Menu.Item component={Link} to='/account/tickets'>
         Return tickets
       </Menu.Item>
 
