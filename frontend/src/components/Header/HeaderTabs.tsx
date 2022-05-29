@@ -59,11 +59,10 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function HeaderTabs() {
+export function HeaderTabs(props: {auth: boolean}) {
   const { classes } = useStyles();
   const location = useLocation();
 
-  const userLogged = true; // TODO set according to global state
   const userCard = (logged: boolean) => {
     if (logged == true) {
       return (
@@ -90,7 +89,7 @@ export function HeaderTabs() {
             </Text>
           </Group>
 
-          {userCard(userLogged)}
+          {userCard(props.auth)}
 
         </Group>
       </Container>

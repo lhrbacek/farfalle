@@ -8,7 +8,7 @@ function SignIn() {
 
   const SignInPhase = (phase: number) => {
     if (phase == 0) {
-      return (<SignInCard setPhase={setPhase}/>);
+      return (<SignInCard setPhase={setPhase} />);
     }
     return (<SignedInCard />);
   }

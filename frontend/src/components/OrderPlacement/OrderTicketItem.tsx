@@ -8,9 +8,8 @@ const useStyles = createStyles((theme) => ({
     padding: theme.spacing.xs,
     borderRadius: theme.radius.md,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
-    border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
-    }`,
+    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[3]
+      }`,
   },
 }));
 

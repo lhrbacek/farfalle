@@ -1,5 +1,6 @@
 export const tickets = [
   {
+      id: 1,
       name: "The Gamer",
       date: "Jun 03, 2022",
       time: "20:00",
@@ -9,6 +10,7 @@ export const tickets = [
       col: 1,
   },
   {
+    id: 2,
     name: "The Gamer",
     date: "Jun 03, 2022",
     time: "20:00",
@@ -18,6 +20,7 @@ export const tickets = [
     col: 2,
   },
   {
+    id: 3,
     name: "The Gamer",
     date: "Jun 03, 2022",
     time: "20:00",

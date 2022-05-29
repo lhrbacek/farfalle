@@ -1,6 +1,4 @@
-import { PerformanceProps } from '../types/performance';
 import { Container, Divider, Stack, Text, Title } from '@mantine/core';
-import LongPerformanceItem from '../ProgramCard/LongPerformanceItem';
 import { plays as data } from '../../data/performances'
 import PlayItem from './PlayItem';
 import { PlayProps } from '../types/play';

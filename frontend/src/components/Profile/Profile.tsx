@@ -1,58 +1,44 @@
-import { Container, Grid, Stack, Text, Space, Button, Card } from '@mantine/core';
-import PurchasedTicket, { PurchasedTicketProps } from './PurchasedTicket';
-import { Trash, Pencil } from 'tabler-icons-react';
+import { Container, Grid, Stack, Text, Space, Button, Card, Paper, Title, Divider } from '@mantine/core';
+import PurchasedTicket from './PurchasedTicket';
+import { Trash, Pencil, Ticket } from 'tabler-icons-react';
+import { user } from '../../data/user'
+import { Link } from 'react-router-dom';
 
-export interface ProfileProps {
-    name: string,
-    surname: string,
-    email: string,
-    addressName: string,
-    street: string,
-    number: number,
-    zip: number,
-    city: string,
-    purchasedTickets: PurchasedTicketProps[],
-}
-
-export function Profile({name, surname, email, addressName, street, number, zip, city, purchasedTickets}: ProfileProps) {
-  return (
-    <Container>
-        <Grid grow columns={10}>
-            <Grid.Col span={4}>
-                <Card>
-                    <Stack spacing="md">
-                        <Text size="md">Name: {name}</Text>
-                        <Text size="md">Surname: {surname}</Text>
-                        <Text size="md">Email: {email}</Text>
-                    </Stack>
-                    <Space h="md"/>
-                    <Stack spacing="xs">
-                        <Text size="md">Address:</Text>
-                        <Text size="sm">{addressName}</Text>
-                        <Text size="sm">{street} {number}</Text>
-                        <Text size="sm">{zip} {city}</Text>
-                    </Stack>
-                </Card>
-
-            </Grid.Col>
-            <Grid.Col span={6}>
-                <Stack justify="space-between">
-                    <Stack justify="space-between">
-                        {purchasedTickets.map((ticket: PurchasedTicketProps) => <PurchasedTicket {...ticket}/> )}
-                    </Stack>
-                    <Card.Section>
-                        <Button  color="red" rightIcon={<Trash size={14} />}>
-                            Delete
+export function Profile() {
+    //TODO: fetch data about user from backend
+    return (
+        <Container>
+            <Grid>
+                <Paper withBorder shadow="md" p={30} radius="md">
+                    <Stack>
+                        <Title>{user.name} {user.surname}</Title>
+                        <Text size="md">Email: {user.email}</Text>
+                        <Text size="md">Address: {user.address}</Text>
+                        <Divider />
+                        <Button color="gray" rightIcon={<Pencil size={14} />} component={Link} to='edit'>
+                            Edit account
                         </Button>
-                    </Card.Section>
-                </Stack>
-            </Grid.Col>
-        </Grid>
-        <Button  color="blue" rightIcon={<Pencil size={14} />}>
-            Edit
-        </Button>
-    </Container>
-  );
+                        <Button variant='outline' color="red" rightIcon={<Trash size={14} />} component={Link} to='delete'>
+                            Delete account
+                        </Button>
+                    </Stack>
+
+                </Paper>
+                <Grid.Col span={6}>
+                    <Stack justify="space-between">
+                        <Stack justify="space-between">
+                            {user.orders.map((ticket) => <PurchasedTicket {...ticket} />)}
+                        </Stack>
+                        <Card.Section>
+                            <Button color="dark" rightIcon={<Ticket size={14} />} component={Link} to='tickets'>
+                                Manage tickets
+                            </Button>
+                        </Card.Section>
+                    </Stack>
+                </Grid.Col>
+            </Grid>
+        </Container>
+    );
 }
 
 export default Profile;

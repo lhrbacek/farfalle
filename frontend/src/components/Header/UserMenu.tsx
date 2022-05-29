@@ -1,5 +1,6 @@
 import { Avatar, createStyles, Group, Menu, UnstyledButton, Text, Divider } from "@mantine/core";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { UserCheck } from "tabler-icons-react";
 import { user } from '../../data/user';
 
@@ -39,9 +40,9 @@ function UserMenu() {
           className={cx(classes.user, { [classes.userActive]: userMenuOpened })}
         >
           <Group spacing={7}>
-          <Avatar alt={user.name} radius="xl">
-            <UserCheck size={24} color='red' />
-          </Avatar>
+            <Avatar alt={user.name} radius="xl">
+              <UserCheck size={24} color='red' />
+            </Avatar>
             <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3}>
               {user.name}
             </Text>
@@ -49,17 +50,17 @@ function UserMenu() {
         </UnstyledButton>
       }
     >
-      <Menu.Item >
-        Tickets
+
+      <Menu.Item component={Link} to='/account'>
+        Account
       </Menu.Item>
 
       <Divider />
-
-      <Menu.Label>Profile</Menu.Label>
       <Menu.Item >
-        Account
+        Return tickets
       </Menu.Item>
-      <Menu.Item onClick={() => signOutUser()}>
+
+      <Menu.Item color="red" onClick={() => signOutUser()}>
         Sign out
       </Menu.Item>
     </Menu>
