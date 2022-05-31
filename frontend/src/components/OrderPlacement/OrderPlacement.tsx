@@ -1,4 +1,4 @@
-import { Button, Container, Group, Stepper } from "@mantine/core";
+import { Container, Stepper } from "@mantine/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import CartCard from "./CartCard";
@@ -35,7 +35,7 @@ export const OrderPlacement = () => {
     zip: "",
     phone: "",
     termsOfService: false,
-});
+  });
 
 
   const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));
@@ -54,7 +54,7 @@ export const OrderPlacement = () => {
           <SummaryCard nextStep={nextStep} prevStep={prevStep} userInfo={userInfo} />
         </Stepper.Step>
         <Stepper.Completed>
-          <ConfirmationCard {...userInfo.email} />
+          <ConfirmationCard />
         </Stepper.Completed>
       </Stepper>
     </Container>

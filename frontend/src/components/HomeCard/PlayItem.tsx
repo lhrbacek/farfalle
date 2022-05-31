@@ -1,10 +1,6 @@
 import { Button, Group, Title, Text, createStyles, Card } from '@mantine/core';
-import { PerformanceProps } from '../types/performance';
-import {
-  Ticket
-} from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
-import { PlayProps } from '../types/play';
+import { Play } from '../../types/play';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -27,18 +23,19 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function PlayItem(props: PlayProps) {
+export function PlayItem(props: Play) {
   const { classes } = useStyles();
-  const idPlay = 1; //TODO: id of the performance --> goes to play page
+  const idPlay = props.id; //TODO: id of the performance --> goes to play page
 
   return (
     <Card shadow="sm" p="lg" className={classes.card}>
       <Group position="apart" className={classes.group}>
         <Group className={classes.innerGroup}>
-          <Title order={2}>{props.title}</Title>
-          <Text>Premiere on {props.premiere}, directed by {props.director}</Text>
+          <Title order={2}>{props.name}</Title>
         </Group>
-        <Group spacing={0}>
+        <Group>
+          <Text>Directed by</Text>
+          <Text weight={500}>{props.director}</Text>
           <Button variant="default" color='white' component={Link} to={`/program/${idPlay}`}>
             About play
           </Button>

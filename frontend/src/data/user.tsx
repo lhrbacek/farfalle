@@ -8,7 +8,7 @@ export const user = {
   password: "123456",
   address: "Blue 123, London 123546",
   addressId: 1,
-  admin: false,
+  admin: true,
   orders: [
     {
       id: 1,

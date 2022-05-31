@@ -1,6 +1,6 @@
 import { Group, Text, createStyles } from '@mantine/core';
 import React from 'react';
-import { TicketProps } from '../types/ticket';
+import { TicketProps } from '../../types/ticket_old';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {

@@ -11,7 +11,8 @@ import NewAccount from './components/NewAccount/NewAccount'
 import Profile from './components/Profile/Profile'
 import EditProfile from './components/Profile/EditProfile'
 import DeleteAccount from './components/Profile/DeleteAccount'
-import ManageTickets from './components/Profile/ManageTickets'
+import ReturnTickets from './components/ReturnTickets/ReturnTickets'
+import Admin from './components/Profile/Admin'
 
 function App() {
 
@@ -31,7 +32,8 @@ function App() {
         <Route path="/account" element={<Profile />} />
         <Route path="/account/edit" element={<EditProfile />} />
         <Route path="/account/delete" element={<DeleteAccount />} />
-        <Route path="/account/tickets" element={<ManageTickets />} />
+        <Route path="/account/tickets" element={<ReturnTickets />} />
+        <Route path="/account/admin" element={<Admin />} />
       </>
     );
   }

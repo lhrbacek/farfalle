@@ -1,14 +1,10 @@
 import { Card, Group, Button, Text, createStyles } from '@mantine/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PerformanceShort } from '../../types/play';
+import { format } from 'date-fns'
 import { Ticket } from 'tabler-icons-react';
 
-export interface PerformanceItemProps {
-    date: string,
-    time: string,
-    venue: string,
-    price: number
-}
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -47,23 +43,19 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function PerformanceItem({date, time, venue, price}: PerformanceItemProps) {
+export function PerformanceItem(performance: PerformanceShort) {
   const { classes } = useStyles();
-  const idPerformance = 1;
 
   return (
     <Card shadow="sm" p="sm" className={classes.card}>
       <Group position="apart" className={classes.group}>
         <Group className={classes.innerGroup}>
-          <Text size="lg">{date}</Text>
-          <Text size="lg">{time}</Text>
-          <Text size="sm">{venue}</Text>
+          <Text size="lg">{format(performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text size="md">{performance.venue.name}</Text>
         </Group>
-        <Link to={`/program/booking/${idPerformance}`}>
-          <Button className={classes.button} leftIcon={<Ticket size={16} />}>
-            {price}€
-          </Button>
-        </Link>
+        <Button className={classes.button} leftIcon={<Ticket size={16} />} component={Link} to={`/program/booking/${performance.id}`}>
+          Tickets
+        </Button>
       </Group>
     </Card>
   );

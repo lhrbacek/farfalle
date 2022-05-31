@@ -42,7 +42,7 @@ export function UserForm(props: FormProps) {
   return (
     <Box sx={{ maxWidth: 300 }} mx="auto">
       <form onSubmit={form.onSubmit((values) => handleSubmit(values))}>
-        <Divider  my="xl" label="Personal Information" labelPosition="center" />
+        <Divider my="xl" label="Personal Information" labelPosition="center" />
         <TextInput
           required
           label="Name"
@@ -57,7 +57,7 @@ export function UserForm(props: FormProps) {
           {...form.getInputProps('surname')}
         />
 
-        <Divider  my="xl" label="Address" labelPosition="center" />
+        <Divider my="xl" label="Address" labelPosition="center" />
 
         <TextInput
           required
@@ -87,7 +87,7 @@ export function UserForm(props: FormProps) {
           {...form.getInputProps('zip')}
         />
 
-        <Divider  my="xl" label="Contact" labelPosition="center" />
+        <Divider my="xl" label="Contact" labelPosition="center" />
 
         <TextInput
           required
@@ -110,7 +110,7 @@ export function UserForm(props: FormProps) {
 
         <Group position="center" mt="xl">
           <Button variant="default" onClick={() => props.prevStep()}>Back</Button>
-          <Button type="submit" >Next step</Button>
+          <Button type="submit" color='dark'>Next step</Button>
         </Group>
       </form>
     </Box>

@@ -1,3 +1,5 @@
+import { Order } from "./order";
+
 export interface User {
   id: number;
   email: string;
@@ -7,5 +9,5 @@ export interface User {
   address: string;
   addressId: number;
   picture: string;
-  orders: never[];
+  orders: Order[];
 }

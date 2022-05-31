@@ -1,32 +1,34 @@
-import { Container, Grid, Image, AspectRatio, Stack, Title, Text, Group, SimpleGrid, Center, Space, Button, createStyles } from '@mantine/core';
+import { Container, Stack, Title, Text, Group, Button, Divider } from '@mantine/core';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { performances as data } from '../../data/performances';
-import { SeatProps } from '../types/ticket';
+import { Link, useParams } from 'react-router-dom';
+import { performancesBooking } from '../../data/performances';
+import { TicketBooking } from '../../types/ticket';
 import SeatsGrid from './SeatsGrid';
 
-const getBookingPhase = (phase: number, seats: SeatProps[], bookedSeats: number[], bookSeat: Function,
-                         tableStyle: any, confirmSeats: Function, price: number, idPlay: number) => {
+
+const getBookingPhase = (phase: number, seats: TicketBooking[], bookedSeats: number[], bookSeat: Function,
+  tableStyle: any, confirmSeats: Function, idPlay: number, price: number) => {
   if (phase == 0) {
-    return(
+    return (
       <Stack>
         {/* Display grid with seats, allow booking == adding to bookedSeats array */}
-        <SeatsGrid values={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle}/>
+        <Divider size="xl" label="Stage" labelPosition="center" />
+        <SeatsGrid values={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} />
         <Container>
           <Text>Number of chosen seats: {bookedSeats.length}</Text>
         </Container>
         <Container>
-          <Text>Price of chosen seats: {bookedSeats.length * price} €</Text>
+          <Text>Price of chosen seats: {price} €</Text>
         </Container>
         <Container>
           <Button color={'dark'} onClick={() => confirmSeats(bookedSeats)} >
-              Confirm booking
+            Confirm booking
           </Button>
         </Container>
       </Stack>
     );
   }
-  return(
+  return (
     <Container>
       <Group position="center" mt="xl">
         <Text weight={700}>Tickets booked succesfuly!</Text>
@@ -35,8 +37,8 @@ const getBookingPhase = (phase: number, seats: SeatProps[], bookedSeats: number[
         <Button variant='default' component={Link} to='/program'>
           Program
         </Button>
-        <Button variant='light' color="dark" component={Link} to={`/program/${idPlay}`}>
-          Back to play
+        <Button variant='light' color="dark" component={Link} to={`/cart`}>
+          Cart
         </Button>
       </Group>
     </Container>
@@ -44,47 +46,51 @@ const getBookingPhase = (phase: number, seats: SeatProps[], bookedSeats: number[
 }
 
 export function BookingCard() {
-
   let initialArray: number[] = [];
   const [bookedSeats, setBookedSeats] = useState(initialArray);
+  const [price, setPrice] = useState(0);
   const [bookingPhase, setBookingPhase] = useState(0);
+  const { id } = useParams();
 
-  const {id, name, venue, date, time, price, columns, seats} = data[0]; // TODO: fetch from backend
-  const idPlay = 1; // TODO: should be part of fetched data, hope so
+  const performance = performancesBooking.find((value) => value.id.toString() == id); // TODO: fetch from backend
 
   let tableStyle = { // separate styles for displaying various venue sizes
-      display: `grid`,
-      alignItems: `stretch`,
-      gridTemplateColumns: `repeat(${columns} , 2rem)`,
+    display: `grid`,
+    alignItems: `stretch`,
+    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
   };
 
-  /* --- Seat booking --- */
-  const bookSeat = (id: number, bookedSeats: number[]) => {
-      if (bookedSeats.includes(id)) {
-          setBookedSeats(bookedSeats.filter(item => item !== id));
-      } else {
-          setBookedSeats([...bookedSeats, id]);
-      }
+  const bookSeat = (id: number, seatPrice: number) => {
+    if (bookedSeats.includes(id)) {
+      setPrice(price - seatPrice);
+      setBookedSeats(bookedSeats.filter(item => item !== id));
+    } else {
+      setPrice(price + seatPrice);
+      setBookedSeats([...bookedSeats, id]);
+    }
   }
 
   const confirmSeats = (bookedSeats: number[]) => {
-      /* Insert seats into database */
-      if (bookedSeats.length == 0)
-        return;
-      // TODO: insert seats into DB and print out error, if occurs => reset array
-      setBookedSeats([]);
-      setBookingPhase(1);
+    /* Insert seats into database */
+    if (bookedSeats.length == 0) {
+      console.log(bookedSeats.length);
+      return;
+    }
+    // TODO: insert seats into DB and print out error, if occurs => reset array
+    // bookedSeats.map((id) => setCart((tickets) => [...tickets, id]))
+    setBookedSeats([]);
+    setBookingPhase(1);
+    console.log(bookedSeats)
   }
 
   return (
-      <Container>
-          <Title>Booking seats for {name}</Title>
-          <Text>Venue: {venue}</Text>
-          <Text>Date: {date}</Text>
-          <Text>Time: {time}</Text>
-
-          {getBookingPhase(bookingPhase, seats, bookedSeats, bookSeat, tableStyle, confirmSeats, price, idPlay)}
-      </Container>
+    <Container>
+      <Title>Booking seats for {performance?.play.name}</Title>
+      <Text>Venue: {performance?.venue.name}</Text>
+      <Text>Date: {performance?.dateTime.toString()}</Text>
+      {/* TODO: get rid of undefined condiitions */}
+      {getBookingPhase(bookingPhase, performance == undefined ? [] : performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance == undefined ? 1 : performance.play.id, price)}
+    </Container>
   );
 }
 

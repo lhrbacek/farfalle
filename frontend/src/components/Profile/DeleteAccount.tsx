@@ -1,7 +1,8 @@
 import { Container, Paper, Text, Notification, Button } from '@mantine/core';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Trash } from 'tabler-icons-react';
+import { Trash } from 'tabler-icons-react';
+import SuccessNotification from '../Notification/SuccessNotification';
 
 function DeleteAccount() {
   const [phase, setPhase] = useState(0);
@@ -28,9 +29,7 @@ function DeleteAccount() {
     }
     return (
       <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-        <Notification disallowClose icon={<Check size={18} />} color="green">
-          Account deleted!
-        </Notification>
+        <SuccessNotification {... "Account deleted!"} />
 
         <Button color='dark' fullWidth component={Link} to='/home'>
           Home

@@ -1,9 +1,8 @@
-import { ActionIcon, Button, createStyles, Group, Text } from '@mantine/core';
-import React from 'react';
-import { Ticket } from '../../types/ticket';
-import { CircleMinus } from 'tabler-icons-react';
+import { Checkbox, createStyles, Group, Text } from '@mantine/core';
 import { format } from 'date-fns';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Ticket } from '../../types/ticket';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -17,22 +16,15 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-interface OrderTicketItemProps {
+interface ReturnTicketItemProps {
   ticket: Ticket;
-  removable: boolean;
+  checkedTickets: number[];
+  setTickets: Function;
 }
 
-export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
+export function ReturnTicketItem({ ticket, checkedTickets, setTickets }: ReturnTicketItemProps) {
+  const [checked, setChecked] = useState(true);
   const { classes } = useStyles();
-
-  const removeButton = (removable: boolean) => {
-    if (removable == true) {
-      return (
-        <ActionIcon variant="hover"><CircleMinus size="md" color="red" /></ActionIcon>
-      );
-    }
-    return (<></>);
-  }
 
   return (
     <div className={classes.wrapper}>
@@ -41,14 +33,27 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
           <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
         </Group>
         <Group>
-          <Text >{format(ticket.performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text>{format(ticket.performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
           <Text color="gray">Row: {ticket.row}</Text>
           <Text color="gray">Seat: {ticket.seat}</Text>
-          {removeButton(removable)}
+
+          <Checkbox
+            color="red"
+            onClick={() => {
+              setChecked(!checked)
+              if (checked === true) {
+                setTickets([...checkedTickets, ticket.id]);
+              } else {
+                setTickets(checkedTickets.filter(item => item != ticket.id));
+              }
+              console.log({ tickets: checkedTickets, checked: checked });
+            }
+            }
+          />
         </Group>
       </Group>
     </div>
   );
 }
 
-export default OrderTicketItem;
+export default ReturnTicketItem;

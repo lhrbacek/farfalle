@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ProgramCard } from '../components/ProgramCard/ProgramCard';
-import { performances } from '../data/performances';
+import { performances } from '../data/performances_old';
 import { PerformanceProps } from '../components/types/performance';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   component: ProgramCard,
 } as ComponentMeta<typeof ProgramCard>;
 
-const Template: ComponentStory<typeof ProgramCard> = (args) => <ProgramCard {...args}/>;
+const Template: ComponentStory<typeof ProgramCard> = (args) => <ProgramCard {...args} />;
 
 export const Program = Template.bind({});
-Program.args = {values: performances};
+Program.args = { values: performances };

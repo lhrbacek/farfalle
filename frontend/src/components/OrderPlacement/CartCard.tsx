@@ -1,4 +1,4 @@
-import { Button, Container, createStyles, Divider, Group, Stack, Text } from '@mantine/core';
+import { Button, Container, Divider, Group, Stack, Text } from '@mantine/core';
 import React from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { Trash } from 'tabler-icons-react';
@@ -14,9 +14,9 @@ export function CartCard(props: StepProps) {
   return (
     <Container>
       <Stack spacing="xs">
-        {tickets.map((ticket) => <OrderTicketItem ticket={ticket} removable={true}/> )}
+        {tickets.map((ticket) => <OrderTicketItem ticket={ticket} removable={true} />)}
       </Stack>
-      <Divider  my="xl" label="Summary" labelPosition="center" />
+      <Divider my="xl" label="Summary" labelPosition="center" />
       <Group position="apart">
         <Text>Number of seats:</Text>
         <Text>{count}</Text>
@@ -27,18 +27,16 @@ export function CartCard(props: StepProps) {
       </Group>
       <Group position="center">
         <Group>
-          {/*TODO: Delete cart content - update global state*/ }
-          <Button color="red" rightIcon={<Trash size={14} />}> 
+          {/*TODO: Delete cart content - update global state*/}
+          <Button color="red" rightIcon={<Trash size={14} />}>
             Delete
           </Button>
         </Group>
       </Group>
 
       <Group position="center" mt="xl">
-        <Link to="/home">
-          <Button variant="default">Home</Button>
-        </Link>
-        <Button onClick={() => props.nextStep()}>Next step</Button>
+        <Button variant="default" component={Link} to='/home'>Home</Button>
+        <Button onClick={() => props.nextStep()} color='dark'>Next step</Button>
       </Group>
     </Container>
   );

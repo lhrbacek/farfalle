@@ -1,17 +1,20 @@
-import { Container, Divider, Stack, Text, Title } from '@mantine/core';
-import { plays as data } from '../../data/performances'
+import { Container, Divider, Pagination, Stack, Title } from '@mantine/core';
+import { useState } from 'react';
+import { plays as data } from '../../data/plays'
+import { Play } from '../../types/play';
 import PlayItem from './PlayItem';
-import { PlayProps } from '../types/play';
 
 export function HomeCard() {
   const values = data;  //TODO: Fetch from backend five newest performances
+  const [activePage, setPage] = useState(1); // TODO: Add paging
 
   return (
     <Container>
       <Title order={1} >Welcome to Farfalle!</Title>
-      <Divider my="sm" variant="dotted" />
+      <Divider my="sm" />
       <Stack spacing="xs">
-        {values.map((value: PlayProps) => <PlayItem {... value}/> )}
+        {values.map((value: Play) => <PlayItem key={1} {...value} />)}
+        <Pagination page={activePage} onChange={setPage} total={2} color="dark" />
       </Stack>
     </Container>
   );

@@ -3,6 +3,7 @@ import { useForm } from '@mantine/form';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Check } from 'tabler-icons-react';
+import SuccessNotification from '../Notification/SuccessNotification';
 
 export function EditProfile() {
   const [saved, setSaved] = useState(false);
@@ -31,9 +32,7 @@ export function EditProfile() {
   const saveNotification = (saved: boolean) => {
     if (saved) {
       return (
-        <Notification disallowClose icon={<Check size={18} />} color="green">
-          Account edited!
-        </Notification>
+        <SuccessNotification {... "Account edited!"} />
       );
     }
     return (<></>);

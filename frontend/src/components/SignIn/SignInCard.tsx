@@ -3,6 +3,7 @@ import { useForm } from '@mantine/form';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
+import ErrorNotification from '../Notification/ErrorNotification';
 
 interface SignUser {
   email: string,
@@ -26,9 +27,7 @@ function SignInCard(props: SignInProps) {
   const signErrorNotification = (signError: boolean) => {
     if (signError) {
       return (
-        <Notification icon={<X size={18} />} color="red" disallowClose>
-          Wrong email or password!
-        </Notification>
+        <ErrorNotification {... "Wrong email or password!"} />
       )
     }
     return (<></>);

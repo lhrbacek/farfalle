@@ -1,5 +1,5 @@
 import React from 'react';
-import { PerformanceProps } from '../types/performance';
+import { Performance } from '../../types/performance';
 import { Container, Stack } from '@mantine/core';
 import LongPerformanceItem from './LongPerformanceItem';
 import { performances as data } from '../../data/performances'
@@ -10,7 +10,7 @@ export function ProgramCard() {
   return (
     <Container>
       <Stack spacing="xs">
-        {values.map((a: PerformanceProps) => <LongPerformanceItem {...a}/> )}
+        {values.map((value: Performance) => <LongPerformanceItem key={value.id} {...value} />)}
       </Stack>
     </Container>
   );

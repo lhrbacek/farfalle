@@ -1,9 +1,10 @@
 import { Button, Group, Title, Text, createStyles, Card } from '@mantine/core';
-import { PerformanceProps } from '../types/performance';
+import { Performance } from '../../types/performance';
 import {
   Ticket
 } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -11,14 +12,6 @@ const useStyles = createStyles((theme) => ({
     ':hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[1],
     }
-  },
-
-  group: {
-    alignItems: 'center',
-  },
-
-  innerGroup: {
-    alignItems: 'baseline',
   },
 
   buttonAbout: {
@@ -36,32 +29,25 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-export function LongPerformanceItem({name, date, time, venue, price}: PerformanceProps) {
+export function LongPerformanceItem(performance: Performance) {
   const { classes } = useStyles();
-  const idPlay = 1; //TODO: id of the performance --> goes to play page
-  const idPerformance = 1; //TODO: id of the performance --> goes to booking page
 
   return (
     <Card shadow="sm" p="lg" className={classes.card}>
-      <Group position="apart" className={classes.group}>
-        <Group className={classes.innerGroup}>
-          <Title order={2} >{name}</Title>
-          <Text size="sm">{date}</Text>
-          <Text size="sm">{time}</Text>
-          <Text size="lg">{venue}</Text>
-        </Group>
-        <Group spacing={0}>
-          <Link to={`${idPlay}`}>
-            <Button variant="default" className={classes.buttonAbout}>
+      <Group position="apart">
+        <Title order={2} >{performance.play.name}</Title>
+        <Group>
+          <Text size="sm">{performance.venue.name}</Text>
+          <Text size="lg">{format(performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Group spacing={0}>
+            <Button variant="default" className={classes.buttonAbout} component={Link} to={`/program/${performance.play.id}`}>
               About play
             </Button>
-          </Link>
 
-          <Link to={`booking/${idPerformance}`}>
-            <Button className={classes.buttonTicket} leftIcon={<Ticket size={16} />}>
-              {price}€
+            <Button className={classes.buttonTicket} leftIcon={<Ticket size={16} />} component={Link} to={`/program/booking/${performance.id}`}>
+              Tickets
             </Button>
-          </Link>
+          </Group>
         </Group>
       </Group>
     </Card>

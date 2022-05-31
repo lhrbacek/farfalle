@@ -1,8 +1,9 @@
-import { Notification, Title, Text, Anchor, Paper, TextInput, PasswordInput, Group, Checkbox, Button } from '@mantine/core';
+import { Notification, Title, Text, Anchor, Paper, TextInput, PasswordInput, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
+import ErrorNotification from '../Notification/ErrorNotification';
 
 interface NewUser {
   name: string,
@@ -36,9 +37,7 @@ function CreateAccount(props: CreateAccountProps) {
   const registeredAccountError = (alreadyRegistered: boolean) => {
     if (alreadyRegistered) {
       return (
-        <Notification icon={<X size={18} />} color="red" disallowClose>
-          Email already registered with existing account!
-        </Notification>
+        <ErrorNotification {... "Email already registered"} />
       )
     }
     return (<></>);
