@@ -3,6 +3,8 @@ import { PrismaService } from '../prisma.service';
 import { Ticket } from '@prisma/client';
 import { CreateTicketDto } from './dto/create-ticket.dto';
 import { UpdateTicketDto } from './dto/update-ticket.dto';
+import { TicketWithPerformanceDto } from './dto/ticket-performance.dto';
+import { FilterTicketDto } from './dto/filter-ticket.dto';
 
 @Injectable()
 export class TicketService {
@@ -17,12 +19,64 @@ export class TicketService {
     });
   }
 
-  async findAll(): Promise<Ticket[]> {
-    return await this.prisma.ticket.findMany();
+  async findAll(
+    filterTicketDto: FilterTicketDto,
+  ): Promise<TicketWithPerformanceDto[]> {
+    return await this.prisma.ticket.findMany({
+      where: {
+        order: {
+          userId: filterTicketDto.user,
+        },
+        performanceId: filterTicketDto.performance,
+        performance: {
+          dateTime: {
+            gt: filterTicketDto.from,
+          },
+        },
+      },
+      include: {
+        performance: {
+          include: {
+            play: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+            venue: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+          },
+        },
+      },
+    });
   }
 
-  async findOne(id: number): Promise<Ticket | null> {
-    return await this.prisma.ticket.findUnique({ where: { id: id } });
+  async findOne(id: number): Promise<TicketWithPerformanceDto | null> {
+    return await this.prisma.ticket.findUnique({
+      where: { id: id },
+      include: {
+        performance: {
+          include: {
+            play: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+            venue: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+          },
+        },
+      },
+    });
   }
 
   async update(id: number, updateTicketDto: UpdateTicketDto): Promise<Ticket> {
