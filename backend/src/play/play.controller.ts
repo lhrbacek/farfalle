@@ -11,6 +11,7 @@ import { PlayService } from './play.service';
 import { Play as PlayModel } from '@prisma/client';
 import { CreatePlayDto } from './dto/create-play.dto';
 import { UpdatePlayDto } from './dto/update-play.dto';
+import { PlayWithPerformancesDto } from './dto/play-performances.dto';
 
 @Controller('play')
 export class PlayController {
@@ -22,12 +23,12 @@ export class PlayController {
   }
 
   @Get()
-  async findAll() {
+  async findAll(): Promise<PlayWithPerformancesDto[]> {
     return await this.playService.findAll();
   }
 
   @Get(':id')
-  async findOne(@Param('id') id: number) {
+  async findOne(@Param('id') id: number): Promise<PlayWithPerformancesDto> {
     return await this.playService.findOne(id);
   }
 
