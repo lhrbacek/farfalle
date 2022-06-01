@@ -1,4 +1,5 @@
 from random import randint, random
+import datetime
 
 
 venues = [(6, 14), (25, 20), (11, 17)]
@@ -87,6 +88,7 @@ for row in range(1, rows + 1):
         stat = "SOLD"
         print(f"    orderId: 3,")
         print(f"    status: StatusTicket.{stat},")
+        print(f"    reservedAt: '{datetime.datetime.now().isoformat()}Z',")
         print("  },")
         i += 1
 
@@ -104,7 +106,9 @@ for p in performances[1:]:
             if (random() > 0.7):
                 order = randint(1,9)
                 if order != 3:
-                    stat = "SOLD" if order in paid else "RESERVED"
+                    if order in paid:
+                        stat = "SOLD"
+                    print(f"    reservedAt: '{datetime.datetime.now().isoformat()}Z',")
                     print(f"    orderId: {order},")
             print(f"    status: StatusTicket.{stat},")
             print("  },")
