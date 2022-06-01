@@ -3,6 +3,7 @@ import { PrismaService } from '../prisma.service';
 import { Performance } from '@prisma/client';
 import { CreatePerformanceDto } from './dto/create-performance.dto';
 import { UpdatePerformanceDto } from './dto/update-performance.dto';
+import { PerformanceBookingDto } from './dto/performance-booking.dto';
 
 @Injectable()
 export class PerformanceService {
@@ -20,12 +21,69 @@ export class PerformanceService {
     });
   }
 
-  async findAll(): Promise<Performance[]> {
-    return await this.prisma.performance.findMany({});
+  async findAll(): Promise<PerformanceBookingDto[]> {
+    return await this.prisma.performance.findMany({
+      select: {
+        id: true,
+        dateTime: true,
+        play: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+        venue: {
+          select: {
+            id: true,
+            name: true,
+            rows: true,
+            cols: true,
+          },
+        },
+        tickets: {
+          select: {
+            id: true,
+            price: true,
+            row: true,
+            seat: true,
+            status: true,
+          },
+        },
+      },
+    });
   }
 
-  async findOne(id: number): Promise<Performance | null> {
-    return await this.prisma.performance.findUnique({ where: { id: id } });
+  async findOne(id: number): Promise<PerformanceBookingDto | null> {
+    return await this.prisma.performance.findUnique({
+      where: { id: id },
+      select: {
+        id: true,
+        dateTime: true,
+        play: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
+        venue: {
+          select: {
+            id: true,
+            name: true,
+            rows: true,
+            cols: true,
+          },
+        },
+        tickets: {
+          select: {
+            id: true,
+            price: true,
+            row: true,
+            seat: true,
+            status: true,
+          },
+        },
+      },
+    });
   }
 
   async update(

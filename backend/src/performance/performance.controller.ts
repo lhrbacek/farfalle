@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from '@nestjs/common';
 import { Performance as PerformanceModel } from '@prisma/client';
 import { PerformanceService } from './performance.service';
@@ -13,6 +14,7 @@ import { UpdatePerformanceDto } from './dto/update-performance.dto';
 import { VenueService } from 'src/venue/venue.service';
 import { TicketService } from 'src/ticket/ticket.service';
 import { CreatePerformanceWithPriceDto } from './dto/create-performance-with-price.dto';
+import { PerformanceBookingDto } from './dto/performance-booking.dto';
 
 @Controller('performance')
 export class PerformanceController {
@@ -45,12 +47,12 @@ export class PerformanceController {
   }
 
   @Get()
-  async findAll() {
+  async findAll(): Promise<PerformanceBookingDto[]> {
     return await this.performanceService.findAll();
   }
 
   @Get(':id')
-  async findOne(@Param('id') id: number) {
+  async findOne(@Param('id') id: number): Promise<PerformanceBookingDto> {
     return await this.performanceService.findOne(id);
   }
 
