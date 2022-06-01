@@ -7,6 +7,7 @@ import { UserModule } from './user/user.module';
 import { VenueModule } from './venue/venue.module';
 import { AddressModule } from './address/address.module';
 import { PerformanceModule } from './performance/performance.module';
+import { OrderModule } from './order/order.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { PerformanceModule } from './performance/performance.module';
     VenueModule,
     AddressModule,
     PerformanceModule,
+    OrderModule,
   ],
   controllers: [AppController],
   providers: [AppService],
