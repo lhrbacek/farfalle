@@ -1,8 +1,10 @@
-import { Button, Container, createStyles, Divider, Group, Stack, Text } from '@mantine/core';
+import { Button, Container, Divider, Group, Stack, Text } from '@mantine/core';
 import React from 'react';
 import OrderTicketItem from './OrderTicketItem';
-import { tickets } from '../../data/tickets'; // TODO: Fetch tickets from global state
-import { StepProps, UserInfo } from './OrderPlacement';
+import { UserInfo } from './OrderPlacement';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { cartStateSelector } from '../../state/Selector';
+import { cartState } from '../../state/Atom';
 
 interface SummaryProps {
   prevStep: Function;
@@ -11,12 +13,14 @@ interface SummaryProps {
 }
 
 export function SummaryCard(props: SummaryProps) {
-  const count = tickets.length;
-  const totalPrice = tickets.reduce((sum: number, current: any) => sum + current.price, 0);
+  const cart = useRecoilValue(cartStateSelector);
+  const setCartState = useSetRecoilState(cartState);
+  const count = cart.length;
+  const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
 
   const confirmOrder = () => {
     // TODO: Update DBˇ
-    // TODO: Clear cart
+    setCartState([])
     props.nextStep();
   }
 
@@ -24,7 +28,7 @@ export function SummaryCard(props: SummaryProps) {
     <Container>
       <Divider my="xl" label="Tickets Summary" labelPosition="center" />
       <Stack spacing="xs">
-        {tickets.map((ticket) => <OrderTicketItem ticket={ticket} removable={false} />)}
+        {cart.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={false} />)}
       </Stack>
       <Group position="apart">
         <Text>Number of seats:</Text>

@@ -1,9 +1,12 @@
-import { ActionIcon, Button, createStyles, Group, Text } from '@mantine/core';
+import { ActionIcon, createStyles, Group, Text } from '@mantine/core';
 import React from 'react';
 import { Ticket } from '../../types/ticket';
 import { CircleMinus } from 'tabler-icons-react';
-import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { cartStateSelector } from '../../state/Selector';
+import { cartState } from '../../state/Atom';
+import { format } from 'date-fns';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -23,15 +26,18 @@ interface OrderTicketItemProps {
 }
 
 export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
+  const cart = useRecoilValue(cartStateSelector);
+  const setCartState = useSetRecoilState(cartState);
   const { classes } = useStyles();
 
   const removeButton = (removable: boolean) => {
     if (removable == true) {
       return (
-        <ActionIcon variant="hover"><CircleMinus size="md" color="red" /></ActionIcon>
+        <ActionIcon variant="hover" onClick={() => setCartState(cart.filter(item => item.id !== ticket.id))}>
+          <CircleMinus color="red" />
+        </ActionIcon >
       );
     }
-    return (<></>);
   }
 
   return (

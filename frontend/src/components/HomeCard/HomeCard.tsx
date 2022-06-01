@@ -13,7 +13,7 @@ export function HomeCard() {
       <Title order={1} >Welcome to Farfalle!</Title>
       <Divider my="sm" />
       <Stack spacing="xs">
-        {values.map((value: Play) => <PlayItem key={1} {...value} />)}
+        {values.map((value: Play) => <PlayItem key={value.id} {...value} />)}
         <Pagination page={activePage} onChange={setPage} total={2} color="dark" />
       </Stack>
     </Container>

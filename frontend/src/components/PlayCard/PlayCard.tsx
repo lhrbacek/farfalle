@@ -30,7 +30,7 @@ export function PlayCard() {
                 </Grid.Col>
                 <Grid.Col span={6}>
                     <Stack justify="space-between">
-                        {playInfo?.performances.map((performance: PerformanceShort) => <PerformanceItem {...performance} />)}
+                        {playInfo?.performances.map((performance: PerformanceShort) => <PerformanceItem key={performance.id} {...performance} />)}
                     </Stack>
                 </Grid.Col>
             </Grid>

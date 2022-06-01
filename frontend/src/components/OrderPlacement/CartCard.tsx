@@ -5,16 +5,20 @@ import { Trash } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
 import { tickets as ticketsData } from '../../data/tickets';
 import { StepProps } from './OrderPlacement';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { cartState } from '../../state/Atom';
+import { cartStateSelector } from '../../state/Selector';
 
 export function CartCard(props: StepProps) {
-  const tickets = ticketsData; // TODO: Fetch tickets from global state
-  const count = tickets.length;
-  const totalPrice = tickets.reduce((sum: number, current: any) => sum + current.price, 0);
+  const cart = useRecoilValue(cartStateSelector);
+  const setCartState = useSetRecoilState(cartState);
+  const count = cart.length;
+  const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
 
   return (
     <Container>
       <Stack spacing="xs">
-        {tickets.map((ticket) => <OrderTicketItem ticket={ticket} removable={true} />)}
+        {cart.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={true} />)}
       </Stack>
       <Divider my="xl" label="Summary" labelPosition="center" />
       <Group position="apart">
@@ -28,7 +32,7 @@ export function CartCard(props: StepProps) {
       <Group position="center">
         <Group>
           {/*TODO: Delete cart content - update global state*/}
-          <Button color="red" rightIcon={<Trash size={14} />}>
+          <Button disabled={count == 0} hidden={count == 0} color="red" rightIcon={<Trash size={14} />} onClick={() => setCartState([])}>
             Delete
           </Button>
         </Group>
@@ -36,7 +40,7 @@ export function CartCard(props: StepProps) {
 
       <Group position="center" mt="xl">
         <Button variant="default" component={Link} to='/home'>Home</Button>
-        <Button onClick={() => props.nextStep()} color='dark'>Next step</Button>
+        <Button disabled={count == 0} onClick={() => props.nextStep()} color='dark'>Next step</Button>
       </Group>
     </Container>
   );
