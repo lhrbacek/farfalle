@@ -22,7 +22,7 @@ export class OrderService {
           }),
         },
         user: { connect: { id: createOrderDto.user } },
-        adress: { connect: { id: createOrderDto.adress } },
+        address: { connect: { id: createOrderDto.adress } },
       },
     });
   }
@@ -47,7 +47,7 @@ export class OrderService {
             };
           }),
         },
-        adress: { connect: { id: updateOrderDto.adress } },
+        address: { connect: { id: updateOrderDto.adress } },
       },
     });
   }

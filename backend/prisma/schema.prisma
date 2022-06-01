@@ -44,7 +44,7 @@ model Play {
 
 model Performance {
   id        Int     @default(autoincrement()) @id
-  dateTime  String
+  dateTime  DateTime
   play      Play    @relation(fields: [playId], references: [id])
   playId    Int
   venue     Venue   @relation(fields: [venueId], references: [id])
@@ -66,6 +66,7 @@ model Ticket {
   row              Int
   seat             Int
   status           StatusTicket
+  reservedAt       DateTime?
   order            Order? @relation(fields: [orderId], references: [id])
   orderId          Int?
   performance      Performance @relation(fields: [performanceId], references: [id])
@@ -84,8 +85,8 @@ model Order {
   email      String
   createdAt  DateTime  @default(now())
   tickets    Ticket[]
-  adress     Address   @relation(fields: [adressId], references: [id])
-  adressId   Int
+  address    Address   @relation(fields: [addressId], references: [id])
+  addressId  Int
   user       User?     @relation(fields: [userId], references: [id])
   userId     Int? 
 }
