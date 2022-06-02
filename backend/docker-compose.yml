@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  database:
+    image: postgres:14.2-alpine
+    environment:
+      - POSTGRES_DB=farfalle
+      - POSTGRES_PASSWORD=DynoveKoreniJeDynovymKorenimZivota
+    volumes:
+      - database-storage:/var/lib/postgresql/data
+    networks:
+      - backend
+    ports:
+      - 127.0.0.1:5432:5432
+
+  admin:
+    image: adminer:4.8.1
+    networks:
+      - backend
+    ports:
+      - 127.0.0.1:8089:8080
+  
+volumes:
+  database-storage:
+
+networks:
+  backend:
