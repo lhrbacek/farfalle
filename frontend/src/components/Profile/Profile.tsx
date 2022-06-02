@@ -3,9 +3,15 @@ import PurchasedTicket from './PurchasedTicket';
 import { user } from '../../data/user'
 import { Link } from 'react-router-dom';
 import { Database, Pencil, Ticket, Trash } from 'tabler-icons-react';
+import { useEffect } from 'react';
 
 function Profile() {
     //TODO: fetch data about user from backend
+
+    useEffect(() => {
+        document.title = "Farfalle | Account"
+    }, [])
+
     return (
         <Container>
             <Group position={'center'} align={'start'}>

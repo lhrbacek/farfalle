@@ -1,6 +1,12 @@
 import { Container, Divider, Text, Title } from '@mantine/core';
+import { useEffect } from 'react';
 
 function AboutCard() {
+
+  useEffect(() => {
+    document.title = "Farfalle | About"
+  }, [])
+
   return (
     <Container>
       <Title order={2}>About Farfalle</Title>

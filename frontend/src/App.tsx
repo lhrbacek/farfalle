@@ -14,8 +14,13 @@ import DeleteAccount from './components/Profile/DeleteAccount'
 import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
+import { useEffect } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Farfalle"
+  }, [])
 
   const user = true;
   const authenticatedUser = (authenticated: boolean) => {

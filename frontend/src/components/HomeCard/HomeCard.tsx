@@ -1,5 +1,5 @@
 import { Container, Divider, Pagination, Stack, Title } from '@mantine/core';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { plays as data } from '../../data/plays'
 import { Play } from '../../types/play';
 import PlayItem from './PlayItem';
@@ -7,6 +7,10 @@ import PlayItem from './PlayItem';
 export function HomeCard() {
   const values = data;  //TODO: Fetch from backend five newest performances
   const [activePage, setPage] = useState(1); // TODO: Add paging
+
+  useEffect(() => {
+    document.title = "Farfalle | Home"
+  }, [])
 
   return (
     <Container>
