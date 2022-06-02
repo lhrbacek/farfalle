@@ -24,7 +24,7 @@ function App() {
     document.title = "Farfalle"
   }, [])
 
-  const user = true;
+  const user = false;
   const authenticatedUser = (authenticated: boolean) => {
     //TODO: there will be probably some token or smh
     if (!authenticated) {

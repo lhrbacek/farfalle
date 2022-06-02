@@ -1,7 +1,8 @@
-import { createStyles, Container, Group, Image, Text, Button } from '@mantine/core';
+import { createStyles, Container, Group, Image, Text, Button, Burger } from '@mantine/core';
 import { Link, useLocation } from 'react-router-dom';
 import UserMenu from './UserMenu';
-import UnknownMenu from './UnknownMenu';
+import { useBooleanToggle } from '@mantine/hooks';
+import BurgerMenu from './BurgerMenu';
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -12,12 +13,6 @@ const useStyles = createStyles((theme) => ({
 
   mainSection: {
     paddingBottom: theme.spacing.sm,
-  },
-
-  userMenu: {
-    [theme.fn.smallerThan('xs')]: {
-      display: 'none',
-    },
   },
 
   user: {
@@ -32,7 +27,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   burger: {
-    [theme.fn.largerThan('xs')]: {
+    [theme.fn.largerThan('sm')]: {
       display: 'none',
     },
   },
@@ -46,6 +41,9 @@ const useStyles = createStyles((theme) => ({
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2],
     },
+    // [theme.fn.smallerThan('sm')]: {
+    //   display: 'none',
+    // },
   },
 
   menuButtonClicked: {
@@ -59,19 +57,9 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function HeaderTabs(props: {auth: boolean}) {
+export function HeaderTabs(props: { auth: boolean }) {
   const { classes } = useStyles();
   const location = useLocation();
-
-  const userCard = (logged: boolean) => {
-    if (logged == true) {
-      return (
-        <UserMenu />
-      );
-    }
-
-    return (<UnknownMenu />);
-  }
 
   return (
     <div className={classes.header}>
@@ -89,7 +77,8 @@ export function HeaderTabs(props: {auth: boolean}) {
             </Text>
           </Group>
 
-          {userCard(props.auth)}
+          {/* <BurgerMenu /> */}
+          <UserMenu auth={props.auth} />
 
         </Group>
       </Container>

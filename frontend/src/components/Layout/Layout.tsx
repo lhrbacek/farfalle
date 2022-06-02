@@ -1,4 +1,4 @@
-import { AppShell, Center, Footer } from "@mantine/core"
+import { AppShell, Center, Footer, Navbar } from "@mantine/core"
 import { Outlet } from "react-router-dom"
 import { HeaderTabs } from "../Header/HeaderTabs"
 import HomeCard from "../HomeCard/HomeCard"
