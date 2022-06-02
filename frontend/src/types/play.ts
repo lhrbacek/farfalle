@@ -21,7 +21,7 @@ export interface PlayOverview {
 
 export interface PerformanceShort {
   id: number,
-  dateTime: Date,
+  dateTime: string,
   venue: {
     id: number,
     name: string
