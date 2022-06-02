@@ -8,6 +8,7 @@ import { VenueModule } from './venue/venue.module';
 import { AddressModule } from './address/address.module';
 import { PerformanceModule } from './performance/performance.module';
 import { OrderModule } from './order/order.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { OrderModule } from './order/order.module';
     AddressModule,
     PerformanceModule,
     OrderModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
