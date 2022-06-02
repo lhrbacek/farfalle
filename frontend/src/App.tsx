@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import PlayCard from './components/PlayCard/PlayCard'
 import AboutCard from './components/AboutCard/AboutCard'
 import HomeCard from './components/HomeCard/HomeCard'
@@ -15,6 +15,7 @@ import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
+import Layout from './components/Layout/Layout'
 
 function App() {
 
@@ -46,8 +47,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage auth={user} />}>
-        <Route path="/home" element={<HomeCard />} />
+      <Route path="/" element={<Layout auth={user} />} >
+        <Route index element={<HomeCard />} />
+        <Route path="/home" element={<Navigate to="/" />} />
         <Route path="/about" element={<AboutCard />} />
         <Route path="/cart" element={<OrderPlacement />} />
 
@@ -59,7 +61,7 @@ function App() {
 
         <Route path="*" element={<NoMatchRoute />} />
       </Route>
-    </Routes>
+    </Routes >
   )
 }
 
