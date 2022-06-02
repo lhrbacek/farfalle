@@ -1,0 +1,17 @@
+.seat {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.1rem;
+}
+
+.seat__free {
+    background-color: green;
+}
+
+.seat__chosen {
+    background-color: pink;
+}
+
+.seat__full {
+    background-color: grey;
+}
