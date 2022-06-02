@@ -22,7 +22,7 @@ export function ConfirmTicketItem(ticket: Ticket) {
       <Group position="apart">
         <Group>
           <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
-          <Text>{format(ticket.performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text>{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
         </Group>
         <Group>
           <Text color="gray">Row: {ticket.row}</Text>

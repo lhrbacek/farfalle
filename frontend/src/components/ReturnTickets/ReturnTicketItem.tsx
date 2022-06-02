@@ -33,7 +33,7 @@ export function ReturnTicketItem({ ticket, checkedTickets, setTickets }: ReturnT
           <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
         </Group>
         <Group>
-          <Text>{format(ticket.performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text>{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Text color="gray">Row: {ticket.row}</Text>
           <Text color="gray">Seat: {ticket.seat}</Text>
 

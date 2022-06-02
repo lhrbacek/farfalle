@@ -50,7 +50,7 @@ export function PerformanceItem(performance: PerformanceShort) {
     <Card shadow="sm" p="sm" className={classes.card}>
       <Group position="apart" className={classes.group}>
         <Group className={classes.innerGroup}>
-          <Text size="lg">{format(performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text size="lg">{format(new Date(performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Text size="md">{performance.venue.name}</Text>
         </Group>
         <Button className={classes.button} leftIcon={<Ticket size={16} />} component={Link} to={`/program/booking/${performance.id}`}>
