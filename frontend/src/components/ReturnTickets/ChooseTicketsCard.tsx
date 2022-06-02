@@ -13,15 +13,9 @@ interface ChooseTicketsCardProps {
 }
 
 export function ChooseTicketsCard({ allTickets, ticketsToReturn, setTickets, setPhase }: ChooseTicketsCardProps) {
-  const [notification, setNotification] = useState(false);
   // TODO: Get bought tickets by user that are in the future
 
   const submitChosenTickets = () => {
-    setNotification(false);
-    if (ticketsToReturn.length == 0) {
-      setNotification(true);
-      return;
-    }
     console.log(ticketsToReturn);
     setPhase(1);
   }
@@ -36,7 +30,7 @@ export function ChooseTicketsCard({ allTickets, ticketsToReturn, setTickets, set
         <Button variant="default" component={Link} to='/account'>
           My account
         </Button>
-        <Button color='red' onClick={() => submitChosenTickets()}>Return tickets</Button>
+        <Button disabled={ticketsToReturn.length == 0} color='red' onClick={() => submitChosenTickets()}>Return tickets</Button>
       </Group>
     </Container>
   );

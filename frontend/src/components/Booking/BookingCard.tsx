@@ -25,7 +25,7 @@ const getBookingPhase = (phase: number, seats: TicketBooking[], bookedSeats: num
           <Text>Price of chosen seats: {price} €</Text>
         </Container>
         <Container>
-          <Button color={'dark'} onClick={() => confirmSeats(bookedSeats)} >
+          <Button disabled={bookedSeats.length == 0} color={'dark'} onClick={() => confirmSeats(bookedSeats)} >
             Confirm booking
           </Button>
         </Container>
