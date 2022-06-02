@@ -16,6 +16,7 @@ import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
 import Layout from './components/Layout/Layout'
+import LoadingCard from './components/Loading/LoadingCard'
 
 function App() {
 
