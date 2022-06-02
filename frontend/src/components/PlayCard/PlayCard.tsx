@@ -1,14 +1,24 @@
 import { Container, Grid, Image, AspectRatio, Stack, Title, Text, Group, SimpleGrid, Center, Space, ScrollArea } from '@mantine/core';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import useSWR from 'swr';
 import { playOverviews } from '../../data/plays';
-import { PerformanceShort } from '../../types/play';
+import fetcher from '../../models/fetcher';
+import { PlayOverview, PerformanceShort } from '../../types/play';
 import PerformanceItem from './PerformanceItem';
 
 
 export function PlayCard() {
     const { id } = useParams();
-    const playInfo = playOverviews.find((play) => play.id.toString() == id); // TODO: fetch data from backend
+    // const playInfo = playOverviews.find((play) => play.id.toString() == id); // TODO: fetch data from backend
+
+    const { data, error } = useSWR(`play/${id}`, fetcher);
+
+    if (error) return <div>failed to load</div>;
+    // TODO spinning wheel
+    if (!data) return <div>loading...</div>;
+
+    const playInfo: PlayOverview = data;
 
     useEffect(() => {
         document.title = "Farfalle | Program"
