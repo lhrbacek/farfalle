@@ -13,6 +13,7 @@ import EditProfile from './components/Profile/EditProfile'
 import DeleteAccount from './components/Profile/DeleteAccount'
 import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
+import NoMatchRoute from './components/Error/NoMatchRoute'
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
 
         {authenticatedUser(user)}
 
+        <Route path="*" element={<NoMatchRoute />} />
       </Route>
     </Routes>
   )
