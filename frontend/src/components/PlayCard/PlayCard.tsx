@@ -1,5 +1,5 @@
 import { Container, Grid, Image, AspectRatio, Stack, Title, Text, Group, SimpleGrid, Center, Space, ScrollArea } from '@mantine/core';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { playOverviews } from '../../data/plays';
 import { PerformanceShort } from '../../types/play';
@@ -9,6 +9,10 @@ import PerformanceItem from './PerformanceItem';
 export function PlayCard() {
     const { id } = useParams();
     const playInfo = playOverviews.find((play) => play.id.toString() == id); // TODO: fetch data from backend
+
+    useEffect(() => {
+        document.title = "Farfalle | Program"
+    }, [])
 
     return (
         <Container>

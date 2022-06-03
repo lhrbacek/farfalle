@@ -1,5 +1,5 @@
 import { Container, Stepper } from "@mantine/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CartCard from "./CartCard";
 import ConfirmationCard from "./ConfirmationCard";
@@ -37,9 +37,12 @@ export const OrderPlacement = () => {
     termsOfService: false,
   });
 
-
   const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));
   const prevStep = () => setActive((current) => (current > 0 ? current - 1 : current));
+
+  useEffect(() => {
+    document.title = "Farfalle | Cart"
+  }, [])
 
   return (
     <Container>

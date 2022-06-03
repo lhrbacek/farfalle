@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import PlayCard from './components/PlayCard/PlayCard'
 import AboutCard from './components/AboutCard/AboutCard'
 import HomeCard from './components/HomeCard/HomeCard'
@@ -14,10 +14,17 @@ import DeleteAccount from './components/Profile/DeleteAccount'
 import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
+import { useEffect } from 'react'
+import Layout from './components/Layout/Layout'
+import LoadingCard from './components/Loading/LoadingCard'
 
 function App() {
 
-  const user = true;
+  useEffect(() => {
+    document.title = "Farfalle"
+  }, [])
+
+  const user = false;
   const authenticatedUser = (authenticated: boolean) => {
     //TODO: there will be probably some token or smh
     if (!authenticated) {
@@ -41,8 +48,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage auth={user} />}>
-        <Route path="/home" element={<HomeCard />} />
+      <Route path="/" element={<Layout auth={user} />} >
+        <Route index element={<HomeCard />} />
+        <Route path="/home" element={<Navigate to="/" />} />
         <Route path="/about" element={<AboutCard />} />
         <Route path="/cart" element={<OrderPlacement />} />
 
@@ -54,7 +62,7 @@ function App() {
 
         <Route path="*" element={<NoMatchRoute />} />
       </Route>
-    </Routes>
+    </Routes >
   )
 }
 

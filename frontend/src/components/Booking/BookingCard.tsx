@@ -1,5 +1,5 @@
 import { Container, Stack, Title, Text, Group, Button, Divider } from '@mantine/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { performancesBooking } from '../../data/performances';
@@ -25,7 +25,7 @@ const getBookingPhase = (phase: number, seats: TicketBooking[], bookedSeats: num
           <Text>Price of chosen seats: {price} €</Text>
         </Container>
         <Container>
-          <Button color={'dark'} onClick={() => confirmSeats(bookedSeats)} >
+          <Button disabled={bookedSeats.length == 0} color={'dark'} onClick={() => confirmSeats(bookedSeats)} >
             Confirm booking
           </Button>
         </Container>
@@ -65,6 +65,10 @@ export function BookingCard() {
     alignItems: `stretch`,
     gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
   };
+
+  useEffect(() => {
+    document.title = "Farfalle | Booking"
+  }, [])
 
   const bookSeat = (id: number, seatPrice: number) => {
     if (bookedSeats.includes(id)) {

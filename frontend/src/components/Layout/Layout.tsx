@@ -1,11 +1,12 @@
-import { AppShell, Center, Footer } from "@mantine/core"
+import { AppShell, Center, Footer, Navbar } from "@mantine/core"
 import { Outlet } from "react-router-dom"
 import { HeaderTabs } from "../Header/HeaderTabs"
+import HomeCard from "../HomeCard/HomeCard"
 
-function HomePage(props: {auth: boolean}) {
+function Layout(props: { auth: boolean }) {
   return (
     <AppShell
-      header={<HeaderTabs auth={props.auth}/>}
+      header={<HeaderTabs auth={props.auth} />}
       footer={<Footer height={60} p="md">{<Center>©Farfalle Team</Center>}</Footer>}
     >
       <Outlet />
@@ -13,4 +14,4 @@ function HomePage(props: {auth: boolean}) {
   )
 }
 
-export default HomePage
+export default Layout

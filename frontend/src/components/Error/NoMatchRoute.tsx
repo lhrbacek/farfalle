@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Title, Button, Container, Group } from '@mantine/core';
+import { createStyles, Title, Text, Container, Group } from '@mantine/core';
 import { Link, Navigate } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
@@ -11,7 +11,7 @@ const useStyles = createStyles((theme) => ({
   label: {
     textAlign: 'center',
     fontWeight: 900,
-    fontSize: 150,
+    fontSize: 120,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2],
   },
 
@@ -19,6 +19,10 @@ const useStyles = createStyles((theme) => ({
     textAlign: 'center',
     fontWeight: 900,
   },
+
+  text: {
+    textAlign: 'center',
+  }
 }));
 
 export function NoMatchRoute() {
@@ -27,7 +31,8 @@ export function NoMatchRoute() {
   return (
     <Container>
       <div className={classes.label}>404</div>
-      <Title className={classes.title}>You better watch our plays.</Title>
+      <Title className={classes.title}>You better watch our plays</Title>
+      <Text className={classes.text}>than sneaking around here.</Text>
     </Container>
   );
 }
