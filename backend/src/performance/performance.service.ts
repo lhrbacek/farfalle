@@ -103,6 +103,7 @@ export class PerformanceService {
             row: true,
             seat: true,
             status: true,
+            reservedAt: true,
           },
         },
       },
