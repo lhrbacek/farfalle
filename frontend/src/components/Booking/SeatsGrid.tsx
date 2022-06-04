@@ -14,11 +14,11 @@ function SeatsGrid(props: { values: TicketBooking[], bookedSeats: number[], book
     <Container style={props.tableStyle}>
       {props.values.map(seat => {
         let seatStatus = props.bookedSeats.includes(seat.id) ? "seat seat__chosen" : "seat seat__free";
-        if (seat.status !== 0) {
-          seatStatus = "seat seat__full"
+        if ((seat.reservedAt && (Date.now() - (new Date(seat.reservedAt).getTime())) < 1800000) || seat.status == "SOLD") { // ticket is reserved no longer than 30 minutes
+          seatStatus = "seat seat__full";
         }
         return (
-          <Button radius="xs" className={seatStatus} key={seat.id} type="button" onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)} disabled={seat.status !== 0}>
+          <Button radius="xs" className={seatStatus} key={seat.id} type="button" onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)} disabled={seat.status != "FREE"}>
             {seat.price}€
           </Button>
         );

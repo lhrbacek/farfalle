@@ -2,10 +2,13 @@ import { Container, Stack, Title, Text, Group, Button, Divider } from '@mantine/
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
+import useSWR from 'swr';
 import { performancesBooking } from '../../data/performances';
 import { tickets } from '../../data/tickets';
+import fetcher from '../../models/fetcher';
 import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
+import { PerformanceBooking } from '../../types/performance';
 import { TicketBooking } from '../../types/ticket';
 import SeatsGrid from './SeatsGrid';
 
@@ -58,13 +61,7 @@ export function BookingCard() {
   const setCartState = useSetRecoilState(cartState);
   const { id } = useParams();
 
-  const performance = performancesBooking.find((value) => value.id.toString() == id); // TODO: fetch from backend whole performance
-
-  let tableStyle = { // separate styles for displaying various venue sizes
-    display: `grid`,
-    alignItems: `stretch`,
-    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
-  };
+  // const performance = performancesBooking.find((value) => value.id.toString() == id); // TODO: fetch from backend whole performance
 
   useEffect(() => {
     document.title = "Farfalle | Booking"
@@ -95,13 +92,28 @@ export function BookingCard() {
     console.log(cart);
   }
 
+  const { data, error } = useSWR(`performance/${id}`, fetcher);
+  if (error) return <div>failed to load</div>;
+  // TODO spinning wheel
+  if (!data) return <div>loading...</div>;
+  const performance: PerformanceBooking = data;
+
+  console.log(performance)
+
+  let tableStyle = { // separate styles for displaying various venue sizes
+    display: `grid`,
+    alignItems: `stretch`,
+    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
+  };
+
+
   return (
     <Container>
       <Title>Booking seats for {performance?.play.name}</Title>
       <Text>Venue: {performance?.venue.name}</Text>
       <Text>Date: {performance?.dateTime.toString()}</Text>
       {/* TODO: get rid of undefined condiitions - it is here just because of getting data from tickets file */}
-      {getBookingPhase(bookingPhase, performance == undefined ? [] : performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance == undefined ? 1 : performance.play.id, price)}
+      {getBookingPhase(bookingPhase, performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance.play.id, price)}
     </Container>
   );
 }
