@@ -18,7 +18,14 @@ function SeatsGrid(props: { values: TicketBooking[], bookedSeats: number[], book
           seatStatus = "seat seat__full";
         }
         return (
-          <Button radius="xs" className={seatStatus} key={seat.id} type="button" onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)} disabled={seat.status != "FREE"}>
+          <Button
+            radius="xs"
+            className={seatStatus}
+            key={seat.id}
+            type="button"
+            onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)}
+            disabled={((seat.reservedAt && (Date.now() - (new Date(seat.reservedAt).getTime())) < 1800000) || seat.status == "SOLD")}
+          >
             {seat.price}€
           </Button>
         );

@@ -9,7 +9,7 @@ import fetcher from '../../models/fetcher';
 import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
 import { PerformanceBooking } from '../../types/performance';
-import { TicketBooking } from '../../types/ticket';
+import { Ticket, TicketBooking } from '../../types/ticket';
 import SeatsGrid from './SeatsGrid';
 
 
@@ -83,8 +83,19 @@ export function BookingCard() {
       console.log(bookedSeats.length);
       return;
     }
+
     // TODO: insert seats into DB and print out error, if occurs => reset array bookedSeats
-    const confirmedTickets = tickets.filter(({ id }) => bookedSeats.includes(id));
+    const confirmedTickets: Ticket[] = [];
+    // get booked tickets information from DB
+    for (let i = 0; i < bookedSeats.length; i++) {
+      const { data, error } = useSWR(`tickets/${bookedSeats[i]}`, fetcher);
+      // TODO call post to change reservedAt
+      if (error) return;
+      // if (!data) return;
+      confirmedTickets.push(data);
+    }
+
+    // add booked tickets to cart
     setCartState((tickets) => [...tickets, ...confirmedTickets]);
     console.log({ seats: bookedSeats })
     setBookedSeats([]);
@@ -98,21 +109,17 @@ export function BookingCard() {
   if (!data) return <div>loading...</div>;
   const performance: PerformanceBooking = data;
 
-  console.log(performance)
-
   let tableStyle = { // separate styles for displaying various venue sizes
     display: `grid`,
     alignItems: `stretch`,
     gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
   };
 
-
   return (
     <Container>
       <Title>Booking seats for {performance?.play.name}</Title>
       <Text>Venue: {performance?.venue.name}</Text>
       <Text>Date: {performance?.dateTime.toString()}</Text>
-      {/* TODO: get rid of undefined condiitions - it is here just because of getting data from tickets file */}
       {getBookingPhase(bookingPhase, performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance.play.id, price)}
     </Container>
   );
