@@ -29,7 +29,7 @@ export class PlayController {
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<PlayWithPerformancesDto> {
-    return await this.playService.findOne(id);
+    return await this.playService.findOne(+id);
   }
 
   @Patch(':id')

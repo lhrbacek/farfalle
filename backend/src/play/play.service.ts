@@ -40,19 +40,7 @@ export class PlayService {
       where: { id: id },
       include: {
         performances: {
-          select: {
-            id: true,
-            dateTime: true,
-            venue: true,
-          },
-          include: {
-            venue: {
-              select: {
-                id: true,
-                name: true,
-              },
-            },
-          },
+          include: { venue: true },
         },
       },
     });
