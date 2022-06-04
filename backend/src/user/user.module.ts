@@ -7,5 +7,6 @@ import { AddressService } from 'src/address/address.service';
 @Module({
   controllers: [UserController],
   providers: [UserService, AddressService, PrismaService],
+  exports: [UserService],
 })
 export class UserModule {}

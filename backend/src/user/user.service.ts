@@ -9,11 +9,14 @@ export class UserService {
   constructor(private prisma: PrismaService) {}
 
   async findOne(id?: number, email?: string): Promise<User | null> {
+    if (email) {
+      return await this.prisma.user.findUnique({
+        where: { email: email }
+      });
+    }
+
     return await this.prisma.user.findUnique({
-      where: {
-        id: id,
-        email: email,
-      },
+      where: { id: id }
     });
   }
 
