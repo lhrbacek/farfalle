@@ -9,47 +9,47 @@ import PerformanceItem from './PerformanceItem';
 
 
 export function PlayCard() {
-    const { id } = useParams();
-    // const playInfo = playOverviews.find((play) => play.id.toString() == id); // TODO: fetch data from backend
+  const { id } = useParams();
+  // const playInfo = playOverviews.find((play) => play.id.toString() == id); // TODO: fetch data from backend
 
-    const { data, error } = useSWR(`play/${id}`, fetcher);
+  useEffect(() => {
+    document.title = "Farfalle | Program"
+  }, [])
 
-    if (error) return <div>failed to load</div>;
-    // TODO spinning wheel
-    if (!data) return <div>loading...</div>;
+  const { data, error } = useSWR(`play/${id}`, fetcher);
 
-    const playInfo: PlayOverview = data;
+  if (error) return <div>failed to load</div>;
+  // TODO spinning wheel
+  if (!data) return <div>loading...</div>;
 
-    useEffect(() => {
-        document.title = "Farfalle | Program"
-    }, [])
+  const playInfo: PlayOverview = data;
 
-    return (
-        <Container>
-            <Grid grow columns={10} align="flex-start">
-                <Grid.Col span={4}>
-                    <Center>
-                        <Image src={playInfo?.imageURL} alt={playInfo?.name} />
-                    </Center>
-                </Grid.Col>
-                <Grid.Col span={6}>
-                    <Title>{playInfo?.name}</Title>
-                    <Space h="md" />
-                    <ScrollArea style={{ height: 100 }}>
-                        <Text>{playInfo?.description}</Text>
-                    </ScrollArea>
-                    <Space h="md" />
-                    <Text size="sm">Director: {playInfo?.director}</Text>
-                    <Text size="sm">Length: {playInfo?.lengthMinutes} minutes</Text>
-                </Grid.Col>
-                <Grid.Col span={6}>
-                    <Stack justify="space-between">
-                        {playInfo?.performances.map((performance: PerformanceShort) => <PerformanceItem key={performance.id} {...performance} />)}
-                    </Stack>
-                </Grid.Col>
-            </Grid>
-        </Container>
-    );
+  return (
+    <Container>
+      <Grid grow columns={10} align="flex-start">
+        <Grid.Col span={4}>
+          <Center>
+            <Image src={playInfo?.imageURL} alt={playInfo?.name} />
+          </Center>
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <Title>{playInfo?.name}</Title>
+          <Space h="md" />
+          <ScrollArea style={{ height: 100 }}>
+            <Text>{playInfo?.description}</Text>
+          </ScrollArea>
+          <Space h="md" />
+          <Text size="sm">Director: {playInfo?.director}</Text>
+          <Text size="sm">Length: {playInfo?.lengthMinutes} minutes</Text>
+        </Grid.Col>
+        <Grid.Col span={6}>
+          <Stack justify="space-between">
+            {playInfo?.performances.map((performance: PerformanceShort) => <PerformanceItem key={performance.id} {...performance} />)}
+          </Stack>
+        </Grid.Col>
+      </Grid>
+    </Container>
+  );
 }
 
 export default PlayCard;
