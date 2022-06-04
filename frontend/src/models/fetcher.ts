@@ -6,5 +6,3 @@
   
   export default fetcher;
   
-
-  // "Access-Control-Allow-Origin": "http://localhost:4000/*"
