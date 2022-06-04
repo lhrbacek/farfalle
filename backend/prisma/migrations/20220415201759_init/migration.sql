@@ -4,6 +4,9 @@ CREATE TYPE "StatusTicket" AS ENUM ('FREE', 'RESERVED', 'SOLD');
 -- CreateEnum
 CREATE TYPE "StatusOrder" AS ENUM ('UNCONFIRMED', 'UNPAID', 'PAID');
 
+-- CreateEnum
+CREATE TYPE "Role" AS ENUM ('USER', 'ADMIN');
+
 -- CreateTable
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
@@ -11,6 +14,7 @@ CREATE TABLE "User" (
     "name" TEXT NOT NULL,
     "surname" TEXT NOT NULL,
     "password" TEXT NOT NULL,
+    "role" "Role" NOT NULL,
     "addressId" INTEGER NOT NULL,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
