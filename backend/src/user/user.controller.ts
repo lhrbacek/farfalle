@@ -1,10 +1,5 @@
-import { Controller, Get, Request,
-  Post,
-  Body,
-  Patch,
-  Param,
-  Delete,
-} from '@nestjs/common';
+import { Controller, Get, Request, Post, Body,
+  Patch, Param, Delete, HttpException, HttpStatus, } from '@nestjs/common';
 import { UserService } from './user.service';
 import { User as UserModel } from '@prisma/client';
 import { CreateUserWithAddressDto } from './dto/create-user-with-address.dto';
@@ -24,6 +19,15 @@ export class UserController {
   async create(
     @Body() createUserWithAddressDto: CreateUserWithAddressDto,
   ): Promise<UserModel> {
+    const emailInUse = await this.userService.findOne(null,
+      createUserWithAddressDto.email);
+
+    if (emailInUse) {
+      throw new HttpException({
+        status: HttpStatus.CONFLICT, //409
+        error: 'This email is already registered',
+      }, HttpStatus.CONFLICT);
+    }
     const address = await this.addressService.create({
       ...createUserWithAddressDto,
       name: createUserWithAddressDto.addressName,
@@ -38,41 +42,21 @@ export class UserController {
   @UseGuards(JwtAuthGuard)
   @Get()
   getUserInfo(@Request() req) {
-    return req.user
+    return req.user;
   }
 
   @Get()
   async findAll(): Promise<UserModel[]> {
     return await this.userService.findAll({});
   }
-  
-  // we want to work with users by mail from FE
-  /*
-  @Get(':id')
-  async findOne(@Param('id') email: string): Promise<UserModel> {
+
+  @UseGuards(JwtAuthGuard)
+  @Get(':email')
+  async findOne(@Param('email') email: string): Promise<UserModel> {
     return await this.userService.findOne(null, email);
   }
 
-  @Patch(':email')
-  update(
-    @Param('email') email: string,
-    @Body() updateUserDto: UpdateUserDto,
-  ): Promise<UserModel> {
-    return this.userService.update(email, updateUserDto);
-  }
-
-  @Delete(':email')
-  async delete(@Param('email') email: string): Promise<UserModel> {
-    return await this.userService.delete(email);
-  }
-  */
-
-  
-  @Get(':id')
-  async findOne(@Param('id') id: number): Promise<UserModel> {
-    return await this.userService.findOne(id);
-  }
-
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   update(
     @Param('id') id: number,
@@ -81,6 +65,7 @@ export class UserController {
     return this.userService.update(id, updateUserDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async delete(@Param('id') id: number): Promise<UserModel> {
     return await this.userService.delete(id);

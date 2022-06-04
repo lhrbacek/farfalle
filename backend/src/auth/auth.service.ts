@@ -4,25 +4,28 @@ import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthService {
-    constructor(private usersService: UserService,
-        private jwtService: JwtService){}
+  constructor(private usersService: UserService,
+    private jwtService: JwtService){}
 
-    async validateUser(email: string, password: string): Promise<any> {
-        const user = await this.usersService.findOne(null, email);
+  async validateUser(email: string, password: string): Promise<any> {
+    const user = await this.usersService.findOne(null, email);
 
-        if (user && user.password === password) {
-            // we dont want password after validation, not even hash
-            const {password, ...result} = user
-            return result
-        }
-        return null
+    if (user && user.password === password) {
+      // we dont want password after validation, not even hash
+      const {password, ...result} = user
+      return result
+    }
+    return null
+  }
+
+  async login(user: any) {
+    let isAdmin: boolean = false;
+    if (user.role && user.role == 'ADMIN') {
+        isAdmin = true;
     }
 
-    async login(user: any) {
-        const payload = { email: user.email, sub: user.id };
+    const payload = { email: user.email, sub: user.id, admin: isAdmin};
 
-        return {
-            access_token: this.jwtService.sign(payload),
-        };
-    }
+    return {access_token: this.jwtService.sign(payload)};
+  }
 }
