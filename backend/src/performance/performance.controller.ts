@@ -15,6 +15,7 @@ import { VenueService } from 'src/venue/venue.service';
 import { TicketService } from 'src/ticket/ticket.service';
 import { CreatePerformanceWithPriceDto } from './dto/create-performance-with-price.dto';
 import { PerformanceBookingDto } from './dto/performance-booking.dto';
+import { PerformanceDto } from './dto/performance.dto';
 
 @Controller('performance')
 export class PerformanceController {
@@ -47,8 +48,14 @@ export class PerformanceController {
   }
 
   @Get()
-  async findAll(): Promise<PerformanceBookingDto[]> {
-    return await this.performanceService.findAll();
+  async findAll(@Query() query): Promise<PerformanceDto[]> {
+    let onlyFuture = false;
+
+    if (query.future) {
+      onlyFuture = true;
+    }
+
+    return await this.performanceService.findAll(onlyFuture);
   }
 
   @Get(':id')
