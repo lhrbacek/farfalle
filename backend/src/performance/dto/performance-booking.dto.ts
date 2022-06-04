@@ -17,5 +17,6 @@ export class PerformanceBookingDto {
     row: number;
     seat: number;
     status: string;
+    reservedAt: Date | null;
   }[];
 }
