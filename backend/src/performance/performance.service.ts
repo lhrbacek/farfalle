@@ -4,6 +4,7 @@ import { Performance } from '@prisma/client';
 import { CreatePerformanceDto } from './dto/create-performance.dto';
 import { UpdatePerformanceDto } from './dto/update-performance.dto';
 import { PerformanceBookingDto } from './dto/performance-booking.dto';
+import { PerformanceDto } from './dto/performance.dto';
 
 @Injectable()
 export class PerformanceService {
@@ -21,8 +22,41 @@ export class PerformanceService {
     });
   }
 
-  async findAll(): Promise<PerformanceBookingDto[]> {
+  async findAll(onlyFuture: boolean): Promise<PerformanceDto[]> {
+    if (onlyFuture) {
+      return await this.prisma.performance.findMany({
+        where: {
+          dateTime: {
+            // only perfomances 12 hours old
+            gt: new Date(Date.now() - 43200),
+          },
+        },
+        orderBy: {
+          dateTime: 'asc',
+        },
+        select: {
+          id: true,
+          dateTime: true,
+          play: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
+          venue: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
+        },
+      });
+    }
+
     return await this.prisma.performance.findMany({
+      orderBy: {
+        dateTime: 'asc',
+      },
       select: {
         id: true,
         dateTime: true,
@@ -36,17 +70,6 @@ export class PerformanceService {
           select: {
             id: true,
             name: true,
-            rows: true,
-            cols: true,
-          },
-        },
-        tickets: {
-          select: {
-            id: true,
-            price: true,
-            row: true,
-            seat: true,
-            status: true,
           },
         },
       },
