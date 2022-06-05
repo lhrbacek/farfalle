@@ -47,6 +47,7 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
           <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
         </Group>
         <Group>
+          <Text>{ticket.id}</Text>
           <Text >{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Text color="gray">Row: {ticket.row}</Text>
           <Text color="gray">Seat: {ticket.seat}</Text>
