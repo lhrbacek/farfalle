@@ -1,5 +1,6 @@
 import { Container, Stepper } from "@mantine/core";
 import { useEffect, useState } from "react";
+import LoadError from "../Error/LoadError";
 import CartCard from "./CartCard";
 import ConfirmationCard from "./ConfirmationCard";
 import SummaryCard from "./SummaryCard";
@@ -17,6 +18,7 @@ export interface UserInfo {
 }
 
 export const OrderPlacement = () => {
+  const [fatalError, setFatalError] = useState(false);
   const [emptyCart, emptyCartEmpty] = useState(false);
   const [active, setActive] = useState(0);
   const [userInfo, setUserInfo] = useState<UserInfo>({
@@ -37,22 +39,33 @@ export const OrderPlacement = () => {
     document.title = "Farfalle | Cart"
   }, [])
 
+  const getOrderPlacement = (fatalError: boolean) => {
+    if (!fatalError) {
+      return (
+        <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
+          <Stepper.Step allowStepSelect={active > 0} label="First step" description="Cart Summary" >
+            <CartCard nextPhase={nextStep} prevPhase={prevStep} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
+          </Stepper.Step>
+          <Stepper.Step allowStepSelect={active > 1} label="Second step" description="Fill Personal information">
+            <UserForm nextStep={nextStep} prevStep={prevStep} setUserInfo={setUserInfo} />
+          </Stepper.Step>
+          <Stepper.Step allowStepSelect={active > 2} label="Final step" description="Order Summary">
+            <SummaryCard nextPhase={nextStep} prevPhase={prevStep} userInfo={userInfo} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} setFatalError={setFatalError} />
+          </Stepper.Step>
+          <Stepper.Completed>
+            <ConfirmationCard />
+          </Stepper.Completed>
+        </Stepper>
+      )
+    }
+    return (
+      <LoadError />
+    );
+  }
+
   return (
     <Container>
-      <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
-        <Stepper.Step allowStepSelect={active > 0} label="First step" description="Cart Summary" >
-          <CartCard nextPhase={nextStep} prevPhase={prevStep} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
-        </Stepper.Step>
-        <Stepper.Step allowStepSelect={active > 1} label="Second step" description="Fill Personal information">
-          <UserForm nextStep={nextStep} prevStep={prevStep} setUserInfo={setUserInfo} />
-        </Stepper.Step>
-        <Stepper.Step allowStepSelect={active > 2} label="Final step" description="Order Summary">
-          <SummaryCard nextPhase={nextStep} prevPhase={prevStep} userInfo={userInfo} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
-        </Stepper.Step>
-        <Stepper.Completed>
-          <ConfirmationCard />
-        </Stepper.Completed>
-      </Stepper>
+      {getOrderPlacement(fatalError)}
     </Container>
   );
 };

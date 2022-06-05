@@ -6,6 +6,7 @@ import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartStateSelector } from '../../state/Selector';
 import { cartState } from '../../state/Atom';
 import { X } from 'tabler-icons-react';
+import { reservationTime } from '../../state/reservationTime';
 
 interface SummaryProps {
   prevPhase: Function;
@@ -13,9 +14,10 @@ interface SummaryProps {
   emptyCart: boolean;
   setEmptyCart: Function;
   userInfo: UserInfo;
+  setFatalError: Function;
 }
 
-export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, userInfo }: SummaryProps) {
+export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, userInfo, setFatalError }: SummaryProps) {
   const [page, setPage] = useState(1);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
@@ -28,10 +30,31 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
   const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
   const currentTickets = cart.slice(indexOfFirstTicket, indexOfLastTicket);
 
-  const confirmOrder = () => {
+  const confirmOrder = async () => {
+    setEmptyCart(false);
+    const confirmedTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    if (confirmedTickets.length == 0) {
+      setEmptyCart(true);
+      return;
+    }
 
-    // TODO: Update DBˇ
-    setCartState([])
+    // Update database with currently conformed tickets
+    for (let i = 0; i < confirmedTickets.length; i++) {
+      await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", },
+        body: JSON.stringify({
+          status: "SOLD",
+        }),
+      }).then((response) => {
+        if (!(response.ok)) {
+          setFatalError(true);
+          return;
+        }
+      });
+    }
+
+    setCartState([]);
     nextPhase();
   }
 

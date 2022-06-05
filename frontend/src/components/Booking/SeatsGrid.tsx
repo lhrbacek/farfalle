@@ -1,6 +1,6 @@
 import { Button, Container } from '@mantine/core';
 import { reservationTime } from '../../state/reservationTime';
-import { Ticket, TicketBooking } from '../../types/ticket';
+import { Ticket } from '../../types/ticket';
 import './bookingcard.css'
 
 /* --- Component for seats --- */
