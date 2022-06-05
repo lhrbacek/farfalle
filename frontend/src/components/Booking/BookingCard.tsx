@@ -1,4 +1,5 @@
 import { Container, Title, Text } from '@mantine/core';
+import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
@@ -87,14 +88,14 @@ export function BookingCard() {
   let tableStyle = { // separate styles for displaying various venue sizes
     display: `grid`,
     alignItems: `stretch`,
-    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
+    gridTemplateColumns: `repeat(${performance.venue.cols} , 2rem)`,
   };
 
   return (
     <Container>
-      <Title>Booking seats for {performance?.play.name}</Title>
-      <Text>Venue: {performance?.venue.name}</Text>
-      <Text>Date: {performance?.dateTime.toString()}</Text>
+      <Title>Booking seats for {performance.play.name}</Title>
+      <Text>Venue: {performance.venue.name}</Text>
+      <Text>Date: {format(new Date(performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
       {
         bookingPhase == 0 ?
           <BookingTickets seats={performance.tickets} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} confirmSeats={confirmSeats} totalPrice={price} /> :
