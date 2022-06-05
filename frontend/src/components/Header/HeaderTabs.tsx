@@ -1,8 +1,6 @@
 import { createStyles, Container, Group, Image, Text, Button, Burger } from '@mantine/core';
 import { Link, useLocation } from 'react-router-dom';
 import UserMenu from './UserMenu';
-import { useBooleanToggle } from '@mantine/hooks';
-import BurgerMenu from './BurgerMenu';
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -23,12 +21,6 @@ const useStyles = createStyles((theme) => ({
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
-    },
-  },
-
-  burger: {
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
     },
   },
 
