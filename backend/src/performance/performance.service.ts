@@ -97,6 +97,9 @@ export class PerformanceService {
           },
         },
         tickets: {
+          orderBy: {
+            id: 'asc',
+          },
           select: {
             id: true,
             price: true,

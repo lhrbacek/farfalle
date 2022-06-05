@@ -1,24 +1,58 @@
-import { Button, Container, Divider, Group, Stack, Text } from '@mantine/core';
-import React from 'react';
+import { Button, Container, Divider, Group, Stack, Text, Notification, Center, Pagination } from '@mantine/core';
+import React, { useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
-import { Trash } from 'tabler-icons-react';
+import { Trash, X } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
-import { tickets as ticketsData } from '../../data/tickets';
-import { StepProps } from './OrderPlacement';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
+import { reservationTime } from '../../state/reservationTime';
 
-export function CartCard(props: StepProps) {
+export interface CartCardProps {
+  prevPhase: Function;
+  nextPhase: Function;
+  emptyCart: boolean;
+  setEmptyCart: Function;
+}
+
+export function CartCard({ nextPhase, emptyCart, setEmptyCart }: CartCardProps) {
+  const [page, setPage] = useState(1);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
+  const ticketsPerPage = 5;
+
+  const pages = Math.ceil(cart.length / ticketsPerPage);
+  const indexOfLastTicket = page * ticketsPerPage;
+  const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
+  const currentTickets = cart.slice(indexOfFirstTicket, indexOfLastTicket);
+
+  const deleteCartContent = () => {
+    // TODO: update DB with ticket.reservedAt = undefined
+    // on error only clear cart
+    console.log(cart);
+    setCartState([]);
+  }
+
+  const nextStep = () => {
+    // setEmptyCart(false);
+    // const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    // if (currentTickets.length == 0) {
+    //   setEmptyCart(true);
+    //   return;
+    // }
+    // setCartState(currentTickets);
+    // nextPhase();
+  }
 
   return (
     <Container>
       <Stack spacing="xs">
-        {cart.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={true} />)}
+        {currentTickets.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={true} />)}
+        <Center>
+          <Pagination page={page} onChange={setPage} total={pages} siblings={0} color="dark" />
+        </Center>
       </Stack>
       <Divider my="xl" label="Summary" labelPosition="center" />
       <Group position="apart">
@@ -31,16 +65,23 @@ export function CartCard(props: StepProps) {
       </Group>
       <Group position="center">
         <Group>
-          {/*TODO: Delete cart content - update global state*/}
-          <Button disabled={count == 0} hidden={count == 0} color="red" rightIcon={<Trash size={14} />} onClick={() => setCartState([])}>
+          <Button disabled={count == 0} hidden={count == 0} color="red" rightIcon={<Trash size={14} />} onClick={() => deleteCartContent()}>
             Delete
           </Button>
         </Group>
       </Group>
 
+      <Group position="center">
+        {emptyCart == true ?
+          <Notification icon={<X size={18} />} color="red" disallowClose title='Something went wrong'>
+            Your cart is empty.
+          </Notification> : <></>
+        }
+      </Group>
+
       <Group position="center" mt="xl">
         <Button variant="default" component={Link} to='/home'>Home</Button>
-        <Button disabled={count == 0} onClick={() => props.nextStep()} color='dark'>Next step</Button>
+        <Button disabled={count == 0} onClick={() => nextStep()} color='dark'>Next step</Button>
       </Group>
     </Container>
   );

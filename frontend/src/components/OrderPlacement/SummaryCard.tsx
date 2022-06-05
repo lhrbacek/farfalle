@@ -1,34 +1,48 @@
-import { Button, Container, Divider, Group, Stack, Text } from '@mantine/core';
-import React from 'react';
+import { Button, Container, Divider, Group, Stack, Text, Notification, Center, Pagination } from '@mantine/core';
+import React, { useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { UserInfo } from './OrderPlacement';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartStateSelector } from '../../state/Selector';
 import { cartState } from '../../state/Atom';
+import { X } from 'tabler-icons-react';
 
 interface SummaryProps {
-  prevStep: Function;
-  nextStep: Function;
+  prevPhase: Function;
+  nextPhase: Function;
+  emptyCart: boolean;
+  setEmptyCart: Function;
   userInfo: UserInfo;
 }
 
-export function SummaryCard(props: SummaryProps) {
+export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, userInfo }: SummaryProps) {
+  const [page, setPage] = useState(1);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
+  const ticketsPerPage = 5;
+
+  const pages = Math.ceil(cart.length / ticketsPerPage);
+  const indexOfLastTicket = page * ticketsPerPage;
+  const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
+  const currentTickets = cart.slice(indexOfFirstTicket, indexOfLastTicket);
 
   const confirmOrder = () => {
+
     // TODO: Update DBˇ
     setCartState([])
-    props.nextStep();
+    nextPhase();
   }
 
   return (
     <Container>
       <Divider my="xl" label="Tickets Summary" labelPosition="center" />
       <Stack spacing="xs">
-        {cart.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={false} />)}
+        {currentTickets.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={false} />)}
+        <Center>
+          <Pagination page={page} onChange={setPage} total={pages} siblings={0} color="dark" />
+        </Center>
       </Stack>
       <Group position="apart">
         <Text>Number of seats:</Text>
@@ -40,14 +54,21 @@ export function SummaryCard(props: SummaryProps) {
       </Group>
 
       <Divider my="xl" label="Personal Information" labelPosition="center" />
-      <Text>{props.userInfo.name} {props.userInfo.surname}</Text>
-      <Text>{props.userInfo.email}</Text>
-      <Text>{props.userInfo.phone}</Text>
-      <Text>{props.userInfo.street}, {props.userInfo.streetNo}</Text>
-      <Text>{props.userInfo.city}, {props.userInfo.zip}</Text>
+      <Text>{userInfo.name} {userInfo.surname}</Text>
+      <Text>{userInfo.email}</Text>
+      <Text>{userInfo.street}, {userInfo.streetNo}</Text>
+      <Text>{userInfo.city}, {userInfo.zip}</Text>
+
+      <Group position="center">
+        {emptyCart == true ?
+          <Notification icon={<X size={18} />} color="red" disallowClose title='Something went wrong'>
+            Your cart is empty.
+          </Notification> : <></>
+        }
+      </Group>
 
       <Group position="center" mt="xl">
-        <Button variant="default" onClick={() => props.prevStep()}>Back</Button>
+        <Button variant="default" onClick={() => prevPhase()}>Back</Button>
         <Button onClick={() => confirmOrder()} color='dark'>Confirm</Button>
       </Group>
     </Container>
