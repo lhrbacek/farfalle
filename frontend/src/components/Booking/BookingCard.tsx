@@ -5,8 +5,6 @@ import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import useSWR from 'swr';
 import { performancesBooking } from '../../data/performances';
-import { tickets } from '../../data/tickets';
-import fetcher from '../../models/fetcher';
 import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
 import { PerformanceBooking } from '../../types/performance';
@@ -111,7 +109,7 @@ export function BookingCard() {
   }
 
   // GET all info about all tickets of this performance
-  const { data, error } = useSWR(`performance/${id}`, fetcher);
+  const { data, error } = useSWR(`performance/${id}`);
   if (error) return <div>failed to load</div>;
   // TODO spinning wheel
   if (!data) return <div>loading...</div>;

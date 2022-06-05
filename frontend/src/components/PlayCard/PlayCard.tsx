@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import useSWR from 'swr';
 import { playOverviews } from '../../data/plays';
-import fetcher from '../../models/fetcher';
 import { PlayOverview, PerformanceShort } from '../../types/play';
 import PerformanceItem from './PerformanceItem';
 
@@ -16,7 +15,7 @@ export function PlayCard() {
     document.title = "Farfalle | Program"
   }, [])
 
-  const { data, error } = useSWR(`play/${id}`, fetcher);
+  const { data, error } = useSWR(`play/${id}`);
 
   if (error) return <div>failed to load</div>;
   // TODO spinning wheel
