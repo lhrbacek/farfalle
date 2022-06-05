@@ -4,6 +4,7 @@ import { Container, Stack } from '@mantine/core';
 import LongPerformanceItem from './LongPerformanceItem';
 import useSWR from 'swr';
 import LoadingCard from '../Loading/LoadingCard';
+import LoadError from '../Error/LoadError';
 
 export function ProgramCard() {
 
@@ -13,7 +14,7 @@ export function ProgramCard() {
 
   const { data, error } = useSWR(`performance?future=true`);
 
-  if (error) return <div>failed to load</div>;
+  if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
 
   const performances: Performance[] = data
