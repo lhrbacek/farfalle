@@ -13,16 +13,54 @@ export class PlayService {
     return await this.prisma.play.create({ data: { ...createPlayDto } });
   }
 
-  async findAll(): Promise<PlayWithPerformancesDto[]> {
+  async findAll(onlyFuture: boolean): Promise<PlayWithPerformancesDto[]> {
+    if (onlyFuture) {
+      return await this.prisma.play.findMany({
+        where: {
+          performances: {
+            some: {
+              dateTime: {
+                // at least 1 perfomances max 12 hours old
+                gt: new Date(Date.now() - 43200000),
+              },
+            },
+          },
+        },
+        select: {
+          id: true,
+          name: true,
+          description: true,
+          imageURL: true,
+          lengthMinutes: true,
+          director: true,
+          performances: {
+            select: {
+              id: true,
+              dateTime: true,
+              venue: {
+                select: {
+                  id: true,
+                  name: true,
+                },
+              },
+            },
+          },
+        },
+      });
+    }
+
     return await this.prisma.play.findMany({
-      include: {
+      select: {
+        id: true,
+        name: true,
+        description: true,
+        imageURL: true,
+        lengthMinutes: true,
+        director: true,
         performances: {
           select: {
             id: true,
             dateTime: true,
-            venue: true,
-          },
-          include: {
             venue: {
               select: {
                 id: true,
