@@ -59,8 +59,7 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
 
   const unreserveTicket = (ticket: Ticket) => {
     //TODO: unreserve ticket in DB
-    const newCart = cart.filter((item) => { item.id != ticket.id })
-      .filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < 10000));
+    const newCart = cart.filter((cartTicket) => cartTicket.id != ticket.id);
     setCartState(newCart);
   }
 

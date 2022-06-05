@@ -1,8 +1,7 @@
-import { Button, Container, Group, Stack } from '@mantine/core';
+import { Button, Center, Container, Group, Pagination, Stack } from '@mantine/core';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Ticket } from '../../types/ticket';
-
 import ReturnTicketItem from './ReturnTicketItem';
 
 interface ChooseTicketsCardProps {
@@ -13,7 +12,15 @@ interface ChooseTicketsCardProps {
 }
 
 export function ChooseTicketsCard({ allTickets, ticketsToReturn, setTickets, setPhase }: ChooseTicketsCardProps) {
+  const [page, setPage] = useState(1);
+  const ticketsPerPage = 5;
+
   // TODO: Get bought tickets by user that are in the future
+
+  const pages = Math.ceil(allTickets.length / ticketsPerPage);
+  const indexOfLastTicket = page * ticketsPerPage;
+  const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
+  const currentTickets = allTickets.slice(indexOfFirstTicket, indexOfLastTicket);
 
   const submitChosenTickets = () => {
     console.log(ticketsToReturn);
@@ -23,7 +30,10 @@ export function ChooseTicketsCard({ allTickets, ticketsToReturn, setTickets, set
   return (
     <Container>
       <Stack spacing="xs">
-        {allTickets.map((ticket) => <ReturnTicketItem key={ticket.id} ticket={ticket} checkedTickets={ticketsToReturn} setTickets={setTickets} />)}
+        {currentTickets.map((ticket) => <ReturnTicketItem key={ticket.id} ticket={ticket} checkedTickets={ticketsToReturn} setTickets={setTickets} />)}
+        <Center>
+          <Pagination page={page} onChange={setPage} total={pages} siblings={0} color="dark" />
+        </Center>
       </Stack>
 
       <Group position="center" mt="xl">

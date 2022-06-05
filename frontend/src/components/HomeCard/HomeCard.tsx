@@ -1,4 +1,4 @@
-import { Container, Divider, Pagination, Stack, Title } from '@mantine/core';
+import { Center, Container, Divider, Pagination, Stack, Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { Play, PlayOverview } from '../../types/play';
@@ -7,7 +7,8 @@ import LoadingCard from '../Loading/LoadingCard';
 import PlayItem from './PlayItem';
 
 export function HomeCard() {
-  const [activePage, setPage] = useState(1); // TODO: Add paging
+  const [page, setPage] = useState(1);
+  const playPerPage = 5;
 
   useEffect(() => {
     document.title = "Farfalle | Home"
@@ -16,15 +17,24 @@ export function HomeCard() {
   const { data, error } = useSWR(`play?future=true`);
   if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
-  const performances: PlayOverview[] = data
+  const plays: PlayOverview[] = data
+
+  // pagination
+  const pages = Math.ceil(plays.length / playPerPage);
+  const indexOfLastPlay = page * playPerPage;
+  const indexOfFirstPlay = indexOfLastPlay - playPerPage < 0 ? 0 : indexOfLastPlay - playPerPage;
+  const currentPlays = plays.slice(indexOfFirstPlay, indexOfLastPlay);
+
 
   return (
     <Container>
       <Title order={1} >Welcome to Farfalle!</Title>
       <Divider my="sm" />
       <Stack spacing="xs">
-        {performances.map((play: Play) => <PlayItem key={play.id} {...play} />)}
-        <Pagination page={activePage} onChange={setPage} total={2} color="dark" />
+        {currentPlays.map((play: Play) => <PlayItem key={play.id} {...play} />)}
+        <Center>
+          <Pagination page={page} onChange={setPage} total={pages} siblings={0} color="dark" />
+        </Center>
       </Stack>
     </Container>
   );

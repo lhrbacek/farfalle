@@ -1,4 +1,4 @@
-import { Button, Container, Divider, Group, Stack, Text, Notification } from '@mantine/core';
+import { Button, Container, Divider, Group, Stack, Text, Notification, Center, Pagination } from '@mantine/core';
 import React, { useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { Trash, X } from 'tabler-icons-react';
@@ -16,33 +16,43 @@ export interface CartCardProps {
 }
 
 export function CartCard({ nextPhase, emptyCart, setEmptyCart }: CartCardProps) {
-
+  const [page, setPage] = useState(1);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
+  const ticketsPerPage = 5;
+
+  const pages = Math.ceil(cart.length / ticketsPerPage);
+  const indexOfLastTicket = page * ticketsPerPage;
+  const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
+  const currentTickets = cart.slice(indexOfFirstTicket, indexOfLastTicket);
 
   const deleteCartContent = () => {
     // TODO: update DB with ticket.reservedAt = undefined
     // on error only clear cart
+    console.log(cart);
     setCartState([]);
   }
 
   const nextStep = () => {
-    setEmptyCart(false);
-    const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
-    if (currentTickets.length == 0) {
-      setEmptyCart(true);
-      return;
-    }
-    setCartState(currentTickets);
-    nextPhase();
+    // setEmptyCart(false);
+    // const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    // if (currentTickets.length == 0) {
+    //   setEmptyCart(true);
+    //   return;
+    // }
+    // setCartState(currentTickets);
+    // nextPhase();
   }
 
   return (
     <Container>
       <Stack spacing="xs">
-        {cart.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={true} />)}
+        {currentTickets.map((ticket) => <OrderTicketItem key={ticket.id} ticket={ticket} removable={true} />)}
+        <Center>
+          <Pagination page={page} onChange={setPage} total={pages} siblings={0} color="dark" />
+        </Center>
       </Stack>
       <Divider my="xl" label="Summary" labelPosition="center" />
       <Group position="apart">
