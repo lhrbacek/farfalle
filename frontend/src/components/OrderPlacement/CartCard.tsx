@@ -31,18 +31,19 @@ export function CartCard({ nextPhase, emptyCart, setEmptyCart }: CartCardProps) 
   const deleteCartContent = () => {
     // TODO: update DB with ticket.reservedAt = undefined
     // on error only clear cart
+    console.log(cart);
     setCartState([]);
   }
 
   const nextStep = () => {
-    setEmptyCart(false);
-    const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
-    if (currentTickets.length == 0) {
-      setEmptyCart(true);
-      return;
-    }
-    setCartState(currentTickets);
-    nextPhase();
+    // setEmptyCart(false);
+    // const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    // if (currentTickets.length == 0) {
+    //   setEmptyCart(true);
+    //   return;
+    // }
+    // setCartState(currentTickets);
+    // nextPhase();
   }
 
   return (
