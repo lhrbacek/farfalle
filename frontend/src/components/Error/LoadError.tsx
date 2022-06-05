@@ -2,10 +2,6 @@ import React from 'react';
 import { createStyles, Title, Text, Container } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
-  root: {
-    paddingTop: 80,
-    paddingBottom: 80,
-  },
 
   label: {
     textAlign: 'center',
@@ -24,16 +20,16 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-export function NoMatchRoute() {
+export function LoadError() {
   const { classes } = useStyles();
 
   return (
     <Container>
-      <div className={classes.label}>404</div>
-      <Title className={classes.title}>You better watch our plays</Title>
-      <Text className={classes.text}>than sneaking around here.</Text>
+      <div className={classes.label}>500</div>
+      <Title className={classes.title}>Internal server error</Title>
+      <Text className={classes.text}>try later.</Text>
     </Container>
   );
 }
 
-export default NoMatchRoute;
+export default LoadError;

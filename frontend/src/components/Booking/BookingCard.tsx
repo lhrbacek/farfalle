@@ -7,6 +7,7 @@ import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
 import { PerformanceBooking } from '../../types/performance';
 import { Ticket } from '../../types/ticket';
+import LoadError from '../Error/LoadError';
 import LoadingCard from '../Loading/LoadingCard';
 import SeatsGrid from './SeatsGrid';
 
@@ -109,7 +110,7 @@ export function BookingCard() {
 
   // GET all info about all tickets of this performance
   const { data, error } = useSWR(`performance/${id}`);
-  if (error) return <div>failed to load</div>;
+  if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
   const performance: PerformanceBooking = data;
 

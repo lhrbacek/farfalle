@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import useSWR from 'swr';
 import { PlayOverview, PerformanceShort } from '../../types/play';
+import LoadError from '../Error/LoadError';
 import LoadingCard from '../Loading/LoadingCard';
 import PerformanceItem from './PerformanceItem';
 
@@ -15,7 +16,7 @@ export function PlayCard() {
   }, [])
 
   const { data, error } = useSWR(`play/${id}`);
-  if (error) return <div>failed to load</div>;
+  if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
   const playInfo: PlayOverview = data;
 
@@ -39,7 +40,7 @@ export function PlayCard() {
         </Grid.Col>
         <Grid.Col span={6}>
           <Stack justify="space-between">
-            {playInfo?.performances.map((performance: PerformanceShort) => <PerformanceItem key={performance.id} {...performance} />)}
+            {playInfo.performances.map((performance: PerformanceShort) => <PerformanceItem key={performance.id} {...performance} />)}
           </Stack>
         </Grid.Col>
       </Grid>

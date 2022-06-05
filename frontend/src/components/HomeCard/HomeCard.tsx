@@ -2,6 +2,7 @@ import { Container, Divider, Pagination, Stack, Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import { Play, PlayOverview } from '../../types/play';
+import LoadError from '../Error/LoadError';
 import LoadingCard from '../Loading/LoadingCard';
 import PlayItem from './PlayItem';
 
@@ -13,7 +14,7 @@ export function HomeCard() {
   }, [])
 
   const { data, error } = useSWR(`play?future=true`);
-  if (error) return <div>failed to load</div>;
+  if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
   const performances: PlayOverview[] = data
 
