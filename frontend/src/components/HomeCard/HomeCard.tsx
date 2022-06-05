@@ -1,9 +1,8 @@
 import { Container, Divider, Pagination, Stack, Title } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
-import { plays as data } from '../../data/plays'
-import fetcher from '../../models/fetcher';
 import { Play, PlayOverview } from '../../types/play';
+import LoadingCard from '../Loading/LoadingCard';
 import PlayItem from './PlayItem';
 
 export function HomeCard() {
@@ -15,8 +14,7 @@ export function HomeCard() {
 
   const { data, error } = useSWR(`play?future=true`);
   if (error) return <div>failed to load</div>;
-  // TODO spinning wheel
-  if (!data) return <div>loading...</div>;
+  if (!data) return <LoadingCard />;
   const performances: PlayOverview[] = data
 
   return (
