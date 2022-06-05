@@ -17,7 +17,6 @@ export function UserForm(props: FormProps) {
     streetNo: '98',
     city: 'London',
     zip: '123',
-    phone: '123456789',
     termsOfService: false,
   };
   const form = useForm({
@@ -25,6 +24,7 @@ export function UserForm(props: FormProps) {
     validate: {
       name: (value) => (value.length < 2 ? 'Name must have at least 2 letters' : null),
       surname: (value) => (value.length < 2 ? 'Surname must have at least 2 letters' : null),
+      city: (value) => (value.length < 2 ? 'Surname must have at least 2 letters' : null),
       street: (value) => (value.length < 2 ? 'Surname must have at least 2 letters' : null),
       streetNo: (value) => (isNaN(Number(value)) ? 'Number of street must be numeric' : null),
       zip: (value) => (isNaN(Number(value)) ? 'Number of street must be numeric' : null),
@@ -94,12 +94,6 @@ export function UserForm(props: FormProps) {
           label="Email"
           placeholder="your@email.com"
           {...form.getInputProps('email')}
-        />
-
-        <TextInput
-          label="Phone"
-          placeholder="111222333"
-          {...form.getInputProps('phone')}
         />
 
         <Checkbox
