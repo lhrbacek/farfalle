@@ -2,7 +2,6 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 import PlayCard from './components/PlayCard/PlayCard'
 import AboutCard from './components/AboutCard/AboutCard'
 import HomeCard from './components/HomeCard/HomeCard'
-import HomePage from './components/Layout/Layout'
 import { OrderPlacement } from './components/OrderPlacement/OrderPlacement'
 import ProgramCard from './components/ProgramCard/ProgramCard'
 import BookingCard from './components/Booking/BookingCard'
@@ -16,7 +15,6 @@ import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
 import Layout from './components/Layout/Layout'
-import LoadingCard from './components/Loading/LoadingCard'
 
 function App() {
 
