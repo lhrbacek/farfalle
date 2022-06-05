@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import useSWR from 'swr';
 import { cartState } from '../../state/Atom';
+import { reservationTime } from '../../state/reservationTime';
 import { cartStateSelector } from '../../state/Selector';
 import { PerformanceBooking } from '../../types/performance';
 import { Ticket } from '../../types/ticket';
@@ -76,17 +77,16 @@ export function BookingCard() {
   }
 
   const confirmSeats = async (bookedSeats: number[]) => {
-    /* Insert seats into database */
+    // Insert seats into database
     if (bookedSeats.length == 0) {
       console.log(bookedSeats.length);
       return;
     }
 
-    // TODO: insert seats into DB and print out error, if occurs => reset array bookedSeats
-    // from all tickets leave only confirmed ones
+    // from all tickets for performance get only confirmed ones
     const confirmedTickets: Ticket[] = performance.tickets.filter(({ id }) => bookedSeats.includes(id));
-    // const confirmedTickets = tickets.map(obj => ({ ...obj })).filter(({ id }) => bookedSeats.includes(id));
     const reservedAt = new Date();
+
     // update reservedAt attribute in DB at each confirmed ticket
     for (let i = 0; i < confirmedTickets.length; i++) {
       await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
@@ -100,9 +100,12 @@ export function BookingCard() {
     // update reservedAt attribute at each confirmed ticket
     confirmedTickets.map((ticket) => ticket.reservedAt = reservedAt);
 
+    //first filter out old tickets
+    setCartState(cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime)));
     // add booked tickets to cart
     setCartState((tickets) => [...tickets, ...confirmedTickets]);
     console.log({ seats: bookedSeats });
+
     setBookedSeats([]);
     setBookingPhase(1);
     console.log(cart);

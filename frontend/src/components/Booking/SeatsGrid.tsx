@@ -1,4 +1,5 @@
 import { Button, Container } from '@mantine/core';
+import { reservationTime } from '../../state/reservationTime';
 import { Ticket, TicketBooking } from '../../types/ticket';
 import './bookingcard.css'
 
@@ -13,8 +14,9 @@ function SeatsGrid(props: { values: Ticket[], bookedSeats: number[], bookSeat: F
   return (
     <Container style={props.tableStyle}>
       {props.values.map(seat => {
+        const now = Date.now();
         let seatStatus = props.bookedSeats.includes(seat.id) ? "seat seat__chosen" : "seat seat__free";
-        if ((seat.reservedAt && (Date.now() - (new Date(seat.reservedAt).getTime())) < 1800000) || seat.status == "SOLD") { // ticket is reserved no longer than 30 minutes
+        if ((seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD") { // ticket is reserved no longer than 30 minutes
           seatStatus = "seat seat__full";
         }
         return (
@@ -24,9 +26,9 @@ function SeatsGrid(props: { values: Ticket[], bookedSeats: number[], bookSeat: F
             key={seat.id}
             type="button"
             onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)}
-            disabled={((seat.reservedAt && (Date.now() - (new Date(seat.reservedAt).getTime())) < 1800000) || seat.status == "SOLD")}
+            disabled={((seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD")}
           >
-            {seat.price}€
+            {seat.id}
           </Button>
         );
       })}
