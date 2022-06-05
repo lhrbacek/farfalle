@@ -14,10 +14,12 @@ import { CreateTicketDto } from './dto/create-ticket.dto';
 import { UpdateTicketDto } from './dto/update-ticket.dto';
 import { TicketWithPerformanceDto } from './dto/ticket-performance.dto';
 import { FilterTicketDto } from './dto/filter-ticket.dto';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('tickets')
 export class TicketController {
-  constructor(private readonly ticketService: TicketService) {}
+  constructor(private readonly ticketService: TicketService,
+              private readonly authService: AuthService) {}
 
   @Post()
   async create(@Body() createTicketDto: CreateTicketDto): Promise<TicketModel> {
