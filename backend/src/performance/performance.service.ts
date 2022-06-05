@@ -104,6 +104,24 @@ export class PerformanceService {
             seat: true,
             status: true,
             reservedAt: true,
+            performance: {
+              select: {
+                id: true,
+                dateTime: true,
+                play: {
+                  select: {
+                    id: true,
+                    name: true,
+                  },
+                },
+                venue: {
+                  select: {
+                    id: true,
+                    name: true,
+                  },
+                },
+              },
+            },
           },
         },
       },
