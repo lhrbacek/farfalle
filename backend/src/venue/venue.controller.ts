@@ -11,10 +11,12 @@ import { CreateVenueDto } from './dto/create-venue.dto';
 import { UpdateVenueDto } from './dto/update-venue.dto';
 import { VenueService } from './venue.service';
 import { Venue as VenueModel } from '@prisma/client';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('venue')
 export class VenueController {
-  constructor(private readonly venueService: VenueService) {}
+  constructor(private readonly venueService: VenueService,
+              private readonly authService: AuthService) {}
 
   @Post()
   async create(@Body() createVenueDto: CreateVenueDto): Promise<VenueModel> {
