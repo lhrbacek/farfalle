@@ -2,16 +2,18 @@ import { Container, Stack, Title, Text, Group, Button, Divider } from '@mantine/
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { performancesBooking } from '../../data/performances';
-import { tickets } from '../../data/tickets';
+import useSWR from 'swr';
 import { cartState } from '../../state/Atom';
 import { cartStateSelector } from '../../state/Selector';
-import { TicketBooking } from '../../types/ticket';
+import { PerformanceBooking } from '../../types/performance';
+import { Ticket } from '../../types/ticket';
+import LoadingCard from '../Loading/LoadingCard';
 import SeatsGrid from './SeatsGrid';
 
 
-const getBookingPhase = (phase: number, seats: TicketBooking[], bookedSeats: number[], bookSeat: Function,
+const getBookingPhase = (phase: number, seats: Ticket[], bookedSeats: number[], bookSeat: Function,
   tableStyle: any, confirmSeats: Function, idPlay: number, price: number) => {
+
   if (phase == 0) {
     return (
       <Stack>
@@ -58,14 +60,6 @@ export function BookingCard() {
   const setCartState = useSetRecoilState(cartState);
   const { id } = useParams();
 
-  const performance = performancesBooking.find((value) => value.id.toString() == id); // TODO: fetch from backend whole performance
-
-  let tableStyle = { // separate styles for displaying various venue sizes
-    display: `grid`,
-    alignItems: `stretch`,
-    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
-  };
-
   useEffect(() => {
     document.title = "Farfalle | Booking"
   }, [])
@@ -80,28 +74,57 @@ export function BookingCard() {
     }
   }
 
-  const confirmSeats = (bookedSeats: number[]) => {
+  const confirmSeats = async (bookedSeats: number[]) => {
     /* Insert seats into database */
     if (bookedSeats.length == 0) {
       console.log(bookedSeats.length);
       return;
     }
+
     // TODO: insert seats into DB and print out error, if occurs => reset array bookedSeats
-    const confirmedTickets = tickets.filter(({ id }) => bookedSeats.includes(id));
+    // from all tickets leave only confirmed ones
+    const confirmedTickets: Ticket[] = performance.tickets.filter(({ id }) => bookedSeats.includes(id));
+    // const confirmedTickets = tickets.map(obj => ({ ...obj })).filter(({ id }) => bookedSeats.includes(id));
+    const reservedAt = new Date();
+    // update reservedAt attribute in DB at each confirmed ticket
+    for (let i = 0; i < confirmedTickets.length; i++) {
+      await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", },
+        body: JSON.stringify({
+          reservedAt: reservedAt,
+        }),
+      }).then((response) => { if (!(response.ok)) { console.log("ERROR") } }); // TODO: Better handling of error
+    }
+    // update reservedAt attribute at each confirmed ticket
+    confirmedTickets.map((ticket) => ticket.reservedAt = reservedAt);
+
+    // add booked tickets to cart
     setCartState((tickets) => [...tickets, ...confirmedTickets]);
-    console.log({ seats: bookedSeats })
+    console.log({ seats: bookedSeats });
     setBookedSeats([]);
     setBookingPhase(1);
     console.log(cart);
   }
+
+  // GET all info about all tickets of this performance
+  const { data, error } = useSWR(`performance/${id}`);
+  if (error) return <div>failed to load</div>;
+  if (!data) return <LoadingCard />;
+  const performance: PerformanceBooking = data;
+
+  let tableStyle = { // separate styles for displaying various venue sizes
+    display: `grid`,
+    alignItems: `stretch`,
+    gridTemplateColumns: `repeat(${performance?.venue.cols} , 2rem)`,
+  };
 
   return (
     <Container>
       <Title>Booking seats for {performance?.play.name}</Title>
       <Text>Venue: {performance?.venue.name}</Text>
       <Text>Date: {performance?.dateTime.toString()}</Text>
-      {/* TODO: get rid of undefined condiitions - it is here just because of getting data from tickets file */}
-      {getBookingPhase(bookingPhase, performance == undefined ? [] : performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance == undefined ? 1 : performance.play.id, price)}
+      {getBookingPhase(bookingPhase, performance.tickets, bookedSeats, bookSeat, tableStyle, confirmSeats, performance.play.id, price)}
     </Container>
   );
 }

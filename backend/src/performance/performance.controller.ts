@@ -15,6 +15,7 @@ import { VenueService } from 'src/venue/venue.service';
 import { TicketService } from 'src/ticket/ticket.service';
 import { CreatePerformanceWithPriceDto } from './dto/create-performance-with-price.dto';
 import { PerformanceBookingDto } from './dto/performance-booking.dto';
+import { PerformanceDto } from './dto/performance.dto';
 
 @Controller('performance')
 export class PerformanceController {
@@ -31,12 +32,12 @@ export class PerformanceController {
     const performance = await this.performanceService.create({
       ...createPerformanceWithPriceDto,
     });
-    const venue = await this.venueService.findOne(performance.venueId);
+    const venue = await this.venueService.findOne(+performance.venueId);
     for (let row = 1; row <= venue.rows; row++) {
       for (let col = 0; col < venue.cols; col++) {
         this.ticketService.create({
           price: createPerformanceWithPriceDto.price,
-          performance: performance.id,
+          performance: +performance.id,
           row: row,
           seat: col,
         });
@@ -47,13 +48,19 @@ export class PerformanceController {
   }
 
   @Get()
-  async findAll(): Promise<PerformanceBookingDto[]> {
-    return await this.performanceService.findAll();
+  async findAll(@Query() query): Promise<PerformanceDto[]> {
+    let onlyFuture = false;
+
+    if (query.future) {
+      onlyFuture = true;
+    }
+
+    return await this.performanceService.findAll(onlyFuture);
   }
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<PerformanceBookingDto> {
-    return await this.performanceService.findOne(id);
+    return await this.performanceService.findOne(+id);
   }
 
   @Patch(':id')
@@ -61,11 +68,11 @@ export class PerformanceController {
     @Param('id') id: number,
     @Body() updatePerformanceDto: UpdatePerformanceDto,
   ) {
-    return await this.performanceService.update(id, updatePerformanceDto);
+    return await this.performanceService.update(+id, updatePerformanceDto);
   }
 
   @Delete(':id')
   async remove(@Param('id') id: number) {
-    return await this.performanceService.delete(id);
+    return await this.performanceService.delete(+id);
   }
 }

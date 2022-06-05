@@ -4,7 +4,8 @@ export interface Ticket {
   price: number,
   row: number,
   seat: number,
-  status: number,
+  status: string,
+  reservedAt: Date | null,
   performance: {
     id: number,
     dateTime: Date,
@@ -25,5 +26,6 @@ export interface TicketBooking {
   price: number,
   row: number,
   seat: number,
-  status: number,
+  status: string,
+  reservedAt: Date | null,
 }

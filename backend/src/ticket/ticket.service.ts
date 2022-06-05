@@ -58,9 +58,17 @@ export class TicketService {
   async findOne(id: number): Promise<TicketWithPerformanceDto | null> {
     return await this.prisma.ticket.findUnique({
       where: { id: id },
-      include: {
+      select: {
+        id: true,
+        price: true,
+        row: true,
+        seat: true,
+        status: true,
+        reservedAt: true,
         performance: {
-          include: {
+          select: {
+            id: true,
+            dateTime: true,
             play: {
               select: {
                 id: true,

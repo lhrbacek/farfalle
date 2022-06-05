@@ -4,6 +4,7 @@ export class TicketWithPerformanceDto {
   row: number;
   seat: number;
   status: string;
+  reservedAt: Date | null;
   performance: {
     id: number;
     dateTime: Date;

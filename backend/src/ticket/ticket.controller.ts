@@ -33,7 +33,7 @@ export class TicketController {
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<TicketWithPerformanceDto> {
-    return await this.ticketService.findOne(id);
+    return await this.ticketService.findOne(+id);
   }
 
   @Patch(':id')
@@ -41,11 +41,11 @@ export class TicketController {
     @Param('id') id: number,
     @Body() updateTicketDto: UpdateTicketDto,
   ) {
-    return await this.ticketService.update(id, updateTicketDto);
+    return await this.ticketService.update(+id, updateTicketDto);
   }
 
   @Delete(':id')
   async delete(@Param('id') id: number): Promise<TicketModel> {
-    return await this.ticketService.delete(id);
+    return await this.ticketService.delete(+id);
   }
 }

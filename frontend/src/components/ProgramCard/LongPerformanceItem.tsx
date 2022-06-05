@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[2],
     ':hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[1],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[3],
     }
   },
 
@@ -38,7 +38,7 @@ export function LongPerformanceItem(performance: Performance) {
         <Title order={2} >{performance.play.name}</Title>
         <Group>
           <Text size="sm">{performance.venue.name}</Text>
-          <Text size="lg">{format(performance.dateTime, "dd.MM.yyyy, HH:mm")}</Text>
+          <Text size="lg">{format(new Date(performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Group spacing={0}>
             <Button variant="default" className={classes.buttonAbout} component={Link} to={`/program/${performance.play.id}`}>
               About play

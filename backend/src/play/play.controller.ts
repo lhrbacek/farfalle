@@ -6,6 +6,7 @@ import {
   Param,
   Delete,
   Patch,
+  Query,
 } from '@nestjs/common';
 import { PlayService } from './play.service';
 import { Play as PlayModel } from '@prisma/client';
@@ -23,13 +24,18 @@ export class PlayController {
   }
 
   @Get()
-  async findAll(): Promise<PlayWithPerformancesDto[]> {
-    return await this.playService.findAll();
+  async findAll(@Query() query): Promise<PlayWithPerformancesDto[]> {
+    let onlyFuture = false;
+
+    if (query.future) {
+      onlyFuture = true;
+    }
+    return await this.playService.findAll(onlyFuture);
   }
 
   @Get(':id')
   async findOne(@Param('id') id: number): Promise<PlayWithPerformancesDto> {
-    return await this.playService.findOne(id);
+    return await this.playService.findOne(+id);
   }
 
   @Patch(':id')
