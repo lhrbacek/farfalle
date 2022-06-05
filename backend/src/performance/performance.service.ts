@@ -27,8 +27,8 @@ export class PerformanceService {
       return await this.prisma.performance.findMany({
         where: {
           dateTime: {
-            // only perfomances 12 hours old
-            gt: new Date(Date.now() - 43200),
+            // only perfomances max 12 hours old
+            gt: new Date(Date.now() - 43200000),
           },
         },
         orderBy: {
