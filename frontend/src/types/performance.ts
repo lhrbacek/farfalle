@@ -1,4 +1,4 @@
-import { TicketBooking } from "./ticket"
+import { Ticket, TicketBooking } from "./ticket"
 
 // for program
 export interface Performance {
@@ -28,5 +28,5 @@ export interface PerformanceBooking {
     rows: number,
     cols: number
   },
-  tickets: TicketBooking[]
+  tickets: Ticket[],
 }

@@ -1,5 +1,6 @@
 import { Container, Stack, Title, Text, Group, Button, Divider } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { Link, useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import useSWR from 'swr';
@@ -13,8 +14,9 @@ import { Ticket, TicketBooking } from '../../types/ticket';
 import SeatsGrid from './SeatsGrid';
 
 
-const getBookingPhase = (phase: number, seats: TicketBooking[], bookedSeats: number[], bookSeat: Function,
+const getBookingPhase = (phase: number, seats: Ticket[], bookedSeats: number[], bookSeat: Function,
   tableStyle: any, confirmSeats: Function, idPlay: number, price: number) => {
+
   if (phase == 0) {
     return (
       <Stack>
@@ -61,8 +63,6 @@ export function BookingCard() {
   const setCartState = useSetRecoilState(cartState);
   const { id } = useParams();
 
-  // const performance = performancesBooking.find((value) => value.id.toString() == id); // TODO: fetch from backend whole performance
-
   useEffect(() => {
     document.title = "Farfalle | Booking"
   }, [])
@@ -77,7 +77,7 @@ export function BookingCard() {
     }
   }
 
-  const confirmSeats = (bookedSeats: number[]) => {
+  const confirmSeats = async (bookedSeats: number[]) => {
     /* Insert seats into database */
     if (bookedSeats.length == 0) {
       console.log(bookedSeats.length);
@@ -85,24 +85,32 @@ export function BookingCard() {
     }
 
     // TODO: insert seats into DB and print out error, if occurs => reset array bookedSeats
-    const confirmedTickets: Ticket[] = [];
-    // get booked tickets information from DB
-    for (let i = 0; i < bookedSeats.length; i++) {
-      const { data, error } = useSWR(`tickets/${bookedSeats[i]}`, fetcher);
-      // TODO call post to change reservedAt
-      if (error) return;
-      // if (!data) return;
-      confirmedTickets.push(data);
+    // from all tickets leave only confirmed ones
+    const confirmedTickets: Ticket[] = performance.tickets.filter(({ id }) => bookedSeats.includes(id));
+    // const confirmedTickets = tickets.map(obj => ({ ...obj })).filter(({ id }) => bookedSeats.includes(id));
+    const reservedAt = new Date();
+    // update reservedAt attribute in DB at each confirmed ticket
+    for (let i = 0; i < confirmedTickets.length; i++) {
+      await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", },
+        body: JSON.stringify({
+          reservedAt: reservedAt,
+        }),
+      }).then((response) => { if (!(response.ok)) { console.log("ERROR") } }); // TODO: Better handling of error
     }
+    // update reservedAt attribute at each confirmed ticket
+    confirmedTickets.map((ticket) => ticket.reservedAt = reservedAt);
 
     // add booked tickets to cart
     setCartState((tickets) => [...tickets, ...confirmedTickets]);
-    console.log({ seats: bookedSeats })
+    console.log({ seats: bookedSeats });
     setBookedSeats([]);
     setBookingPhase(1);
     console.log(cart);
   }
 
+  // GET all info about all tickets of this performance
   const { data, error } = useSWR(`performance/${id}`, fetcher);
   if (error) return <div>failed to load</div>;
   // TODO spinning wheel

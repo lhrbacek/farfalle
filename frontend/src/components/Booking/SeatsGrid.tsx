@@ -1,5 +1,5 @@
 import { Button, Container } from '@mantine/core';
-import { TicketBooking } from '../../types/ticket';
+import { Ticket, TicketBooking } from '../../types/ticket';
 import './bookingcard.css'
 
 /* --- Component for seats --- */
@@ -9,7 +9,7 @@ import './bookingcard.css'
   * 2. draw button
   *      a. if seat is already booked in current session - unbook the seat and remove from array
   *      b. otherwise book and add to bookedSeats array*/
-function SeatsGrid(props: { values: TicketBooking[], bookedSeats: number[], bookSeat: Function, tableStyle: any }) {
+function SeatsGrid(props: { values: Ticket[], bookedSeats: number[], bookSeat: Function, tableStyle: any }) {
   return (
     <Container style={props.tableStyle}>
       {props.values.map(seat => {
