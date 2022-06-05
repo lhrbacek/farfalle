@@ -5,7 +5,7 @@ import { JwtService } from '@nestjs/jwt';
 @Injectable()
 export class AuthService {
   constructor(private usersService: UserService,
-    private jwtService: JwtService){}
+    private readonly jwtService: JwtService){}
 
   async validateUser(email: string, password: string): Promise<any> {
     const user = await this.usersService.findOne(null, email);
