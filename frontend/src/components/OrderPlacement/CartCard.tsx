@@ -13,9 +13,10 @@ export interface CartCardProps {
   nextPhase: Function;
   emptyCart: boolean;
   setEmptyCart: Function;
+  setFatalError: Function;
 }
 
-export function CartCard({ nextPhase, emptyCart, setEmptyCart }: CartCardProps) {
+export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: CartCardProps) {
   const [page, setPage] = useState(1);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
@@ -28,22 +29,34 @@ export function CartCard({ nextPhase, emptyCart, setEmptyCart }: CartCardProps) 
   const indexOfFirstTicket = indexOfLastTicket - ticketsPerPage < 0 ? 0 : indexOfLastTicket - ticketsPerPage;
   const currentTickets = cart.slice(indexOfFirstTicket, indexOfLastTicket);
 
-  const deleteCartContent = () => {
-    // TODO: update DB with ticket.reservedAt = undefined
-    // on error only clear cart
-    console.log(cart);
+  const deleteCartContent = async () => {
+    for (let i = 0; i < cart.length; i++) {
+      await fetch(`http://localhost:4000/tickets/${cart[i].id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", },
+        body: JSON.stringify({
+          reservedAt: undefined,
+        }),
+      }).then((response) => {
+        if (!(response.ok)) {
+          setFatalError(true);
+          return;
+        }
+      });
+    }
+
     setCartState([]);
   }
 
   const nextStep = () => {
-    // setEmptyCart(false);
-    // const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
-    // if (currentTickets.length == 0) {
-    //   setEmptyCart(true);
-    //   return;
-    // }
-    // setCartState(currentTickets);
-    // nextPhase();
+    setEmptyCart(false);
+    const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    if (currentTickets.length == 0) {
+      setEmptyCart(true);
+      return;
+    }
+    setCartState(currentTickets);
+    nextPhase();
   }
 
   return (

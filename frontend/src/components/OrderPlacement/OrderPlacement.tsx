@@ -44,7 +44,7 @@ export const OrderPlacement = () => {
       return (
         <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
           <Stepper.Step allowStepSelect={active > 0} label="First step" description="Cart Summary" >
-            <CartCard nextPhase={nextStep} prevPhase={prevStep} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
+            <CartCard nextPhase={nextStep} prevPhase={prevStep} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} setFatalError={setFatalError} />
           </Stepper.Step>
           <Stepper.Step allowStepSelect={active > 1} label="Second step" description="Fill Personal information">
             <UserForm nextStep={nextStep} prevStep={prevStep} setUserInfo={setUserInfo} />
