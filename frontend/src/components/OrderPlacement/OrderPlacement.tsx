@@ -19,7 +19,6 @@ export interface UserInfo {
   streetNo: string;
   city: string;
   zip: string;
-  phone: string;
   termsOfService: boolean;
 }
 
@@ -33,7 +32,6 @@ export const OrderPlacement = () => {
     streetNo: "",
     city: "",
     zip: "",
-    phone: "",
     termsOfService: false,
   });
 
