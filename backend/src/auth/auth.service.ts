@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
 
@@ -27,5 +27,14 @@ export class AuthService {
     const payload = { email: user.email, sub: user.id, admin: isAdmin};
 
     return {access_token: this.jwtService.sign(payload)};
+  }
+
+  async isAllowed(req: any, id: number) {
+    if (req.user.userId != id || req.user.isAdmin == false) {
+      throw new HttpException({
+        status: HttpStatus.UNAUTHORIZED, //401
+        error: 'This operation is forbidden, you do not have access rights!',
+      }, HttpStatus.UNAUTHORIZED);
+    }
   }
 }

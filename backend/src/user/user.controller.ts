@@ -7,12 +7,14 @@ import { AddressService } from 'src/address/address.service';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { UseGuards } from '@nestjs/common';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('user')
 export class UserController {
   constructor(
     private readonly userService: UserService,
     private readonly addressService: AddressService,
+    private readonly authService: AuthService,
   ) {}
 
   @Post()
@@ -39,35 +41,44 @@ export class UserController {
     });
   }
 
+  /*
   @UseGuards(JwtAuthGuard)
   @Get()
   getUserInfo(@Request() req) {
     return req.user;
   }
+  */
 
+  @UseGuards(JwtAuthGuard)
   @Get()
-  async findAll(): Promise<UserModel[]> {
+  async findAll(@Request() req): Promise<UserModel[]> {
     return await this.userService.findAll({});
   }
 
   @UseGuards(JwtAuthGuard)
-  @Get(':email')
-  async findOne(@Param('email') email: string): Promise<UserModel> {
-    return await this.userService.findOne(null, email);
+  @Get(':id')
+  async findOne(@Param('id') id: number,
+                @Request() req): Promise<UserModel> {
+    await this.authService.isAllowed(req, +id);
+    return await this.userService.findOne(+id);
   }
 
   @UseGuards(JwtAuthGuard)
   @Patch(':id')
-  update(
+  async update(
     @Param('id') id: number,
     @Body() updateUserDto: UpdateUserDto,
+    @Request() req,
   ): Promise<UserModel> {
-    return this.userService.update(id, updateUserDto);
+    await this.authService.isAllowed(req, +id);
+    return await this.userService.update(+id, updateUserDto);
   }
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async delete(@Param('id') id: number): Promise<UserModel> {
-    return await this.userService.delete(id);
+  async delete(@Param('id') id: number,
+               @Request() req): Promise<UserModel> {
+    await this.authService.isAllowed(req, +id);
+    return await this.userService.delete(+id);
   }
 }
