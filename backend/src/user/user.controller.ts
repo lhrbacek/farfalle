@@ -41,17 +41,10 @@ export class UserController {
     });
   }
 
-  /*
-  @UseGuards(JwtAuthGuard)
-  @Get()
-  getUserInfo(@Request() req) {
-    return req.user;
-  }
-  */
-
   @UseGuards(JwtAuthGuard)
   @Get()
   async findAll(@Request() req): Promise<UserModel[]> {
+    await this.authService.isPrivileged(req);
     return await this.userService.findAll({});
   }
 

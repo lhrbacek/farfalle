@@ -29,6 +29,15 @@ export class AuthService {
     return {access_token: this.jwtService.sign(payload)};
   }
 
+  async isPrivileged(req: any) {
+    if (req.user.isAdmin == false) {
+      throw new HttpException({
+        status: HttpStatus.FORBIDDEN, //403
+        error: 'You do not have admin rights!',
+      }, HttpStatus.FORBIDDEN);
+    }
+  }
+
   async isAllowed(req: any, id: number) {
     if (req.user.userId != id || req.user.isAdmin == false) {
       throw new HttpException({
