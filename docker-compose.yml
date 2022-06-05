@@ -11,17 +11,39 @@ services:
     networks:
       - backend
     ports:
-      - 127.0.0.1:5432:5432
+      - 5432:5432
 
   admin:
     image: adminer:4.8.1
     networks:
       - backend
     ports:
-      - 127.0.0.1:8089:8080
+      - 8089:8080
+
+  api:
+    container_name: farfalle_api
+    image: farfalle_api:1.0.0
+    build: ./backend
+    networks:
+      - backend
+      - frontend
+    ports:
+      - 3001:3001
+
+  app:
+    container_name: farfalle_app
+    image: farfalle_app:1.0.0
+    build: ./frontend
+    networks:
+      - frontend
+    ports:
+      - 3000:3000
+    environment:
+      - API_URL=http://api:3001/
   
 volumes:
   database-storage:
 
 networks:
   backend:
+  frontend:
