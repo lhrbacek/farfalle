@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Request,
 } from '@nestjs/common';
 import { CreateVenueDto } from './dto/create-venue.dto';
 import { UpdateVenueDto } from './dto/update-venue.dto';
@@ -19,7 +20,9 @@ export class VenueController {
               private readonly authService: AuthService) {}
 
   @Post()
-  async create(@Body() createVenueDto: CreateVenueDto): Promise<VenueModel> {
+  async create(@Body() createVenueDto: CreateVenueDto,
+               @Request() req): Promise<VenueModel> {
+    await this.authService.isPrivileged(req);
     return await this.venueService.create(createVenueDto);
   }
 
@@ -37,12 +40,16 @@ export class VenueController {
   async update(
     @Param('id') id: number,
     @Body() updateVenueDto: UpdateVenueDto,
+    @Request() req,
   ) {
+    await this.authService.isPrivileged(req);
     return await this.venueService.update(id, updateVenueDto);
   }
 
   @Delete(':id')
-  async remove(@Param('id') id: number) {
+  async remove(@Param('id') id: number,
+               @Request() req) {
+    await this.authService.isPrivileged(req);
     return await this.venueService.delete(id);
   }
 }
