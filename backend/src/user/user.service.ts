@@ -41,6 +41,7 @@ export class UserService {
     return await this.prisma.user.create({
       data: {
         ...createUserDto,
+        role: 'USER',
         address: { connect: { id: createUserDto.address } },
       },
     });
