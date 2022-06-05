@@ -1,27 +1,31 @@
-import { Button, Container, Divider, Group, Stack, Text } from '@mantine/core';
+import { Button, Container, Divider, Group, Stack, Text, Notification } from '@mantine/core';
 import React from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { UserInfo } from './OrderPlacement';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartStateSelector } from '../../state/Selector';
 import { cartState } from '../../state/Atom';
+import { X } from 'tabler-icons-react';
 
 interface SummaryProps {
-  prevStep: Function;
-  nextStep: Function;
+  prevPhase: Function;
+  nextPhase: Function;
+  emptyCart: boolean;
+  setEmptyCart: Function;
   userInfo: UserInfo;
 }
 
-export function SummaryCard(props: SummaryProps) {
+export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, userInfo }: SummaryProps) {
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
 
   const confirmOrder = () => {
+
     // TODO: Update DBˇ
     setCartState([])
-    props.nextStep();
+    nextPhase();
   }
 
   return (
@@ -40,14 +44,21 @@ export function SummaryCard(props: SummaryProps) {
       </Group>
 
       <Divider my="xl" label="Personal Information" labelPosition="center" />
-      <Text>{props.userInfo.name} {props.userInfo.surname}</Text>
-      <Text>{props.userInfo.email}</Text>
-      <Text>{props.userInfo.phone}</Text>
-      <Text>{props.userInfo.street}, {props.userInfo.streetNo}</Text>
-      <Text>{props.userInfo.city}, {props.userInfo.zip}</Text>
+      <Text>{userInfo.name} {userInfo.surname}</Text>
+      <Text>{userInfo.email}</Text>
+      <Text>{userInfo.street}, {userInfo.streetNo}</Text>
+      <Text>{userInfo.city}, {userInfo.zip}</Text>
+
+      <Group position="center">
+        {emptyCart == true ?
+          <Notification icon={<X size={18} />} color="red" disallowClose title='Something went wrong'>
+            Your cart is empty.
+          </Notification> : <></>
+        }
+      </Group>
 
       <Group position="center" mt="xl">
-        <Button variant="default" onClick={() => props.prevStep()}>Back</Button>
+        <Button variant="default" onClick={() => prevPhase()}>Back</Button>
         <Button onClick={() => confirmOrder()} color='dark'>Confirm</Button>
       </Group>
     </Container>

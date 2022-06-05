@@ -1,15 +1,9 @@
 import { Container, Stepper } from "@mantine/core";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import CartCard from "./CartCard";
 import ConfirmationCard from "./ConfirmationCard";
 import SummaryCard from "./SummaryCard";
 import UserForm from "./UserForm";
-
-export interface StepProps {
-  prevStep: Function;
-  nextStep: Function;
-}
 
 export interface UserInfo {
   email: string;
@@ -23,6 +17,7 @@ export interface UserInfo {
 }
 
 export const OrderPlacement = () => {
+  const [emptyCart, emptyCartEmpty] = useState(false);
   const [active, setActive] = useState(0);
   const [userInfo, setUserInfo] = useState<UserInfo>({
     email: "",
@@ -46,13 +41,13 @@ export const OrderPlacement = () => {
     <Container>
       <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
         <Stepper.Step allowStepSelect={active > 0} label="First step" description="Cart Summary" >
-          <CartCard nextStep={nextStep} prevStep={prevStep} />
+          <CartCard nextPhase={nextStep} prevPhase={prevStep} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
         </Stepper.Step>
         <Stepper.Step allowStepSelect={active > 1} label="Second step" description="Fill Personal information">
           <UserForm nextStep={nextStep} prevStep={prevStep} setUserInfo={setUserInfo} />
         </Stepper.Step>
         <Stepper.Step allowStepSelect={active > 2} label="Final step" description="Order Summary">
-          <SummaryCard nextStep={nextStep} prevStep={prevStep} userInfo={userInfo} />
+          <SummaryCard nextPhase={nextStep} prevPhase={prevStep} userInfo={userInfo} emptyCart={emptyCart} setEmptyCart={emptyCartEmpty} />
         </Stepper.Step>
         <Stepper.Completed>
           <ConfirmationCard />
