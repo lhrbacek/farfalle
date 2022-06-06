@@ -1,4 +1,4 @@
-const API_URL = process.env.API_URL ?? "http://api:3001/"
+const API_URL = "http://localhost:4000/"
 
 function fetcher(url: string, header: Headers) {
   return fetch(`${API_URL}${url}`, {
