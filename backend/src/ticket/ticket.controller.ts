@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   Query,
+  Request,
 } from '@nestjs/common';
 import { TicketService } from './ticket.service';
 import { Ticket as TicketModel } from '@prisma/client';
@@ -22,7 +23,9 @@ export class TicketController {
               private readonly authService: AuthService) {}
 
   @Post()
-  async create(@Body() createTicketDto: CreateTicketDto): Promise<TicketModel> {
+  async create(@Body() createTicketDto: CreateTicketDto,
+               @Request() req): Promise<TicketModel> {
+    await this.authService.isPrivileged(req);
     return await this.ticketService.create(createTicketDto);
   }
 
@@ -38,6 +41,7 @@ export class TicketController {
     return await this.ticketService.findOne(+id);
   }
 
+  // TODO
   @Patch(':id')
   async update(
     @Param('id') id: number,
@@ -47,7 +51,9 @@ export class TicketController {
   }
 
   @Delete(':id')
-  async delete(@Param('id') id: number): Promise<TicketModel> {
+  async delete(@Param('id') id: number,
+               @Request() req): Promise<TicketModel> {
+    await this.authService.isPrivileged(req);
     return await this.ticketService.delete(+id);
   }
 }
