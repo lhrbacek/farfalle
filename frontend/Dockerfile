@@ -14,8 +14,9 @@ FROM node:18.2.0-alpine3.14
 
 WORKDIR /app
 
-COPY --from=build /src/build .
+COPY --from=build /src .
+# COPY --from=build /src/package*.json /src/tsconfig.json ./
 
-EXPOSE 3000
+EXPOSE 4000
 
-CMD [ "npm", "start:dev" ]
+CMD ["npm", "run", "dev"]
