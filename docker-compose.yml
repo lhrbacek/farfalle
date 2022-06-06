@@ -24,11 +24,13 @@ services:
     container_name: farfalle_api
     image: farfalle_api:1.0.0
     build: ./backend
+    env_file:
+      - ./backend/.env
     networks:
       - backend
       - frontend
     ports:
-      - 3001:3001
+      - 4000:4000
 
   app:
     container_name: farfalle_app
@@ -39,7 +41,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      - API_URL=http://api:3001/
+      - API_URL=http://api:4000/
   
 volumes:
   database-storage:
