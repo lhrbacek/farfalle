@@ -16,8 +16,8 @@ FROM node:18.2.0-alpine3.14
 
 WORKDIR /api
 
-COPY --from=build /src/build .
+COPY --from=build /src .
 
 EXPOSE 3001
 
-CMD [ "npm", "start" ]
+CMD ["npm", "run", "start:migrate:prod"]
