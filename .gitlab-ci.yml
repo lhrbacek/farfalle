@@ -1,18 +1,18 @@
 stages:
 - deploy
 deploy:
-image: docker:latest
-stage: deploy
-variables:
-DOCKER_DRIVER: overlay
-services:
-- docker:dind
-script:
-- docker build -t farfalle.azurecr.io/farfalle:latest .
-- echo "$DOCKER_PASSWD" | docker login $DOCKER_REPOSITORY --username $DOCKER_USER --password-stdin
-- docker push farfalle.azurecr.io/farfalle:latest
-only:
-- master
-environment:
-  name: farfalle-service
-  url: https://farfalle.azurewebsites.net
+  image: docker:latest
+  stage: deploy
+  variables:
+    DOCKER_DRIVER: overlay
+  services:
+    - docker:dind
+  script:
+    - docker build -t farfalle.azurecr.io/farfalle:latest .
+    - echo "$DOCKER_PASSWD" | docker login $DOCKER_REPOSITORY --username $DOCKER_USER --password-stdin
+    - docker push farfalle.azurecr.io/farfalle:latest
+  only:
+    - master
+  environment:
+    name: farfalle-service
+    url: https://farfalle.azurewebsites.net
