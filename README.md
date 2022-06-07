@@ -1,5 +1,12 @@
 # Farfalle
 
+## Run
+```bash
+docker compose build
+docker compose up
+```
+Dostupné na `http://localhost:80`
+
 ## Zadání
 V rámci systému pro divadlo nabízíte různá představení. Při prodeji lístku musí být možnost výběru představení, termínu, a místa. Divadlo má určité rozložení sedadel, které by chtělo zobrazit při výběru sedadla.
 
