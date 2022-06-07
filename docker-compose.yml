@@ -8,15 +8,11 @@ services:
       - POSTGRES_PASSWORD=DynoveKoreniJeDynovymKorenimZivota
     volumes:
       - database-storage:/var/lib/postgresql/data
-    networks:
-      - backend
     ports:
       - "5432:5432"
 
   admin:
     image: adminer:4.8.1
-    networks:
-      - backend
     ports:
       - "8089:8080"
 
@@ -26,9 +22,6 @@ services:
     build: ./backend
     environment:
       DATABASE_URL: "postgresql://postgres:DynoveKoreniJeDynovymKorenimZivota@database:5432/farfalle?schema=public"
-    networks:
-      - backend
-      - frontend
     ports:
       - "4000:4000"
 
@@ -36,8 +29,6 @@ services:
     container_name: farfalle_app
     image: farfalle_app:1.0.0
     build: ./frontend
-    networks:
-      - frontend
     ports:
       - "80:80"
     environment:
@@ -45,7 +36,3 @@ services:
   
 volumes:
   database-storage:
-
-networks:
-  backend:
-  frontend:
