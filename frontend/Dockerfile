@@ -17,6 +17,6 @@ WORKDIR /app
 COPY --from=build /src .
 # COPY --from=build /src/package*.json /src/tsconfig.json ./
 
-EXPOSE 4000
+EXPOSE 80
 
 CMD ["npm", "run", "dev"]

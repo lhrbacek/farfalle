@@ -18,6 +18,6 @@ WORKDIR /api
 
 COPY --from=build /src .
 
-EXPOSE 3001
+EXPOSE 4000
 
 CMD ["npm", "run", "start:migrate:prod"]
