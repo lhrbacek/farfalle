@@ -11,26 +11,26 @@ services:
     networks:
       - backend
     ports:
-      - 5432:5432
+      - "5432:5432"
 
   admin:
     image: adminer:4.8.1
     networks:
       - backend
     ports:
-      - 8089:8080
+      - "8089:8080"
 
   api:
     container_name: farfalle_api
     image: farfalle_api:1.0.0
     build: ./backend
     environment:
-      - DATABASE_URL="postgresql://postgres:DynoveKoreniJeDynovymKorenimZivota@database:5432/farfalle?schema=public"
+      DATABASE_URL: "postgresql://postgres:DynoveKoreniJeDynovymKorenimZivota@database:5432/farfalle?schema=public"
     networks:
       - backend
       - frontend
     ports:
-      - 4000:4000
+      - "4000:4000"
 
   app:
     container_name: farfalle_app
@@ -39,9 +39,9 @@ services:
     networks:
       - frontend
     ports:
-      - 3000:3000
+      - "3000:3000"
     environment:
-      - API_URL=http://api:4000/
+      API_URL: http://api:4000/
   
 volumes:
   database-storage:
