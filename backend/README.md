@@ -5,12 +5,15 @@
 ```bash
 $ npm install
 
-# following commands in backend file
+# following commands in backend file, if dependencies do not work
 $ npm install --save @nestjs/passport passport passport-local
 $ npm install --save-dev @types/passport-local
 
 $ npm install --save @nestjs/jwt passport-jwt
 $ npm install --save-dev @types/passport-jwt
+
+$ npm i cookie-parser
+$ npm i -D @types/cookie-parser
 ```
 
 ## Start
