@@ -1,6 +1,7 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
+import { jwtConstants } from '../constants';
 
 @Injectable()
 export class AuthService {
@@ -26,7 +27,8 @@ export class AuthService {
 
     const payload = { email: user.email, sub: user.id, admin: isAdmin};
 
-    return this.jwtService.sign(payload);
+    // nova metoda chce aj tu secret:)))))))))))))))))))))
+    return this.jwtService.sign(payload, {secret: jwtConstants.secret});
     //return {access_token: this.jwtService.sign(payload)};
   }
 

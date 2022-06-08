@@ -25,6 +25,7 @@ export class AuthController {
     //res.cookie('auth-cookie', data, {httpOnly: true});
 
     res.cookie('auth-cookie', token, {httpOnly: true});
-    return {userId: req.user.userId};
+    return {userId: req.user.id};
+    //return {userId: req.user.userId};
   }
 }
