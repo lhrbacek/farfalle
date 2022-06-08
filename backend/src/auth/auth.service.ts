@@ -12,10 +12,10 @@ export class AuthService {
 
     if (user && user.password === password) {
       // we dont want password after validation, not even hash
-      const {password, ...result} = user
-      return result
+      const {password, ...result} = user;
+      return result;
     }
-    return null
+    return null;
   }
 
   async login(user: any) {
@@ -26,7 +26,8 @@ export class AuthService {
 
     const payload = { email: user.email, sub: user.id, admin: isAdmin};
 
-    return {access_token: this.jwtService.sign(payload)};
+    return this.jwtService.sign(payload);
+    //return {access_token: this.jwtService.sign(payload)};
   }
 
   async isPrivileged(req: any) {
