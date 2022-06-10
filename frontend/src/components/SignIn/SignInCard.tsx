@@ -1,7 +1,7 @@
 import { Container, Title, Text, Paper, TextInput, PasswordInput, Button, Notification } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
 
 interface SignUser {
@@ -14,6 +14,10 @@ interface SignInProps {
 }
 
 function SignInCard(props: SignInProps) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
   const [signError, setSignError] = useState(false);
 
   const form = useForm({
@@ -34,22 +38,43 @@ function SignInCard(props: SignInProps) {
     return (<></>);
   }
 
-  const SignUserIn = (values: SignUser) => {
-    const user = undefined;
-    const hash = '';
-    const hashInput = '';
+  const SignUserIn = async (values: SignUser) => {
+    let user = undefined;
+    let hash = '';
+    let isAdmin: boolean;
     setSignError(false);
     // TODO: find user according to email in database
+    // LOGIN, POST on url below with object {email: "", password: ""}
+    // no hash, hash password must be put on login screen
+    await fetch(`http://0.0.0.0:4000/auth/login`, {
+      credentials: 'include',
+      method: "POST",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        ...values,
+      }),
+    }).then((response) => {
+      if (response.status == 409) {
+
+      } else if (response.status == 401) {
+
+      } else if (!(response.ok)) {
+
+      } else {
+
+      }
+      response.json().then((data) => {
+        user = data.userId
+      })
+    });
+
     if (user == undefined) {
       setSignError(true);
       return;
     }
-    // TODO: get password from and check hash
-    if (hashInput != hash) {
-      setSignError(true);
-      return;
-    }
     // TODO: update global state
+    // navigate(from, { replace:true }); // after login navigate where the user wanted to go
+    // what is this
     props.setPhase(1);
   }
 
