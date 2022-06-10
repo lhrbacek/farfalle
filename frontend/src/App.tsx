@@ -42,34 +42,34 @@ function App() {
     //       <Route path="/account/admin" element={<Admin />} />
     //     </>
     //   );
-    // }
-
-    return (
-      <Routes>
-        <Route path="/" element={<Layout auth={user} />} >
-          <Route index element={<HomeCard />} />
-          <Route path="/home" element={<Navigate to="/" />} />
-          <Route path="/about" element={<AboutCard />} />
-          <Route path="/cart" element={<OrderPlacement />} />
-
-          <Route path="/program" element={<ProgramCard />} />
-          <Route path="/program/:id" element={<PlayCard />} />
-          <Route path="/program/booking/:id" element={<BookingCard />} />
-
-          {/* {authenticatedUser(user)} */}
-
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/newcommer" element={<NewAccount />} />
-          <Route path="/account" element={<Profile />} />
-          <Route path="/account/edit" element={<EditProfile />} />
-          <Route path="/account/delete" element={<DeleteAccount />} />
-          <Route path="/account/tickets" element={<ReturnTickets />} />
-          <Route path="/account/admin" element={<Admin />} />
-
-          <Route path="*" element={<NoMatchRoute />} />
-        </Route>
-      </Routes >
-    )
   }
 
-  export default App
+  return (
+    <Routes>
+      <Route path="/" element={<Layout auth={user} />} >
+        <Route index element={<HomeCard />} />
+        <Route path="/home" element={<Navigate to="/" />} />
+        <Route path="/about" element={<AboutCard />} />
+        <Route path="/cart" element={<OrderPlacement />} />
+
+        <Route path="/program" element={<ProgramCard />} />
+        <Route path="/program/:id" element={<PlayCard />} />
+        <Route path="/program/booking/:id" element={<BookingCard />} />
+
+        {/* {authenticatedUser(user)} */}
+
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/newcommer" element={<NewAccount />} />
+        <Route path="/account" element={<Profile />} />
+        <Route path="/account/edit" element={<EditProfile />} />
+        <Route path="/account/delete" element={<DeleteAccount />} />
+        <Route path="/account/tickets" element={<ReturnTickets />} />
+        <Route path="/account/admin" element={<Admin />} />
+
+        <Route path="*" element={<NoMatchRoute />} />
+      </Route>
+    </Routes >
+  )
+}
+
+export default App
