@@ -8,6 +8,7 @@ import {
   Delete,
   Query,
   Request,
+  UseGuards,
 } from '@nestjs/common';
 import { TicketService } from './ticket.service';
 import { Ticket as TicketModel } from '@prisma/client';
@@ -16,12 +17,16 @@ import { UpdateTicketDto } from './dto/update-ticket.dto';
 import { TicketWithPerformanceDto } from './dto/ticket-performance.dto';
 import { FilterTicketDto } from './dto/filter-ticket.dto';
 import { AuthService } from 'src/auth/auth.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 @Controller('tickets')
 export class TicketController {
-  constructor(private readonly ticketService: TicketService,
-              private readonly authService: AuthService) {}
+  constructor(
+    private readonly ticketService: TicketService,
+    private readonly authService: AuthService
+  ) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(@Body() createTicketDto: CreateTicketDto,
                @Request() req): Promise<TicketModel> {
@@ -50,6 +55,7 @@ export class TicketController {
     return await this.ticketService.update(+id, updateTicketDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async delete(@Param('id') id: number,
                @Request() req): Promise<TicketModel> {

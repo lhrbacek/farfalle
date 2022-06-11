@@ -8,6 +8,7 @@ import {
   Post,
   Query,
   Request,
+  UseGuards,
 } from '@nestjs/common';
 import { Performance as PerformanceModel } from '@prisma/client';
 import { PerformanceService } from './performance.service';
@@ -18,6 +19,7 @@ import { CreatePerformanceWithPriceDto } from './dto/create-performance-with-pri
 import { PerformanceBookingDto } from './dto/performance-booking.dto';
 import { PerformanceDto } from './dto/performance.dto';
 import { AuthService } from 'src/auth/auth.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 @Controller('performance')
 export class PerformanceController {
@@ -28,6 +30,7 @@ export class PerformanceController {
     private readonly authService: AuthService,
   ) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Body() createPerformanceWithPriceDto: CreatePerformanceWithPriceDto,
@@ -69,6 +72,7 @@ export class PerformanceController {
     return await this.performanceService.findOne(+id);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   async update(
     @Param('id') id: number,
@@ -79,6 +83,7 @@ export class PerformanceController {
     return await this.performanceService.update(+id, updatePerformanceDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(@Param('id') id: number, @Request() req,) {
     await this.authService.isPrivileged(req);

@@ -8,6 +8,7 @@ import {
   Patch,
   Query,
   Request,
+  UseGuards,
 } from '@nestjs/common';
 import { PlayService } from './play.service';
 import { Play as PlayModel } from '@prisma/client';
@@ -15,6 +16,7 @@ import { CreatePlayDto } from './dto/create-play.dto';
 import { UpdatePlayDto } from './dto/update-play.dto';
 import { PlayWithPerformancesDto } from './dto/play-performances.dto';
 import { AuthService } from 'src/auth/auth.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 @Controller('play')
 export class PlayController {
@@ -23,6 +25,7 @@ export class PlayController {
     private readonly authService: AuthService,
   ) {}
 
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Body() createPlayDto: CreatePlayDto,
@@ -47,6 +50,7 @@ export class PlayController {
     return await this.playService.findOne(+id);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   async update(
     @Param('id') id: number,
@@ -57,6 +61,7 @@ export class PlayController {
     return await this.playService.update(id, updatePlayDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(
     @Param('id') id: number,
