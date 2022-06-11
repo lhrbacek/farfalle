@@ -11,11 +11,16 @@ import { AddressService } from './address.service';
 import { Address as AddressModel } from '@prisma/client';
 import { CreateAddressDto } from './dto/create-address.dto';
 import { UpdateAddressDto } from './dto/update-address.dto';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('address')
 export class AddressController {
-  constructor(private readonly addressService: AddressService) {}
+  constructor(
+    private readonly addressService: AddressService,
+    private readonly authService: AuthService,
+  ) {}
 
+  // TODO
   @Post()
   async create(
     @Body() createAddressDto: CreateAddressDto,
@@ -33,6 +38,7 @@ export class AddressController {
     return await this.addressService.findOne(id);
   }
 
+  // TODO
   @Patch(':id')
   async update(
     @Param('id') id: number,
@@ -41,6 +47,7 @@ export class AddressController {
     return await this.addressService.update(id, updateAddressDto);
   }
 
+  // TODO
   @Delete(':id')
   async remove(@Param('id') id: number) {
     return await this.addressService.delete(id);

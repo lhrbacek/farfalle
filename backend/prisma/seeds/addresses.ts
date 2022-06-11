@@ -1,5 +1,13 @@
 export const addresses = [
   {
+    id: 0,
+    name: 'Admin Adminovy',
+    street: 'Farfalle',
+    number: 42,
+    zip: 60200,
+    city: 'Brno',
+  },
+  {
     id: 1,
     name: 'Eugenio Gutiérrez',
     street: 'Calle de Lagasca',
