@@ -3,7 +3,8 @@ import { ExtractJwt, Strategy } from "passport-jwt";
 import { jwtConstants } from '../constants';
 //import { Request } from '@nestjs/common';
 import { Request } from "express";
-import { UnauthorizedException } from "@nestjs/common/exceptions";
+import { HttpException, UnauthorizedException } from "@nestjs/common/exceptions";
+import { HttpStatus } from "@nestjs/common";
 
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
     constructor() {
@@ -11,11 +12,12 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
             secretOrKey: jwtConstants.secret,
             ignoreExpiration: true,
             jwtFromRequest: ExtractJwt.fromExtractors([(request:Request) => {
-              let data = request?.cookies["auth-cookie"];
+              let data = request?.cookies['auth-cookie'];
               if(!data){
                 return null;
               }
-              return data.token
+              //console.log(request.cookies);
+              return data.token;
             }])
         })
     }
@@ -24,6 +26,6 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
         if(payload === null){
             throw new UnauthorizedException();
         }
-        return {userId: payload.sub, email: payload.email, isAdmin: payload.admin}
+        return {userId: payload.sub, email: payload.email, isAdmin: payload.admin};
     }
 }

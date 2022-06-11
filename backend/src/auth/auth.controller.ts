@@ -19,12 +19,13 @@ export class AuthController {
   ) {
     const token = await this.authService.login(req.user);
 
-    /*const data = {
+    const data = {
       token,
-    }*/
-    //res.cookie('auth-cookie', data, {httpOnly: true});
+    }
+    res.cookie('auth-cookie', data, {httpOnly: true});
+    //res.cookie('auth-cookie', data, {httpOnly: true, signed: true});
 
-    res.cookie('auth-cookie', token, {httpOnly: true});
+    //res.cookie('auth-cookie', token, {httpOnly: true});
     return {userId: req.user.id};
     //return {userId: req.user.userId};
   }
