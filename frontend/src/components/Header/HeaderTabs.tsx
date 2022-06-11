@@ -5,7 +5,7 @@ import UserMenu from './UserMenu';
 const useStyles = createStyles((theme) => ({
   header: {
     paddingTop: theme.spacing.sm,
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[3],
+    backgroundColor: theme.colors.gray[3],
     marginBottom: 20,
   },
 
@@ -13,36 +13,24 @@ const useStyles = createStyles((theme) => ({
     paddingBottom: theme.spacing.sm,
   },
 
-  user: {
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-    padding: `${theme.spacing.xs}px ${theme.spacing.sm}px`,
-    borderRadius: theme.radius.sm,
-    transition: 'background-color 100ms ease',
-
-    '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
-    },
-  },
-
-  userActive: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
-  },
-
   menuButton: {
     color: theme.colors.gray[8],
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2],
+      backgroundColor: theme.colors.gray[2],
     },
-    // [theme.fn.smallerThan('sm')]: {
-    //   display: 'none',
-    // },
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
   },
 
   menuButtonClicked: {
     color: theme.black,
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.white,
+    backgroundColor: theme.white,
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1],
+      backgroundColor: theme.colors.gray[1],
+    },
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
     },
   }
 
