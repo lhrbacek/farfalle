@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   Delete,
+  Request,
 } from '@nestjs/common';
 import { OrderService } from './order.service';
 import { CreateOrderDto } from './dto/create-order.dto';
@@ -35,13 +36,15 @@ export class OrderController {
     return this.orderService.findOne(+id);
   }
 
+  // TODO
   @Patch(':id')
   update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
     return this.orderService.update(+id, updateOrderDto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: number) {
+  async remove(@Param('id') id: number, @Request() req,) {
+    await this.authService.isPrivileged(req);
     return this.orderService.remove(+id);
   }
 }

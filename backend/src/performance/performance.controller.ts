@@ -7,6 +7,7 @@ import {
   Patch,
   Post,
   Query,
+  Request,
 } from '@nestjs/common';
 import { Performance as PerformanceModel } from '@prisma/client';
 import { PerformanceService } from './performance.service';
@@ -30,7 +31,10 @@ export class PerformanceController {
   @Post()
   async create(
     @Body() createPerformanceWithPriceDto: CreatePerformanceWithPriceDto,
+    @Request() req,
   ): Promise<PerformanceModel> {
+    await this.authService.isPrivileged(req);
+
     const performance = await this.performanceService.create({
       ...createPerformanceWithPriceDto,
     });
@@ -69,12 +73,15 @@ export class PerformanceController {
   async update(
     @Param('id') id: number,
     @Body() updatePerformanceDto: UpdatePerformanceDto,
+    @Request() req,
   ) {
+    await this.authService.isPrivileged(req);
     return await this.performanceService.update(+id, updatePerformanceDto);
   }
 
   @Delete(':id')
-  async remove(@Param('id') id: number) {
+  async remove(@Param('id') id: number, @Request() req,) {
+    await this.authService.isPrivileged(req);
     return await this.performanceService.delete(+id);
   }
 }

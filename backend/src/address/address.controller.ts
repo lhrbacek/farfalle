@@ -47,6 +47,7 @@ export class AddressController {
     return await this.addressService.update(id, updateAddressDto);
   }
 
+  // TODO
   @Delete(':id')
   async remove(@Param('id') id: number) {
     return await this.addressService.delete(id);
