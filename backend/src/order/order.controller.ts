@@ -10,11 +10,15 @@ import {
 import { OrderService } from './order.service';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';
+import { AuthService } from 'src/auth/auth.service';
 
 // TODO
 @Controller('order')
 export class OrderController {
-  constructor(private readonly orderService: OrderService) {}
+  constructor(
+    private readonly orderService: OrderService,
+    private readonly authService: AuthService,
+  ) {}
 
   @Post()
   create(@Body() createOrderDto: CreateOrderDto) {

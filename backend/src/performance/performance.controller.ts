@@ -16,6 +16,7 @@ import { TicketService } from 'src/ticket/ticket.service';
 import { CreatePerformanceWithPriceDto } from './dto/create-performance-with-price.dto';
 import { PerformanceBookingDto } from './dto/performance-booking.dto';
 import { PerformanceDto } from './dto/performance.dto';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('performance')
 export class PerformanceController {
@@ -23,6 +24,7 @@ export class PerformanceController {
     private readonly performanceService: PerformanceService,
     private readonly venueService: VenueService,
     private readonly ticketService: TicketService,
+    private readonly authService: AuthService,
   ) {}
 
   @Post()
