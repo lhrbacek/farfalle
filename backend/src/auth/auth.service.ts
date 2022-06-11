@@ -29,9 +29,7 @@ export class AuthService {
 
     const payload = { email: user.email, sub: user.id, admin: isAdmin };
 
-    // nova metoda chce aj tu secret:)))))))))))))))))))))
     return this.jwtService.sign(payload, { secret: jwtConstants.secret });
-    //return {access_token: this.jwtService.sign(payload)};
   }
 
   async isPrivileged(req: any) {

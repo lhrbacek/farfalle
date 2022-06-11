@@ -1,10 +1,8 @@
 import { PassportStrategy } from "@nestjs/passport";
 import { ExtractJwt, Strategy } from "passport-jwt";
 import { jwtConstants } from '../constants';
-//import { Request } from '@nestjs/common';
 import { Request } from "express";
-import { HttpException, UnauthorizedException } from "@nestjs/common/exceptions";
-import { HttpStatus } from "@nestjs/common";
+import { UnauthorizedException } from "@nestjs/common/exceptions";
 
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
     constructor() {
@@ -16,7 +14,6 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
               if(!data){
                 return null;
               }
-              //console.log(request.cookies);
               return data.token;
             }])
         })

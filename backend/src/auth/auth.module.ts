@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { UserModule } from 'src/user/user.module';
 import { AuthService } from './auth.service';
 import { JwtModule } from '@nestjs/jwt';
 import { jwtConstants } from '../constants';
@@ -13,7 +12,6 @@ import { PrismaService } from 'src/prisma.service';
 
 @Module({
   imports: [
-    //UserModule,
     PassportModule,
     JwtModule.register({
       secret: jwtConstants.secret,
