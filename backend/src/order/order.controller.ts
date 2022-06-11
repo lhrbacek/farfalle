@@ -22,29 +22,29 @@ export class OrderController {
   ) {}
 
   @Post()
-  create(@Body() createOrderDto: CreateOrderDto) {
-    return this.orderService.create(createOrderDto);
+  async create(@Body() createOrderDto: CreateOrderDto) {
+    return await this.orderService.create(createOrderDto);
   }
 
   @Get()
-  findAll() {
-    return this.orderService.findAll();
+  async findAll() {
+    return await this.orderService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
-    return this.orderService.findOne(+id);
+  async findOne(@Param('id') id: number) {
+    return await this.orderService.findOne(+id);
   }
 
   // TODO
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
-    return this.orderService.update(+id, updateOrderDto);
+  async update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
+    return await this.orderService.update(+id, updateOrderDto);
   }
 
   @Delete(':id')
   async remove(@Param('id') id: number, @Request() req,) {
     await this.authService.isPrivileged(req);
-    return this.orderService.remove(+id);
+    return await this.orderService.remove(+id);
   }
 }
