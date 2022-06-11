@@ -7,6 +7,7 @@ import {
   Delete,
   Patch,
   Query,
+  Request,
 } from '@nestjs/common';
 import { PlayService } from './play.service';
 import { Play as PlayModel } from '@prisma/client';
@@ -23,7 +24,11 @@ export class PlayController {
   ) {}
 
   @Post()
-  async create(@Body() createPlayDto: CreatePlayDto): Promise<PlayModel> {
+  async create(
+    @Body() createPlayDto: CreatePlayDto,
+    @Request() req,
+  ): Promise<PlayModel> {
+    await this.authService.isPrivileged(req);
     return await this.playService.create(createPlayDto);
   }
 
@@ -43,12 +48,21 @@ export class PlayController {
   }
 
   @Patch(':id')
-  async update(@Param('id') id: number, @Body() updatePlayDto: UpdatePlayDto) {
+  async update(
+    @Param('id') id: number,
+    @Body() updatePlayDto: UpdatePlayDto,
+    @Request() req
+  ) {
+    await this.authService.isPrivileged(req);
     return await this.playService.update(id, updatePlayDto);
   }
 
   @Delete(':id')
-  async remove(@Param('id') id: number) {
+  async remove(
+    @Param('id') id: number,
+    @Request() req,
+  ) {
+    await this.authService.isPrivileged(req);
     return await this.playService.delete(id);
   }
 }
