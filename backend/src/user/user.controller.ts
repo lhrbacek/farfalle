@@ -8,6 +8,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { UseGuards } from '@nestjs/common';
 import { AuthService } from 'src/auth/auth.service';
+import { ReturnUserInfoDto } from './dto/return-user-info.dto';
 
 @Controller('user')
 export class UserController {
@@ -43,17 +44,23 @@ export class UserController {
 
   @UseGuards(JwtAuthGuard)
   @Get()
-  async findAll(@Request() req): Promise<UserModel[]> {
+  async findAll(@Request() req): Promise<ReturnUserInfoDto[]> {
     await this.authService.isPrivileged(req);
     return await this.userService.findAll({});
   }
 
   @UseGuards(JwtAuthGuard)
   @Get(':id')
-  async findOne(@Param('id') id: number,
-                @Request() req): Promise<UserModel> {
+  async findOne(@Param('id') id: number, @Request() req
+  ): Promise<ReturnUserInfoDto> {
     await this.authService.isAllowed(req, +id);
-    return await this.userService.findOne(+id);
+    var user = await this.userService.findOne(+id);
+
+    if (!user) {
+      return null;
+    }
+    const { password, ...userWithoutPassword } = user;
+    return userWithoutPassword;
   }
 
   @UseGuards(JwtAuthGuard)
