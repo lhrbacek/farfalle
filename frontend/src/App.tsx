@@ -14,10 +14,10 @@ import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
-import Layout from './components/Layout/Layout'
+import { HeaderTabs } from './components/Header/HeaderTabs'
+import FooterBar from './components/Footer/FooterBar'
 
 function App() {
-
   useEffect(() => {
     document.title = "Farfalle"
   }, [])
@@ -25,42 +25,55 @@ function App() {
   const user = false;
   const authenticatedUser = (authenticated: boolean) => {
     //TODO: there will be probably some token or smh
-    if (!authenticated) {
-      return (
-        <>
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/newcommer" element={<NewAccount />} />
-        </>
-      );
-    }
-    return (
-      <>
-        <Route path="/account" element={<Profile />} />
-        <Route path="/account/edit" element={<EditProfile />} />
-        <Route path="/account/delete" element={<DeleteAccount />} />
-        <Route path="/account/tickets" element={<ReturnTickets />} />
-        <Route path="/account/admin" element={<Admin />} />
-      </>
-    );
+    //   if (!authenticated) {
+    //     return (
+    //       <>
+    //         <Route path="/signin" element={<SignIn />} />
+    //         <Route path="/newcommer" element={<NewAccount />} />
+    //       </>
+    //     );
+    //   }
+    //   return (
+    //     <>
+    //       <Route path="/account" element={<Profile />} />
+    //       <Route path="/account/edit" element={<EditProfile />} />
+    //       <Route path="/account/delete" element={<DeleteAccount />} />
+    //       <Route path="/account/tickets" element={<ReturnTickets />} />
+    //       <Route path="/account/admin" element={<Admin />} />
+    //     </>
+    //   );
   }
 
   return (
-    <Routes>
-      <Route path="/" element={<Layout auth={user} />} >
-        <Route index element={<HomeCard />} />
-        <Route path="/home" element={<Navigate to="/" />} />
-        <Route path="/about" element={<AboutCard />} />
-        <Route path="/cart" element={<OrderPlacement />} />
 
-        <Route path="/program" element={<ProgramCard />} />
-        <Route path="/program/:id" element={<PlayCard />} />
-        <Route path="/program/booking/:id" element={<BookingCard />} />
+    <div className="page">
+      <HeaderTabs auth={user} />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<HomeCard />} />
+          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/about" element={<AboutCard />} />
+          <Route path="/cart" element={<OrderPlacement />} />
 
-        {authenticatedUser(user)}
+          <Route path="/program" element={<ProgramCard />} />
+          <Route path="/program/:id" element={<PlayCard />} />
+          <Route path="/program/booking/:id" element={<BookingCard />} />
 
-        <Route path="*" element={<NoMatchRoute />} />
-      </Route>
-    </Routes >
+          {/* {authenticatedUser(user)} */}
+
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/newcommer" element={<NewAccount />} />
+          <Route path="/account" element={<Profile />} />
+          <Route path="/account/edit" element={<EditProfile />} />
+          <Route path="/account/delete" element={<DeleteAccount />} />
+          <Route path="/account/tickets" element={<ReturnTickets />} />
+          <Route path="/account/admin" element={<Admin />} />
+
+          <Route path="*" element={<NoMatchRoute />} />
+        </Routes>
+      </div>
+      <FooterBar />
+    </div>
   )
 }
 
