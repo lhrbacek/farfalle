@@ -3,17 +3,21 @@ import { PrismaService } from 'src/prisma.service';
 import { User, Prisma } from '@prisma/client';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { ReturnUserInfoDto } from './dto/return-user-info.dto';
 
 @Injectable()
 export class UserService {
   constructor(private prisma: PrismaService) {}
 
   async findOne(id?: number, email?: string): Promise<User | null> {
+    if (email) {
+      return await this.prisma.user.findUnique({
+        where: { email: email }
+      });
+    }
+
     return await this.prisma.user.findUnique({
-      where: {
-        id: id,
-        email: email,
-      },
+      where: { id: id },
     });
   }
 
@@ -23,9 +27,20 @@ export class UserService {
     cursor?: Prisma.UserWhereUniqueInput;
     where?: Prisma.UserWhereInput;
     orderBy?: Prisma.UserOrderByWithRelationInput;
-  }): Promise<User[]> {
+  }): Promise<ReturnUserInfoDto[]> {
     const { skip, take, cursor, where, orderBy } = params;
     return await this.prisma.user.findMany({
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        surname: true,
+        password: false,
+        role: true,
+        addressId: true,
+        address: false,
+        orders: false,
+      },
       skip,
       take,
       cursor,
@@ -38,6 +53,7 @@ export class UserService {
     return await this.prisma.user.create({
       data: {
         ...createUserDto,
+        role: 'USER',
         address: { connect: { id: createUserDto.address } },
       },
     });

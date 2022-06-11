@@ -6,37 +6,48 @@ import {
   Patch,
   Param,
   Delete,
+  Request,
+  UseGuards,
 } from '@nestjs/common';
 import { OrderService } from './order.service';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';
+import { AuthService } from 'src/auth/auth.service';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
+// TODO
 @Controller('order')
 export class OrderController {
-  constructor(private readonly orderService: OrderService) {}
+  constructor(
+    private readonly orderService: OrderService,
+    private readonly authService: AuthService,
+  ) {}
 
   @Post()
-  create(@Body() createOrderDto: CreateOrderDto) {
-    return this.orderService.create(createOrderDto);
+  async create(@Body() createOrderDto: CreateOrderDto) {
+    return await this.orderService.create(createOrderDto);
   }
 
   @Get()
-  findAll() {
-    return this.orderService.findAll();
+  async findAll() {
+    return await this.orderService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: number) {
-    return this.orderService.findOne(+id);
+  async findOne(@Param('id') id: number) {
+    return await this.orderService.findOne(+id);
   }
 
+  // TODO
   @Patch(':id')
-  update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
-    return this.orderService.update(+id, updateOrderDto);
+  async update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
+    return await this.orderService.update(+id, updateOrderDto);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  remove(@Param('id') id: number) {
-    return this.orderService.remove(+id);
+  async remove(@Param('id') id: number, @Request() req,) {
+    await this.authService.isPrivileged(req);
+    return await this.orderService.remove(+id);
   }
 }
