@@ -39,13 +39,12 @@ function SignInCard(props: SignInProps) {
   }
 
   const SignUserIn = async (values: SignUser) => {
-    let user = undefined;
     let hash = '';
     let isAdmin: boolean;
     setSignError(false);
-    // TODO: find user according to email in database
+
     // LOGIN, POST on url below with object {email: "", password: ""}
-    // no hash, hash password must be put on login screen
+    // no hash, hash password must be put on login screen, TODO
     await fetch(`http://0.0.0.0:4000/auth/login`, {
       credentials: 'include',
       method: "POST",
@@ -53,25 +52,20 @@ function SignInCard(props: SignInProps) {
       body: JSON.stringify({
         ...values,
       }),
-    }).then((response) => {
-      if (response.status == 409) {
-
-      } else if (response.status == 401) {
-
-      } else if (!(response.ok)) {
-
-      } else {
-
+    }).then(response => {
+      if (!(response.ok)) {
+        setSignError(true);
+        return;
       }
-      response.json().then((data) => {
-        user = data.userId
+      response.json().then(data => {
+        if (!data.userId) {
+          setSignError(true);
+          return;
+        }
+        localStorage.setItem("userId", data.userId);
       })
     });
 
-    if (user == undefined) {
-      setSignError(true);
-      return;
-    }
     // TODO: update global state
     // navigate(from, { replace:true }); // after login navigate where the user wanted to go
     // what is this
