@@ -13,10 +13,14 @@ import { Play as PlayModel } from '@prisma/client';
 import { CreatePlayDto } from './dto/create-play.dto';
 import { UpdatePlayDto } from './dto/update-play.dto';
 import { PlayWithPerformancesDto } from './dto/play-performances.dto';
+import { AuthService } from 'src/auth/auth.service';
 
 @Controller('play')
 export class PlayController {
-  constructor(private readonly playService: PlayService) {}
+  constructor(
+    private readonly playService: PlayService,
+    private readonly authService: AuthService,
+  ) {}
 
   @Post()
   async create(@Body() createPlayDto: CreatePlayDto): Promise<PlayModel> {
