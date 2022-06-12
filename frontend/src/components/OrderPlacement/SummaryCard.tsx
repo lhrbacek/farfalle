@@ -38,7 +38,24 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
       return;
     }
 
-    // Update database with currently conformed tickets
+    // create order in database
+    await fetch(`http://localhost:4000/order`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        email: userInfo.email,
+        tickets: confirmedTickets,
+        adress: 0, // TODO
+        // user?: ?,
+      }),
+    }).then((response) => {
+      if (!(response.ok)) {
+        setFatalError(true);
+        return;
+      }
+    });
+
+    // Update database with currently confirmed tickets
     for (let i = 0; i < confirmedTickets.length; i++) {
       await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
         method: "PATCH",
