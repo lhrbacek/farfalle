@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Text } from '@mantine/core';
+import { Container } from '@mantine/core';
 import ChooseTicketsCard from './ChooseTicketsCard';
 import ConfirmTicketsCard from './ConfirmTicketsCard';
 import ReturnTicketsConfirmation from './ReturnConfirmationCard';

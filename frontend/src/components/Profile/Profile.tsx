@@ -1,4 +1,4 @@
-import { Container, Stack, Text, Button, Card, Paper, Title, Divider, Group } from '@mantine/core';
+import { Container, Stack, Text, Button, Card, Paper, Title, Divider, Group, createStyles } from '@mantine/core';
 import PurchasedTicket from './PurchasedTicket';
 import { user } from '../../data/user'
 import { Link } from 'react-router-dom';
@@ -10,7 +10,23 @@ import useSWR from 'swr';
 
 // TODO: Make better user type
 
+const useStyles = createStyles((theme) => ({
+
+  group: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-start'
+  },
+
+  innerGroup: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start'
+  }
+}));
+
 function Profile() {
+  const { classes } = useStyles();
   useEffect(() => {
     document.title = "Farfalle | Account"
   }, [])
@@ -30,7 +46,7 @@ function Profile() {
 
   return (
     <Container>
-      <Group position={'center'} align={'start'}>
+      <Group className={classes.group}>
         <Paper withBorder shadow="md" p={30} radius="md">
           <Stack>
             <Title>{data?.name} {data?.surname}</Title>
@@ -50,8 +66,8 @@ function Profile() {
             </Button>
           </Stack>
         </Paper>
-        <Stack justify="space-between">
-          <Stack justify="space-between">
+        <Stack className={classes.innerGroup}>
+          <Stack>
             {/* {user.orders.map((ticket) => <PurchasedTicket key={ticket.id} {...ticket} />)} */}
             TODO
           </Stack>

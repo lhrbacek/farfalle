@@ -25,10 +25,9 @@ export function HomeCard() {
   const indexOfFirstPlay = indexOfLastPlay - playPerPage < 0 ? 0 : indexOfLastPlay - playPerPage;
   const currentPlays = plays.slice(indexOfFirstPlay, indexOfLastPlay);
 
-
   return (
     <Container>
-      <Title order={1} >Welcome to Farfalle!</Title>
+      <Title order={2}>Our current repertoire</Title>
       <Divider my="sm" />
       <Stack spacing="xs">
         {currentPlays.map((play: Play) => <PlayItem key={play.id} {...play} />)}

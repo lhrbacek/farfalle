@@ -14,6 +14,34 @@ const useStyles = createStyles((theme) => ({
     }
   },
 
+  group: {
+    display: 'flex',
+    alignItems: 'center',
+
+    [theme.fn.largerThan('sm')]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+
+    [theme.fn.smallerThan('md')]: {
+      flexDirection: 'column',
+    },
+  },
+
+  innerGroup: {
+    alignItems: 'baseline',
+    display: 'flex',
+
+    [theme.fn.smallerThan('md')]: {
+      alignItems: 'center',
+    },
+
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+  },
+
   buttonAbout: {
     borderRadius: 0,
     borderTopLeftRadius: theme.radius.sm,
@@ -34,9 +62,9 @@ export function LongPerformanceItem(performance: Performance) {
 
   return (
     <Card shadow="sm" p="lg" className={classes.card}>
-      <Group position="apart">
+      <Group className={classes.group}>
         <Title order={2} >{performance.play.name}</Title>
-        <Group>
+        <Group className={classes.innerGroup}>
           <Text size="sm">{performance.venue.name}</Text>
           <Text size="lg">{format(new Date(performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Group spacing={0}>

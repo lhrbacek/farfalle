@@ -64,7 +64,7 @@ export function HeaderTabs(props: { auth: boolean }) {
       </Container>
       <Container>
         <Button
-          className={location.pathname == "/home" ? classes.menuButtonClicked : classes.menuButton}
+          className={location.pathname == "/" ? classes.menuButtonClicked : classes.menuButton}
           component={Link}
           to="/home"
           variant="subtle"

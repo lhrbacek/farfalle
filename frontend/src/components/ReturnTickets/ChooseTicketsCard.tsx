@@ -1,4 +1,4 @@
-import { Button, Center, Container, Group, Pagination, Stack } from '@mantine/core';
+import { Button, Center, Container, createStyles, Group, Pagination, Stack } from '@mantine/core';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Ticket } from '../../types/ticket';
