@@ -4,10 +4,10 @@ import { Ticket } from '../../types/ticket';
 import { CircleMinus } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { cartStateSelector } from '../../state/Selector';
-import { cartState } from '../../state/Atom';
+import { cartStateSelector } from '../../state/CartStateSelector';
+import { cartState } from '../../state/CartState';
 import { format } from 'date-fns';
-import { reservationTime } from '../../state/reservationTime';
+import { filterCart, reservationTime } from '../../state/reservationTime';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -72,7 +72,18 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
         const now = new Date();
         setCartState(cart.filter((item) => (item.reservedAt == undefined ? false : (now.getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime)));
       }
+      setCartState(filterCart(cart));
     }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCartState(filterCart(cart));
+    }, 5000);
 
     return () => {
       clearInterval(timer);

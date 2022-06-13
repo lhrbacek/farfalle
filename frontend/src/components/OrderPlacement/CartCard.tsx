@@ -4,9 +4,9 @@ import OrderTicketItem from './OrderTicketItem';
 import { Trash, X } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { cartState } from '../../state/Atom';
-import { cartStateSelector } from '../../state/Selector';
-import { reservationTime } from '../../state/reservationTime';
+import { cartState } from '../../state/CartState';
+import { cartStateSelector } from '../../state/CartStateSelector';
+import { filterCart, reservationTime } from '../../state/reservationTime';
 
 export interface CartCardProps {
   prevPhase: Function;
@@ -18,7 +18,7 @@ export interface CartCardProps {
 
 export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: CartCardProps) {
   const [page, setPage] = useState(1);
-  const cart = useRecoilValue(cartStateSelector);
+  const cart = filterCart(useRecoilValue(cartStateSelector));
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
@@ -50,7 +50,7 @@ export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: 
 
   const nextStep = () => {
     setEmptyCart(false);
-    const currentTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    const currentTickets = filterCart(cart);
     if (currentTickets.length == 0) {
       setEmptyCart(true);
       return;

@@ -1,7 +1,6 @@
 import { ActionIcon, Container, createStyles } from '@mantine/core';
 import { reservationTime } from '../../state/reservationTime';
 import { Ticket } from '../../types/ticket';
-import './bookingcard.css'
 
 const useStyles = createStyles((theme) => ({
   seatFree: {

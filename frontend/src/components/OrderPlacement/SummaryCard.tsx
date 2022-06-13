@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { UserInfo } from './OrderPlacement';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { cartStateSelector } from '../../state/Selector';
-import { cartState } from '../../state/Atom';
+import { cartStateSelector } from '../../state/CartStateSelector';
+import { cartState } from '../../state/CartState';
 import { X } from 'tabler-icons-react';
-import { reservationTime } from '../../state/reservationTime';
+import { filterCart, reservationTime } from '../../state/reservationTime';
 
 interface SummaryProps {
   prevPhase: Function;
@@ -32,7 +32,7 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
 
   const confirmOrder = async () => {
     setEmptyCart(false);
-    const confirmedTickets = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+    const confirmedTickets = filterCart(cart);
     if (confirmedTickets.length == 0) {
       setEmptyCart(true);
       return;

@@ -1,13 +1,13 @@
 import { selector } from "recoil";
-import { cartState } from "./Atom";
+import { cartState } from "./CartState";
 import { reservationTime } from "./reservationTime";
 
 export const cartStateSelector = selector({
     key: "cartStateSelector",
     get: ({ get }) => {
       const cart = get(cartState);
-      const now = new Date();
-      return cart.filter((item) => (item.reservedAt == undefined ? false : (now.getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+      //const current = cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime));
+      return cart;
     },
 });
 
