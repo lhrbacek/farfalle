@@ -98,7 +98,8 @@ export function BookingCard() {
       <Text>Date: {format(new Date(performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
       {
         bookingPhase == 0 ?
-          <BookingTickets seats={performance.tickets} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} confirmSeats={confirmSeats} totalPrice={price} /> :
+          <BookingTickets seats={performance.tickets} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle}
+            confirmSeats={confirmSeats} totalPrice={price} columns={performance.venue.cols} /> :
           <></>
       }
 

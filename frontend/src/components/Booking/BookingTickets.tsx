@@ -24,9 +24,10 @@ interface BookingTicketsProps {
   tableStyle: any;
   confirmSeats: Function;
   totalPrice: number;
+  columns: number;
 }
 
-function BookingTickets({ seats, bookedSeats, bookSeat, tableStyle, confirmSeats, totalPrice }: BookingTicketsProps) {
+function BookingTickets({ seats, bookedSeats, bookSeat, tableStyle, confirmSeats, totalPrice, columns }: BookingTicketsProps) {
   const { classes } = useStyles();
 
   return (
@@ -35,10 +36,10 @@ function BookingTickets({ seats, bookedSeats, bookSeat, tableStyle, confirmSeats
       <Divider size="xl" label="Stage" labelPosition="center" />
 
       <ScrollArea className={classes.screenScrolling}>
-        <SeatsGrid values={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} />
+        <SeatsGrid seats={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} columns={columns} />
       </ScrollArea>
       <Center className={classes.screenNoScrolling}>
-        <SeatsGrid values={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} />
+        <SeatsGrid seats={seats} bookedSeats={bookedSeats} bookSeat={bookSeat} tableStyle={tableStyle} columns={columns} />
       </Center>
 
       <Container>

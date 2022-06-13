@@ -3,6 +3,14 @@ import { reservationTime } from '../../state/reservationTime';
 import { Ticket } from '../../types/ticket';
 import './bookingcard.css'
 
+interface BookingTicketsProps {
+  seats: Ticket[];
+  bookedSeats: number[];
+  bookSeat: Function;
+  tableStyle: any;
+  columns: number;
+}
+
 /* --- Component for seats --- */
 /* @values      data from database
   * @ bookedSeat seats array booked in current session
@@ -10,12 +18,12 @@ import './bookingcard.css'
   * 2. draw button
   *      a. if seat is already booked in current session - unbook the seat and remove from array
   *      b. otherwise book and add to bookedSeats array*/
-function SeatsGrid(props: { values: Ticket[], bookedSeats: number[], bookSeat: Function, tableStyle: any }) {
+function SeatsGrid({ seats, bookedSeats, bookSeat, tableStyle, columns }: BookingTicketsProps) {
   return (
-    <Container style={props.tableStyle}>
-      {props.values.map(seat => {
+    <Container style={tableStyle}>
+      {seats.map(seat => {
         const now = Date.now();
-        let seatStatus = props.bookedSeats.includes(seat.id) ? "seat seat__chosen" : "seat seat__free";
+        let seatStatus = bookedSeats.includes(seat.id) ? "seat seat__chosen" : "seat seat__free";
         if ((seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD") { // ticket is reserved no longer than 30 minutes
           seatStatus = "seat seat__full";
         }
@@ -25,10 +33,10 @@ function SeatsGrid(props: { values: Ticket[], bookedSeats: number[], bookSeat: F
             className={seatStatus}
             key={seat.id}
             type="button"
-            onClick={() => props.bookSeat(seat.id, seat.price, props.bookedSeats)}
+            onClick={() => bookSeat(seat.id, seat.price, bookedSeats)}
             disabled={((seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD")}
           >
-            {seat.id}
+            {seat.seat + (seat.row - 1) * columns}
           </Button>
         );
       })}
