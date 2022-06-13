@@ -10,6 +10,12 @@ import { AuthService } from 'src/auth/auth.service';
 @Module({
   imports: [AuthModule],
   controllers: [PlayController],
-  providers: [PlayService, PrismaService, PerformanceService, VenueService, AuthService],
+  providers: [
+    PlayService,
+    PrismaService,
+    PerformanceService,
+    VenueService,
+    AuthService,
+  ],
 })
 export class PlaysModule {}

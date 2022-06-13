@@ -25,8 +25,10 @@ export class VenueController {
 
   @UseGuards(JwtAuthGuard)
   @Post()
-  async create(@Body() createVenueDto: CreateVenueDto,
-               @Request() req): Promise<VenueModel> {
+  async create(
+    @Body() createVenueDto: CreateVenueDto,
+    @Request() req,
+  ): Promise<VenueModel> {
     await this.authService.isPrivileged(req);
     return await this.venueService.create(createVenueDto);
   }
@@ -54,8 +56,7 @@ export class VenueController {
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async remove(@Param('id') id: number,
-               @Request() req) {
+  async remove(@Param('id') id: number, @Request() req) {
     await this.authService.isPrivileged(req);
     return await this.venueService.delete(id);
   }

@@ -1,5 +1,15 @@
-import { Controller, Get, Request, Post, Body,
-  Patch, Param, Delete, HttpException, HttpStatus, } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Request,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
 import { UserService } from './user.service';
 import { User as UserModel } from '@prisma/client';
 import { CreateUserWithAddressDto } from './dto/create-user-with-address.dto';
@@ -22,14 +32,19 @@ export class UserController {
   async create(
     @Body() createUserWithAddressDto: CreateUserWithAddressDto,
   ): Promise<UserModel> {
-    const emailInUse = await this.userService.findOne(null,
-      createUserWithAddressDto.email);
+    const emailInUse = await this.userService.findOne(
+      null,
+      createUserWithAddressDto.email,
+    );
 
     if (emailInUse) {
-      throw new HttpException({
-        status: HttpStatus.CONFLICT, //409
-        error: 'This email is already registered',
-      }, HttpStatus.CONFLICT);
+      throw new HttpException(
+        {
+          status: HttpStatus.CONFLICT, //409
+          error: 'This email is already registered',
+        },
+        HttpStatus.CONFLICT,
+      );
     }
     const address = await this.addressService.create({
       ...createUserWithAddressDto,
@@ -51,10 +66,12 @@ export class UserController {
 
   @UseGuards(JwtAuthGuard)
   @Get(':id')
-  async findOne(@Param('id') id: number, @Request() req
+  async findOne(
+    @Param('id') id: number,
+    @Request() req,
   ): Promise<ReturnUserInfoDto> {
     await this.authService.isAllowed(req, +id);
-    var user = await this.userService.findOne(+id);
+    const user = await this.userService.findOne(+id);
 
     if (!user) {
       return null;
@@ -76,8 +93,7 @@ export class UserController {
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async delete(@Param('id') id: number,
-               @Request() req): Promise<UserModel> {
+  async delete(@Param('id') id: number, @Request() req): Promise<UserModel> {
     await this.authService.isAllowed(req, +id);
     return await this.userService.delete(+id);
   }

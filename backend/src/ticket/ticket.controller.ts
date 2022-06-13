@@ -23,13 +23,15 @@ import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 export class TicketController {
   constructor(
     private readonly ticketService: TicketService,
-    private readonly authService: AuthService
+    private readonly authService: AuthService,
   ) {}
 
   @UseGuards(JwtAuthGuard)
   @Post()
-  async create(@Body() createTicketDto: CreateTicketDto,
-               @Request() req): Promise<TicketModel> {
+  async create(
+    @Body() createTicketDto: CreateTicketDto,
+    @Request() req,
+  ): Promise<TicketModel> {
     await this.authService.isPrivileged(req);
     return await this.ticketService.create(createTicketDto);
   }
@@ -57,8 +59,7 @@ export class TicketController {
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async delete(@Param('id') id: number,
-               @Request() req): Promise<TicketModel> {
+  async delete(@Param('id') id: number, @Request() req): Promise<TicketModel> {
     await this.authService.isPrivileged(req);
     return await this.ticketService.delete(+id);
   }
