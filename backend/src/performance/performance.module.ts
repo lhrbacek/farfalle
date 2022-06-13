@@ -10,6 +10,12 @@ import { PerformanceService } from './performance.service';
 @Module({
   imports: [AuthModule],
   controllers: [PerformanceController],
-  providers: [PerformanceService, VenueService, TicketService, PrismaService, AuthService],
+  providers: [
+    PerformanceService,
+    VenueService,
+    TicketService,
+    PrismaService,
+    AuthService,
+  ],
 })
 export class PerformanceModule {}

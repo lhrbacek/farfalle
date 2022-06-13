@@ -55,7 +55,7 @@ export class PlayController {
   async update(
     @Param('id') id: number,
     @Body() updatePlayDto: UpdatePlayDto,
-    @Request() req
+    @Request() req,
   ) {
     await this.authService.isPrivileged(req);
     return await this.playService.update(id, updatePlayDto);
@@ -63,10 +63,7 @@ export class PlayController {
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async remove(
-    @Param('id') id: number,
-    @Request() req,
-  ) {
+  async remove(@Param('id') id: number, @Request() req) {
     await this.authService.isPrivileged(req);
     return await this.playService.delete(id);
   }

@@ -40,13 +40,16 @@ export class OrderController {
 
   // TODO
   @Patch(':id')
-  async update(@Param('id') id: number, @Body() updateOrderDto: UpdateOrderDto) {
+  async update(
+    @Param('id') id: number,
+    @Body() updateOrderDto: UpdateOrderDto,
+  ) {
     return await this.orderService.update(+id, updateOrderDto);
   }
 
   @UseGuards(JwtAuthGuard)
   @Delete(':id')
-  async remove(@Param('id') id: number, @Request() req,) {
+  async remove(@Param('id') id: number, @Request() req) {
     await this.authService.isPrivileged(req);
     return await this.orderService.remove(+id);
   }

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
-import { Play, Prisma } from '@prisma/client';
+import { Play } from '@prisma/client';
 import { CreatePlayDto } from './dto/create-play.dto';
 import { UpdatePlayDto } from './dto/update-play.dto';
 import { PlayWithPerformancesDto } from './dto/play-performances.dto';
