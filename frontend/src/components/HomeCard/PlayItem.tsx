@@ -6,16 +6,33 @@ const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[2],
     ':hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[1],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.red[3],
     }
   },
 
   group: {
+    display: 'flex',
     alignItems: 'center',
+
+    [theme.fn.largerThan('sm')]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: 'column',
+      justifyContent: 'flex-start',
+    },
   },
 
   innerGroup: {
     alignItems: 'baseline',
+    display: 'flex',
+
+    [theme.fn.smallerThan('sm')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
   },
 
   buttonAbout: {
@@ -29,13 +46,12 @@ export function PlayItem(props: Play) {
 
   return (
     <Card shadow="sm" p="lg" className={classes.card}>
-      <Group position="apart" className={classes.group}>
+      <Group className={classes.group}>
         <Group className={classes.innerGroup}>
           <Title order={2}>{props.name}</Title>
         </Group>
-        <Group>
-          <Text>Directed by</Text>
-          <Text weight={500}>{props.director}</Text>
+        <Group className={classes.innerGroup}>
+          <Text>Directed by {props.director}</Text>
           <Button variant="default" color='white' component={Link} to={`/program/${idPlay}`}>
             About play
           </Button>

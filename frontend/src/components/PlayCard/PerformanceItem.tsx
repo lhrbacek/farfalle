@@ -15,11 +15,29 @@ const useStyles = createStyles((theme) => ({
   },
 
   group: {
-    alignItems: 'center',
+    display: 'flex',
+
+    [theme.fn.largerThan('sm')]: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+
+    [theme.fn.smallerThan('md')]: {
+      flexDirection: 'column',
+    },
   },
 
   innerGroup: {
     alignItems: 'baseline',
+    display: 'flex',
+
+    [theme.fn.smallerThan('md')]: {
+    },
+
+    [theme.fn.smallerThan('xs')]: {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
   },
 
   button: {
