@@ -1,5 +1,5 @@
 import { StatusTicket } from '@prisma/client';
-import { IsDate, IsOptional, IsPositive } from 'class-validator';
+import { IsDateString, IsOptional, IsPositive } from 'class-validator';
 
 export class UpdateTicketDto {
   @IsOptional()
@@ -10,6 +10,6 @@ export class UpdateTicketDto {
   status?: StatusTicket;
 
   @IsOptional()
-  @IsDate()
+  @IsDateString()
   reservedAt: Date;
 }

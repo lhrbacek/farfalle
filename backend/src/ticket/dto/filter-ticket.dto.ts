@@ -1,8 +1,8 @@
-import { IsDate, IsInt, IsOptional, IsPositive } from 'class-validator';
+import { IsDateString, IsInt, IsOptional, IsPositive } from 'class-validator';
 
 export class FilterTicketDto {
   @IsOptional()
-  @IsDate()
+  @IsDateString()
   from?: Date;
 
   @IsOptional()
