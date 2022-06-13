@@ -22,7 +22,7 @@ export class OrderService {
           }),
         },
         user: { connect: { id: createOrderDto.user } },
-        address: { connect: { id: createOrderDto.adress } },
+        address: { connect: { id: createOrderDto.address } },
       },
     });
   }
