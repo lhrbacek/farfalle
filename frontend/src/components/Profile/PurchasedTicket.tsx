@@ -1,6 +1,7 @@
 import { Group, Text, createStyles } from '@mantine/core';
+import { format } from 'date-fns';
 import React from 'react';
-import { TicketProps } from '../../types/ticket_old';
+import { Ticket } from '../../types/ticket';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -12,19 +13,19 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function PurchasedTicket(ticket: TicketProps) {
+export function PurchasedTicket(ticket: Ticket) {
   const { classes } = useStyles();
 
   return (
     <div className={classes.wrapper}>
       <Group position="apart">
         <Group>
-          <Text weight={700}>{ticket.name}</Text>
-          <Text >{ticket.time}, {ticket.date}</Text>
+          <Text weight={700}>{ticket.performance.play.name}</Text>
+          <Text >{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
         </Group>
         <Group>
           <Text color="gray">Row: {ticket.row}</Text>
-          <Text color="gray">Seat: {ticket.col}</Text>
+          <Text color="gray">Seat: {ticket.seat}</Text>
         </Group>
       </Group>
     </div>
