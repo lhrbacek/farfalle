@@ -30,12 +30,20 @@ export class UserController {
 
   @Post()
   async create(
-    @Body() createUserWithAddressDto: CreateUserWithAddressDto,
+    @Body()
+    {
+      email,
+      name,
+      surname,
+      password,
+      addressName,
+      street,
+      number,
+      zip,
+      city,
+    }: CreateUserWithAddressDto,
   ): Promise<UserModel> {
-    const emailInUse = await this.userService.findOne(
-      null,
-      createUserWithAddressDto.email,
-    );
+    const emailInUse = await this.userService.findOne(null, email);
 
     if (emailInUse) {
       throw new HttpException(
@@ -47,12 +55,18 @@ export class UserController {
       );
     }
     const address = await this.addressService.create({
-      ...createUserWithAddressDto,
-      name: createUserWithAddressDto.addressName,
+      street: street,
+      number: +number,
+      zip: +zip,
+      city: city,
+      name: addressName,
     });
 
     return await this.userService.create({
-      ...createUserWithAddressDto,
+      email: email,
+      name: name,
+      surname: surname,
+      password: password,
       address: address.id,
     });
   }

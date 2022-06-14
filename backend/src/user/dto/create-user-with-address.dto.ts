@@ -1,14 +1,8 @@
-import {
-  IsEmail,
-  IsInt,
-  IsNotEmpty,
-  IsPositive,
-  IsPostalCode,
-  MaxLength,
-} from 'class-validator';
+import { Type } from 'class-transformer';
+import { IsInt, IsNotEmpty, IsPositive, MaxLength } from 'class-validator';
 
 export class CreateUserWithAddressDto {
-  @IsEmail()
+  @IsNotEmpty()
   @MaxLength(254)
   email: string;
 
@@ -31,11 +25,14 @@ export class CreateUserWithAddressDto {
   @MaxLength(100)
   street: string;
 
+  @Type(() => Number)
   @IsInt()
   @IsPositive()
   number: number;
 
-  @IsPostalCode()
+  @Type(() => Number)
+  @IsInt()
+  @IsPositive()
   zip: number;
 
   @MaxLength(50)
