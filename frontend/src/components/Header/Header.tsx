@@ -38,7 +38,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function HeaderTabs() {
+export function Header() {
   const { classes } = useStyles();
   const location = useLocation();
 
@@ -61,8 +61,7 @@ export function HeaderTabs() {
             </Text>
           </Group>
 
-          {/* <BurgerMenu /> */}
-          <UserMenu auth={isLogged} />
+          <UserMenu />
 
         </Group>
       </Container>

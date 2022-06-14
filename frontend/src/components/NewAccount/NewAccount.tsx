@@ -6,16 +6,16 @@ import CreateAccountCard from './CreateAccountCard';
 function NewAccount() {
   const [phase, setPhase] = useState(0);
 
-  const NewAccountPhase = (phase: number) => {
+  const NewAccountPhase = () => {
     if (phase == 0) {
-      return (<CreateAccountCard setPhase={setPhase}/>);
+      return (<CreateAccountCard setPhase={setPhase} />);
     }
     return (<AccountCreatedCard />);
   }
 
   return (
     <Container size={420} my={40}>
-      {NewAccountPhase(phase)}
+      <NewAccountPhase />
     </Container>
   );
 }

@@ -14,7 +14,7 @@ import ReturnTickets from './components/ReturnTickets/ReturnTickets'
 import Admin from './components/Profile/Admin'
 import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
-import { HeaderTabs } from './components/Header/HeaderTabs'
+import { Header } from './components/Header/Header'
 import FooterBar from './components/Footer/FooterBar'
 import RequireAuth from './components/RequireAuth/RequireAuth'
 
@@ -48,7 +48,7 @@ function App() {
   return (
 
     <div className="page">
-      <HeaderTabs />
+      <Header />
       <div className="content">
         <Routes>
           <Route path="/" element={<HomeCard />} />

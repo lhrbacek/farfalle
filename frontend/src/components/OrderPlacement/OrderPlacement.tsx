@@ -39,7 +39,7 @@ export const OrderPlacement = () => {
     document.title = "Farfalle | Cart"
   }, [])
 
-  const getOrderPlacement = (fatalError: boolean) => {
+  const OrderPlacementCard = () => {
     if (!fatalError) {
       return (
         <Stepper color="dark" active={active} onStepClick={setActive} breakpoint="sm">
@@ -65,7 +65,7 @@ export const OrderPlacement = () => {
 
   return (
     <Container>
-      {getOrderPlacement(fatalError)}
+      <OrderPlacementCard />
     </Container>
   );
 };

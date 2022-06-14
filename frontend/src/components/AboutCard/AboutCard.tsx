@@ -1,4 +1,4 @@
-import { Container, Divider, Text, Title } from '@mantine/core';
+import { Accordion, Container, Divider, Stack, Text, Title } from '@mantine/core';
 import { useEffect } from 'react';
 
 function AboutCard() {
@@ -11,16 +11,12 @@ function AboutCard() {
     <Container>
       <Title order={2}>About Farfalle</Title>
       <Text>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-        Sed ac dolor sit amet purus malesuada congue. Sed convallis magna eu sem.
-        Aliquam erat volutpat. In convallis. Praesent dapibus.
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tempor.
-        In sem justo, commodo ut, suscipit at, pharetra vitae, orci.
-        Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus.
-        Sed convallis magna eu sem. Nullam rhoncus aliquam metus. Aliquam erat volutpat.
-        Integer in sapien. Integer malesuada. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.
+        Our application was developed to provide users with a convenient way to purchase tickets for theater performances.
+        We hope we can help you achieve a theatrical experience in every situation!
       </Text>
-      <Divider my="sm" variant="dotted" />
+
+      <Divider my="sm" />
+
       <Title order={3}>Contact</Title>
       <Text>
         37 Sulphur Springs Court
@@ -29,6 +25,24 @@ function AboutCard() {
         Norwood, MA 02062
       </Text>
 
+      <Divider my="sm" />
+
+      <Stack>
+        <Title order={3}>FAQ</Title>
+        <Accordion>
+          <Accordion.Item label="Seat is not available.">
+            The ticket can be purchased by another user, at this time it will not be possible for you to purchase the ticket.
+          </Accordion.Item>
+
+          <Accordion.Item label="My ticket has disappeared from the cart.">
+            You only have the ticket booked for 30 minutes, after which time the ticket will disappear from the cart.
+          </Accordion.Item>
+
+          <Accordion.Item label="I want to return the purchased ticket.">
+            Only registered users can return purchased tickets.
+          </Accordion.Item>
+        </Accordion>
+      </Stack>
     </Container>
   )
 }
