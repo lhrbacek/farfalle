@@ -1,6 +1,5 @@
 export const plays = [
   {
-    id: 1,
     name: 'The Gamer',
     description:
       'Is this still Dostoyevsky? Is this still theatre? This is a production by the controversial director Michal Hába based on Dostoyevsky’s novella. Russian ecstasy, European provocation. And what came first – the chicken or the egg?',
@@ -10,7 +9,6 @@ export const plays = [
     director: 'Michal Hába',
   },
   {
-    id: 2,
     name: 'Carmen',
     description:
       'Carmen: a woman ablaze with passion, surrounded by men possessed by obsession and jealousy. One of opera’s most well-known characters sets herself on a road to tragedy when she meets Don José, a corporal in the army searching for love.',
@@ -20,7 +18,6 @@ export const plays = [
     director: 'Jamie Manton',
   },
   {
-    id: 3,
     name: 'La tríada: contra el diàleg',
     description:
       'When we talk about “dialogue” as the only way of solving all the problems of the world today, what are we talking about precisely? What exactly does dialogue mean? How does one hold dialogue within the context of an increasingly individualised and polarised society? Or perhaps the real problem is words, this blind and absolute faith in words?',

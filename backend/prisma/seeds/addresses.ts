@@ -1,14 +1,5 @@
 export const addresses = [
   {
-    id: 0,
-    name: 'Admin Adminovy',
-    street: 'Farfalle',
-    number: 42,
-    zip: 60200,
-    city: 'Brno',
-  },
-  {
-    id: 1,
     name: 'Eugenio Gutiérrez',
     street: 'Calle de Lagasca',
     number: 67,
@@ -16,7 +7,6 @@ export const addresses = [
     city: 'Madrid',
   },
   {
-    id: 2,
     name: 'Luis Martínez',
     street: 'C/ de Fernán González',
     number: 27,
@@ -24,7 +14,6 @@ export const addresses = [
     city: 'Madrid',
   },
   {
-    id: 3,
     name: 'Apartamento Madrid Mendez Alvaro',
     street: 'Calle del Tejo',
     number: 14,
@@ -32,7 +21,6 @@ export const addresses = [
     city: 'Madrid',
   },
   {
-    id: 4,
     name: 'Noelia Guerrero',
     street: 'C. Cuatro Santos',
     number: 29,
@@ -40,7 +28,6 @@ export const addresses = [
     city: 'Cartagena',
   },
   {
-    id: 5,
     name: 'Fabiola Méndez',
     street: 'Colonia de San Conrado',
     number: 20,
@@ -48,7 +35,6 @@ export const addresses = [
     city: 'Granada',
   },
   {
-    id: 6,
     name: 'Daniel Montero',
     street: 'Rambla de la Llibertat',
     number: 33,
@@ -56,7 +42,6 @@ export const addresses = [
     city: 'Girona',
   },
   {
-    id: 7,
     name: 'El Soldadito de Plomo',
     street: 'C. Principe de Vergara',
     number: 1,
@@ -64,7 +49,6 @@ export const addresses = [
     city: 'Cartagena',
   },
   {
-    id: 8,
     name: 'Dolores Gómez',
     street: 'Guridi Kalea',
     number: 15,
@@ -72,11 +56,17 @@ export const addresses = [
     city: 'Barakaldo',
   },
   {
-    id: 9,
     name: 'Dorotea Domínguez',
     street: 'C. Rosario Pereda',
     number: 31,
     zip: 47007,
     city: 'Valladolid',
+  },
+  {
+    name: 'Admin Adminovy',
+    street: 'Farfalle',
+    number: 42,
+    zip: 60200,
+    city: 'Brno',
   },
 ];
