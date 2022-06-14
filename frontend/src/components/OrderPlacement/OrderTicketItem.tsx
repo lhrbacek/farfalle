@@ -62,7 +62,7 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
   const { classes } = useStyles();
 
   const reservationDate: Date = ticket.reservedAt == undefined ? new Date() : new Date(ticket.reservedAt);
-  var newDateObj = new Date(reservationDate.getTime() + reservationTime);
+  let newDateObj = new Date(reservationDate.getTime() + reservationTime);
 
   useEffect(() => {
     const timer = setInterval(() => {

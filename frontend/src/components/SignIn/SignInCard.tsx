@@ -2,8 +2,10 @@ import { Container, Title, Text, Paper, TextInput, PasswordInput, Button, Notifi
 import { useForm } from '@mantine/form';
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
 import { X } from 'tabler-icons-react';
 import { API_URL } from '../../models/fetcher';
+import { userIdState } from '../../state/UserIdState';
 
 interface SignUser {
   email: string,
@@ -15,6 +17,7 @@ interface SignInProps {
 }
 
 function SignInCard(props: SignInProps) {
+  const [userId, setUserId] = useRecoilState(userIdState);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -57,14 +60,15 @@ function SignInCard(props: SignInProps) {
       if (!(response.ok)) {
         setSignError(true);
         return;
+      } else {
+        response.json().then(data => {
+          if (!data.userId) {
+            setSignError(true);
+            return;
+          }
+          setUserId(data.userId)
+        })
       }
-      response.json().then(data => {
-        if (!data.userId) {
-          setSignError(true);
-          return;
-        }
-        localStorage.setItem("userId", data.userId);
-      })
     });
 
     navigate(from, { replace: true }); // after login navigate where the user wanted to go

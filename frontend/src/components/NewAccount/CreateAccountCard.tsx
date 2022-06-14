@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
 import { API_URL } from '../../models/fetcher';
-import ErrorNotification from '../Notification/ErrorNotification';
 
 interface NewUser {
   name: string,
@@ -22,7 +21,7 @@ interface CreateAccountProps {
 }
 
 function CreateAccount(props: CreateAccountProps) {
-  const [alreadyRegistered, setAlreadyRegistered] = useState(false);
+  const [registrationError, setRegistrationError] = useState("");
 
   const form = useForm({
     initialValues: {
@@ -47,12 +46,11 @@ function CreateAccount(props: CreateAccountProps) {
     },
   });
 
-  const registeredAccountError = (alreadyRegistered: boolean) => {
-    if (alreadyRegistered) {
+  const RegistrationError = () => {
+    if (registrationError != "") {
       return (
-        // <ErrorNotification {... "Email already registered"} />
-        <Notification icon={<X size={18} />} color="red" disallowClose>
-          Error: email already registered.
+        <Notification icon={<X size={18} />} color="red" disallowClose title="Error">
+          {registrationError}
         </Notification>
       )
     }
@@ -60,7 +58,7 @@ function CreateAccount(props: CreateAccountProps) {
   }
 
   const handleSubmit = async (values: NewUser) => {
-    setAlreadyRegistered(false);
+    setRegistrationError("");
 
     await fetch(`${API_URL}user`, {
       method: "POST",
@@ -72,15 +70,19 @@ function CreateAccount(props: CreateAccountProps) {
       }),
     }).then(response => {
       if (!(response.ok)) {
-        setAlreadyRegistered(true);
-        console.log("not ok");
+        switch (response.status) {
+          case 409:
+            setRegistrationError("Email already registered");
+            break;
+          default:
+            setRegistrationError("Internal error");
+            break;
+        }
+        console.log("Error");
+      } else {
+        props.setPhase(1);
       }
     });
-
-    if (!alreadyRegistered) {
-      props.setPhase(1);
-    }
-
   }
 
   return (
@@ -152,12 +154,12 @@ function CreateAccount(props: CreateAccountProps) {
             {...form.getInputProps('password')}
           />
 
+          <RegistrationError />
+
           <Button color='dark' fullWidth mt="xl" type="submit">
             Create account
           </Button>
         </form>
-
-        {registeredAccountError(alreadyRegistered)}
 
         <Text color="dimmed" size="sm" align="center" mt="xl">
           Do you already have an account?
