@@ -60,14 +60,15 @@ function SignInCard(props: SignInProps) {
       if (!(response.ok)) {
         setSignError(true);
         return;
+      } else {
+        response.json().then(data => {
+          if (!data.userId) {
+            setSignError(true);
+            return;
+          }
+          setUserId(data.userId)
+        })
       }
-      response.json().then(data => {
-        if (!data.userId) {
-          setSignError(true);
-          return;
-        }
-        setUserId(data.userId)
-      })
     });
 
     navigate(from, { replace: true }); // after login navigate where the user wanted to go
