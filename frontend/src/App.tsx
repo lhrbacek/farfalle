@@ -16,6 +16,7 @@ import NoMatchRoute from './components/Error/NoMatchRoute'
 import { useEffect } from 'react'
 import { HeaderTabs } from './components/Header/HeaderTabs'
 import FooterBar from './components/Footer/FooterBar'
+import RequireAuth from './components/RequireAuth/RequireAuth'
 
 function App() {
   useEffect(() => {
@@ -47,7 +48,7 @@ function App() {
   return (
 
     <div className="page">
-      <HeaderTabs auth={user} />
+      <HeaderTabs />
       <div className="content">
         <Routes>
           <Route path="/" element={<HomeCard />} />
@@ -63,11 +64,15 @@ function App() {
 
           <Route path="/signin" element={<SignIn />} />
           <Route path="/newcommer" element={<NewAccount />} />
-          <Route path="/account" element={<Profile />} />
-          <Route path="/account/edit" element={<EditProfile />} />
-          <Route path="/account/delete" element={<DeleteAccount />} />
-          <Route path="/account/tickets" element={<ReturnTickets />} />
-          <Route path="/account/admin" element={<Admin />} />
+
+          {/* protected paths */}
+          <Route element={<RequireAuth />}>
+            <Route path="/account" element={<Profile />} />
+            <Route path="/account/edit" element={<EditProfile />} />
+            <Route path="/account/delete" element={<DeleteAccount />} />
+            <Route path="/account/tickets" element={<ReturnTickets />} />
+            <Route path="/account/admin" element={<Admin />} />
+          </Route>
 
           <Route path="*" element={<NoMatchRoute />} />
         </Routes>
