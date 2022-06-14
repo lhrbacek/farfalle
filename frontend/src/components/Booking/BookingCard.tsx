@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import useSWR from 'swr';
-import { cartState } from '../../state/Atom';
-import { reservationTime } from '../../state/reservationTime';
-import { cartStateSelector } from '../../state/Selector';
+import { cartState } from '../../state/CartState';
+import { filterCart, reservationTime } from '../../state/reservationTime';
+import { cartStateSelector } from '../../state/CartStateSelector';
 import { PerformanceBooking } from '../../types/performance';
 import { Ticket } from '../../types/ticket';
 import LoadError from '../Error/LoadError';
@@ -69,7 +69,7 @@ export function BookingCard() {
     confirmedTickets.map((ticket) => ticket.reservedAt = reservedAt);
 
     //first filter out old tickets
-    setCartState(cart.filter((item) => (item.reservedAt == undefined ? false : (new Date().getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime)));
+    setCartState(filterCart(cart));
     // add booked tickets to cart
     setCartState((tickets) => [...tickets, ...confirmedTickets]);
     console.log({ seats: bookedSeats });

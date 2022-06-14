@@ -4,10 +4,10 @@ import { Ticket } from '../../types/ticket';
 import { CircleMinus } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { cartStateSelector } from '../../state/Selector';
-import { cartState } from '../../state/Atom';
+import { cartStateSelector } from '../../state/CartStateSelector';
+import { cartState } from '../../state/CartState';
 import { format } from 'date-fns';
-import { reservationTime } from '../../state/reservationTime';
+import { filterCart, reservationTime } from '../../state/reservationTime';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -68,11 +68,17 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     const timer = setInterval(() => {
       const time = (newDateObj.getTime() - new Date().getTime());
       setTime(time < 0 ? 0 : time);
-      if (time === 0) {
-        const now = new Date();
-        setCartState(cart.filter((item) => (item.reservedAt == undefined ? false : (now.getTime() - (new Date(item.reservedAt)).getTime()) < reservationTime)));
-      }
     }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCartState(filterCart(cart));
+    }, 5000);
 
     return () => {
       clearInterval(timer);
@@ -87,7 +93,19 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
   }
 
   const unreserveTicket = (ticket: Ticket) => {
-    //TODO: unreserve ticket in DB
+
+    fetch(`http://localhost:4000/tickets/${ticket.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        // unreserve ticket also in DB
+        reservedAt: new Date(new Date().getTime() - reservationTime),
+      }),
+    }).then((response) => {
+      if (!(response.ok)) {
+        return;
+      }
+    });
     const newCart = cart.filter((cartTicket) => cartTicket.id != ticket.id);
     setCartState(newCart);
   }
@@ -102,19 +120,18 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     }
   }
 
-
   return (
     <div className={classes.wrapper}>
       <Group className={classes.group}>
         <Group>
-          <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
+          <Text weight={700} component={Link} to={`/program/booking/${ticket.performance.id}`}>{ticket.performance.play.name}</Text>
         </Group>
         <Group className={classes.innerGroup}>
           <Text>{getTimeStamp()}</Text>
           <Text >{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
           <Group>
-            <Text color="gray">Row: {ticket.row}</Text>
-            <Text color="gray">Seat: {ticket.seat}</Text>
+            <Text>Row: {ticket.row}</Text>
+            <Text>Seat: {ticket.seat}</Text>
           </Group>
           {removeButton(removable)}
         </Group>

@@ -58,6 +58,7 @@ export function ReturnTicketItem({ ticket, checkedTickets, setTickets }: ReturnT
         </Group>
         <Group className={classes.innerGroup}>
           <Text>{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
+          <Text>{ticket.performance.venue.name}</Text>
           <Group>
             <Text color="gray">Row: {ticket.row}</Text>
             <Text color="gray">Seat: {ticket.seat}</Text>
