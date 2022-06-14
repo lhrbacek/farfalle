@@ -1,6 +1,6 @@
 import { Avatar, createStyles, Group, Menu, UnstyledButton, Text, Divider } from "@mantine/core";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Home, Menu2, News, Pencil, ShoppingCart, User, UserCheck, X } from "tabler-icons-react";
 import { user } from '../../data/user';
 
@@ -52,7 +52,9 @@ function UserMenu({ auth }: UserMenuProps) {
   const { classes, cx } = useStyles();
 
   const signOutUser = () => {
-    // TODO: change global state - sign out
+    // TODO: call backend
+    localStorage.removeItem("userId");
+    localStorage.setItem("isLogged", "false");
   }
 
   const getMenu = (auth: boolean) => {
@@ -67,7 +69,7 @@ function UserMenu({ auth }: UserMenuProps) {
             Return tickets
           </Menu.Item>
 
-          <Menu.Item color="red" onClick={() => signOutUser()}>
+          <Menu.Item component={Link} to='/home' color="red" onClick={() => signOutUser()}>
             Sign out
           </Menu.Item>
         </>
@@ -112,7 +114,7 @@ function UserMenu({ auth }: UserMenuProps) {
               }
             </Avatar>
             <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3} className={classes.desktopMenu}>
-              {auth ? user.name : "Unlogged user"}
+              {auth ? "Signed in" : "Unsigned"}
             </Text>
           </Group>
         </UnstyledButton>

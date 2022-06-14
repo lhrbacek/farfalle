@@ -3,6 +3,7 @@ import { useForm } from '@mantine/form';
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
+import { API_URL } from '../../models/fetcher';
 
 interface SignUser {
   email: string,
@@ -45,7 +46,7 @@ function SignInCard(props: SignInProps) {
 
     // LOGIN, POST on url below with object {email: "", password: ""}
     // no hash, hash password must be put on login screen, TODO
-    await fetch(`http://0.0.0.0:4000/auth/login`, {
+    await fetch(`${API_URL}auth/login`, {
       credentials: 'include',
       method: "POST",
       headers: { "Content-Type": "application/json", },
@@ -66,10 +67,9 @@ function SignInCard(props: SignInProps) {
       })
     });
 
-    // TODO: update global state
-    // navigate(from, { replace:true }); // after login navigate where the user wanted to go
+    navigate(from, { replace: true }); // after login navigate where the user wanted to go
     // what is this
-    props.setPhase(1);
+    // props.setPhase(1);
   }
 
   return (
