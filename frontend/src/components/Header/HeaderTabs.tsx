@@ -1,5 +1,6 @@
 import { createStyles, Container, Group, Image, Text, Button, Burger } from '@mantine/core';
 import { Link, useLocation } from 'react-router-dom';
+import authorise from '../../models/authorise';
 import UserMenu from './UserMenu';
 
 const useStyles = createStyles((theme) => ({
@@ -37,9 +38,12 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function HeaderTabs(props: { auth: boolean }) {
+export function HeaderTabs() {
   const { classes } = useStyles();
   const location = useLocation();
+
+  // auth section
+  let isLogged: boolean = authorise();
 
   return (
     <div className={classes.header}>
@@ -58,7 +62,7 @@ export function HeaderTabs(props: { auth: boolean }) {
           </Group>
 
           {/* <BurgerMenu /> */}
-          <UserMenu auth={props.auth} />
+          <UserMenu auth={isLogged} />
 
         </Group>
       </Container>
