@@ -37,9 +37,14 @@ export function ProgramCard() {
 
   const getPerformances = (searchString: string, filter: string, performances: Performance[]) => {
     const searchedPerformances = searchPerformances(searchString, performances);
+    const now = new Date();
     switch (filter) {
       case "today":
-        return [searchedPerformances[0]];
+        return searchedPerformances.filter((performance) => ((new Date(performance.dateTime).getTime() - now.getTime()) < 86400000) /* 24 hours*/);
+      case "week":
+        return searchedPerformances.filter((performance) => ((new Date(performance.dateTime).getTime() - now.getTime()) < 604800000) /* 7 days*/);
+      case "month":
+        return searchedPerformances.filter((performance) => ((new Date(performance.dateTime).getTime() - now.getTime()) < 3024000000) /* 35 days*/);
       default:
         return searchedPerformances;
     }
@@ -56,9 +61,9 @@ export function ProgramCard() {
           <SegmentedControl
             data={[
               { value: 'all', label: 'All' },
-              { value: 'today', label: 'Today' },
-              { value: 'week', label: 'This week' },
-              { value: 'month', label: 'This month' },
+              { value: 'today', label: '24 hours' },
+              { value: 'week', label: '7 days' },
+              { value: 'month', label: '35 days' },
             ]}
             onChange={(value) => setFilter(value)}
           />
