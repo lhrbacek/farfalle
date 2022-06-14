@@ -1,11 +1,14 @@
-import { Button, Container } from '@mantine/core';
+import { Button, Container, Notification } from '@mantine/core';
 import { Link } from 'react-router-dom';
-import SuccessNotification from '../Notification/SuccessNotification';
+import { Check } from 'tabler-icons-react';
 
 function ReturnTicketsConfirmation() {
   return (
     <Container size={420} my={40}>
-      <SuccessNotification {... "Tickets returned!"} />
+      <Notification disallowClose icon={<Check size={18} />} color="teal" title="Success">
+        Tickets returned!
+      </Notification>
+
 
       <Button color='dark' fullWidth component={Link} to='/home'>
         Home
