@@ -1,7 +1,9 @@
-import { Title, Text, Paper, TextInput, PasswordInput, Button, Divider } from '@mantine/core';
+import { Title, Text, Paper, TextInput, PasswordInput, Button, Divider, Notification } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { X } from 'tabler-icons-react';
+import { API_URL } from '../../models/fetcher';
 import ErrorNotification from '../Notification/ErrorNotification';
 
 interface NewUser {
@@ -41,30 +43,44 @@ function CreateAccount(props: CreateAccountProps) {
       city: (value) => (value.length < 2 ? 'Surname must have at least 2 letters' : null),
       street: (value) => (value.length < 2 ? 'Surname must have at least 2 letters' : null),
       streetNo: (value) => (isNaN(Number(value)) ? 'Number of street must be numeric' : null),
-      zip: (value) => (isNaN(Number(value)) ? 'Number of street must be numeric' : null),
+      zip: (value) => (isNaN(Number(value)) ? 'Number of zip must be numeric' : null),
     },
   });
 
   const registeredAccountError = (alreadyRegistered: boolean) => {
     if (alreadyRegistered) {
       return (
-        <ErrorNotification {... "Email already registered"} />
+        // <ErrorNotification {... "Email already registered"} />
+        <Notification icon={<X size={18} />} color="red" disallowClose>
+          Error: email already registered.
+        </Notification>
       )
     }
     return (<></>);
   }
 
-  const handleSubmit = (values: NewUser) => {
-    var registered = false;
+  const handleSubmit = async (values: NewUser) => {
     setAlreadyRegistered(false);
-    // TODO: Check whether email is not registered already
-    if (registered) {
-      setAlreadyRegistered(true);
-      return;
+
+    await fetch(`${API_URL}user`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        number: values.streetNo,
+        ...values,
+        addressName: values.name.concat(" ", values.surname),
+      }),
+    }).then(response => {
+      if (!(response.ok)) {
+        setAlreadyRegistered(true);
+        console.log("not ok");
+      }
+    });
+
+    if (!alreadyRegistered) {
+      props.setPhase(1);
     }
 
-    // TODO: Store value in database
-    props.setPhase(1);
   }
 
   return (
