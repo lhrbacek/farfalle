@@ -2,7 +2,6 @@ import { StatusTicket } from '@prisma/client';
 
 export const tickets = [
   {
-    id: 1,
     price: 10,
     row: 1,
     seat: 1,
@@ -12,7 +11,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055012Z',
   },
   {
-    id: 2,
     price: 10,
     row: 1,
     seat: 2,
@@ -22,7 +20,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055024Z',
   },
   {
-    id: 3,
     price: 10,
     row: 1,
     seat: 3,
@@ -32,7 +29,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055031Z',
   },
   {
-    id: 4,
     price: 10,
     row: 1,
     seat: 4,
@@ -42,7 +38,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055037Z',
   },
   {
-    id: 5,
     price: 10,
     row: 1,
     seat: 5,
@@ -52,7 +47,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055042Z',
   },
   {
-    id: 6,
     price: 10,
     row: 1,
     seat: 6,
@@ -62,7 +56,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055047Z',
   },
   {
-    id: 7,
     price: 10,
     row: 1,
     seat: 7,
@@ -72,7 +65,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055053Z',
   },
   {
-    id: 8,
     price: 10,
     row: 1,
     seat: 8,
@@ -82,7 +74,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055058Z',
   },
   {
-    id: 9,
     price: 10,
     row: 1,
     seat: 9,
@@ -92,7 +83,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055064Z',
   },
   {
-    id: 10,
     price: 10,
     row: 1,
     seat: 10,
@@ -102,7 +92,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055069Z',
   },
   {
-    id: 11,
     price: 10,
     row: 1,
     seat: 11,
@@ -112,7 +101,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055074Z',
   },
   {
-    id: 12,
     price: 10,
     row: 1,
     seat: 12,
@@ -122,7 +110,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055079Z',
   },
   {
-    id: 13,
     price: 10,
     row: 1,
     seat: 13,
@@ -132,7 +119,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055085Z',
   },
   {
-    id: 14,
     price: 10,
     row: 1,
     seat: 14,
@@ -142,7 +128,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055090Z',
   },
   {
-    id: 15,
     price: 10,
     row: 2,
     seat: 1,
@@ -152,7 +137,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055096Z',
   },
   {
-    id: 16,
     price: 10,
     row: 2,
     seat: 2,
@@ -162,7 +146,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055101Z',
   },
   {
-    id: 17,
     price: 10,
     row: 2,
     seat: 3,
@@ -172,7 +155,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055107Z',
   },
   {
-    id: 18,
     price: 10,
     row: 2,
     seat: 4,
@@ -182,7 +164,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055112Z',
   },
   {
-    id: 19,
     price: 10,
     row: 2,
     seat: 5,
@@ -192,7 +173,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055117Z',
   },
   {
-    id: 20,
     price: 10,
     row: 2,
     seat: 6,
@@ -202,7 +182,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055122Z',
   },
   {
-    id: 21,
     price: 10,
     row: 2,
     seat: 7,
@@ -212,7 +191,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055128Z',
   },
   {
-    id: 22,
     price: 10,
     row: 2,
     seat: 8,
@@ -222,7 +200,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055133Z',
   },
   {
-    id: 23,
     price: 10,
     row: 2,
     seat: 9,
@@ -232,7 +209,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055138Z',
   },
   {
-    id: 24,
     price: 10,
     row: 2,
     seat: 10,
@@ -242,7 +218,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055145Z',
   },
   {
-    id: 25,
     price: 10,
     row: 2,
     seat: 11,
@@ -252,7 +227,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055150Z',
   },
   {
-    id: 26,
     price: 10,
     row: 2,
     seat: 12,
@@ -262,7 +236,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055156Z',
   },
   {
-    id: 27,
     price: 10,
     row: 2,
     seat: 13,
@@ -272,7 +245,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055161Z',
   },
   {
-    id: 28,
     price: 10,
     row: 2,
     seat: 14,
@@ -282,7 +254,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055166Z',
   },
   {
-    id: 29,
     price: 10,
     row: 3,
     seat: 1,
@@ -292,7 +263,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055172Z',
   },
   {
-    id: 30,
     price: 10,
     row: 3,
     seat: 2,
@@ -302,7 +272,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055178Z',
   },
   {
-    id: 31,
     price: 10,
     row: 3,
     seat: 3,
@@ -312,7 +281,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055184Z',
   },
   {
-    id: 32,
     price: 10,
     row: 3,
     seat: 4,
@@ -322,7 +290,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055189Z',
   },
   {
-    id: 33,
     price: 10,
     row: 3,
     seat: 5,
@@ -332,7 +299,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055195Z',
   },
   {
-    id: 34,
     price: 10,
     row: 3,
     seat: 6,
@@ -342,7 +308,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055200Z',
   },
   {
-    id: 35,
     price: 10,
     row: 3,
     seat: 7,
@@ -352,7 +317,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055205Z',
   },
   {
-    id: 36,
     price: 10,
     row: 3,
     seat: 8,
@@ -362,7 +326,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055210Z',
   },
   {
-    id: 37,
     price: 10,
     row: 3,
     seat: 9,
@@ -372,7 +335,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055216Z',
   },
   {
-    id: 38,
     price: 10,
     row: 3,
     seat: 10,
@@ -382,7 +344,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055221Z',
   },
   {
-    id: 39,
     price: 10,
     row: 3,
     seat: 11,
@@ -392,7 +353,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055226Z',
   },
   {
-    id: 40,
     price: 10,
     row: 3,
     seat: 12,
@@ -402,7 +362,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055231Z',
   },
   {
-    id: 41,
     price: 10,
     row: 3,
     seat: 13,
@@ -412,7 +371,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055237Z',
   },
   {
-    id: 42,
     price: 10,
     row: 3,
     seat: 14,
@@ -422,7 +380,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055243Z',
   },
   {
-    id: 43,
     price: 10,
     row: 4,
     seat: 1,
@@ -432,7 +389,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055249Z',
   },
   {
-    id: 44,
     price: 10,
     row: 4,
     seat: 2,
@@ -442,7 +398,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055254Z',
   },
   {
-    id: 45,
     price: 10,
     row: 4,
     seat: 3,
@@ -452,7 +407,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055260Z',
   },
   {
-    id: 46,
     price: 10,
     row: 4,
     seat: 4,
@@ -462,7 +416,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055265Z',
   },
   {
-    id: 47,
     price: 10,
     row: 4,
     seat: 5,
@@ -472,7 +425,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055377Z',
   },
   {
-    id: 48,
     price: 10,
     row: 4,
     seat: 6,
@@ -482,7 +434,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055390Z',
   },
   {
-    id: 49,
     price: 10,
     row: 4,
     seat: 7,
@@ -492,7 +443,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055399Z',
   },
   {
-    id: 50,
     price: 10,
     row: 4,
     seat: 8,
@@ -502,7 +452,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055408Z',
   },
   {
-    id: 51,
     price: 10,
     row: 4,
     seat: 9,
@@ -512,7 +461,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055418Z',
   },
   {
-    id: 52,
     price: 10,
     row: 4,
     seat: 10,
@@ -522,7 +470,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055428Z',
   },
   {
-    id: 53,
     price: 10,
     row: 4,
     seat: 11,
@@ -532,7 +479,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055433Z',
   },
   {
-    id: 54,
     price: 10,
     row: 4,
     seat: 12,
@@ -542,7 +488,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055439Z',
   },
   {
-    id: 55,
     price: 10,
     row: 4,
     seat: 13,
@@ -552,7 +497,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055444Z',
   },
   {
-    id: 56,
     price: 10,
     row: 4,
     seat: 14,
@@ -562,7 +506,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055450Z',
   },
   {
-    id: 57,
     price: 10,
     row: 5,
     seat: 1,
@@ -572,7 +515,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055457Z',
   },
   {
-    id: 58,
     price: 10,
     row: 5,
     seat: 2,
@@ -582,7 +524,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055462Z',
   },
   {
-    id: 59,
     price: 10,
     row: 5,
     seat: 3,
@@ -592,7 +533,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055467Z',
   },
   {
-    id: 60,
     price: 10,
     row: 5,
     seat: 4,
@@ -602,7 +542,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055488Z',
   },
   {
-    id: 61,
     price: 10,
     row: 5,
     seat: 5,
@@ -612,7 +551,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055494Z',
   },
   {
-    id: 62,
     price: 10,
     row: 5,
     seat: 6,
@@ -622,7 +560,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055499Z',
   },
   {
-    id: 63,
     price: 10,
     row: 5,
     seat: 7,
@@ -632,7 +569,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055508Z',
   },
   {
-    id: 64,
     price: 10,
     row: 5,
     seat: 8,
@@ -642,7 +578,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055517Z',
   },
   {
-    id: 65,
     price: 10,
     row: 5,
     seat: 9,
@@ -652,7 +587,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055526Z',
   },
   {
-    id: 66,
     price: 10,
     row: 5,
     seat: 10,
@@ -662,7 +596,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055536Z',
   },
   {
-    id: 67,
     price: 10,
     row: 5,
     seat: 11,
@@ -672,7 +605,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055545Z',
   },
   {
-    id: 68,
     price: 10,
     row: 5,
     seat: 12,
@@ -682,7 +614,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055551Z',
   },
   {
-    id: 69,
     price: 10,
     row: 5,
     seat: 13,
@@ -692,7 +623,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055556Z',
   },
   {
-    id: 70,
     price: 10,
     row: 5,
     seat: 14,
@@ -702,7 +632,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055562Z',
   },
   {
-    id: 71,
     price: 10,
     row: 6,
     seat: 1,
@@ -712,7 +641,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055568Z',
   },
   {
-    id: 72,
     price: 10,
     row: 6,
     seat: 2,
@@ -722,7 +650,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055573Z',
   },
   {
-    id: 73,
     price: 10,
     row: 6,
     seat: 3,
@@ -732,7 +659,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055579Z',
   },
   {
-    id: 74,
     price: 10,
     row: 6,
     seat: 4,
@@ -742,7 +668,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055584Z',
   },
   {
-    id: 75,
     price: 10,
     row: 6,
     seat: 5,
@@ -752,7 +677,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055589Z',
   },
   {
-    id: 76,
     price: 10,
     row: 6,
     seat: 6,
@@ -762,7 +686,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055595Z',
   },
   {
-    id: 77,
     price: 10,
     row: 6,
     seat: 7,
@@ -772,7 +695,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055600Z',
   },
   {
-    id: 78,
     price: 10,
     row: 6,
     seat: 8,
@@ -782,7 +704,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055605Z',
   },
   {
-    id: 79,
     price: 10,
     row: 6,
     seat: 9,
@@ -792,7 +713,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055628Z',
   },
   {
-    id: 80,
     price: 10,
     row: 6,
     seat: 10,
@@ -802,7 +722,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055634Z',
   },
   {
-    id: 81,
     price: 10,
     row: 6,
     seat: 11,
@@ -812,7 +731,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055639Z',
   },
   {
-    id: 82,
     price: 10,
     row: 6,
     seat: 12,
@@ -822,7 +740,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055646Z',
   },
   {
-    id: 83,
     price: 10,
     row: 6,
     seat: 13,
@@ -832,7 +749,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055671Z',
   },
   {
-    id: 84,
     price: 10,
     row: 6,
     seat: 14,
@@ -842,7 +758,6 @@ export const tickets = [
     reservedAt: '2022-06-01T19:29:02.055677Z',
   },
   {
-    id: 85,
     price: 12,
     row: 1,
     seat: 1,
@@ -850,7 +765,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 86,
     price: 12,
     row: 1,
     seat: 2,
@@ -858,7 +772,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 87,
     price: 12,
     row: 1,
     seat: 3,
@@ -866,7 +779,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 88,
     price: 12,
     row: 1,
     seat: 4,
@@ -876,7 +788,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 89,
     price: 12,
     row: 1,
     seat: 5,
@@ -884,7 +795,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 90,
     price: 12,
     row: 1,
     seat: 6,
@@ -892,7 +802,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 91,
     price: 12,
     row: 1,
     seat: 7,
@@ -900,7 +809,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 92,
     price: 12,
     row: 1,
     seat: 8,
@@ -908,7 +816,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 93,
     price: 12,
     row: 1,
     seat: 9,
@@ -918,7 +825,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 94,
     price: 12,
     row: 1,
     seat: 10,
@@ -926,7 +832,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 95,
     price: 12,
     row: 1,
     seat: 11,
@@ -934,7 +839,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 96,
     price: 12,
     row: 1,
     seat: 12,
@@ -942,7 +846,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 97,
     price: 12,
     row: 1,
     seat: 13,
@@ -950,7 +853,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 98,
     price: 12,
     row: 1,
     seat: 14,
@@ -960,7 +862,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 99,
     price: 12,
     row: 2,
     seat: 1,
@@ -968,7 +869,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 100,
     price: 12,
     row: 2,
     seat: 2,
@@ -976,7 +876,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 101,
     price: 12,
     row: 2,
     seat: 3,
@@ -984,7 +883,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 102,
     price: 12,
     row: 2,
     seat: 4,
@@ -992,7 +890,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 103,
     price: 12,
     row: 2,
     seat: 5,
@@ -1002,7 +899,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 104,
     price: 12,
     row: 2,
     seat: 6,
@@ -1010,7 +906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 105,
     price: 12,
     row: 2,
     seat: 7,
@@ -1018,7 +913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 106,
     price: 12,
     row: 2,
     seat: 8,
@@ -1026,7 +920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 107,
     price: 12,
     row: 2,
     seat: 9,
@@ -1034,7 +927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 108,
     price: 12,
     row: 2,
     seat: 10,
@@ -1044,7 +936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 109,
     price: 12,
     row: 2,
     seat: 11,
@@ -1052,7 +943,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 110,
     price: 12,
     row: 2,
     seat: 12,
@@ -1062,7 +952,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 111,
     price: 12,
     row: 2,
     seat: 13,
@@ -1070,7 +959,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 112,
     price: 12,
     row: 2,
     seat: 14,
@@ -1080,7 +968,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 113,
     price: 12,
     row: 3,
     seat: 1,
@@ -1088,7 +975,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 114,
     price: 12,
     row: 3,
     seat: 2,
@@ -1096,7 +982,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 115,
     price: 12,
     row: 3,
     seat: 3,
@@ -1106,7 +991,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 116,
     price: 12,
     row: 3,
     seat: 4,
@@ -1116,7 +1000,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 117,
     price: 12,
     row: 3,
     seat: 5,
@@ -1126,7 +1009,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 118,
     price: 12,
     row: 3,
     seat: 6,
@@ -1136,7 +1018,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 119,
     price: 12,
     row: 3,
     seat: 7,
@@ -1146,7 +1027,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 120,
     price: 12,
     row: 3,
     seat: 8,
@@ -1154,7 +1034,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 121,
     price: 12,
     row: 3,
     seat: 9,
@@ -1162,7 +1041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 122,
     price: 12,
     row: 3,
     seat: 10,
@@ -1170,7 +1048,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 123,
     price: 12,
     row: 3,
     seat: 11,
@@ -1178,7 +1055,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 124,
     price: 12,
     row: 3,
     seat: 12,
@@ -1186,7 +1062,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 125,
     price: 12,
     row: 3,
     seat: 13,
@@ -1194,7 +1069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 126,
     price: 12,
     row: 3,
     seat: 14,
@@ -1204,7 +1078,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 127,
     price: 12,
     row: 4,
     seat: 1,
@@ -1212,7 +1085,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 128,
     price: 12,
     row: 4,
     seat: 2,
@@ -1220,7 +1092,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 129,
     price: 12,
     row: 4,
     seat: 3,
@@ -1228,7 +1099,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 130,
     price: 12,
     row: 4,
     seat: 4,
@@ -1236,7 +1106,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 131,
     price: 12,
     row: 4,
     seat: 5,
@@ -1244,7 +1113,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 132,
     price: 12,
     row: 4,
     seat: 6,
@@ -1252,7 +1120,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 133,
     price: 12,
     row: 4,
     seat: 7,
@@ -1260,7 +1127,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 134,
     price: 12,
     row: 4,
     seat: 8,
@@ -1268,7 +1134,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 135,
     price: 12,
     row: 4,
     seat: 9,
@@ -1276,7 +1141,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 136,
     price: 12,
     row: 4,
     seat: 10,
@@ -1284,7 +1148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 137,
     price: 12,
     row: 4,
     seat: 11,
@@ -1292,7 +1155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 138,
     price: 12,
     row: 4,
     seat: 12,
@@ -1300,7 +1162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 139,
     price: 12,
     row: 4,
     seat: 13,
@@ -1308,7 +1169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 140,
     price: 12,
     row: 4,
     seat: 14,
@@ -1318,7 +1178,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 141,
     price: 12,
     row: 5,
     seat: 1,
@@ -1326,7 +1185,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 142,
     price: 12,
     row: 5,
     seat: 2,
@@ -1334,7 +1192,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 143,
     price: 12,
     row: 5,
     seat: 3,
@@ -1344,7 +1201,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 144,
     price: 12,
     row: 5,
     seat: 4,
@@ -1352,7 +1208,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 145,
     price: 12,
     row: 5,
     seat: 5,
@@ -1362,7 +1217,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 146,
     price: 12,
     row: 5,
     seat: 6,
@@ -1370,7 +1224,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 147,
     price: 12,
     row: 5,
     seat: 7,
@@ -1378,7 +1231,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 148,
     price: 12,
     row: 5,
     seat: 8,
@@ -1388,7 +1240,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 149,
     price: 12,
     row: 5,
     seat: 9,
@@ -1398,7 +1249,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 150,
     price: 12,
     row: 5,
     seat: 10,
@@ -1406,7 +1256,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 151,
     price: 12,
     row: 5,
     seat: 11,
@@ -1416,7 +1265,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 152,
     price: 12,
     row: 5,
     seat: 12,
@@ -1424,7 +1272,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 153,
     price: 12,
     row: 5,
     seat: 13,
@@ -1432,7 +1279,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 154,
     price: 12,
     row: 5,
     seat: 14,
@@ -1440,7 +1286,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 155,
     price: 12,
     row: 6,
     seat: 1,
@@ -1448,7 +1293,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 156,
     price: 12,
     row: 6,
     seat: 2,
@@ -1456,7 +1300,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 157,
     price: 12,
     row: 6,
     seat: 3,
@@ -1464,7 +1307,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 158,
     price: 12,
     row: 6,
     seat: 4,
@@ -1472,7 +1314,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 159,
     price: 12,
     row: 6,
     seat: 5,
@@ -1480,7 +1321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 160,
     price: 12,
     row: 6,
     seat: 6,
@@ -1490,7 +1330,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 161,
     price: 12,
     row: 6,
     seat: 7,
@@ -1498,7 +1337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 162,
     price: 12,
     row: 6,
     seat: 8,
@@ -1508,7 +1346,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 163,
     price: 12,
     row: 6,
     seat: 9,
@@ -1516,7 +1353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 164,
     price: 12,
     row: 6,
     seat: 10,
@@ -1524,7 +1360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 165,
     price: 12,
     row: 6,
     seat: 11,
@@ -1534,7 +1369,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 166,
     price: 12,
     row: 6,
     seat: 12,
@@ -1542,7 +1376,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 167,
     price: 12,
     row: 6,
     seat: 13,
@@ -1552,7 +1385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 168,
     price: 12,
     row: 6,
     seat: 14,
@@ -1562,7 +1394,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 169,
     price: 18,
     row: 1,
     seat: 1,
@@ -1570,7 +1401,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 170,
     price: 18,
     row: 1,
     seat: 2,
@@ -1578,7 +1408,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 171,
     price: 18,
     row: 1,
     seat: 3,
@@ -1588,7 +1417,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 172,
     price: 18,
     row: 1,
     seat: 4,
@@ -1598,7 +1426,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 173,
     price: 18,
     row: 1,
     seat: 5,
@@ -1608,7 +1435,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 174,
     price: 18,
     row: 1,
     seat: 6,
@@ -1616,7 +1442,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 175,
     price: 18,
     row: 1,
     seat: 7,
@@ -1624,7 +1449,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 176,
     price: 18,
     row: 1,
     seat: 8,
@@ -1632,7 +1456,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 177,
     price: 18,
     row: 1,
     seat: 9,
@@ -1640,7 +1463,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 178,
     price: 18,
     row: 1,
     seat: 10,
@@ -1650,7 +1472,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 179,
     price: 18,
     row: 1,
     seat: 11,
@@ -1658,7 +1479,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 180,
     price: 18,
     row: 1,
     seat: 12,
@@ -1666,7 +1486,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 181,
     price: 18,
     row: 1,
     seat: 13,
@@ -1674,7 +1493,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 182,
     price: 18,
     row: 1,
     seat: 14,
@@ -1684,7 +1502,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 183,
     price: 18,
     row: 1,
     seat: 15,
@@ -1692,7 +1509,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 184,
     price: 18,
     row: 1,
     seat: 16,
@@ -1700,7 +1516,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 185,
     price: 18,
     row: 1,
     seat: 17,
@@ -1710,7 +1525,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 186,
     price: 18,
     row: 1,
     seat: 18,
@@ -1720,7 +1534,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 187,
     price: 18,
     row: 1,
     seat: 19,
@@ -1730,7 +1543,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 188,
     price: 18,
     row: 1,
     seat: 20,
@@ -1738,7 +1550,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 189,
     price: 18,
     row: 2,
     seat: 1,
@@ -1746,7 +1557,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 190,
     price: 18,
     row: 2,
     seat: 2,
@@ -1756,7 +1566,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 191,
     price: 18,
     row: 2,
     seat: 3,
@@ -1764,7 +1573,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 192,
     price: 18,
     row: 2,
     seat: 4,
@@ -1772,7 +1580,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 193,
     price: 18,
     row: 2,
     seat: 5,
@@ -1780,7 +1587,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 194,
     price: 18,
     row: 2,
     seat: 6,
@@ -1788,7 +1594,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 195,
     price: 18,
     row: 2,
     seat: 7,
@@ -1798,7 +1603,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 196,
     price: 18,
     row: 2,
     seat: 8,
@@ -1806,7 +1610,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 197,
     price: 18,
     row: 2,
     seat: 9,
@@ -1814,7 +1617,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 198,
     price: 18,
     row: 2,
     seat: 10,
@@ -1822,7 +1624,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 199,
     price: 18,
     row: 2,
     seat: 11,
@@ -1830,7 +1631,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 200,
     price: 18,
     row: 2,
     seat: 12,
@@ -1838,7 +1638,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 201,
     price: 18,
     row: 2,
     seat: 13,
@@ -1846,7 +1645,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 202,
     price: 18,
     row: 2,
     seat: 14,
@@ -1854,7 +1652,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 203,
     price: 18,
     row: 2,
     seat: 15,
@@ -1864,7 +1661,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 204,
     price: 18,
     row: 2,
     seat: 16,
@@ -1872,7 +1668,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 205,
     price: 18,
     row: 2,
     seat: 17,
@@ -1880,7 +1675,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 206,
     price: 18,
     row: 2,
     seat: 18,
@@ -1890,7 +1684,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 207,
     price: 18,
     row: 2,
     seat: 19,
@@ -1898,7 +1691,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 208,
     price: 18,
     row: 2,
     seat: 20,
@@ -1908,7 +1700,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 209,
     price: 18,
     row: 3,
     seat: 1,
@@ -1918,7 +1709,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 210,
     price: 18,
     row: 3,
     seat: 2,
@@ -1926,7 +1716,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 211,
     price: 18,
     row: 3,
     seat: 3,
@@ -1934,7 +1723,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 212,
     price: 18,
     row: 3,
     seat: 4,
@@ -1942,7 +1730,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 213,
     price: 18,
     row: 3,
     seat: 5,
@@ -1952,7 +1739,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 214,
     price: 18,
     row: 3,
     seat: 6,
@@ -1962,7 +1748,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 215,
     price: 18,
     row: 3,
     seat: 7,
@@ -1970,7 +1755,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 216,
     price: 18,
     row: 3,
     seat: 8,
@@ -1978,7 +1762,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 217,
     price: 18,
     row: 3,
     seat: 9,
@@ -1986,7 +1769,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 218,
     price: 18,
     row: 3,
     seat: 10,
@@ -1994,7 +1776,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 219,
     price: 18,
     row: 3,
     seat: 11,
@@ -2002,7 +1783,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 220,
     price: 18,
     row: 3,
     seat: 12,
@@ -2012,7 +1792,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 221,
     price: 18,
     row: 3,
     seat: 13,
@@ -2022,7 +1801,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 222,
     price: 18,
     row: 3,
     seat: 14,
@@ -2030,7 +1808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 223,
     price: 18,
     row: 3,
     seat: 15,
@@ -2038,7 +1815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 224,
     price: 18,
     row: 3,
     seat: 16,
@@ -2046,7 +1822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 225,
     price: 18,
     row: 3,
     seat: 17,
@@ -2056,7 +1831,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 226,
     price: 18,
     row: 3,
     seat: 18,
@@ -2064,7 +1838,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 227,
     price: 18,
     row: 3,
     seat: 19,
@@ -2072,7 +1845,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 228,
     price: 18,
     row: 3,
     seat: 20,
@@ -2080,7 +1852,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 229,
     price: 18,
     row: 4,
     seat: 1,
@@ -2088,7 +1859,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 230,
     price: 18,
     row: 4,
     seat: 2,
@@ -2096,7 +1866,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 231,
     price: 18,
     row: 4,
     seat: 3,
@@ -2104,7 +1873,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 232,
     price: 18,
     row: 4,
     seat: 4,
@@ -2112,7 +1880,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 233,
     price: 18,
     row: 4,
     seat: 5,
@@ -2120,7 +1887,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 234,
     price: 18,
     row: 4,
     seat: 6,
@@ -2128,7 +1894,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 235,
     price: 18,
     row: 4,
     seat: 7,
@@ -2138,7 +1903,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 236,
     price: 18,
     row: 4,
     seat: 8,
@@ -2146,7 +1910,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 237,
     price: 18,
     row: 4,
     seat: 9,
@@ -2154,7 +1917,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 238,
     price: 18,
     row: 4,
     seat: 10,
@@ -2164,7 +1926,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 239,
     price: 18,
     row: 4,
     seat: 11,
@@ -2172,7 +1933,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 240,
     price: 18,
     row: 4,
     seat: 12,
@@ -2180,7 +1940,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 241,
     price: 18,
     row: 4,
     seat: 13,
@@ -2188,7 +1947,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 242,
     price: 18,
     row: 4,
     seat: 14,
@@ -2198,7 +1956,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 243,
     price: 18,
     row: 4,
     seat: 15,
@@ -2206,7 +1963,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 244,
     price: 18,
     row: 4,
     seat: 16,
@@ -2214,7 +1970,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 245,
     price: 18,
     row: 4,
     seat: 17,
@@ -2224,7 +1979,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 246,
     price: 18,
     row: 4,
     seat: 18,
@@ -2232,7 +1986,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 247,
     price: 18,
     row: 4,
     seat: 19,
@@ -2240,7 +1993,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 248,
     price: 18,
     row: 4,
     seat: 20,
@@ -2248,7 +2000,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 249,
     price: 18,
     row: 5,
     seat: 1,
@@ -2256,7 +2007,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 250,
     price: 18,
     row: 5,
     seat: 2,
@@ -2264,7 +2014,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 251,
     price: 18,
     row: 5,
     seat: 3,
@@ -2272,7 +2021,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 252,
     price: 18,
     row: 5,
     seat: 4,
@@ -2280,7 +2028,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 253,
     price: 18,
     row: 5,
     seat: 5,
@@ -2288,7 +2035,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 254,
     price: 18,
     row: 5,
     seat: 6,
@@ -2296,7 +2042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 255,
     price: 18,
     row: 5,
     seat: 7,
@@ -2306,7 +2051,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 256,
     price: 18,
     row: 5,
     seat: 8,
@@ -2314,7 +2058,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 257,
     price: 18,
     row: 5,
     seat: 9,
@@ -2322,7 +2065,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 258,
     price: 18,
     row: 5,
     seat: 10,
@@ -2330,7 +2072,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 259,
     price: 18,
     row: 5,
     seat: 11,
@@ -2338,7 +2079,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 260,
     price: 18,
     row: 5,
     seat: 12,
@@ -2346,7 +2086,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 261,
     price: 18,
     row: 5,
     seat: 13,
@@ -2354,7 +2093,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 262,
     price: 18,
     row: 5,
     seat: 14,
@@ -2362,7 +2100,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 263,
     price: 18,
     row: 5,
     seat: 15,
@@ -2372,7 +2109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 264,
     price: 18,
     row: 5,
     seat: 16,
@@ -2380,7 +2116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 265,
     price: 18,
     row: 5,
     seat: 17,
@@ -2388,7 +2123,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 266,
     price: 18,
     row: 5,
     seat: 18,
@@ -2396,7 +2130,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 267,
     price: 18,
     row: 5,
     seat: 19,
@@ -2406,7 +2139,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 268,
     price: 18,
     row: 5,
     seat: 20,
@@ -2416,7 +2148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 269,
     price: 18,
     row: 6,
     seat: 1,
@@ -2426,7 +2157,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 270,
     price: 18,
     row: 6,
     seat: 2,
@@ -2436,7 +2166,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 271,
     price: 18,
     row: 6,
     seat: 3,
@@ -2446,7 +2175,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 272,
     price: 18,
     row: 6,
     seat: 4,
@@ -2454,7 +2182,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 273,
     price: 18,
     row: 6,
     seat: 5,
@@ -2462,7 +2189,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 274,
     price: 18,
     row: 6,
     seat: 6,
@@ -2470,7 +2196,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 275,
     price: 18,
     row: 6,
     seat: 7,
@@ -2478,7 +2203,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 276,
     price: 18,
     row: 6,
     seat: 8,
@@ -2486,7 +2210,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 277,
     price: 18,
     row: 6,
     seat: 9,
@@ -2494,7 +2217,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 278,
     price: 18,
     row: 6,
     seat: 10,
@@ -2502,7 +2224,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 279,
     price: 18,
     row: 6,
     seat: 11,
@@ -2510,7 +2231,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 280,
     price: 18,
     row: 6,
     seat: 12,
@@ -2520,7 +2240,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 281,
     price: 18,
     row: 6,
     seat: 13,
@@ -2530,7 +2249,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 282,
     price: 18,
     row: 6,
     seat: 14,
@@ -2538,7 +2256,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 283,
     price: 18,
     row: 6,
     seat: 15,
@@ -2546,7 +2263,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 284,
     price: 18,
     row: 6,
     seat: 16,
@@ -2554,7 +2270,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 285,
     price: 18,
     row: 6,
     seat: 17,
@@ -2562,7 +2277,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 286,
     price: 18,
     row: 6,
     seat: 18,
@@ -2570,7 +2284,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 287,
     price: 18,
     row: 6,
     seat: 19,
@@ -2580,7 +2293,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 288,
     price: 18,
     row: 6,
     seat: 20,
@@ -2590,7 +2302,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 289,
     price: 18,
     row: 7,
     seat: 1,
@@ -2598,7 +2309,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 290,
     price: 18,
     row: 7,
     seat: 2,
@@ -2606,7 +2316,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 291,
     price: 18,
     row: 7,
     seat: 3,
@@ -2614,7 +2323,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 292,
     price: 18,
     row: 7,
     seat: 4,
@@ -2622,7 +2330,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 293,
     price: 18,
     row: 7,
     seat: 5,
@@ -2630,7 +2337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 294,
     price: 18,
     row: 7,
     seat: 6,
@@ -2638,7 +2344,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 295,
     price: 18,
     row: 7,
     seat: 7,
@@ -2648,7 +2353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 296,
     price: 18,
     row: 7,
     seat: 8,
@@ -2656,7 +2360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 297,
     price: 18,
     row: 7,
     seat: 9,
@@ -2666,7 +2369,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 298,
     price: 18,
     row: 7,
     seat: 10,
@@ -2674,7 +2376,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 299,
     price: 18,
     row: 7,
     seat: 11,
@@ -2682,7 +2383,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 300,
     price: 18,
     row: 7,
     seat: 12,
@@ -2690,7 +2390,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 301,
     price: 18,
     row: 7,
     seat: 13,
@@ -2700,7 +2399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 302,
     price: 18,
     row: 7,
     seat: 14,
@@ -2708,7 +2406,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 303,
     price: 18,
     row: 7,
     seat: 15,
@@ -2716,7 +2413,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 304,
     price: 18,
     row: 7,
     seat: 16,
@@ -2726,7 +2422,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 305,
     price: 18,
     row: 7,
     seat: 17,
@@ -2734,7 +2429,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 306,
     price: 18,
     row: 7,
     seat: 18,
@@ -2742,7 +2436,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 307,
     price: 18,
     row: 7,
     seat: 19,
@@ -2752,7 +2445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 308,
     price: 18,
     row: 7,
     seat: 20,
@@ -2760,7 +2452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 309,
     price: 18,
     row: 8,
     seat: 1,
@@ -2768,7 +2459,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 310,
     price: 18,
     row: 8,
     seat: 2,
@@ -2776,7 +2466,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 311,
     price: 18,
     row: 8,
     seat: 3,
@@ -2786,7 +2475,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 312,
     price: 18,
     row: 8,
     seat: 4,
@@ -2794,7 +2482,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 313,
     price: 18,
     row: 8,
     seat: 5,
@@ -2804,7 +2491,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 314,
     price: 18,
     row: 8,
     seat: 6,
@@ -2812,7 +2498,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 315,
     price: 18,
     row: 8,
     seat: 7,
@@ -2822,7 +2507,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 316,
     price: 18,
     row: 8,
     seat: 8,
@@ -2830,7 +2514,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 317,
     price: 18,
     row: 8,
     seat: 9,
@@ -2840,7 +2523,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 318,
     price: 18,
     row: 8,
     seat: 10,
@@ -2848,7 +2530,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 319,
     price: 18,
     row: 8,
     seat: 11,
@@ -2856,7 +2537,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 320,
     price: 18,
     row: 8,
     seat: 12,
@@ -2866,7 +2546,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 321,
     price: 18,
     row: 8,
     seat: 13,
@@ -2874,7 +2553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 322,
     price: 18,
     row: 8,
     seat: 14,
@@ -2884,7 +2562,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 323,
     price: 18,
     row: 8,
     seat: 15,
@@ -2894,7 +2571,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 324,
     price: 18,
     row: 8,
     seat: 16,
@@ -2902,7 +2578,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 325,
     price: 18,
     row: 8,
     seat: 17,
@@ -2912,7 +2587,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 326,
     price: 18,
     row: 8,
     seat: 18,
@@ -2920,7 +2594,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 327,
     price: 18,
     row: 8,
     seat: 19,
@@ -2928,7 +2601,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 328,
     price: 18,
     row: 8,
     seat: 20,
@@ -2938,7 +2610,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 329,
     price: 18,
     row: 9,
     seat: 1,
@@ -2948,7 +2619,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 330,
     price: 18,
     row: 9,
     seat: 2,
@@ -2956,7 +2626,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 331,
     price: 18,
     row: 9,
     seat: 3,
@@ -2964,7 +2633,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 332,
     price: 18,
     row: 9,
     seat: 4,
@@ -2974,7 +2642,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 333,
     price: 18,
     row: 9,
     seat: 5,
@@ -2982,7 +2649,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 334,
     price: 18,
     row: 9,
     seat: 6,
@@ -2990,7 +2656,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 335,
     price: 18,
     row: 9,
     seat: 7,
@@ -2998,7 +2663,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 336,
     price: 18,
     row: 9,
     seat: 8,
@@ -3008,7 +2672,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 337,
     price: 18,
     row: 9,
     seat: 9,
@@ -3016,7 +2679,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 338,
     price: 18,
     row: 9,
     seat: 10,
@@ -3026,7 +2688,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 339,
     price: 18,
     row: 9,
     seat: 11,
@@ -3034,7 +2695,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 340,
     price: 18,
     row: 9,
     seat: 12,
@@ -3042,7 +2702,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 341,
     price: 18,
     row: 9,
     seat: 13,
@@ -3050,7 +2709,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 342,
     price: 18,
     row: 9,
     seat: 14,
@@ -3060,7 +2718,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 343,
     price: 18,
     row: 9,
     seat: 15,
@@ -3068,7 +2725,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 344,
     price: 18,
     row: 9,
     seat: 16,
@@ -3078,7 +2734,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 345,
     price: 18,
     row: 9,
     seat: 17,
@@ -3086,7 +2741,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 346,
     price: 18,
     row: 9,
     seat: 18,
@@ -3096,7 +2750,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 347,
     price: 18,
     row: 9,
     seat: 19,
@@ -3104,7 +2757,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 348,
     price: 18,
     row: 9,
     seat: 20,
@@ -3112,7 +2764,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 349,
     price: 18,
     row: 10,
     seat: 1,
@@ -3120,7 +2771,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 350,
     price: 18,
     row: 10,
     seat: 2,
@@ -3128,7 +2778,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 351,
     price: 18,
     row: 10,
     seat: 3,
@@ -3136,7 +2785,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 352,
     price: 18,
     row: 10,
     seat: 4,
@@ -3146,7 +2794,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 353,
     price: 18,
     row: 10,
     seat: 5,
@@ -3154,7 +2801,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 354,
     price: 18,
     row: 10,
     seat: 6,
@@ -3162,7 +2808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 355,
     price: 18,
     row: 10,
     seat: 7,
@@ -3170,7 +2815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 356,
     price: 18,
     row: 10,
     seat: 8,
@@ -3178,7 +2822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 357,
     price: 18,
     row: 10,
     seat: 9,
@@ -3188,7 +2831,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 358,
     price: 18,
     row: 10,
     seat: 10,
@@ -3198,7 +2840,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 359,
     price: 18,
     row: 10,
     seat: 11,
@@ -3206,7 +2847,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 360,
     price: 18,
     row: 10,
     seat: 12,
@@ -3216,7 +2856,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 361,
     price: 18,
     row: 10,
     seat: 13,
@@ -3224,7 +2863,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 362,
     price: 18,
     row: 10,
     seat: 14,
@@ -3234,7 +2872,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 363,
     price: 18,
     row: 10,
     seat: 15,
@@ -3244,7 +2881,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 364,
     price: 18,
     row: 10,
     seat: 16,
@@ -3254,7 +2890,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 365,
     price: 18,
     row: 10,
     seat: 17,
@@ -3262,7 +2897,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 366,
     price: 18,
     row: 10,
     seat: 18,
@@ -3270,7 +2904,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 367,
     price: 18,
     row: 10,
     seat: 19,
@@ -3280,7 +2913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 368,
     price: 18,
     row: 10,
     seat: 20,
@@ -3288,7 +2920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 369,
     price: 18,
     row: 11,
     seat: 1,
@@ -3298,7 +2929,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 370,
     price: 18,
     row: 11,
     seat: 2,
@@ -3306,7 +2936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 371,
     price: 18,
     row: 11,
     seat: 3,
@@ -3314,7 +2943,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 372,
     price: 18,
     row: 11,
     seat: 4,
@@ -3322,7 +2950,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 373,
     price: 18,
     row: 11,
     seat: 5,
@@ -3330,7 +2957,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 374,
     price: 18,
     row: 11,
     seat: 6,
@@ -3338,7 +2964,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 375,
     price: 18,
     row: 11,
     seat: 7,
@@ -3348,7 +2973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 376,
     price: 18,
     row: 11,
     seat: 8,
@@ -3356,7 +2980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 377,
     price: 18,
     row: 11,
     seat: 9,
@@ -3366,7 +2989,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 378,
     price: 18,
     row: 11,
     seat: 10,
@@ -3374,7 +2996,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 379,
     price: 18,
     row: 11,
     seat: 11,
@@ -3382,7 +3003,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 380,
     price: 18,
     row: 11,
     seat: 12,
@@ -3392,7 +3012,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 381,
     price: 18,
     row: 11,
     seat: 13,
@@ -3402,7 +3021,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 382,
     price: 18,
     row: 11,
     seat: 14,
@@ -3410,7 +3028,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 383,
     price: 18,
     row: 11,
     seat: 15,
@@ -3418,7 +3035,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 384,
     price: 18,
     row: 11,
     seat: 16,
@@ -3426,7 +3042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 385,
     price: 18,
     row: 11,
     seat: 17,
@@ -3434,7 +3049,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 386,
     price: 18,
     row: 11,
     seat: 18,
@@ -3442,7 +3056,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 387,
     price: 18,
     row: 11,
     seat: 19,
@@ -3452,7 +3065,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 388,
     price: 18,
     row: 11,
     seat: 20,
@@ -3460,7 +3072,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 389,
     price: 18,
     row: 12,
     seat: 1,
@@ -3468,7 +3079,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 390,
     price: 18,
     row: 12,
     seat: 2,
@@ -3476,7 +3086,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 391,
     price: 18,
     row: 12,
     seat: 3,
@@ -3486,7 +3095,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 392,
     price: 18,
     row: 12,
     seat: 4,
@@ -3494,7 +3102,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 393,
     price: 18,
     row: 12,
     seat: 5,
@@ -3502,7 +3109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 394,
     price: 18,
     row: 12,
     seat: 6,
@@ -3510,7 +3116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 395,
     price: 18,
     row: 12,
     seat: 7,
@@ -3520,7 +3125,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 396,
     price: 18,
     row: 12,
     seat: 8,
@@ -3528,7 +3132,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 397,
     price: 18,
     row: 12,
     seat: 9,
@@ -3536,7 +3139,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 398,
     price: 18,
     row: 12,
     seat: 10,
@@ -3546,7 +3148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 399,
     price: 18,
     row: 12,
     seat: 11,
@@ -3554,7 +3155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 400,
     price: 18,
     row: 12,
     seat: 12,
@@ -3564,7 +3164,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 401,
     price: 18,
     row: 12,
     seat: 13,
@@ -3572,7 +3171,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 402,
     price: 18,
     row: 12,
     seat: 14,
@@ -3580,7 +3178,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 403,
     price: 18,
     row: 12,
     seat: 15,
@@ -3588,7 +3185,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 404,
     price: 18,
     row: 12,
     seat: 16,
@@ -3596,7 +3192,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 405,
     price: 18,
     row: 12,
     seat: 17,
@@ -3604,7 +3199,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 406,
     price: 18,
     row: 12,
     seat: 18,
@@ -3612,7 +3206,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 407,
     price: 18,
     row: 12,
     seat: 19,
@@ -3622,7 +3215,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 408,
     price: 18,
     row: 12,
     seat: 20,
@@ -3632,7 +3224,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 409,
     price: 18,
     row: 13,
     seat: 1,
@@ -3640,7 +3231,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 410,
     price: 18,
     row: 13,
     seat: 2,
@@ -3650,7 +3240,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 411,
     price: 18,
     row: 13,
     seat: 3,
@@ -3658,7 +3247,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 412,
     price: 18,
     row: 13,
     seat: 4,
@@ -3666,7 +3254,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 413,
     price: 18,
     row: 13,
     seat: 5,
@@ -3674,7 +3261,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 414,
     price: 18,
     row: 13,
     seat: 6,
@@ -3684,7 +3270,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 415,
     price: 18,
     row: 13,
     seat: 7,
@@ -3692,7 +3277,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 416,
     price: 18,
     row: 13,
     seat: 8,
@@ -3700,7 +3284,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 417,
     price: 18,
     row: 13,
     seat: 9,
@@ -3708,7 +3291,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 418,
     price: 18,
     row: 13,
     seat: 10,
@@ -3716,7 +3298,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 419,
     price: 18,
     row: 13,
     seat: 11,
@@ -3724,7 +3305,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 420,
     price: 18,
     row: 13,
     seat: 12,
@@ -3732,7 +3312,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 421,
     price: 18,
     row: 13,
     seat: 13,
@@ -3742,7 +3321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 422,
     price: 18,
     row: 13,
     seat: 14,
@@ -3750,7 +3328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 423,
     price: 18,
     row: 13,
     seat: 15,
@@ -3758,7 +3335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 424,
     price: 18,
     row: 13,
     seat: 16,
@@ -3768,7 +3344,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 425,
     price: 18,
     row: 13,
     seat: 17,
@@ -3776,7 +3351,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 426,
     price: 18,
     row: 13,
     seat: 18,
@@ -3784,7 +3358,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 427,
     price: 18,
     row: 13,
     seat: 19,
@@ -3792,7 +3365,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 428,
     price: 18,
     row: 13,
     seat: 20,
@@ -3802,7 +3374,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 429,
     price: 18,
     row: 14,
     seat: 1,
@@ -3810,7 +3381,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 430,
     price: 18,
     row: 14,
     seat: 2,
@@ -3818,7 +3388,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 431,
     price: 18,
     row: 14,
     seat: 3,
@@ -3826,7 +3395,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 432,
     price: 18,
     row: 14,
     seat: 4,
@@ -3834,7 +3402,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 433,
     price: 18,
     row: 14,
     seat: 5,
@@ -3842,7 +3409,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 434,
     price: 18,
     row: 14,
     seat: 6,
@@ -3850,7 +3416,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 435,
     price: 18,
     row: 14,
     seat: 7,
@@ -3858,7 +3423,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 436,
     price: 18,
     row: 14,
     seat: 8,
@@ -3866,7 +3430,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 437,
     price: 18,
     row: 14,
     seat: 9,
@@ -3874,7 +3437,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 438,
     price: 18,
     row: 14,
     seat: 10,
@@ -3882,7 +3444,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 439,
     price: 18,
     row: 14,
     seat: 11,
@@ -3892,7 +3453,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 440,
     price: 18,
     row: 14,
     seat: 12,
@@ -3900,7 +3460,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 441,
     price: 18,
     row: 14,
     seat: 13,
@@ -3910,7 +3469,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 442,
     price: 18,
     row: 14,
     seat: 14,
@@ -3920,7 +3478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 443,
     price: 18,
     row: 14,
     seat: 15,
@@ -3928,7 +3485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 444,
     price: 18,
     row: 14,
     seat: 16,
@@ -3936,7 +3492,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 445,
     price: 18,
     row: 14,
     seat: 17,
@@ -3946,7 +3501,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 446,
     price: 18,
     row: 14,
     seat: 18,
@@ -3954,7 +3508,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 447,
     price: 18,
     row: 14,
     seat: 19,
@@ -3962,7 +3515,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 448,
     price: 18,
     row: 14,
     seat: 20,
@@ -3970,7 +3522,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 449,
     price: 18,
     row: 15,
     seat: 1,
@@ -3978,7 +3529,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 450,
     price: 18,
     row: 15,
     seat: 2,
@@ -3988,7 +3538,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 451,
     price: 18,
     row: 15,
     seat: 3,
@@ -3996,7 +3545,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 452,
     price: 18,
     row: 15,
     seat: 4,
@@ -4004,7 +3552,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 453,
     price: 18,
     row: 15,
     seat: 5,
@@ -4012,7 +3559,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 454,
     price: 18,
     row: 15,
     seat: 6,
@@ -4020,7 +3566,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 455,
     price: 18,
     row: 15,
     seat: 7,
@@ -4028,7 +3573,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 456,
     price: 18,
     row: 15,
     seat: 8,
@@ -4038,7 +3582,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 457,
     price: 18,
     row: 15,
     seat: 9,
@@ -4046,7 +3589,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 458,
     price: 18,
     row: 15,
     seat: 10,
@@ -4054,7 +3596,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 459,
     price: 18,
     row: 15,
     seat: 11,
@@ -4064,7 +3605,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 460,
     price: 18,
     row: 15,
     seat: 12,
@@ -4072,7 +3612,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 461,
     price: 18,
     row: 15,
     seat: 13,
@@ -4080,7 +3619,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 462,
     price: 18,
     row: 15,
     seat: 14,
@@ -4088,7 +3626,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 463,
     price: 18,
     row: 15,
     seat: 15,
@@ -4098,7 +3635,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 464,
     price: 18,
     row: 15,
     seat: 16,
@@ -4106,7 +3642,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 465,
     price: 18,
     row: 15,
     seat: 17,
@@ -4114,7 +3649,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 466,
     price: 18,
     row: 15,
     seat: 18,
@@ -4124,7 +3658,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 467,
     price: 18,
     row: 15,
     seat: 19,
@@ -4132,7 +3665,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 468,
     price: 18,
     row: 15,
     seat: 20,
@@ -4142,7 +3674,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 469,
     price: 18,
     row: 16,
     seat: 1,
@@ -4152,7 +3683,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 470,
     price: 18,
     row: 16,
     seat: 2,
@@ -4160,7 +3690,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 471,
     price: 18,
     row: 16,
     seat: 3,
@@ -4168,7 +3697,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 472,
     price: 18,
     row: 16,
     seat: 4,
@@ -4176,7 +3704,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 473,
     price: 18,
     row: 16,
     seat: 5,
@@ -4186,7 +3713,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 474,
     price: 18,
     row: 16,
     seat: 6,
@@ -4196,7 +3722,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 475,
     price: 18,
     row: 16,
     seat: 7,
@@ -4204,7 +3729,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 476,
     price: 18,
     row: 16,
     seat: 8,
@@ -4212,7 +3736,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 477,
     price: 18,
     row: 16,
     seat: 9,
@@ -4220,7 +3743,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 478,
     price: 18,
     row: 16,
     seat: 10,
@@ -4228,7 +3750,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 479,
     price: 18,
     row: 16,
     seat: 11,
@@ -4238,7 +3759,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 480,
     price: 18,
     row: 16,
     seat: 12,
@@ -4248,7 +3768,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 481,
     price: 18,
     row: 16,
     seat: 13,
@@ -4258,7 +3777,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 482,
     price: 18,
     row: 16,
     seat: 14,
@@ -4266,7 +3784,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 483,
     price: 18,
     row: 16,
     seat: 15,
@@ -4274,7 +3791,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 484,
     price: 18,
     row: 16,
     seat: 16,
@@ -4282,7 +3798,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 485,
     price: 18,
     row: 16,
     seat: 17,
@@ -4292,7 +3807,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 486,
     price: 18,
     row: 16,
     seat: 18,
@@ -4300,7 +3814,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 487,
     price: 18,
     row: 16,
     seat: 19,
@@ -4308,7 +3821,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 488,
     price: 18,
     row: 16,
     seat: 20,
@@ -4316,7 +3828,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 489,
     price: 18,
     row: 17,
     seat: 1,
@@ -4324,7 +3835,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 490,
     price: 18,
     row: 17,
     seat: 2,
@@ -4332,7 +3842,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 491,
     price: 18,
     row: 17,
     seat: 3,
@@ -4340,7 +3849,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 492,
     price: 18,
     row: 17,
     seat: 4,
@@ -4348,7 +3856,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 493,
     price: 18,
     row: 17,
     seat: 5,
@@ -4356,7 +3863,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 494,
     price: 18,
     row: 17,
     seat: 6,
@@ -4364,7 +3870,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 495,
     price: 18,
     row: 17,
     seat: 7,
@@ -4372,7 +3877,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 496,
     price: 18,
     row: 17,
     seat: 8,
@@ -4380,7 +3884,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 497,
     price: 18,
     row: 17,
     seat: 9,
@@ -4388,7 +3891,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 498,
     price: 18,
     row: 17,
     seat: 10,
@@ -4398,7 +3900,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 499,
     price: 18,
     row: 17,
     seat: 11,
@@ -4408,7 +3909,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 500,
     price: 18,
     row: 17,
     seat: 12,
@@ -4416,7 +3916,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 501,
     price: 18,
     row: 17,
     seat: 13,
@@ -4424,7 +3923,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 502,
     price: 18,
     row: 17,
     seat: 14,
@@ -4432,7 +3930,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 503,
     price: 18,
     row: 17,
     seat: 15,
@@ -4442,7 +3939,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 504,
     price: 18,
     row: 17,
     seat: 16,
@@ -4450,7 +3946,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 505,
     price: 18,
     row: 17,
     seat: 17,
@@ -4460,7 +3955,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 506,
     price: 18,
     row: 17,
     seat: 18,
@@ -4470,7 +3964,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 507,
     price: 18,
     row: 17,
     seat: 19,
@@ -4480,7 +3973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 508,
     price: 18,
     row: 17,
     seat: 20,
@@ -4488,7 +3980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 509,
     price: 18,
     row: 18,
     seat: 1,
@@ -4496,7 +3987,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 510,
     price: 18,
     row: 18,
     seat: 2,
@@ -4504,7 +3994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 511,
     price: 18,
     row: 18,
     seat: 3,
@@ -4514,7 +4003,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 512,
     price: 18,
     row: 18,
     seat: 4,
@@ -4522,7 +4010,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 513,
     price: 18,
     row: 18,
     seat: 5,
@@ -4530,7 +4017,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 514,
     price: 18,
     row: 18,
     seat: 6,
@@ -4540,7 +4026,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 515,
     price: 18,
     row: 18,
     seat: 7,
@@ -4548,7 +4033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 516,
     price: 18,
     row: 18,
     seat: 8,
@@ -4558,7 +4042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 517,
     price: 18,
     row: 18,
     seat: 9,
@@ -4568,7 +4051,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 518,
     price: 18,
     row: 18,
     seat: 10,
@@ -4576,7 +4058,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 519,
     price: 18,
     row: 18,
     seat: 11,
@@ -4584,7 +4065,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 520,
     price: 18,
     row: 18,
     seat: 12,
@@ -4594,7 +4074,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 521,
     price: 18,
     row: 18,
     seat: 13,
@@ -4602,7 +4081,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 522,
     price: 18,
     row: 18,
     seat: 14,
@@ -4610,7 +4088,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 523,
     price: 18,
     row: 18,
     seat: 15,
@@ -4618,7 +4095,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 524,
     price: 18,
     row: 18,
     seat: 16,
@@ -4626,7 +4102,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 525,
     price: 18,
     row: 18,
     seat: 17,
@@ -4634,7 +4109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 526,
     price: 18,
     row: 18,
     seat: 18,
@@ -4642,7 +4116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 527,
     price: 18,
     row: 18,
     seat: 19,
@@ -4652,7 +4125,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 528,
     price: 18,
     row: 18,
     seat: 20,
@@ -4662,7 +4134,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 529,
     price: 18,
     row: 19,
     seat: 1,
@@ -4670,7 +4141,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 530,
     price: 18,
     row: 19,
     seat: 2,
@@ -4678,7 +4148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 531,
     price: 18,
     row: 19,
     seat: 3,
@@ -4686,7 +4155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 532,
     price: 18,
     row: 19,
     seat: 4,
@@ -4694,7 +4162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 533,
     price: 18,
     row: 19,
     seat: 5,
@@ -4702,7 +4169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 534,
     price: 18,
     row: 19,
     seat: 6,
@@ -4710,7 +4176,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 535,
     price: 18,
     row: 19,
     seat: 7,
@@ -4718,7 +4183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 536,
     price: 18,
     row: 19,
     seat: 8,
@@ -4726,7 +4190,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 537,
     price: 18,
     row: 19,
     seat: 9,
@@ -4734,7 +4197,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 538,
     price: 18,
     row: 19,
     seat: 10,
@@ -4742,7 +4204,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 539,
     price: 18,
     row: 19,
     seat: 11,
@@ -4750,7 +4211,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 540,
     price: 18,
     row: 19,
     seat: 12,
@@ -4760,7 +4220,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 541,
     price: 18,
     row: 19,
     seat: 13,
@@ -4768,7 +4227,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 542,
     price: 18,
     row: 19,
     seat: 14,
@@ -4776,7 +4234,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 543,
     price: 18,
     row: 19,
     seat: 15,
@@ -4786,7 +4243,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 544,
     price: 18,
     row: 19,
     seat: 16,
@@ -4796,7 +4252,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 545,
     price: 18,
     row: 19,
     seat: 17,
@@ -4804,7 +4259,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 546,
     price: 18,
     row: 19,
     seat: 18,
@@ -4812,7 +4266,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 547,
     price: 18,
     row: 19,
     seat: 19,
@@ -4820,7 +4273,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 548,
     price: 18,
     row: 19,
     seat: 20,
@@ -4830,7 +4282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 549,
     price: 18,
     row: 20,
     seat: 1,
@@ -4838,7 +4289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 550,
     price: 18,
     row: 20,
     seat: 2,
@@ -4846,7 +4296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 551,
     price: 18,
     row: 20,
     seat: 3,
@@ -4854,7 +4303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 552,
     price: 18,
     row: 20,
     seat: 4,
@@ -4862,7 +4310,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 553,
     price: 18,
     row: 20,
     seat: 5,
@@ -4872,7 +4319,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 554,
     price: 18,
     row: 20,
     seat: 6,
@@ -4880,7 +4326,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 555,
     price: 18,
     row: 20,
     seat: 7,
@@ -4890,7 +4335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 556,
     price: 18,
     row: 20,
     seat: 8,
@@ -4900,7 +4344,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 557,
     price: 18,
     row: 20,
     seat: 9,
@@ -4910,7 +4353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 558,
     price: 18,
     row: 20,
     seat: 10,
@@ -4918,7 +4360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 559,
     price: 18,
     row: 20,
     seat: 11,
@@ -4926,7 +4367,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 560,
     price: 18,
     row: 20,
     seat: 12,
@@ -4934,7 +4374,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 561,
     price: 18,
     row: 20,
     seat: 13,
@@ -4944,7 +4383,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 562,
     price: 18,
     row: 20,
     seat: 14,
@@ -4952,7 +4390,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 563,
     price: 18,
     row: 20,
     seat: 15,
@@ -4960,7 +4397,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 564,
     price: 18,
     row: 20,
     seat: 16,
@@ -4968,7 +4404,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 565,
     price: 18,
     row: 20,
     seat: 17,
@@ -4976,7 +4411,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 566,
     price: 18,
     row: 20,
     seat: 18,
@@ -4986,7 +4420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 567,
     price: 18,
     row: 20,
     seat: 19,
@@ -4994,7 +4427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 568,
     price: 18,
     row: 20,
     seat: 20,
@@ -5002,7 +4434,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 569,
     price: 18,
     row: 21,
     seat: 1,
@@ -5010,7 +4441,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 570,
     price: 18,
     row: 21,
     seat: 2,
@@ -5020,7 +4450,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 571,
     price: 18,
     row: 21,
     seat: 3,
@@ -5028,7 +4457,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 572,
     price: 18,
     row: 21,
     seat: 4,
@@ -5036,7 +4464,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 573,
     price: 18,
     row: 21,
     seat: 5,
@@ -5044,7 +4471,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 574,
     price: 18,
     row: 21,
     seat: 6,
@@ -5052,7 +4478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 575,
     price: 18,
     row: 21,
     seat: 7,
@@ -5062,7 +4487,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 576,
     price: 18,
     row: 21,
     seat: 8,
@@ -5070,7 +4494,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 577,
     price: 18,
     row: 21,
     seat: 9,
@@ -5078,7 +4501,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 578,
     price: 18,
     row: 21,
     seat: 10,
@@ -5086,7 +4508,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 579,
     price: 18,
     row: 21,
     seat: 11,
@@ -5094,7 +4515,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 580,
     price: 18,
     row: 21,
     seat: 12,
@@ -5102,7 +4522,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 581,
     price: 18,
     row: 21,
     seat: 13,
@@ -5110,7 +4529,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 582,
     price: 18,
     row: 21,
     seat: 14,
@@ -5120,7 +4538,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 583,
     price: 18,
     row: 21,
     seat: 15,
@@ -5128,7 +4545,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 584,
     price: 18,
     row: 21,
     seat: 16,
@@ -5136,7 +4552,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 585,
     price: 18,
     row: 21,
     seat: 17,
@@ -5144,7 +4559,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 586,
     price: 18,
     row: 21,
     seat: 18,
@@ -5152,7 +4566,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 587,
     price: 18,
     row: 21,
     seat: 19,
@@ -5162,7 +4575,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 588,
     price: 18,
     row: 21,
     seat: 20,
@@ -5172,7 +4584,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 589,
     price: 18,
     row: 22,
     seat: 1,
@@ -5180,7 +4591,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 590,
     price: 18,
     row: 22,
     seat: 2,
@@ -5188,7 +4598,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 591,
     price: 18,
     row: 22,
     seat: 3,
@@ -5198,7 +4607,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 592,
     price: 18,
     row: 22,
     seat: 4,
@@ -5206,7 +4614,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 593,
     price: 18,
     row: 22,
     seat: 5,
@@ -5214,7 +4621,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 594,
     price: 18,
     row: 22,
     seat: 6,
@@ -5224,7 +4630,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 595,
     price: 18,
     row: 22,
     seat: 7,
@@ -5234,7 +4639,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 596,
     price: 18,
     row: 22,
     seat: 8,
@@ -5242,7 +4646,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 597,
     price: 18,
     row: 22,
     seat: 9,
@@ -5252,7 +4655,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 598,
     price: 18,
     row: 22,
     seat: 10,
@@ -5260,7 +4662,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 599,
     price: 18,
     row: 22,
     seat: 11,
@@ -5270,7 +4671,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 600,
     price: 18,
     row: 22,
     seat: 12,
@@ -5278,7 +4678,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 601,
     price: 18,
     row: 22,
     seat: 13,
@@ -5286,7 +4685,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 602,
     price: 18,
     row: 22,
     seat: 14,
@@ -5294,7 +4692,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 603,
     price: 18,
     row: 22,
     seat: 15,
@@ -5302,7 +4699,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 604,
     price: 18,
     row: 22,
     seat: 16,
@@ -5310,7 +4706,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 605,
     price: 18,
     row: 22,
     seat: 17,
@@ -5318,7 +4713,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 606,
     price: 18,
     row: 22,
     seat: 18,
@@ -5326,7 +4720,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 607,
     price: 18,
     row: 22,
     seat: 19,
@@ -5336,7 +4729,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 608,
     price: 18,
     row: 22,
     seat: 20,
@@ -5344,7 +4736,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 609,
     price: 18,
     row: 23,
     seat: 1,
@@ -5352,7 +4743,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 610,
     price: 18,
     row: 23,
     seat: 2,
@@ -5360,7 +4750,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 611,
     price: 18,
     row: 23,
     seat: 3,
@@ -5368,7 +4757,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 612,
     price: 18,
     row: 23,
     seat: 4,
@@ -5376,7 +4764,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 613,
     price: 18,
     row: 23,
     seat: 5,
@@ -5384,7 +4771,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 614,
     price: 18,
     row: 23,
     seat: 6,
@@ -5392,7 +4778,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 615,
     price: 18,
     row: 23,
     seat: 7,
@@ -5402,7 +4787,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 616,
     price: 18,
     row: 23,
     seat: 8,
@@ -5410,7 +4794,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 617,
     price: 18,
     row: 23,
     seat: 9,
@@ -5418,7 +4801,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 618,
     price: 18,
     row: 23,
     seat: 10,
@@ -5426,7 +4808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 619,
     price: 18,
     row: 23,
     seat: 11,
@@ -5434,7 +4815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 620,
     price: 18,
     row: 23,
     seat: 12,
@@ -5442,7 +4822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 621,
     price: 18,
     row: 23,
     seat: 13,
@@ -5450,7 +4829,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 622,
     price: 18,
     row: 23,
     seat: 14,
@@ -5458,7 +4836,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 623,
     price: 18,
     row: 23,
     seat: 15,
@@ -5466,7 +4843,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 624,
     price: 18,
     row: 23,
     seat: 16,
@@ -5474,7 +4850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 625,
     price: 18,
     row: 23,
     seat: 17,
@@ -5484,7 +4859,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 626,
     price: 18,
     row: 23,
     seat: 18,
@@ -5492,7 +4866,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 627,
     price: 18,
     row: 23,
     seat: 19,
@@ -5500,7 +4873,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 628,
     price: 18,
     row: 23,
     seat: 20,
@@ -5510,7 +4882,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 629,
     price: 18,
     row: 24,
     seat: 1,
@@ -5518,7 +4889,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 630,
     price: 18,
     row: 24,
     seat: 2,
@@ -5526,7 +4896,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 631,
     price: 18,
     row: 24,
     seat: 3,
@@ -5534,7 +4903,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 632,
     price: 18,
     row: 24,
     seat: 4,
@@ -5542,7 +4910,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 633,
     price: 18,
     row: 24,
     seat: 5,
@@ -5552,7 +4919,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 634,
     price: 18,
     row: 24,
     seat: 6,
@@ -5560,7 +4926,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 635,
     price: 18,
     row: 24,
     seat: 7,
@@ -5570,7 +4935,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 636,
     price: 18,
     row: 24,
     seat: 8,
@@ -5580,7 +4944,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 637,
     price: 18,
     row: 24,
     seat: 9,
@@ -5590,7 +4953,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 638,
     price: 18,
     row: 24,
     seat: 10,
@@ -5598,7 +4960,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 639,
     price: 18,
     row: 24,
     seat: 11,
@@ -5606,7 +4967,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 640,
     price: 18,
     row: 24,
     seat: 12,
@@ -5616,7 +4976,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 641,
     price: 18,
     row: 24,
     seat: 13,
@@ -5624,7 +4983,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 642,
     price: 18,
     row: 24,
     seat: 14,
@@ -5632,7 +4990,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 643,
     price: 18,
     row: 24,
     seat: 15,
@@ -5640,7 +4997,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 644,
     price: 18,
     row: 24,
     seat: 16,
@@ -5648,7 +5004,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 645,
     price: 18,
     row: 24,
     seat: 17,
@@ -5656,7 +5011,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 646,
     price: 18,
     row: 24,
     seat: 18,
@@ -5664,7 +5018,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 647,
     price: 18,
     row: 24,
     seat: 19,
@@ -5674,7 +5027,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 648,
     price: 18,
     row: 24,
     seat: 20,
@@ -5682,7 +5034,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 649,
     price: 18,
     row: 25,
     seat: 1,
@@ -5690,7 +5041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 650,
     price: 18,
     row: 25,
     seat: 2,
@@ -5700,7 +5050,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 651,
     price: 18,
     row: 25,
     seat: 3,
@@ -5710,7 +5059,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 652,
     price: 18,
     row: 25,
     seat: 4,
@@ -5718,7 +5066,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 653,
     price: 18,
     row: 25,
     seat: 5,
@@ -5726,7 +5073,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 654,
     price: 18,
     row: 25,
     seat: 6,
@@ -5734,7 +5080,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 655,
     price: 18,
     row: 25,
     seat: 7,
@@ -5744,7 +5089,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 656,
     price: 18,
     row: 25,
     seat: 8,
@@ -5754,7 +5098,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 657,
     price: 18,
     row: 25,
     seat: 9,
@@ -5762,7 +5105,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 658,
     price: 18,
     row: 25,
     seat: 10,
@@ -5770,7 +5112,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 659,
     price: 18,
     row: 25,
     seat: 11,
@@ -5780,7 +5121,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 660,
     price: 18,
     row: 25,
     seat: 12,
@@ -5788,7 +5128,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 661,
     price: 18,
     row: 25,
     seat: 13,
@@ -5796,7 +5135,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 662,
     price: 18,
     row: 25,
     seat: 14,
@@ -5804,7 +5142,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 663,
     price: 18,
     row: 25,
     seat: 15,
@@ -5812,7 +5149,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 664,
     price: 18,
     row: 25,
     seat: 16,
@@ -5820,7 +5156,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 665,
     price: 18,
     row: 25,
     seat: 17,
@@ -5828,7 +5163,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 666,
     price: 18,
     row: 25,
     seat: 18,
@@ -5838,7 +5172,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 667,
     price: 18,
     row: 25,
     seat: 19,
@@ -5846,7 +5179,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 668,
     price: 18,
     row: 25,
     seat: 20,
@@ -5856,7 +5188,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 669,
     price: 10,
     row: 1,
     seat: 1,
@@ -5864,7 +5195,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 670,
     price: 10,
     row: 1,
     seat: 2,
@@ -5874,7 +5204,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 671,
     price: 10,
     row: 1,
     seat: 3,
@@ -5882,7 +5211,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 672,
     price: 10,
     row: 1,
     seat: 4,
@@ -5892,7 +5220,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 673,
     price: 10,
     row: 1,
     seat: 5,
@@ -5900,7 +5227,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 674,
     price: 10,
     row: 1,
     seat: 6,
@@ -5908,7 +5234,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 675,
     price: 10,
     row: 1,
     seat: 7,
@@ -5916,7 +5241,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 676,
     price: 10,
     row: 1,
     seat: 8,
@@ -5926,7 +5250,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 677,
     price: 10,
     row: 1,
     seat: 9,
@@ -5934,7 +5257,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 678,
     price: 10,
     row: 1,
     seat: 10,
@@ -5944,7 +5266,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 679,
     price: 10,
     row: 1,
     seat: 11,
@@ -5952,7 +5273,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 680,
     price: 10,
     row: 1,
     seat: 12,
@@ -5962,7 +5282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 681,
     price: 10,
     row: 1,
     seat: 13,
@@ -5970,7 +5289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 682,
     price: 10,
     row: 1,
     seat: 14,
@@ -5978,7 +5296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 683,
     price: 10,
     row: 1,
     seat: 15,
@@ -5986,7 +5303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 684,
     price: 10,
     row: 1,
     seat: 16,
@@ -5996,7 +5312,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 685,
     price: 10,
     row: 1,
     seat: 17,
@@ -6006,7 +5321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 686,
     price: 10,
     row: 1,
     seat: 18,
@@ -6014,7 +5328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 687,
     price: 10,
     row: 1,
     seat: 19,
@@ -6022,7 +5335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 688,
     price: 10,
     row: 1,
     seat: 20,
@@ -6032,7 +5344,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 689,
     price: 10,
     row: 2,
     seat: 1,
@@ -6040,7 +5351,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 690,
     price: 10,
     row: 2,
     seat: 2,
@@ -6050,7 +5360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 691,
     price: 10,
     row: 2,
     seat: 3,
@@ -6058,7 +5367,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 692,
     price: 10,
     row: 2,
     seat: 4,
@@ -6066,7 +5374,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 693,
     price: 10,
     row: 2,
     seat: 5,
@@ -6074,7 +5381,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 694,
     price: 10,
     row: 2,
     seat: 6,
@@ -6082,7 +5388,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 695,
     price: 10,
     row: 2,
     seat: 7,
@@ -6092,7 +5397,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 696,
     price: 10,
     row: 2,
     seat: 8,
@@ -6100,7 +5404,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 697,
     price: 10,
     row: 2,
     seat: 9,
@@ -6108,7 +5411,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 698,
     price: 10,
     row: 2,
     seat: 10,
@@ -6118,7 +5420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 699,
     price: 10,
     row: 2,
     seat: 11,
@@ -6126,7 +5427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 700,
     price: 10,
     row: 2,
     seat: 12,
@@ -6134,7 +5434,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 701,
     price: 10,
     row: 2,
     seat: 13,
@@ -6142,7 +5441,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 702,
     price: 10,
     row: 2,
     seat: 14,
@@ -6150,7 +5448,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 703,
     price: 10,
     row: 2,
     seat: 15,
@@ -6158,7 +5455,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 704,
     price: 10,
     row: 2,
     seat: 16,
@@ -6166,7 +5462,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 705,
     price: 10,
     row: 2,
     seat: 17,
@@ -6176,7 +5471,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 706,
     price: 10,
     row: 2,
     seat: 18,
@@ -6184,7 +5478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 707,
     price: 10,
     row: 2,
     seat: 19,
@@ -6192,7 +5485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 708,
     price: 10,
     row: 2,
     seat: 20,
@@ -6202,7 +5494,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 709,
     price: 10,
     row: 3,
     seat: 1,
@@ -6210,7 +5501,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 710,
     price: 10,
     row: 3,
     seat: 2,
@@ -6220,7 +5510,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 711,
     price: 10,
     row: 3,
     seat: 3,
@@ -6230,7 +5519,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 712,
     price: 10,
     row: 3,
     seat: 4,
@@ -6238,7 +5526,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 713,
     price: 10,
     row: 3,
     seat: 5,
@@ -6248,7 +5535,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 714,
     price: 10,
     row: 3,
     seat: 6,
@@ -6258,7 +5544,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 715,
     price: 10,
     row: 3,
     seat: 7,
@@ -6268,7 +5553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 716,
     price: 10,
     row: 3,
     seat: 8,
@@ -6278,7 +5562,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 717,
     price: 10,
     row: 3,
     seat: 9,
@@ -6288,7 +5571,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 718,
     price: 10,
     row: 3,
     seat: 10,
@@ -6298,7 +5580,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 719,
     price: 10,
     row: 3,
     seat: 11,
@@ -6306,7 +5587,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 720,
     price: 10,
     row: 3,
     seat: 12,
@@ -6314,7 +5594,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 721,
     price: 10,
     row: 3,
     seat: 13,
@@ -6322,7 +5601,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 722,
     price: 10,
     row: 3,
     seat: 14,
@@ -6332,7 +5610,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 723,
     price: 10,
     row: 3,
     seat: 15,
@@ -6340,7 +5617,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 724,
     price: 10,
     row: 3,
     seat: 16,
@@ -6350,7 +5626,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 725,
     price: 10,
     row: 3,
     seat: 17,
@@ -6358,7 +5633,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 726,
     price: 10,
     row: 3,
     seat: 18,
@@ -6366,7 +5640,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 727,
     price: 10,
     row: 3,
     seat: 19,
@@ -6374,7 +5647,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 728,
     price: 10,
     row: 3,
     seat: 20,
@@ -6382,7 +5654,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 729,
     price: 10,
     row: 4,
     seat: 1,
@@ -6390,7 +5661,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 730,
     price: 10,
     row: 4,
     seat: 2,
@@ -6398,7 +5668,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 731,
     price: 10,
     row: 4,
     seat: 3,
@@ -6406,7 +5675,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 732,
     price: 10,
     row: 4,
     seat: 4,
@@ -6414,7 +5682,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 733,
     price: 10,
     row: 4,
     seat: 5,
@@ -6422,7 +5689,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 734,
     price: 10,
     row: 4,
     seat: 6,
@@ -6430,7 +5696,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 735,
     price: 10,
     row: 4,
     seat: 7,
@@ -6440,7 +5705,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 736,
     price: 10,
     row: 4,
     seat: 8,
@@ -6450,7 +5714,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 737,
     price: 10,
     row: 4,
     seat: 9,
@@ -6458,7 +5721,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 738,
     price: 10,
     row: 4,
     seat: 10,
@@ -6466,7 +5728,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 739,
     price: 10,
     row: 4,
     seat: 11,
@@ -6474,7 +5735,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 740,
     price: 10,
     row: 4,
     seat: 12,
@@ -6482,7 +5742,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 741,
     price: 10,
     row: 4,
     seat: 13,
@@ -6492,7 +5751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 742,
     price: 10,
     row: 4,
     seat: 14,
@@ -6502,7 +5760,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 743,
     price: 10,
     row: 4,
     seat: 15,
@@ -6512,7 +5769,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 744,
     price: 10,
     row: 4,
     seat: 16,
@@ -6522,7 +5778,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 745,
     price: 10,
     row: 4,
     seat: 17,
@@ -6530,7 +5785,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 746,
     price: 10,
     row: 4,
     seat: 18,
@@ -6540,7 +5794,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 747,
     price: 10,
     row: 4,
     seat: 19,
@@ -6548,7 +5801,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 748,
     price: 10,
     row: 4,
     seat: 20,
@@ -6556,7 +5808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 749,
     price: 10,
     row: 5,
     seat: 1,
@@ -6566,7 +5817,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 750,
     price: 10,
     row: 5,
     seat: 2,
@@ -6574,7 +5824,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 751,
     price: 10,
     row: 5,
     seat: 3,
@@ -6584,7 +5833,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 752,
     price: 10,
     row: 5,
     seat: 4,
@@ -6592,7 +5840,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 753,
     price: 10,
     row: 5,
     seat: 5,
@@ -6602,7 +5849,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 754,
     price: 10,
     row: 5,
     seat: 6,
@@ -6610,7 +5856,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 755,
     price: 10,
     row: 5,
     seat: 7,
@@ -6618,7 +5863,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 756,
     price: 10,
     row: 5,
     seat: 8,
@@ -6628,7 +5872,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 757,
     price: 10,
     row: 5,
     seat: 9,
@@ -6636,7 +5879,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 758,
     price: 10,
     row: 5,
     seat: 10,
@@ -6646,7 +5888,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 759,
     price: 10,
     row: 5,
     seat: 11,
@@ -6654,7 +5895,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 760,
     price: 10,
     row: 5,
     seat: 12,
@@ -6664,7 +5904,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 761,
     price: 10,
     row: 5,
     seat: 13,
@@ -6674,7 +5913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 762,
     price: 10,
     row: 5,
     seat: 14,
@@ -6682,7 +5920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 763,
     price: 10,
     row: 5,
     seat: 15,
@@ -6690,7 +5927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 764,
     price: 10,
     row: 5,
     seat: 16,
@@ -6698,7 +5934,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 765,
     price: 10,
     row: 5,
     seat: 17,
@@ -6706,7 +5941,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 766,
     price: 10,
     row: 5,
     seat: 18,
@@ -6714,7 +5948,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 767,
     price: 10,
     row: 5,
     seat: 19,
@@ -6722,7 +5955,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 768,
     price: 10,
     row: 5,
     seat: 20,
@@ -6730,7 +5962,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 769,
     price: 10,
     row: 6,
     seat: 1,
@@ -6738,7 +5969,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 770,
     price: 10,
     row: 6,
     seat: 2,
@@ -6746,7 +5976,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 771,
     price: 10,
     row: 6,
     seat: 3,
@@ -6756,7 +5985,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 772,
     price: 10,
     row: 6,
     seat: 4,
@@ -6764,7 +5992,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 773,
     price: 10,
     row: 6,
     seat: 5,
@@ -6774,7 +6001,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 774,
     price: 10,
     row: 6,
     seat: 6,
@@ -6782,7 +6008,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 775,
     price: 10,
     row: 6,
     seat: 7,
@@ -6792,7 +6017,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 776,
     price: 10,
     row: 6,
     seat: 8,
@@ -6800,7 +6024,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 777,
     price: 10,
     row: 6,
     seat: 9,
@@ -6810,7 +6033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 778,
     price: 10,
     row: 6,
     seat: 10,
@@ -6820,7 +6042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 779,
     price: 10,
     row: 6,
     seat: 11,
@@ -6828,7 +6049,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 780,
     price: 10,
     row: 6,
     seat: 12,
@@ -6838,7 +6058,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 781,
     price: 10,
     row: 6,
     seat: 13,
@@ -6848,7 +6067,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 782,
     price: 10,
     row: 6,
     seat: 14,
@@ -6856,7 +6074,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 783,
     price: 10,
     row: 6,
     seat: 15,
@@ -6864,7 +6081,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 784,
     price: 10,
     row: 6,
     seat: 16,
@@ -6872,7 +6088,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 785,
     price: 10,
     row: 6,
     seat: 17,
@@ -6882,7 +6097,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 786,
     price: 10,
     row: 6,
     seat: 18,
@@ -6890,7 +6104,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 787,
     price: 10,
     row: 6,
     seat: 19,
@@ -6900,7 +6113,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 788,
     price: 10,
     row: 6,
     seat: 20,
@@ -6910,7 +6122,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 789,
     price: 10,
     row: 7,
     seat: 1,
@@ -6918,7 +6129,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 790,
     price: 10,
     row: 7,
     seat: 2,
@@ -6926,7 +6136,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 791,
     price: 10,
     row: 7,
     seat: 3,
@@ -6934,7 +6143,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 792,
     price: 10,
     row: 7,
     seat: 4,
@@ -6942,7 +6150,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 793,
     price: 10,
     row: 7,
     seat: 5,
@@ -6950,7 +6157,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 794,
     price: 10,
     row: 7,
     seat: 6,
@@ -6960,7 +6166,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 795,
     price: 10,
     row: 7,
     seat: 7,
@@ -6968,7 +6173,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 796,
     price: 10,
     row: 7,
     seat: 8,
@@ -6978,7 +6182,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 797,
     price: 10,
     row: 7,
     seat: 9,
@@ -6988,7 +6191,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 798,
     price: 10,
     row: 7,
     seat: 10,
@@ -6996,7 +6198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 799,
     price: 10,
     row: 7,
     seat: 11,
@@ -7004,7 +6205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 800,
     price: 10,
     row: 7,
     seat: 12,
@@ -7012,7 +6212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 801,
     price: 10,
     row: 7,
     seat: 13,
@@ -7020,7 +6219,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 802,
     price: 10,
     row: 7,
     seat: 14,
@@ -7030,7 +6228,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 803,
     price: 10,
     row: 7,
     seat: 15,
@@ -7038,7 +6235,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 804,
     price: 10,
     row: 7,
     seat: 16,
@@ -7046,7 +6242,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 805,
     price: 10,
     row: 7,
     seat: 17,
@@ -7054,7 +6249,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 806,
     price: 10,
     row: 7,
     seat: 18,
@@ -7064,7 +6258,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 807,
     price: 10,
     row: 7,
     seat: 19,
@@ -7072,7 +6265,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 808,
     price: 10,
     row: 7,
     seat: 20,
@@ -7080,7 +6272,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 809,
     price: 10,
     row: 8,
     seat: 1,
@@ -7090,7 +6281,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 810,
     price: 10,
     row: 8,
     seat: 2,
@@ -7098,7 +6288,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 811,
     price: 10,
     row: 8,
     seat: 3,
@@ -7108,7 +6297,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 812,
     price: 10,
     row: 8,
     seat: 4,
@@ -7116,7 +6304,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 813,
     price: 10,
     row: 8,
     seat: 5,
@@ -7124,7 +6311,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 814,
     price: 10,
     row: 8,
     seat: 6,
@@ -7132,7 +6318,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 815,
     price: 10,
     row: 8,
     seat: 7,
@@ -7142,7 +6327,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 816,
     price: 10,
     row: 8,
     seat: 8,
@@ -7152,7 +6336,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 817,
     price: 10,
     row: 8,
     seat: 9,
@@ -7160,7 +6343,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 818,
     price: 10,
     row: 8,
     seat: 10,
@@ -7168,7 +6350,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 819,
     price: 10,
     row: 8,
     seat: 11,
@@ -7176,7 +6357,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 820,
     price: 10,
     row: 8,
     seat: 12,
@@ -7184,7 +6364,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 821,
     price: 10,
     row: 8,
     seat: 13,
@@ -7192,7 +6371,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 822,
     price: 10,
     row: 8,
     seat: 14,
@@ -7200,7 +6378,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 823,
     price: 10,
     row: 8,
     seat: 15,
@@ -7208,7 +6385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 824,
     price: 10,
     row: 8,
     seat: 16,
@@ -7216,7 +6392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 825,
     price: 10,
     row: 8,
     seat: 17,
@@ -7224,7 +6399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 826,
     price: 10,
     row: 8,
     seat: 18,
@@ -7232,7 +6406,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 827,
     price: 10,
     row: 8,
     seat: 19,
@@ -7240,7 +6413,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 828,
     price: 10,
     row: 8,
     seat: 20,
@@ -7248,7 +6420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 829,
     price: 10,
     row: 9,
     seat: 1,
@@ -7256,7 +6427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 830,
     price: 10,
     row: 9,
     seat: 2,
@@ -7266,7 +6436,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 831,
     price: 10,
     row: 9,
     seat: 3,
@@ -7274,7 +6443,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 832,
     price: 10,
     row: 9,
     seat: 4,
@@ -7282,7 +6450,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 833,
     price: 10,
     row: 9,
     seat: 5,
@@ -7290,7 +6457,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 834,
     price: 10,
     row: 9,
     seat: 6,
@@ -7300,7 +6466,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 835,
     price: 10,
     row: 9,
     seat: 7,
@@ -7308,7 +6473,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 836,
     price: 10,
     row: 9,
     seat: 8,
@@ -7316,7 +6480,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 837,
     price: 10,
     row: 9,
     seat: 9,
@@ -7324,7 +6487,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 838,
     price: 10,
     row: 9,
     seat: 10,
@@ -7334,7 +6496,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 839,
     price: 10,
     row: 9,
     seat: 11,
@@ -7342,7 +6503,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 840,
     price: 10,
     row: 9,
     seat: 12,
@@ -7352,7 +6512,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 841,
     price: 10,
     row: 9,
     seat: 13,
@@ -7362,7 +6521,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 842,
     price: 10,
     row: 9,
     seat: 14,
@@ -7372,7 +6530,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 843,
     price: 10,
     row: 9,
     seat: 15,
@@ -7380,7 +6537,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 844,
     price: 10,
     row: 9,
     seat: 16,
@@ -7388,7 +6544,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 845,
     price: 10,
     row: 9,
     seat: 17,
@@ -7398,7 +6553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 846,
     price: 10,
     row: 9,
     seat: 18,
@@ -7406,7 +6560,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 847,
     price: 10,
     row: 9,
     seat: 19,
@@ -7414,7 +6567,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 848,
     price: 10,
     row: 9,
     seat: 20,
@@ -7422,7 +6574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 849,
     price: 10,
     row: 10,
     seat: 1,
@@ -7430,7 +6581,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 850,
     price: 10,
     row: 10,
     seat: 2,
@@ -7438,7 +6588,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 851,
     price: 10,
     row: 10,
     seat: 3,
@@ -7448,7 +6597,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 852,
     price: 10,
     row: 10,
     seat: 4,
@@ -7456,7 +6604,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 853,
     price: 10,
     row: 10,
     seat: 5,
@@ -7464,7 +6611,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 854,
     price: 10,
     row: 10,
     seat: 6,
@@ -7472,7 +6618,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 855,
     price: 10,
     row: 10,
     seat: 7,
@@ -7480,7 +6625,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 856,
     price: 10,
     row: 10,
     seat: 8,
@@ -7488,7 +6632,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 857,
     price: 10,
     row: 10,
     seat: 9,
@@ -7498,7 +6641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 858,
     price: 10,
     row: 10,
     seat: 10,
@@ -7508,7 +6650,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 859,
     price: 10,
     row: 10,
     seat: 11,
@@ -7516,7 +6657,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 860,
     price: 10,
     row: 10,
     seat: 12,
@@ -7524,7 +6664,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 861,
     price: 10,
     row: 10,
     seat: 13,
@@ -7532,7 +6671,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 862,
     price: 10,
     row: 10,
     seat: 14,
@@ -7542,7 +6680,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 863,
     price: 10,
     row: 10,
     seat: 15,
@@ -7550,7 +6687,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 864,
     price: 10,
     row: 10,
     seat: 16,
@@ -7558,7 +6694,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 865,
     price: 10,
     row: 10,
     seat: 17,
@@ -7568,7 +6703,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 866,
     price: 10,
     row: 10,
     seat: 18,
@@ -7576,7 +6710,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 867,
     price: 10,
     row: 10,
     seat: 19,
@@ -7584,7 +6717,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 868,
     price: 10,
     row: 10,
     seat: 20,
@@ -7594,7 +6726,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 869,
     price: 10,
     row: 11,
     seat: 1,
@@ -7602,7 +6733,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 870,
     price: 10,
     row: 11,
     seat: 2,
@@ -7610,7 +6740,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 871,
     price: 10,
     row: 11,
     seat: 3,
@@ -7620,7 +6749,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 872,
     price: 10,
     row: 11,
     seat: 4,
@@ -7630,7 +6758,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 873,
     price: 10,
     row: 11,
     seat: 5,
@@ -7638,7 +6765,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 874,
     price: 10,
     row: 11,
     seat: 6,
@@ -7646,7 +6772,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 875,
     price: 10,
     row: 11,
     seat: 7,
@@ -7656,7 +6781,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 876,
     price: 10,
     row: 11,
     seat: 8,
@@ -7666,7 +6790,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 877,
     price: 10,
     row: 11,
     seat: 9,
@@ -7674,7 +6797,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 878,
     price: 10,
     row: 11,
     seat: 10,
@@ -7682,7 +6804,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 879,
     price: 10,
     row: 11,
     seat: 11,
@@ -7690,7 +6811,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 880,
     price: 10,
     row: 11,
     seat: 12,
@@ -7698,7 +6818,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 881,
     price: 10,
     row: 11,
     seat: 13,
@@ -7706,7 +6825,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 882,
     price: 10,
     row: 11,
     seat: 14,
@@ -7714,7 +6832,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 883,
     price: 10,
     row: 11,
     seat: 15,
@@ -7722,7 +6839,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 884,
     price: 10,
     row: 11,
     seat: 16,
@@ -7730,7 +6846,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 885,
     price: 10,
     row: 11,
     seat: 17,
@@ -7738,7 +6853,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 886,
     price: 10,
     row: 11,
     seat: 18,
@@ -7748,7 +6862,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 887,
     price: 10,
     row: 11,
     seat: 19,
@@ -7756,7 +6869,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 888,
     price: 10,
     row: 11,
     seat: 20,
@@ -7764,7 +6876,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 889,
     price: 10,
     row: 12,
     seat: 1,
@@ -7774,7 +6885,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 890,
     price: 10,
     row: 12,
     seat: 2,
@@ -7782,7 +6892,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 891,
     price: 10,
     row: 12,
     seat: 3,
@@ -7790,7 +6899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 892,
     price: 10,
     row: 12,
     seat: 4,
@@ -7798,7 +6906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 893,
     price: 10,
     row: 12,
     seat: 5,
@@ -7806,7 +6913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 894,
     price: 10,
     row: 12,
     seat: 6,
@@ -7814,7 +6920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 895,
     price: 10,
     row: 12,
     seat: 7,
@@ -7822,7 +6927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 896,
     price: 10,
     row: 12,
     seat: 8,
@@ -7832,7 +6936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 897,
     price: 10,
     row: 12,
     seat: 9,
@@ -7840,7 +6943,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 898,
     price: 10,
     row: 12,
     seat: 10,
@@ -7850,7 +6952,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 899,
     price: 10,
     row: 12,
     seat: 11,
@@ -7858,7 +6959,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 900,
     price: 10,
     row: 12,
     seat: 12,
@@ -7868,7 +6968,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 901,
     price: 10,
     row: 12,
     seat: 13,
@@ -7876,7 +6975,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 902,
     price: 10,
     row: 12,
     seat: 14,
@@ -7884,7 +6982,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 903,
     price: 10,
     row: 12,
     seat: 15,
@@ -7892,7 +6989,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 904,
     price: 10,
     row: 12,
     seat: 16,
@@ -7902,7 +6998,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 905,
     price: 10,
     row: 12,
     seat: 17,
@@ -7910,7 +7005,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 906,
     price: 10,
     row: 12,
     seat: 18,
@@ -7918,7 +7012,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 907,
     price: 10,
     row: 12,
     seat: 19,
@@ -7926,7 +7019,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 908,
     price: 10,
     row: 12,
     seat: 20,
@@ -7934,7 +7026,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 909,
     price: 10,
     row: 13,
     seat: 1,
@@ -7942,7 +7033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 910,
     price: 10,
     row: 13,
     seat: 2,
@@ -7952,7 +7042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 911,
     price: 10,
     row: 13,
     seat: 3,
@@ -7960,7 +7049,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 912,
     price: 10,
     row: 13,
     seat: 4,
@@ -7968,7 +7056,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 913,
     price: 10,
     row: 13,
     seat: 5,
@@ -7976,7 +7063,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 914,
     price: 10,
     row: 13,
     seat: 6,
@@ -7984,7 +7070,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 915,
     price: 10,
     row: 13,
     seat: 7,
@@ -7992,7 +7077,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 916,
     price: 10,
     row: 13,
     seat: 8,
@@ -8002,7 +7086,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 917,
     price: 10,
     row: 13,
     seat: 9,
@@ -8010,7 +7093,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 918,
     price: 10,
     row: 13,
     seat: 10,
@@ -8020,7 +7102,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 919,
     price: 10,
     row: 13,
     seat: 11,
@@ -8028,7 +7109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 920,
     price: 10,
     row: 13,
     seat: 12,
@@ -8036,7 +7116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 921,
     price: 10,
     row: 13,
     seat: 13,
@@ -8046,7 +7125,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 922,
     price: 10,
     row: 13,
     seat: 14,
@@ -8054,7 +7132,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 923,
     price: 10,
     row: 13,
     seat: 15,
@@ -8064,7 +7141,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 924,
     price: 10,
     row: 13,
     seat: 16,
@@ -8072,7 +7148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 925,
     price: 10,
     row: 13,
     seat: 17,
@@ -8080,7 +7155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 926,
     price: 10,
     row: 13,
     seat: 18,
@@ -8088,7 +7162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 927,
     price: 10,
     row: 13,
     seat: 19,
@@ -8096,7 +7169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 928,
     price: 10,
     row: 13,
     seat: 20,
@@ -8104,7 +7176,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 929,
     price: 10,
     row: 14,
     seat: 1,
@@ -8112,7 +7183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 930,
     price: 10,
     row: 14,
     seat: 2,
@@ -8120,7 +7190,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 931,
     price: 10,
     row: 14,
     seat: 3,
@@ -8128,7 +7197,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 932,
     price: 10,
     row: 14,
     seat: 4,
@@ -8138,7 +7206,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 933,
     price: 10,
     row: 14,
     seat: 5,
@@ -8148,7 +7215,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 934,
     price: 10,
     row: 14,
     seat: 6,
@@ -8156,7 +7222,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 935,
     price: 10,
     row: 14,
     seat: 7,
@@ -8166,7 +7231,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 936,
     price: 10,
     row: 14,
     seat: 8,
@@ -8174,7 +7238,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 937,
     price: 10,
     row: 14,
     seat: 9,
@@ -8182,7 +7245,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 938,
     price: 10,
     row: 14,
     seat: 10,
@@ -8190,7 +7252,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 939,
     price: 10,
     row: 14,
     seat: 11,
@@ -8200,7 +7261,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 940,
     price: 10,
     row: 14,
     seat: 12,
@@ -8210,7 +7270,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 941,
     price: 10,
     row: 14,
     seat: 13,
@@ -8218,7 +7277,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 942,
     price: 10,
     row: 14,
     seat: 14,
@@ -8226,7 +7284,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 943,
     price: 10,
     row: 14,
     seat: 15,
@@ -8234,7 +7291,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 944,
     price: 10,
     row: 14,
     seat: 16,
@@ -8244,7 +7300,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 945,
     price: 10,
     row: 14,
     seat: 17,
@@ -8252,7 +7307,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 946,
     price: 10,
     row: 14,
     seat: 18,
@@ -8260,7 +7314,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 947,
     price: 10,
     row: 14,
     seat: 19,
@@ -8268,7 +7321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 948,
     price: 10,
     row: 14,
     seat: 20,
@@ -8278,7 +7330,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 949,
     price: 10,
     row: 15,
     seat: 1,
@@ -8288,7 +7339,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 950,
     price: 10,
     row: 15,
     seat: 2,
@@ -8296,7 +7346,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 951,
     price: 10,
     row: 15,
     seat: 3,
@@ -8304,7 +7353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 952,
     price: 10,
     row: 15,
     seat: 4,
@@ -8312,7 +7360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 953,
     price: 10,
     row: 15,
     seat: 5,
@@ -8322,7 +7369,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 954,
     price: 10,
     row: 15,
     seat: 6,
@@ -8332,7 +7378,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 955,
     price: 10,
     row: 15,
     seat: 7,
@@ -8340,7 +7385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 956,
     price: 10,
     row: 15,
     seat: 8,
@@ -8348,7 +7392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 957,
     price: 10,
     row: 15,
     seat: 9,
@@ -8358,7 +7401,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 958,
     price: 10,
     row: 15,
     seat: 10,
@@ -8366,7 +7408,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 959,
     price: 10,
     row: 15,
     seat: 11,
@@ -8374,7 +7415,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 960,
     price: 10,
     row: 15,
     seat: 12,
@@ -8384,7 +7424,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 961,
     price: 10,
     row: 15,
     seat: 13,
@@ -8394,7 +7433,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 962,
     price: 10,
     row: 15,
     seat: 14,
@@ -8402,7 +7440,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 963,
     price: 10,
     row: 15,
     seat: 15,
@@ -8410,7 +7447,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 964,
     price: 10,
     row: 15,
     seat: 16,
@@ -8418,7 +7454,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 965,
     price: 10,
     row: 15,
     seat: 17,
@@ -8428,7 +7463,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 966,
     price: 10,
     row: 15,
     seat: 18,
@@ -8436,7 +7470,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 967,
     price: 10,
     row: 15,
     seat: 19,
@@ -8444,7 +7477,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 968,
     price: 10,
     row: 15,
     seat: 20,
@@ -8452,7 +7484,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 969,
     price: 10,
     row: 16,
     seat: 1,
@@ -8462,7 +7493,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 970,
     price: 10,
     row: 16,
     seat: 2,
@@ -8472,7 +7502,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 971,
     price: 10,
     row: 16,
     seat: 3,
@@ -8480,7 +7509,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 972,
     price: 10,
     row: 16,
     seat: 4,
@@ -8488,7 +7516,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 973,
     price: 10,
     row: 16,
     seat: 5,
@@ -8496,7 +7523,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 974,
     price: 10,
     row: 16,
     seat: 6,
@@ -8504,7 +7530,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 975,
     price: 10,
     row: 16,
     seat: 7,
@@ -8512,7 +7537,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 976,
     price: 10,
     row: 16,
     seat: 8,
@@ -8520,7 +7544,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 977,
     price: 10,
     row: 16,
     seat: 9,
@@ -8528,7 +7551,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 978,
     price: 10,
     row: 16,
     seat: 10,
@@ -8536,7 +7558,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 979,
     price: 10,
     row: 16,
     seat: 11,
@@ -8546,7 +7567,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 980,
     price: 10,
     row: 16,
     seat: 12,
@@ -8554,7 +7574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 981,
     price: 10,
     row: 16,
     seat: 13,
@@ -8562,7 +7581,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 982,
     price: 10,
     row: 16,
     seat: 14,
@@ -8570,7 +7588,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 983,
     price: 10,
     row: 16,
     seat: 15,
@@ -8578,7 +7595,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 984,
     price: 10,
     row: 16,
     seat: 16,
@@ -8588,7 +7604,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 985,
     price: 10,
     row: 16,
     seat: 17,
@@ -8596,7 +7611,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 986,
     price: 10,
     row: 16,
     seat: 18,
@@ -8604,7 +7618,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 987,
     price: 10,
     row: 16,
     seat: 19,
@@ -8612,7 +7625,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 988,
     price: 10,
     row: 16,
     seat: 20,
@@ -8622,7 +7634,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 989,
     price: 10,
     row: 17,
     seat: 1,
@@ -8630,7 +7641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 990,
     price: 10,
     row: 17,
     seat: 2,
@@ -8638,7 +7648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 991,
     price: 10,
     row: 17,
     seat: 3,
@@ -8646,7 +7655,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 992,
     price: 10,
     row: 17,
     seat: 4,
@@ -8654,7 +7662,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 993,
     price: 10,
     row: 17,
     seat: 5,
@@ -8662,7 +7669,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 994,
     price: 10,
     row: 17,
     seat: 6,
@@ -8672,7 +7678,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 995,
     price: 10,
     row: 17,
     seat: 7,
@@ -8682,7 +7687,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 996,
     price: 10,
     row: 17,
     seat: 8,
@@ -8690,7 +7694,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 997,
     price: 10,
     row: 17,
     seat: 9,
@@ -8698,7 +7701,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 998,
     price: 10,
     row: 17,
     seat: 10,
@@ -8708,7 +7710,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 999,
     price: 10,
     row: 17,
     seat: 11,
@@ -8716,7 +7717,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1000,
     price: 10,
     row: 17,
     seat: 12,
@@ -8724,7 +7724,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1001,
     price: 10,
     row: 17,
     seat: 13,
@@ -8732,7 +7731,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1002,
     price: 10,
     row: 17,
     seat: 14,
@@ -8742,7 +7740,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1003,
     price: 10,
     row: 17,
     seat: 15,
@@ -8750,7 +7747,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1004,
     price: 10,
     row: 17,
     seat: 16,
@@ -8760,7 +7756,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1005,
     price: 10,
     row: 17,
     seat: 17,
@@ -8768,7 +7763,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1006,
     price: 10,
     row: 17,
     seat: 18,
@@ -8776,7 +7770,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1007,
     price: 10,
     row: 17,
     seat: 19,
@@ -8784,7 +7777,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1008,
     price: 10,
     row: 17,
     seat: 20,
@@ -8792,7 +7784,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1009,
     price: 10,
     row: 18,
     seat: 1,
@@ -8800,7 +7791,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1010,
     price: 10,
     row: 18,
     seat: 2,
@@ -8808,7 +7798,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1011,
     price: 10,
     row: 18,
     seat: 3,
@@ -8816,7 +7805,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1012,
     price: 10,
     row: 18,
     seat: 4,
@@ -8824,7 +7812,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1013,
     price: 10,
     row: 18,
     seat: 5,
@@ -8834,7 +7821,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1014,
     price: 10,
     row: 18,
     seat: 6,
@@ -8844,7 +7830,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1015,
     price: 10,
     row: 18,
     seat: 7,
@@ -8852,7 +7837,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1016,
     price: 10,
     row: 18,
     seat: 8,
@@ -8860,7 +7844,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1017,
     price: 10,
     row: 18,
     seat: 9,
@@ -8868,7 +7851,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1018,
     price: 10,
     row: 18,
     seat: 10,
@@ -8878,7 +7860,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1019,
     price: 10,
     row: 18,
     seat: 11,
@@ -8886,7 +7867,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1020,
     price: 10,
     row: 18,
     seat: 12,
@@ -8894,7 +7874,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1021,
     price: 10,
     row: 18,
     seat: 13,
@@ -8902,7 +7881,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1022,
     price: 10,
     row: 18,
     seat: 14,
@@ -8910,7 +7888,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1023,
     price: 10,
     row: 18,
     seat: 15,
@@ -8920,7 +7897,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1024,
     price: 10,
     row: 18,
     seat: 16,
@@ -8928,7 +7904,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1025,
     price: 10,
     row: 18,
     seat: 17,
@@ -8936,7 +7911,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1026,
     price: 10,
     row: 18,
     seat: 18,
@@ -8946,7 +7920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1027,
     price: 10,
     row: 18,
     seat: 19,
@@ -8954,7 +7927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1028,
     price: 10,
     row: 18,
     seat: 20,
@@ -8962,7 +7934,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1029,
     price: 10,
     row: 19,
     seat: 1,
@@ -8970,7 +7941,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1030,
     price: 10,
     row: 19,
     seat: 2,
@@ -8978,7 +7948,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1031,
     price: 10,
     row: 19,
     seat: 3,
@@ -8986,7 +7955,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1032,
     price: 10,
     row: 19,
     seat: 4,
@@ -8994,7 +7962,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1033,
     price: 10,
     row: 19,
     seat: 5,
@@ -9002,7 +7969,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1034,
     price: 10,
     row: 19,
     seat: 6,
@@ -9010,7 +7976,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1035,
     price: 10,
     row: 19,
     seat: 7,
@@ -9018,7 +7983,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1036,
     price: 10,
     row: 19,
     seat: 8,
@@ -9026,7 +7990,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1037,
     price: 10,
     row: 19,
     seat: 9,
@@ -9034,7 +7997,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1038,
     price: 10,
     row: 19,
     seat: 10,
@@ -9042,7 +8004,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1039,
     price: 10,
     row: 19,
     seat: 11,
@@ -9052,7 +8013,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1040,
     price: 10,
     row: 19,
     seat: 12,
@@ -9060,7 +8020,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1041,
     price: 10,
     row: 19,
     seat: 13,
@@ -9068,7 +8027,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1042,
     price: 10,
     row: 19,
     seat: 14,
@@ -9076,7 +8034,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1043,
     price: 10,
     row: 19,
     seat: 15,
@@ -9084,7 +8041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1044,
     price: 10,
     row: 19,
     seat: 16,
@@ -9092,7 +8048,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1045,
     price: 10,
     row: 19,
     seat: 17,
@@ -9102,7 +8057,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1046,
     price: 10,
     row: 19,
     seat: 18,
@@ -9110,7 +8064,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1047,
     price: 10,
     row: 19,
     seat: 19,
@@ -9118,7 +8071,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1048,
     price: 10,
     row: 19,
     seat: 20,
@@ -9126,7 +8078,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1049,
     price: 10,
     row: 20,
     seat: 1,
@@ -9134,7 +8085,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1050,
     price: 10,
     row: 20,
     seat: 2,
@@ -9142,7 +8092,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1051,
     price: 10,
     row: 20,
     seat: 3,
@@ -9152,7 +8101,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1052,
     price: 10,
     row: 20,
     seat: 4,
@@ -9160,7 +8108,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1053,
     price: 10,
     row: 20,
     seat: 5,
@@ -9168,7 +8115,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1054,
     price: 10,
     row: 20,
     seat: 6,
@@ -9176,7 +8122,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1055,
     price: 10,
     row: 20,
     seat: 7,
@@ -9186,7 +8131,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1056,
     price: 10,
     row: 20,
     seat: 8,
@@ -9194,7 +8138,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1057,
     price: 10,
     row: 20,
     seat: 9,
@@ -9202,7 +8145,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1058,
     price: 10,
     row: 20,
     seat: 10,
@@ -9210,7 +8152,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1059,
     price: 10,
     row: 20,
     seat: 11,
@@ -9218,7 +8159,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1060,
     price: 10,
     row: 20,
     seat: 12,
@@ -9226,7 +8166,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1061,
     price: 10,
     row: 20,
     seat: 13,
@@ -9236,7 +8175,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1062,
     price: 10,
     row: 20,
     seat: 14,
@@ -9246,7 +8184,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1063,
     price: 10,
     row: 20,
     seat: 15,
@@ -9254,7 +8191,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1064,
     price: 10,
     row: 20,
     seat: 16,
@@ -9262,7 +8198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1065,
     price: 10,
     row: 20,
     seat: 17,
@@ -9270,7 +8205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1066,
     price: 10,
     row: 20,
     seat: 18,
@@ -9278,7 +8212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1067,
     price: 10,
     row: 20,
     seat: 19,
@@ -9286,7 +8219,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1068,
     price: 10,
     row: 20,
     seat: 20,
@@ -9294,7 +8226,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1069,
     price: 10,
     row: 21,
     seat: 1,
@@ -9302,7 +8233,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1070,
     price: 10,
     row: 21,
     seat: 2,
@@ -9312,7 +8242,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1071,
     price: 10,
     row: 21,
     seat: 3,
@@ -9322,7 +8251,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1072,
     price: 10,
     row: 21,
     seat: 4,
@@ -9330,7 +8258,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1073,
     price: 10,
     row: 21,
     seat: 5,
@@ -9340,7 +8267,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1074,
     price: 10,
     row: 21,
     seat: 6,
@@ -9348,7 +8274,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1075,
     price: 10,
     row: 21,
     seat: 7,
@@ -9358,7 +8283,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1076,
     price: 10,
     row: 21,
     seat: 8,
@@ -9368,7 +8292,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1077,
     price: 10,
     row: 21,
     seat: 9,
@@ -9376,7 +8299,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1078,
     price: 10,
     row: 21,
     seat: 10,
@@ -9384,7 +8306,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1079,
     price: 10,
     row: 21,
     seat: 11,
@@ -9392,7 +8313,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1080,
     price: 10,
     row: 21,
     seat: 12,
@@ -9400,7 +8320,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1081,
     price: 10,
     row: 21,
     seat: 13,
@@ -9410,7 +8329,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1082,
     price: 10,
     row: 21,
     seat: 14,
@@ -9418,7 +8336,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1083,
     price: 10,
     row: 21,
     seat: 15,
@@ -9426,7 +8343,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1084,
     price: 10,
     row: 21,
     seat: 16,
@@ -9434,7 +8350,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1085,
     price: 10,
     row: 21,
     seat: 17,
@@ -9442,7 +8357,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1086,
     price: 10,
     row: 21,
     seat: 18,
@@ -9450,7 +8364,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1087,
     price: 10,
     row: 21,
     seat: 19,
@@ -9460,7 +8373,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1088,
     price: 10,
     row: 21,
     seat: 20,
@@ -9468,7 +8380,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1089,
     price: 10,
     row: 22,
     seat: 1,
@@ -9476,7 +8387,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1090,
     price: 10,
     row: 22,
     seat: 2,
@@ -9484,7 +8394,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1091,
     price: 10,
     row: 22,
     seat: 3,
@@ -9492,7 +8401,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1092,
     price: 10,
     row: 22,
     seat: 4,
@@ -9500,7 +8408,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1093,
     price: 10,
     row: 22,
     seat: 5,
@@ -9508,7 +8415,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1094,
     price: 10,
     row: 22,
     seat: 6,
@@ -9516,7 +8422,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1095,
     price: 10,
     row: 22,
     seat: 7,
@@ -9524,7 +8429,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1096,
     price: 10,
     row: 22,
     seat: 8,
@@ -9532,7 +8436,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1097,
     price: 10,
     row: 22,
     seat: 9,
@@ -9542,7 +8445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1098,
     price: 10,
     row: 22,
     seat: 10,
@@ -9550,7 +8452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1099,
     price: 10,
     row: 22,
     seat: 11,
@@ -9558,7 +8459,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1100,
     price: 10,
     row: 22,
     seat: 12,
@@ -9566,7 +8466,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1101,
     price: 10,
     row: 22,
     seat: 13,
@@ -9574,7 +8473,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1102,
     price: 10,
     row: 22,
     seat: 14,
@@ -9582,7 +8480,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1103,
     price: 10,
     row: 22,
     seat: 15,
@@ -9590,7 +8487,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1104,
     price: 10,
     row: 22,
     seat: 16,
@@ -9600,7 +8496,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1105,
     price: 10,
     row: 22,
     seat: 17,
@@ -9608,7 +8503,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1106,
     price: 10,
     row: 22,
     seat: 18,
@@ -9616,7 +8510,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1107,
     price: 10,
     row: 22,
     seat: 19,
@@ -9626,7 +8519,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1108,
     price: 10,
     row: 22,
     seat: 20,
@@ -9636,7 +8528,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1109,
     price: 10,
     row: 23,
     seat: 1,
@@ -9644,7 +8535,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1110,
     price: 10,
     row: 23,
     seat: 2,
@@ -9652,7 +8542,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1111,
     price: 10,
     row: 23,
     seat: 3,
@@ -9660,7 +8549,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1112,
     price: 10,
     row: 23,
     seat: 4,
@@ -9670,7 +8558,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1113,
     price: 10,
     row: 23,
     seat: 5,
@@ -9680,7 +8567,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1114,
     price: 10,
     row: 23,
     seat: 6,
@@ -9688,7 +8574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1115,
     price: 10,
     row: 23,
     seat: 7,
@@ -9696,7 +8581,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1116,
     price: 10,
     row: 23,
     seat: 8,
@@ -9704,7 +8588,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1117,
     price: 10,
     row: 23,
     seat: 9,
@@ -9712,7 +8595,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1118,
     price: 10,
     row: 23,
     seat: 10,
@@ -9720,7 +8602,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1119,
     price: 10,
     row: 23,
     seat: 11,
@@ -9728,7 +8609,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1120,
     price: 10,
     row: 23,
     seat: 12,
@@ -9736,7 +8616,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1121,
     price: 10,
     row: 23,
     seat: 13,
@@ -9744,7 +8623,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1122,
     price: 10,
     row: 23,
     seat: 14,
@@ -9754,7 +8632,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1123,
     price: 10,
     row: 23,
     seat: 15,
@@ -9764,7 +8641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1124,
     price: 10,
     row: 23,
     seat: 16,
@@ -9774,7 +8650,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1125,
     price: 10,
     row: 23,
     seat: 17,
@@ -9782,7 +8657,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1126,
     price: 10,
     row: 23,
     seat: 18,
@@ -9792,7 +8666,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1127,
     price: 10,
     row: 23,
     seat: 19,
@@ -9800,7 +8673,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1128,
     price: 10,
     row: 23,
     seat: 20,
@@ -9810,7 +8682,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1129,
     price: 10,
     row: 24,
     seat: 1,
@@ -9818,7 +8689,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1130,
     price: 10,
     row: 24,
     seat: 2,
@@ -9828,7 +8698,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1131,
     price: 10,
     row: 24,
     seat: 3,
@@ -9836,7 +8705,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1132,
     price: 10,
     row: 24,
     seat: 4,
@@ -9844,7 +8712,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1133,
     price: 10,
     row: 24,
     seat: 5,
@@ -9852,7 +8719,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1134,
     price: 10,
     row: 24,
     seat: 6,
@@ -9862,7 +8728,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1135,
     price: 10,
     row: 24,
     seat: 7,
@@ -9872,7 +8737,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1136,
     price: 10,
     row: 24,
     seat: 8,
@@ -9880,7 +8744,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1137,
     price: 10,
     row: 24,
     seat: 9,
@@ -9888,7 +8751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1138,
     price: 10,
     row: 24,
     seat: 10,
@@ -9896,7 +8758,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1139,
     price: 10,
     row: 24,
     seat: 11,
@@ -9906,7 +8767,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1140,
     price: 10,
     row: 24,
     seat: 12,
@@ -9914,7 +8774,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1141,
     price: 10,
     row: 24,
     seat: 13,
@@ -9922,7 +8781,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1142,
     price: 10,
     row: 24,
     seat: 14,
@@ -9930,7 +8788,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1143,
     price: 10,
     row: 24,
     seat: 15,
@@ -9938,7 +8795,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1144,
     price: 10,
     row: 24,
     seat: 16,
@@ -9946,7 +8802,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1145,
     price: 10,
     row: 24,
     seat: 17,
@@ -9954,7 +8809,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1146,
     price: 10,
     row: 24,
     seat: 18,
@@ -9964,7 +8818,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1147,
     price: 10,
     row: 24,
     seat: 19,
@@ -9972,7 +8825,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1148,
     price: 10,
     row: 24,
     seat: 20,
@@ -9980,7 +8832,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1149,
     price: 10,
     row: 25,
     seat: 1,
@@ -9988,7 +8839,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1150,
     price: 10,
     row: 25,
     seat: 2,
@@ -9996,7 +8846,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1151,
     price: 10,
     row: 25,
     seat: 3,
@@ -10006,7 +8855,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1152,
     price: 10,
     row: 25,
     seat: 4,
@@ -10014,7 +8862,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1153,
     price: 10,
     row: 25,
     seat: 5,
@@ -10022,7 +8869,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1154,
     price: 10,
     row: 25,
     seat: 6,
@@ -10032,7 +8878,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1155,
     price: 10,
     row: 25,
     seat: 7,
@@ -10040,7 +8885,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1156,
     price: 10,
     row: 25,
     seat: 8,
@@ -10048,7 +8892,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1157,
     price: 10,
     row: 25,
     seat: 9,
@@ -10056,7 +8899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1158,
     price: 10,
     row: 25,
     seat: 10,
@@ -10064,7 +8906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1159,
     price: 10,
     row: 25,
     seat: 11,
@@ -10072,7 +8913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1160,
     price: 10,
     row: 25,
     seat: 12,
@@ -10080,7 +8920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1161,
     price: 10,
     row: 25,
     seat: 13,
@@ -10088,7 +8927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1162,
     price: 10,
     row: 25,
     seat: 14,
@@ -10096,7 +8934,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1163,
     price: 10,
     row: 25,
     seat: 15,
@@ -10104,7 +8941,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1164,
     price: 10,
     row: 25,
     seat: 16,
@@ -10112,7 +8948,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1165,
     price: 10,
     row: 25,
     seat: 17,
@@ -10122,7 +8957,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1166,
     price: 10,
     row: 25,
     seat: 18,
@@ -10132,7 +8966,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1167,
     price: 10,
     row: 25,
     seat: 19,
@@ -10140,7 +8973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1168,
     price: 10,
     row: 25,
     seat: 20,
@@ -10148,7 +8980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1169,
     price: 16,
     row: 1,
     seat: 1,
@@ -10156,7 +8987,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1170,
     price: 16,
     row: 1,
     seat: 2,
@@ -10164,7 +8994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1171,
     price: 16,
     row: 1,
     seat: 3,
@@ -10172,7 +9001,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1172,
     price: 16,
     row: 1,
     seat: 4,
@@ -10180,7 +9008,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1173,
     price: 16,
     row: 1,
     seat: 5,
@@ -10190,7 +9017,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1174,
     price: 16,
     row: 1,
     seat: 6,
@@ -10198,7 +9024,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1175,
     price: 16,
     row: 1,
     seat: 7,
@@ -10208,7 +9033,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1176,
     price: 16,
     row: 1,
     seat: 8,
@@ -10216,7 +9040,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1177,
     price: 16,
     row: 1,
     seat: 9,
@@ -10226,7 +9049,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1178,
     price: 16,
     row: 1,
     seat: 10,
@@ -10234,7 +9056,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1179,
     price: 16,
     row: 1,
     seat: 11,
@@ -10242,7 +9063,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1180,
     price: 16,
     row: 1,
     seat: 12,
@@ -10250,7 +9070,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1181,
     price: 16,
     row: 1,
     seat: 13,
@@ -10258,7 +9077,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1182,
     price: 16,
     row: 1,
     seat: 14,
@@ -10268,7 +9086,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1183,
     price: 16,
     row: 1,
     seat: 15,
@@ -10278,7 +9095,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1184,
     price: 16,
     row: 1,
     seat: 16,
@@ -10286,7 +9102,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1185,
     price: 16,
     row: 1,
     seat: 17,
@@ -10294,7 +9109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1186,
     price: 16,
     row: 2,
     seat: 1,
@@ -10302,7 +9116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1187,
     price: 16,
     row: 2,
     seat: 2,
@@ -10310,7 +9123,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1188,
     price: 16,
     row: 2,
     seat: 3,
@@ -10320,7 +9132,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1189,
     price: 16,
     row: 2,
     seat: 4,
@@ -10328,7 +9139,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1190,
     price: 16,
     row: 2,
     seat: 5,
@@ -10336,7 +9146,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1191,
     price: 16,
     row: 2,
     seat: 6,
@@ -10344,7 +9153,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1192,
     price: 16,
     row: 2,
     seat: 7,
@@ -10352,7 +9160,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1193,
     price: 16,
     row: 2,
     seat: 8,
@@ -10360,7 +9167,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1194,
     price: 16,
     row: 2,
     seat: 9,
@@ -10368,7 +9174,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1195,
     price: 16,
     row: 2,
     seat: 10,
@@ -10376,7 +9181,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1196,
     price: 16,
     row: 2,
     seat: 11,
@@ -10384,7 +9188,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1197,
     price: 16,
     row: 2,
     seat: 12,
@@ -10392,7 +9195,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1198,
     price: 16,
     row: 2,
     seat: 13,
@@ -10400,7 +9202,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1199,
     price: 16,
     row: 2,
     seat: 14,
@@ -10408,7 +9209,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1200,
     price: 16,
     row: 2,
     seat: 15,
@@ -10416,7 +9216,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1201,
     price: 16,
     row: 2,
     seat: 16,
@@ -10424,7 +9223,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1202,
     price: 16,
     row: 2,
     seat: 17,
@@ -10432,7 +9230,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1203,
     price: 16,
     row: 3,
     seat: 1,
@@ -10440,7 +9237,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1204,
     price: 16,
     row: 3,
     seat: 2,
@@ -10448,7 +9244,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1205,
     price: 16,
     row: 3,
     seat: 3,
@@ -10456,7 +9251,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1206,
     price: 16,
     row: 3,
     seat: 4,
@@ -10464,7 +9258,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1207,
     price: 16,
     row: 3,
     seat: 5,
@@ -10472,7 +9265,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1208,
     price: 16,
     row: 3,
     seat: 6,
@@ -10480,7 +9272,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1209,
     price: 16,
     row: 3,
     seat: 7,
@@ -10488,7 +9279,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1210,
     price: 16,
     row: 3,
     seat: 8,
@@ -10498,7 +9288,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1211,
     price: 16,
     row: 3,
     seat: 9,
@@ -10506,7 +9295,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1212,
     price: 16,
     row: 3,
     seat: 10,
@@ -10514,7 +9302,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1213,
     price: 16,
     row: 3,
     seat: 11,
@@ -10524,7 +9311,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1214,
     price: 16,
     row: 3,
     seat: 12,
@@ -10532,7 +9318,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1215,
     price: 16,
     row: 3,
     seat: 13,
@@ -10542,7 +9327,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1216,
     price: 16,
     row: 3,
     seat: 14,
@@ -10552,7 +9336,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1217,
     price: 16,
     row: 3,
     seat: 15,
@@ -10562,7 +9345,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1218,
     price: 16,
     row: 3,
     seat: 16,
@@ -10570,7 +9352,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1219,
     price: 16,
     row: 3,
     seat: 17,
@@ -10578,7 +9359,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1220,
     price: 16,
     row: 4,
     seat: 1,
@@ -10588,7 +9368,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1221,
     price: 16,
     row: 4,
     seat: 2,
@@ -10596,7 +9375,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1222,
     price: 16,
     row: 4,
     seat: 3,
@@ -10606,7 +9384,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1223,
     price: 16,
     row: 4,
     seat: 4,
@@ -10616,7 +9393,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1224,
     price: 16,
     row: 4,
     seat: 5,
@@ -10626,7 +9402,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1225,
     price: 16,
     row: 4,
     seat: 6,
@@ -10634,7 +9409,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1226,
     price: 16,
     row: 4,
     seat: 7,
@@ -10642,7 +9416,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1227,
     price: 16,
     row: 4,
     seat: 8,
@@ -10650,7 +9423,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1228,
     price: 16,
     row: 4,
     seat: 9,
@@ -10660,7 +9432,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1229,
     price: 16,
     row: 4,
     seat: 10,
@@ -10668,7 +9439,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1230,
     price: 16,
     row: 4,
     seat: 11,
@@ -10676,7 +9446,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1231,
     price: 16,
     row: 4,
     seat: 12,
@@ -10686,7 +9455,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1232,
     price: 16,
     row: 4,
     seat: 13,
@@ -10696,7 +9464,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1233,
     price: 16,
     row: 4,
     seat: 14,
@@ -10704,7 +9471,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1234,
     price: 16,
     row: 4,
     seat: 15,
@@ -10714,7 +9480,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1235,
     price: 16,
     row: 4,
     seat: 16,
@@ -10724,7 +9489,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1236,
     price: 16,
     row: 4,
     seat: 17,
@@ -10734,7 +9498,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1237,
     price: 16,
     row: 5,
     seat: 1,
@@ -10742,7 +9505,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1238,
     price: 16,
     row: 5,
     seat: 2,
@@ -10750,7 +9512,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1239,
     price: 16,
     row: 5,
     seat: 3,
@@ -10758,7 +9519,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1240,
     price: 16,
     row: 5,
     seat: 4,
@@ -10768,7 +9528,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1241,
     price: 16,
     row: 5,
     seat: 5,
@@ -10778,7 +9537,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1242,
     price: 16,
     row: 5,
     seat: 6,
@@ -10786,7 +9544,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1243,
     price: 16,
     row: 5,
     seat: 7,
@@ -10796,7 +9553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1244,
     price: 16,
     row: 5,
     seat: 8,
@@ -10806,7 +9562,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1245,
     price: 16,
     row: 5,
     seat: 9,
@@ -10814,7 +9569,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1246,
     price: 16,
     row: 5,
     seat: 10,
@@ -10822,7 +9576,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1247,
     price: 16,
     row: 5,
     seat: 11,
@@ -10832,7 +9585,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1248,
     price: 16,
     row: 5,
     seat: 12,
@@ -10840,7 +9592,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1249,
     price: 16,
     row: 5,
     seat: 13,
@@ -10848,7 +9599,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1250,
     price: 16,
     row: 5,
     seat: 14,
@@ -10856,7 +9606,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1251,
     price: 16,
     row: 5,
     seat: 15,
@@ -10866,7 +9615,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1252,
     price: 16,
     row: 5,
     seat: 16,
@@ -10874,7 +9622,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1253,
     price: 16,
     row: 5,
     seat: 17,
@@ -10882,7 +9629,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1254,
     price: 16,
     row: 6,
     seat: 1,
@@ -10890,7 +9636,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1255,
     price: 16,
     row: 6,
     seat: 2,
@@ -10898,7 +9643,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1256,
     price: 16,
     row: 6,
     seat: 3,
@@ -10906,7 +9650,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1257,
     price: 16,
     row: 6,
     seat: 4,
@@ -10916,7 +9659,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1258,
     price: 16,
     row: 6,
     seat: 5,
@@ -10926,7 +9668,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1259,
     price: 16,
     row: 6,
     seat: 6,
@@ -10936,7 +9677,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1260,
     price: 16,
     row: 6,
     seat: 7,
@@ -10944,7 +9684,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1261,
     price: 16,
     row: 6,
     seat: 8,
@@ -10952,7 +9691,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1262,
     price: 16,
     row: 6,
     seat: 9,
@@ -10960,7 +9698,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1263,
     price: 16,
     row: 6,
     seat: 10,
@@ -10970,7 +9707,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1264,
     price: 16,
     row: 6,
     seat: 11,
@@ -10978,7 +9714,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1265,
     price: 16,
     row: 6,
     seat: 12,
@@ -10986,7 +9721,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1266,
     price: 16,
     row: 6,
     seat: 13,
@@ -10996,7 +9730,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1267,
     price: 16,
     row: 6,
     seat: 14,
@@ -11004,7 +9737,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1268,
     price: 16,
     row: 6,
     seat: 15,
@@ -11014,7 +9746,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1269,
     price: 16,
     row: 6,
     seat: 16,
@@ -11022,7 +9753,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1270,
     price: 16,
     row: 6,
     seat: 17,
@@ -11030,7 +9760,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1271,
     price: 16,
     row: 7,
     seat: 1,
@@ -11040,7 +9769,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1272,
     price: 16,
     row: 7,
     seat: 2,
@@ -11050,7 +9778,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1273,
     price: 16,
     row: 7,
     seat: 3,
@@ -11058,7 +9785,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1274,
     price: 16,
     row: 7,
     seat: 4,
@@ -11066,7 +9792,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1275,
     price: 16,
     row: 7,
     seat: 5,
@@ -11074,7 +9799,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1276,
     price: 16,
     row: 7,
     seat: 6,
@@ -11082,7 +9806,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1277,
     price: 16,
     row: 7,
     seat: 7,
@@ -11092,7 +9815,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1278,
     price: 16,
     row: 7,
     seat: 8,
@@ -11102,7 +9824,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1279,
     price: 16,
     row: 7,
     seat: 9,
@@ -11110,7 +9831,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1280,
     price: 16,
     row: 7,
     seat: 10,
@@ -11118,7 +9838,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1281,
     price: 16,
     row: 7,
     seat: 11,
@@ -11128,7 +9847,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1282,
     price: 16,
     row: 7,
     seat: 12,
@@ -11136,7 +9854,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1283,
     price: 16,
     row: 7,
     seat: 13,
@@ -11146,7 +9863,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1284,
     price: 16,
     row: 7,
     seat: 14,
@@ -11154,7 +9870,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1285,
     price: 16,
     row: 7,
     seat: 15,
@@ -11164,7 +9879,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1286,
     price: 16,
     row: 7,
     seat: 16,
@@ -11174,7 +9888,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1287,
     price: 16,
     row: 7,
     seat: 17,
@@ -11182,7 +9895,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1288,
     price: 16,
     row: 8,
     seat: 1,
@@ -11190,7 +9902,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1289,
     price: 16,
     row: 8,
     seat: 2,
@@ -11198,7 +9909,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1290,
     price: 16,
     row: 8,
     seat: 3,
@@ -11206,7 +9916,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1291,
     price: 16,
     row: 8,
     seat: 4,
@@ -11214,7 +9923,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1292,
     price: 16,
     row: 8,
     seat: 5,
@@ -11222,7 +9930,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1293,
     price: 16,
     row: 8,
     seat: 6,
@@ -11230,7 +9937,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1294,
     price: 16,
     row: 8,
     seat: 7,
@@ -11240,7 +9946,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1295,
     price: 16,
     row: 8,
     seat: 8,
@@ -11248,7 +9953,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1296,
     price: 16,
     row: 8,
     seat: 9,
@@ -11256,7 +9960,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1297,
     price: 16,
     row: 8,
     seat: 10,
@@ -11266,7 +9969,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1298,
     price: 16,
     row: 8,
     seat: 11,
@@ -11274,7 +9976,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1299,
     price: 16,
     row: 8,
     seat: 12,
@@ -11282,7 +9983,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1300,
     price: 16,
     row: 8,
     seat: 13,
@@ -11290,7 +9990,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1301,
     price: 16,
     row: 8,
     seat: 14,
@@ -11298,7 +9997,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1302,
     price: 16,
     row: 8,
     seat: 15,
@@ -11306,7 +10004,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1303,
     price: 16,
     row: 8,
     seat: 16,
@@ -11314,7 +10011,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1304,
     price: 16,
     row: 8,
     seat: 17,
@@ -11322,7 +10018,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1305,
     price: 16,
     row: 9,
     seat: 1,
@@ -11330,7 +10025,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1306,
     price: 16,
     row: 9,
     seat: 2,
@@ -11338,7 +10032,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1307,
     price: 16,
     row: 9,
     seat: 3,
@@ -11346,7 +10039,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1308,
     price: 16,
     row: 9,
     seat: 4,
@@ -11354,7 +10046,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1309,
     price: 16,
     row: 9,
     seat: 5,
@@ -11362,7 +10053,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1310,
     price: 16,
     row: 9,
     seat: 6,
@@ -11370,7 +10060,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1311,
     price: 16,
     row: 9,
     seat: 7,
@@ -11380,7 +10069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1312,
     price: 16,
     row: 9,
     seat: 8,
@@ -11388,7 +10076,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1313,
     price: 16,
     row: 9,
     seat: 9,
@@ -11396,7 +10083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1314,
     price: 16,
     row: 9,
     seat: 10,
@@ -11406,7 +10092,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1315,
     price: 16,
     row: 9,
     seat: 11,
@@ -11414,7 +10099,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1316,
     price: 16,
     row: 9,
     seat: 12,
@@ -11424,7 +10108,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1317,
     price: 16,
     row: 9,
     seat: 13,
@@ -11432,7 +10115,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1318,
     price: 16,
     row: 9,
     seat: 14,
@@ -11442,7 +10124,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1319,
     price: 16,
     row: 9,
     seat: 15,
@@ -11450,7 +10131,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1320,
     price: 16,
     row: 9,
     seat: 16,
@@ -11460,7 +10140,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1321,
     price: 16,
     row: 9,
     seat: 17,
@@ -11470,7 +10149,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1322,
     price: 16,
     row: 10,
     seat: 1,
@@ -11478,7 +10156,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1323,
     price: 16,
     row: 10,
     seat: 2,
@@ -11486,7 +10163,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1324,
     price: 16,
     row: 10,
     seat: 3,
@@ -11496,7 +10172,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1325,
     price: 16,
     row: 10,
     seat: 4,
@@ -11504,7 +10179,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1326,
     price: 16,
     row: 10,
     seat: 5,
@@ -11512,7 +10186,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1327,
     price: 16,
     row: 10,
     seat: 6,
@@ -11520,7 +10193,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1328,
     price: 16,
     row: 10,
     seat: 7,
@@ -11528,7 +10200,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1329,
     price: 16,
     row: 10,
     seat: 8,
@@ -11536,7 +10207,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1330,
     price: 16,
     row: 10,
     seat: 9,
@@ -11544,7 +10214,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1331,
     price: 16,
     row: 10,
     seat: 10,
@@ -11552,7 +10221,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1332,
     price: 16,
     row: 10,
     seat: 11,
@@ -11560,7 +10228,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1333,
     price: 16,
     row: 10,
     seat: 12,
@@ -11568,7 +10235,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1334,
     price: 16,
     row: 10,
     seat: 13,
@@ -11576,7 +10242,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1335,
     price: 16,
     row: 10,
     seat: 14,
@@ -11584,7 +10249,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1336,
     price: 16,
     row: 10,
     seat: 15,
@@ -11592,7 +10256,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1337,
     price: 16,
     row: 10,
     seat: 16,
@@ -11602,7 +10265,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1338,
     price: 16,
     row: 10,
     seat: 17,
@@ -11612,7 +10274,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1339,
     price: 16,
     row: 11,
     seat: 1,
@@ -11620,7 +10281,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1340,
     price: 16,
     row: 11,
     seat: 2,
@@ -11630,7 +10290,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1341,
     price: 16,
     row: 11,
     seat: 3,
@@ -11640,7 +10299,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1342,
     price: 16,
     row: 11,
     seat: 4,
@@ -11648,7 +10306,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1343,
     price: 16,
     row: 11,
     seat: 5,
@@ -11656,7 +10313,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1344,
     price: 16,
     row: 11,
     seat: 6,
@@ -11664,7 +10320,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1345,
     price: 16,
     row: 11,
     seat: 7,
@@ -11672,7 +10327,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1346,
     price: 16,
     row: 11,
     seat: 8,
@@ -11680,7 +10334,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1347,
     price: 16,
     row: 11,
     seat: 9,
@@ -11690,7 +10343,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1348,
     price: 16,
     row: 11,
     seat: 10,
@@ -11698,7 +10350,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1349,
     price: 16,
     row: 11,
     seat: 11,
@@ -11706,7 +10357,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1350,
     price: 16,
     row: 11,
     seat: 12,
@@ -11714,7 +10364,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1351,
     price: 16,
     row: 11,
     seat: 13,
@@ -11722,7 +10371,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1352,
     price: 16,
     row: 11,
     seat: 14,
@@ -11730,7 +10378,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1353,
     price: 16,
     row: 11,
     seat: 15,
@@ -11738,7 +10385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1354,
     price: 16,
     row: 11,
     seat: 16,
@@ -11746,7 +10392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1355,
     price: 16,
     row: 11,
     seat: 17,
@@ -11754,7 +10399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1356,
     price: 18,
     row: 1,
     seat: 1,
@@ -11764,7 +10408,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1357,
     price: 18,
     row: 1,
     seat: 2,
@@ -11772,7 +10415,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1358,
     price: 18,
     row: 1,
     seat: 3,
@@ -11780,7 +10422,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1359,
     price: 18,
     row: 1,
     seat: 4,
@@ -11790,7 +10431,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1360,
     price: 18,
     row: 1,
     seat: 5,
@@ -11798,7 +10438,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1361,
     price: 18,
     row: 1,
     seat: 6,
@@ -11806,7 +10445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1362,
     price: 18,
     row: 1,
     seat: 7,
@@ -11814,7 +10452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1363,
     price: 18,
     row: 1,
     seat: 8,
@@ -11822,7 +10459,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1364,
     price: 18,
     row: 1,
     seat: 9,
@@ -11832,7 +10468,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1365,
     price: 18,
     row: 1,
     seat: 10,
@@ -11840,7 +10475,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1366,
     price: 18,
     row: 1,
     seat: 11,
@@ -11848,7 +10482,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1367,
     price: 18,
     row: 1,
     seat: 12,
@@ -11856,7 +10489,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1368,
     price: 18,
     row: 1,
     seat: 13,
@@ -11864,7 +10496,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1369,
     price: 18,
     row: 1,
     seat: 14,
@@ -11872,7 +10503,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1370,
     price: 18,
     row: 1,
     seat: 15,
@@ -11880,7 +10510,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1371,
     price: 18,
     row: 1,
     seat: 16,
@@ -11888,7 +10517,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1372,
     price: 18,
     row: 1,
     seat: 17,
@@ -11896,7 +10524,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1373,
     price: 18,
     row: 1,
     seat: 18,
@@ -11904,7 +10531,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1374,
     price: 18,
     row: 1,
     seat: 19,
@@ -11912,7 +10538,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1375,
     price: 18,
     row: 1,
     seat: 20,
@@ -11920,7 +10545,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1376,
     price: 18,
     row: 2,
     seat: 1,
@@ -11930,7 +10554,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1377,
     price: 18,
     row: 2,
     seat: 2,
@@ -11938,7 +10561,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1378,
     price: 18,
     row: 2,
     seat: 3,
@@ -11948,7 +10570,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1379,
     price: 18,
     row: 2,
     seat: 4,
@@ -11956,7 +10577,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1380,
     price: 18,
     row: 2,
     seat: 5,
@@ -11966,7 +10586,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1381,
     price: 18,
     row: 2,
     seat: 6,
@@ -11974,7 +10593,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1382,
     price: 18,
     row: 2,
     seat: 7,
@@ -11984,7 +10602,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1383,
     price: 18,
     row: 2,
     seat: 8,
@@ -11994,7 +10611,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1384,
     price: 18,
     row: 2,
     seat: 9,
@@ -12002,7 +10618,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1385,
     price: 18,
     row: 2,
     seat: 10,
@@ -12010,7 +10625,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1386,
     price: 18,
     row: 2,
     seat: 11,
@@ -12020,7 +10634,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1387,
     price: 18,
     row: 2,
     seat: 12,
@@ -12028,7 +10641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1388,
     price: 18,
     row: 2,
     seat: 13,
@@ -12036,7 +10648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1389,
     price: 18,
     row: 2,
     seat: 14,
@@ -12046,7 +10657,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1390,
     price: 18,
     row: 2,
     seat: 15,
@@ -12054,7 +10664,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1391,
     price: 18,
     row: 2,
     seat: 16,
@@ -12062,7 +10671,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1392,
     price: 18,
     row: 2,
     seat: 17,
@@ -12072,7 +10680,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1393,
     price: 18,
     row: 2,
     seat: 18,
@@ -12080,7 +10687,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1394,
     price: 18,
     row: 2,
     seat: 19,
@@ -12088,7 +10694,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1395,
     price: 18,
     row: 2,
     seat: 20,
@@ -12096,7 +10701,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1396,
     price: 18,
     row: 3,
     seat: 1,
@@ -12106,7 +10710,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1397,
     price: 18,
     row: 3,
     seat: 2,
@@ -12116,7 +10719,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1398,
     price: 18,
     row: 3,
     seat: 3,
@@ -12126,7 +10728,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1399,
     price: 18,
     row: 3,
     seat: 4,
@@ -12134,7 +10735,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1400,
     price: 18,
     row: 3,
     seat: 5,
@@ -12144,7 +10744,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1401,
     price: 18,
     row: 3,
     seat: 6,
@@ -12152,7 +10751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1402,
     price: 18,
     row: 3,
     seat: 7,
@@ -12162,7 +10760,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1403,
     price: 18,
     row: 3,
     seat: 8,
@@ -12172,7 +10769,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1404,
     price: 18,
     row: 3,
     seat: 9,
@@ -12180,7 +10776,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1405,
     price: 18,
     row: 3,
     seat: 10,
@@ -12190,7 +10785,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1406,
     price: 18,
     row: 3,
     seat: 11,
@@ -12200,7 +10794,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1407,
     price: 18,
     row: 3,
     seat: 12,
@@ -12208,7 +10801,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1408,
     price: 18,
     row: 3,
     seat: 13,
@@ -12216,7 +10808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1409,
     price: 18,
     row: 3,
     seat: 14,
@@ -12224,7 +10815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1410,
     price: 18,
     row: 3,
     seat: 15,
@@ -12232,7 +10822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1411,
     price: 18,
     row: 3,
     seat: 16,
@@ -12240,7 +10829,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1412,
     price: 18,
     row: 3,
     seat: 17,
@@ -12248,7 +10836,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1413,
     price: 18,
     row: 3,
     seat: 18,
@@ -12256,7 +10843,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1414,
     price: 18,
     row: 3,
     seat: 19,
@@ -12264,7 +10850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1415,
     price: 18,
     row: 3,
     seat: 20,
@@ -12272,7 +10857,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1416,
     price: 18,
     row: 4,
     seat: 1,
@@ -12280,7 +10864,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1417,
     price: 18,
     row: 4,
     seat: 2,
@@ -12288,7 +10871,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1418,
     price: 18,
     row: 4,
     seat: 3,
@@ -12296,7 +10878,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1419,
     price: 18,
     row: 4,
     seat: 4,
@@ -12304,7 +10885,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1420,
     price: 18,
     row: 4,
     seat: 5,
@@ -12312,7 +10892,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1421,
     price: 18,
     row: 4,
     seat: 6,
@@ -12320,7 +10899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1422,
     price: 18,
     row: 4,
     seat: 7,
@@ -12328,7 +10906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1423,
     price: 18,
     row: 4,
     seat: 8,
@@ -12336,7 +10913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1424,
     price: 18,
     row: 4,
     seat: 9,
@@ -12344,7 +10920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1425,
     price: 18,
     row: 4,
     seat: 10,
@@ -12352,7 +10927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1426,
     price: 18,
     row: 4,
     seat: 11,
@@ -12362,7 +10936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1427,
     price: 18,
     row: 4,
     seat: 12,
@@ -12372,7 +10945,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1428,
     price: 18,
     row: 4,
     seat: 13,
@@ -12382,7 +10954,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1429,
     price: 18,
     row: 4,
     seat: 14,
@@ -12390,7 +10961,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1430,
     price: 18,
     row: 4,
     seat: 15,
@@ -12400,7 +10970,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1431,
     price: 18,
     row: 4,
     seat: 16,
@@ -12408,7 +10977,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1432,
     price: 18,
     row: 4,
     seat: 17,
@@ -12416,7 +10984,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1433,
     price: 18,
     row: 4,
     seat: 18,
@@ -12424,7 +10991,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1434,
     price: 18,
     row: 4,
     seat: 19,
@@ -12432,7 +10998,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1435,
     price: 18,
     row: 4,
     seat: 20,
@@ -12440,7 +11005,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1436,
     price: 18,
     row: 5,
     seat: 1,
@@ -12448,7 +11012,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1437,
     price: 18,
     row: 5,
     seat: 2,
@@ -12456,7 +11019,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1438,
     price: 18,
     row: 5,
     seat: 3,
@@ -12464,7 +11026,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1439,
     price: 18,
     row: 5,
     seat: 4,
@@ -12472,7 +11033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1440,
     price: 18,
     row: 5,
     seat: 5,
@@ -12482,7 +11042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1441,
     price: 18,
     row: 5,
     seat: 6,
@@ -12490,7 +11049,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1442,
     price: 18,
     row: 5,
     seat: 7,
@@ -12500,7 +11058,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1443,
     price: 18,
     row: 5,
     seat: 8,
@@ -12508,7 +11065,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1444,
     price: 18,
     row: 5,
     seat: 9,
@@ -12516,7 +11072,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1445,
     price: 18,
     row: 5,
     seat: 10,
@@ -12524,7 +11079,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1446,
     price: 18,
     row: 5,
     seat: 11,
@@ -12534,7 +11088,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1447,
     price: 18,
     row: 5,
     seat: 12,
@@ -12542,7 +11095,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1448,
     price: 18,
     row: 5,
     seat: 13,
@@ -12550,7 +11102,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1449,
     price: 18,
     row: 5,
     seat: 14,
@@ -12558,7 +11109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1450,
     price: 18,
     row: 5,
     seat: 15,
@@ -12568,7 +11118,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1451,
     price: 18,
     row: 5,
     seat: 16,
@@ -12576,7 +11125,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1452,
     price: 18,
     row: 5,
     seat: 17,
@@ -12586,7 +11134,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1453,
     price: 18,
     row: 5,
     seat: 18,
@@ -12596,7 +11143,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1454,
     price: 18,
     row: 5,
     seat: 19,
@@ -12604,7 +11150,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1455,
     price: 18,
     row: 5,
     seat: 20,
@@ -12612,7 +11157,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1456,
     price: 18,
     row: 6,
     seat: 1,
@@ -12622,7 +11166,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1457,
     price: 18,
     row: 6,
     seat: 2,
@@ -12630,7 +11173,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1458,
     price: 18,
     row: 6,
     seat: 3,
@@ -12638,7 +11180,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1459,
     price: 18,
     row: 6,
     seat: 4,
@@ -12646,7 +11187,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1460,
     price: 18,
     row: 6,
     seat: 5,
@@ -12654,7 +11194,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1461,
     price: 18,
     row: 6,
     seat: 6,
@@ -12664,7 +11203,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1462,
     price: 18,
     row: 6,
     seat: 7,
@@ -12672,7 +11210,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1463,
     price: 18,
     row: 6,
     seat: 8,
@@ -12680,7 +11217,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1464,
     price: 18,
     row: 6,
     seat: 9,
@@ -12690,7 +11226,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1465,
     price: 18,
     row: 6,
     seat: 10,
@@ -12698,7 +11233,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1466,
     price: 18,
     row: 6,
     seat: 11,
@@ -12706,7 +11240,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1467,
     price: 18,
     row: 6,
     seat: 12,
@@ -12714,7 +11247,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1468,
     price: 18,
     row: 6,
     seat: 13,
@@ -12722,7 +11254,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1469,
     price: 18,
     row: 6,
     seat: 14,
@@ -12730,7 +11261,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1470,
     price: 18,
     row: 6,
     seat: 15,
@@ -12738,7 +11268,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1471,
     price: 18,
     row: 6,
     seat: 16,
@@ -12746,7 +11275,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1472,
     price: 18,
     row: 6,
     seat: 17,
@@ -12754,7 +11282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1473,
     price: 18,
     row: 6,
     seat: 18,
@@ -12762,7 +11289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1474,
     price: 18,
     row: 6,
     seat: 19,
@@ -12770,7 +11296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1475,
     price: 18,
     row: 6,
     seat: 20,
@@ -12778,7 +11303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1476,
     price: 18,
     row: 7,
     seat: 1,
@@ -12788,7 +11312,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1477,
     price: 18,
     row: 7,
     seat: 2,
@@ -12796,7 +11319,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1478,
     price: 18,
     row: 7,
     seat: 3,
@@ -12804,7 +11326,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1479,
     price: 18,
     row: 7,
     seat: 4,
@@ -12812,7 +11333,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1480,
     price: 18,
     row: 7,
     seat: 5,
@@ -12820,7 +11340,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1481,
     price: 18,
     row: 7,
     seat: 6,
@@ -12828,7 +11347,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1482,
     price: 18,
     row: 7,
     seat: 7,
@@ -12836,7 +11354,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1483,
     price: 18,
     row: 7,
     seat: 8,
@@ -12844,7 +11361,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1484,
     price: 18,
     row: 7,
     seat: 9,
@@ -12852,7 +11368,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1485,
     price: 18,
     row: 7,
     seat: 10,
@@ -12862,7 +11377,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1486,
     price: 18,
     row: 7,
     seat: 11,
@@ -12870,7 +11384,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1487,
     price: 18,
     row: 7,
     seat: 12,
@@ -12878,7 +11391,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1488,
     price: 18,
     row: 7,
     seat: 13,
@@ -12886,7 +11398,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1489,
     price: 18,
     row: 7,
     seat: 14,
@@ -12894,7 +11405,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1490,
     price: 18,
     row: 7,
     seat: 15,
@@ -12902,7 +11412,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1491,
     price: 18,
     row: 7,
     seat: 16,
@@ -12910,7 +11419,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1492,
     price: 18,
     row: 7,
     seat: 17,
@@ -12918,7 +11426,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1493,
     price: 18,
     row: 7,
     seat: 18,
@@ -12926,7 +11433,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1494,
     price: 18,
     row: 7,
     seat: 19,
@@ -12934,7 +11440,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1495,
     price: 18,
     row: 7,
     seat: 20,
@@ -12942,7 +11447,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1496,
     price: 18,
     row: 8,
     seat: 1,
@@ -12950,7 +11454,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1497,
     price: 18,
     row: 8,
     seat: 2,
@@ -12958,7 +11461,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1498,
     price: 18,
     row: 8,
     seat: 3,
@@ -12966,7 +11468,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1499,
     price: 18,
     row: 8,
     seat: 4,
@@ -12976,7 +11477,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1500,
     price: 18,
     row: 8,
     seat: 5,
@@ -12984,7 +11484,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1501,
     price: 18,
     row: 8,
     seat: 6,
@@ -12992,7 +11491,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1502,
     price: 18,
     row: 8,
     seat: 7,
@@ -13000,7 +11498,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1503,
     price: 18,
     row: 8,
     seat: 8,
@@ -13008,7 +11505,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1504,
     price: 18,
     row: 8,
     seat: 9,
@@ -13018,7 +11514,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1505,
     price: 18,
     row: 8,
     seat: 10,
@@ -13028,7 +11523,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1506,
     price: 18,
     row: 8,
     seat: 11,
@@ -13038,7 +11532,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1507,
     price: 18,
     row: 8,
     seat: 12,
@@ -13048,7 +11541,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1508,
     price: 18,
     row: 8,
     seat: 13,
@@ -13056,7 +11548,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1509,
     price: 18,
     row: 8,
     seat: 14,
@@ -13064,7 +11555,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1510,
     price: 18,
     row: 8,
     seat: 15,
@@ -13072,7 +11562,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1511,
     price: 18,
     row: 8,
     seat: 16,
@@ -13080,7 +11569,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1512,
     price: 18,
     row: 8,
     seat: 17,
@@ -13090,7 +11578,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1513,
     price: 18,
     row: 8,
     seat: 18,
@@ -13098,7 +11585,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1514,
     price: 18,
     row: 8,
     seat: 19,
@@ -13106,7 +11592,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1515,
     price: 18,
     row: 8,
     seat: 20,
@@ -13114,7 +11599,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1516,
     price: 18,
     row: 9,
     seat: 1,
@@ -13122,7 +11606,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1517,
     price: 18,
     row: 9,
     seat: 2,
@@ -13130,7 +11613,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1518,
     price: 18,
     row: 9,
     seat: 3,
@@ -13140,7 +11622,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1519,
     price: 18,
     row: 9,
     seat: 4,
@@ -13150,7 +11631,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1520,
     price: 18,
     row: 9,
     seat: 5,
@@ -13158,7 +11638,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1521,
     price: 18,
     row: 9,
     seat: 6,
@@ -13166,7 +11645,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1522,
     price: 18,
     row: 9,
     seat: 7,
@@ -13174,7 +11652,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1523,
     price: 18,
     row: 9,
     seat: 8,
@@ -13182,7 +11659,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1524,
     price: 18,
     row: 9,
     seat: 9,
@@ -13192,7 +11668,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1525,
     price: 18,
     row: 9,
     seat: 10,
@@ -13202,7 +11677,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1526,
     price: 18,
     row: 9,
     seat: 11,
@@ -13210,7 +11684,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1527,
     price: 18,
     row: 9,
     seat: 12,
@@ -13218,7 +11691,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1528,
     price: 18,
     row: 9,
     seat: 13,
@@ -13226,7 +11698,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1529,
     price: 18,
     row: 9,
     seat: 14,
@@ -13234,7 +11705,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1530,
     price: 18,
     row: 9,
     seat: 15,
@@ -13244,7 +11714,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1531,
     price: 18,
     row: 9,
     seat: 16,
@@ -13254,7 +11723,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1532,
     price: 18,
     row: 9,
     seat: 17,
@@ -13262,7 +11730,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1533,
     price: 18,
     row: 9,
     seat: 18,
@@ -13270,7 +11737,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1534,
     price: 18,
     row: 9,
     seat: 19,
@@ -13278,7 +11744,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1535,
     price: 18,
     row: 9,
     seat: 20,
@@ -13286,7 +11751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1536,
     price: 18,
     row: 10,
     seat: 1,
@@ -13296,7 +11760,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1537,
     price: 18,
     row: 10,
     seat: 2,
@@ -13304,7 +11767,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1538,
     price: 18,
     row: 10,
     seat: 3,
@@ -13312,7 +11774,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1539,
     price: 18,
     row: 10,
     seat: 4,
@@ -13322,7 +11783,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1540,
     price: 18,
     row: 10,
     seat: 5,
@@ -13330,7 +11790,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1541,
     price: 18,
     row: 10,
     seat: 6,
@@ -13338,7 +11797,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1542,
     price: 18,
     row: 10,
     seat: 7,
@@ -13348,7 +11806,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1543,
     price: 18,
     row: 10,
     seat: 8,
@@ -13358,7 +11815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1544,
     price: 18,
     row: 10,
     seat: 9,
@@ -13366,7 +11822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1545,
     price: 18,
     row: 10,
     seat: 10,
@@ -13374,7 +11829,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1546,
     price: 18,
     row: 10,
     seat: 11,
@@ -13382,7 +11836,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1547,
     price: 18,
     row: 10,
     seat: 12,
@@ -13390,7 +11843,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1548,
     price: 18,
     row: 10,
     seat: 13,
@@ -13398,7 +11850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1549,
     price: 18,
     row: 10,
     seat: 14,
@@ -13406,7 +11857,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1550,
     price: 18,
     row: 10,
     seat: 15,
@@ -13414,7 +11864,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1551,
     price: 18,
     row: 10,
     seat: 16,
@@ -13422,7 +11871,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1552,
     price: 18,
     row: 10,
     seat: 17,
@@ -13432,7 +11880,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1553,
     price: 18,
     row: 10,
     seat: 18,
@@ -13440,7 +11887,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1554,
     price: 18,
     row: 10,
     seat: 19,
@@ -13448,7 +11894,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1555,
     price: 18,
     row: 10,
     seat: 20,
@@ -13456,7 +11901,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1556,
     price: 18,
     row: 11,
     seat: 1,
@@ -13464,7 +11908,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1557,
     price: 18,
     row: 11,
     seat: 2,
@@ -13472,7 +11915,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1558,
     price: 18,
     row: 11,
     seat: 3,
@@ -13480,7 +11922,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1559,
     price: 18,
     row: 11,
     seat: 4,
@@ -13490,7 +11931,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1560,
     price: 18,
     row: 11,
     seat: 5,
@@ -13498,7 +11938,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1561,
     price: 18,
     row: 11,
     seat: 6,
@@ -13506,7 +11945,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1562,
     price: 18,
     row: 11,
     seat: 7,
@@ -13514,7 +11952,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1563,
     price: 18,
     row: 11,
     seat: 8,
@@ -13524,7 +11961,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1564,
     price: 18,
     row: 11,
     seat: 9,
@@ -13532,7 +11968,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1565,
     price: 18,
     row: 11,
     seat: 10,
@@ -13540,7 +11975,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1566,
     price: 18,
     row: 11,
     seat: 11,
@@ -13548,7 +11982,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1567,
     price: 18,
     row: 11,
     seat: 12,
@@ -13556,7 +11989,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1568,
     price: 18,
     row: 11,
     seat: 13,
@@ -13564,7 +11996,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1569,
     price: 18,
     row: 11,
     seat: 14,
@@ -13572,7 +12003,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1570,
     price: 18,
     row: 11,
     seat: 15,
@@ -13582,7 +12012,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1571,
     price: 18,
     row: 11,
     seat: 16,
@@ -13592,7 +12021,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1572,
     price: 18,
     row: 11,
     seat: 17,
@@ -13600,7 +12028,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1573,
     price: 18,
     row: 11,
     seat: 18,
@@ -13608,7 +12035,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1574,
     price: 18,
     row: 11,
     seat: 19,
@@ -13616,7 +12042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1575,
     price: 18,
     row: 11,
     seat: 20,
@@ -13626,7 +12051,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1576,
     price: 18,
     row: 12,
     seat: 1,
@@ -13636,7 +12060,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1577,
     price: 18,
     row: 12,
     seat: 2,
@@ -13644,7 +12067,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1578,
     price: 18,
     row: 12,
     seat: 3,
@@ -13652,7 +12074,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1579,
     price: 18,
     row: 12,
     seat: 4,
@@ -13662,7 +12083,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1580,
     price: 18,
     row: 12,
     seat: 5,
@@ -13670,7 +12090,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1581,
     price: 18,
     row: 12,
     seat: 6,
@@ -13678,7 +12097,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1582,
     price: 18,
     row: 12,
     seat: 7,
@@ -13686,7 +12104,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1583,
     price: 18,
     row: 12,
     seat: 8,
@@ -13694,7 +12111,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1584,
     price: 18,
     row: 12,
     seat: 9,
@@ -13702,7 +12118,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1585,
     price: 18,
     row: 12,
     seat: 10,
@@ -13710,7 +12125,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1586,
     price: 18,
     row: 12,
     seat: 11,
@@ -13720,7 +12134,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1587,
     price: 18,
     row: 12,
     seat: 12,
@@ -13728,7 +12141,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1588,
     price: 18,
     row: 12,
     seat: 13,
@@ -13736,7 +12148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1589,
     price: 18,
     row: 12,
     seat: 14,
@@ -13744,7 +12155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1590,
     price: 18,
     row: 12,
     seat: 15,
@@ -13752,7 +12162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1591,
     price: 18,
     row: 12,
     seat: 16,
@@ -13760,7 +12169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1592,
     price: 18,
     row: 12,
     seat: 17,
@@ -13768,7 +12176,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1593,
     price: 18,
     row: 12,
     seat: 18,
@@ -13776,7 +12183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1594,
     price: 18,
     row: 12,
     seat: 19,
@@ -13784,7 +12190,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1595,
     price: 18,
     row: 12,
     seat: 20,
@@ -13792,7 +12197,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1596,
     price: 18,
     row: 13,
     seat: 1,
@@ -13800,7 +12204,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1597,
     price: 18,
     row: 13,
     seat: 2,
@@ -13810,7 +12213,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1598,
     price: 18,
     row: 13,
     seat: 3,
@@ -13818,7 +12220,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1599,
     price: 18,
     row: 13,
     seat: 4,
@@ -13826,7 +12227,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1600,
     price: 18,
     row: 13,
     seat: 5,
@@ -13834,7 +12234,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1601,
     price: 18,
     row: 13,
     seat: 6,
@@ -13844,7 +12243,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1602,
     price: 18,
     row: 13,
     seat: 7,
@@ -13854,7 +12252,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1603,
     price: 18,
     row: 13,
     seat: 8,
@@ -13862,7 +12259,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1604,
     price: 18,
     row: 13,
     seat: 9,
@@ -13870,7 +12266,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1605,
     price: 18,
     row: 13,
     seat: 10,
@@ -13878,7 +12273,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1606,
     price: 18,
     row: 13,
     seat: 11,
@@ -13888,7 +12282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1607,
     price: 18,
     row: 13,
     seat: 12,
@@ -13896,7 +12289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1608,
     price: 18,
     row: 13,
     seat: 13,
@@ -13904,7 +12296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1609,
     price: 18,
     row: 13,
     seat: 14,
@@ -13912,7 +12303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1610,
     price: 18,
     row: 13,
     seat: 15,
@@ -13920,7 +12310,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1611,
     price: 18,
     row: 13,
     seat: 16,
@@ -13930,7 +12319,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1612,
     price: 18,
     row: 13,
     seat: 17,
@@ -13940,7 +12328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1613,
     price: 18,
     row: 13,
     seat: 18,
@@ -13948,7 +12335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1614,
     price: 18,
     row: 13,
     seat: 19,
@@ -13956,7 +12342,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1615,
     price: 18,
     row: 13,
     seat: 20,
@@ -13964,7 +12349,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1616,
     price: 18,
     row: 14,
     seat: 1,
@@ -13972,7 +12356,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1617,
     price: 18,
     row: 14,
     seat: 2,
@@ -13980,7 +12363,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1618,
     price: 18,
     row: 14,
     seat: 3,
@@ -13990,7 +12372,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1619,
     price: 18,
     row: 14,
     seat: 4,
@@ -14000,7 +12381,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1620,
     price: 18,
     row: 14,
     seat: 5,
@@ -14008,7 +12388,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1621,
     price: 18,
     row: 14,
     seat: 6,
@@ -14016,7 +12395,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1622,
     price: 18,
     row: 14,
     seat: 7,
@@ -14026,7 +12404,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1623,
     price: 18,
     row: 14,
     seat: 8,
@@ -14034,7 +12411,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1624,
     price: 18,
     row: 14,
     seat: 9,
@@ -14042,7 +12418,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1625,
     price: 18,
     row: 14,
     seat: 10,
@@ -14050,7 +12425,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1626,
     price: 18,
     row: 14,
     seat: 11,
@@ -14060,7 +12434,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1627,
     price: 18,
     row: 14,
     seat: 12,
@@ -14070,7 +12443,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1628,
     price: 18,
     row: 14,
     seat: 13,
@@ -14078,7 +12450,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1629,
     price: 18,
     row: 14,
     seat: 14,
@@ -14086,7 +12457,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1630,
     price: 18,
     row: 14,
     seat: 15,
@@ -14094,7 +12464,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1631,
     price: 18,
     row: 14,
     seat: 16,
@@ -14102,7 +12471,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1632,
     price: 18,
     row: 14,
     seat: 17,
@@ -14110,7 +12478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1633,
     price: 18,
     row: 14,
     seat: 18,
@@ -14118,7 +12485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1634,
     price: 18,
     row: 14,
     seat: 19,
@@ -14126,7 +12492,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1635,
     price: 18,
     row: 14,
     seat: 20,
@@ -14134,7 +12499,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1636,
     price: 18,
     row: 15,
     seat: 1,
@@ -14142,7 +12506,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1637,
     price: 18,
     row: 15,
     seat: 2,
@@ -14150,7 +12513,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1638,
     price: 18,
     row: 15,
     seat: 3,
@@ -14160,7 +12522,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1639,
     price: 18,
     row: 15,
     seat: 4,
@@ -14170,7 +12531,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1640,
     price: 18,
     row: 15,
     seat: 5,
@@ -14180,7 +12540,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1641,
     price: 18,
     row: 15,
     seat: 6,
@@ -14188,7 +12547,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1642,
     price: 18,
     row: 15,
     seat: 7,
@@ -14198,7 +12556,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1643,
     price: 18,
     row: 15,
     seat: 8,
@@ -14206,7 +12563,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1644,
     price: 18,
     row: 15,
     seat: 9,
@@ -14214,7 +12570,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1645,
     price: 18,
     row: 15,
     seat: 10,
@@ -14224,7 +12579,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1646,
     price: 18,
     row: 15,
     seat: 11,
@@ -14234,7 +12588,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1647,
     price: 18,
     row: 15,
     seat: 12,
@@ -14242,7 +12595,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1648,
     price: 18,
     row: 15,
     seat: 13,
@@ -14250,7 +12602,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1649,
     price: 18,
     row: 15,
     seat: 14,
@@ -14258,7 +12609,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1650,
     price: 18,
     row: 15,
     seat: 15,
@@ -14266,7 +12616,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1651,
     price: 18,
     row: 15,
     seat: 16,
@@ -14274,7 +12623,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1652,
     price: 18,
     row: 15,
     seat: 17,
@@ -14284,7 +12632,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1653,
     price: 18,
     row: 15,
     seat: 18,
@@ -14292,7 +12639,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1654,
     price: 18,
     row: 15,
     seat: 19,
@@ -14300,7 +12646,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1655,
     price: 18,
     row: 15,
     seat: 20,
@@ -14308,7 +12653,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1656,
     price: 18,
     row: 16,
     seat: 1,
@@ -14316,7 +12660,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1657,
     price: 18,
     row: 16,
     seat: 2,
@@ -14326,7 +12669,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1658,
     price: 18,
     row: 16,
     seat: 3,
@@ -14334,7 +12676,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1659,
     price: 18,
     row: 16,
     seat: 4,
@@ -14342,7 +12683,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1660,
     price: 18,
     row: 16,
     seat: 5,
@@ -14350,7 +12690,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1661,
     price: 18,
     row: 16,
     seat: 6,
@@ -14358,7 +12697,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1662,
     price: 18,
     row: 16,
     seat: 7,
@@ -14366,7 +12704,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1663,
     price: 18,
     row: 16,
     seat: 8,
@@ -14376,7 +12713,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1664,
     price: 18,
     row: 16,
     seat: 9,
@@ -14384,7 +12720,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1665,
     price: 18,
     row: 16,
     seat: 10,
@@ -14392,7 +12727,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1666,
     price: 18,
     row: 16,
     seat: 11,
@@ -14400,7 +12734,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1667,
     price: 18,
     row: 16,
     seat: 12,
@@ -14408,7 +12741,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1668,
     price: 18,
     row: 16,
     seat: 13,
@@ -14418,7 +12750,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1669,
     price: 18,
     row: 16,
     seat: 14,
@@ -14426,7 +12757,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1670,
     price: 18,
     row: 16,
     seat: 15,
@@ -14436,7 +12766,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1671,
     price: 18,
     row: 16,
     seat: 16,
@@ -14444,7 +12773,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1672,
     price: 18,
     row: 16,
     seat: 17,
@@ -14452,7 +12780,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1673,
     price: 18,
     row: 16,
     seat: 18,
@@ -14462,7 +12789,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1674,
     price: 18,
     row: 16,
     seat: 19,
@@ -14472,7 +12798,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1675,
     price: 18,
     row: 16,
     seat: 20,
@@ -14480,7 +12805,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1676,
     price: 18,
     row: 17,
     seat: 1,
@@ -14488,7 +12812,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1677,
     price: 18,
     row: 17,
     seat: 2,
@@ -14496,7 +12819,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1678,
     price: 18,
     row: 17,
     seat: 3,
@@ -14504,7 +12826,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1679,
     price: 18,
     row: 17,
     seat: 4,
@@ -14514,7 +12835,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1680,
     price: 18,
     row: 17,
     seat: 5,
@@ -14522,7 +12842,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1681,
     price: 18,
     row: 17,
     seat: 6,
@@ -14532,7 +12851,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1682,
     price: 18,
     row: 17,
     seat: 7,
@@ -14540,7 +12858,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1683,
     price: 18,
     row: 17,
     seat: 8,
@@ -14550,7 +12867,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1684,
     price: 18,
     row: 17,
     seat: 9,
@@ -14558,7 +12874,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1685,
     price: 18,
     row: 17,
     seat: 10,
@@ -14568,7 +12883,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1686,
     price: 18,
     row: 17,
     seat: 11,
@@ -14578,7 +12892,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1687,
     price: 18,
     row: 17,
     seat: 12,
@@ -14586,7 +12899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1688,
     price: 18,
     row: 17,
     seat: 13,
@@ -14594,7 +12906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1689,
     price: 18,
     row: 17,
     seat: 14,
@@ -14604,7 +12915,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1690,
     price: 18,
     row: 17,
     seat: 15,
@@ -14612,7 +12922,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1691,
     price: 18,
     row: 17,
     seat: 16,
@@ -14620,7 +12929,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1692,
     price: 18,
     row: 17,
     seat: 17,
@@ -14628,7 +12936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1693,
     price: 18,
     row: 17,
     seat: 18,
@@ -14638,7 +12945,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1694,
     price: 18,
     row: 17,
     seat: 19,
@@ -14646,7 +12952,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1695,
     price: 18,
     row: 17,
     seat: 20,
@@ -14654,7 +12959,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1696,
     price: 18,
     row: 18,
     seat: 1,
@@ -14662,7 +12966,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1697,
     price: 18,
     row: 18,
     seat: 2,
@@ -14670,7 +12973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1698,
     price: 18,
     row: 18,
     seat: 3,
@@ -14680,7 +12982,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1699,
     price: 18,
     row: 18,
     seat: 4,
@@ -14688,7 +12989,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1700,
     price: 18,
     row: 18,
     seat: 5,
@@ -14696,7 +12996,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1701,
     price: 18,
     row: 18,
     seat: 6,
@@ -14704,7 +13003,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1702,
     price: 18,
     row: 18,
     seat: 7,
@@ -14712,7 +13010,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1703,
     price: 18,
     row: 18,
     seat: 8,
@@ -14720,7 +13017,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1704,
     price: 18,
     row: 18,
     seat: 9,
@@ -14728,7 +13024,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1705,
     price: 18,
     row: 18,
     seat: 10,
@@ -14736,7 +13031,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1706,
     price: 18,
     row: 18,
     seat: 11,
@@ -14744,7 +13038,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1707,
     price: 18,
     row: 18,
     seat: 12,
@@ -14754,7 +13047,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1708,
     price: 18,
     row: 18,
     seat: 13,
@@ -14762,7 +13054,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1709,
     price: 18,
     row: 18,
     seat: 14,
@@ -14770,7 +13061,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1710,
     price: 18,
     row: 18,
     seat: 15,
@@ -14780,7 +13070,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1711,
     price: 18,
     row: 18,
     seat: 16,
@@ -14788,7 +13077,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1712,
     price: 18,
     row: 18,
     seat: 17,
@@ -14798,7 +13086,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1713,
     price: 18,
     row: 18,
     seat: 18,
@@ -14808,7 +13095,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1714,
     price: 18,
     row: 18,
     seat: 19,
@@ -14816,7 +13102,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1715,
     price: 18,
     row: 18,
     seat: 20,
@@ -14824,7 +13109,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1716,
     price: 18,
     row: 19,
     seat: 1,
@@ -14832,7 +13116,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1717,
     price: 18,
     row: 19,
     seat: 2,
@@ -14840,7 +13123,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1718,
     price: 18,
     row: 19,
     seat: 3,
@@ -14848,7 +13130,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1719,
     price: 18,
     row: 19,
     seat: 4,
@@ -14856,7 +13137,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1720,
     price: 18,
     row: 19,
     seat: 5,
@@ -14866,7 +13146,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1721,
     price: 18,
     row: 19,
     seat: 6,
@@ -14874,7 +13153,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1722,
     price: 18,
     row: 19,
     seat: 7,
@@ -14882,7 +13160,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1723,
     price: 18,
     row: 19,
     seat: 8,
@@ -14890,7 +13167,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1724,
     price: 18,
     row: 19,
     seat: 9,
@@ -14898,7 +13174,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1725,
     price: 18,
     row: 19,
     seat: 10,
@@ -14908,7 +13183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1726,
     price: 18,
     row: 19,
     seat: 11,
@@ -14916,7 +13190,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1727,
     price: 18,
     row: 19,
     seat: 12,
@@ -14926,7 +13199,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1728,
     price: 18,
     row: 19,
     seat: 13,
@@ -14934,7 +13206,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1729,
     price: 18,
     row: 19,
     seat: 14,
@@ -14942,7 +13213,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1730,
     price: 18,
     row: 19,
     seat: 15,
@@ -14952,7 +13222,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1731,
     price: 18,
     row: 19,
     seat: 16,
@@ -14960,7 +13229,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1732,
     price: 18,
     row: 19,
     seat: 17,
@@ -14968,7 +13236,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1733,
     price: 18,
     row: 19,
     seat: 18,
@@ -14978,7 +13245,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1734,
     price: 18,
     row: 19,
     seat: 19,
@@ -14986,7 +13252,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1735,
     price: 18,
     row: 19,
     seat: 20,
@@ -14996,7 +13261,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1736,
     price: 18,
     row: 20,
     seat: 1,
@@ -15004,7 +13268,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1737,
     price: 18,
     row: 20,
     seat: 2,
@@ -15012,7 +13275,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1738,
     price: 18,
     row: 20,
     seat: 3,
@@ -15020,7 +13282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1739,
     price: 18,
     row: 20,
     seat: 4,
@@ -15028,7 +13289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1740,
     price: 18,
     row: 20,
     seat: 5,
@@ -15038,7 +13298,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1741,
     price: 18,
     row: 20,
     seat: 6,
@@ -15046,7 +13305,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1742,
     price: 18,
     row: 20,
     seat: 7,
@@ -15056,7 +13314,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1743,
     price: 18,
     row: 20,
     seat: 8,
@@ -15066,7 +13323,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1744,
     price: 18,
     row: 20,
     seat: 9,
@@ -15076,7 +13332,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1745,
     price: 18,
     row: 20,
     seat: 10,
@@ -15084,7 +13339,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1746,
     price: 18,
     row: 20,
     seat: 11,
@@ -15094,7 +13348,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1747,
     price: 18,
     row: 20,
     seat: 12,
@@ -15102,7 +13355,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1748,
     price: 18,
     row: 20,
     seat: 13,
@@ -15110,7 +13362,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1749,
     price: 18,
     row: 20,
     seat: 14,
@@ -15118,7 +13369,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1750,
     price: 18,
     row: 20,
     seat: 15,
@@ -15126,7 +13376,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1751,
     price: 18,
     row: 20,
     seat: 16,
@@ -15136,7 +13385,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1752,
     price: 18,
     row: 20,
     seat: 17,
@@ -15144,7 +13392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1753,
     price: 18,
     row: 20,
     seat: 18,
@@ -15152,7 +13399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1754,
     price: 18,
     row: 20,
     seat: 19,
@@ -15160,7 +13406,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1755,
     price: 18,
     row: 20,
     seat: 20,
@@ -15168,7 +13413,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1756,
     price: 18,
     row: 21,
     seat: 1,
@@ -15176,7 +13420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1757,
     price: 18,
     row: 21,
     seat: 2,
@@ -15184,7 +13427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1758,
     price: 18,
     row: 21,
     seat: 3,
@@ -15194,7 +13436,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1759,
     price: 18,
     row: 21,
     seat: 4,
@@ -15204,7 +13445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1760,
     price: 18,
     row: 21,
     seat: 5,
@@ -15212,7 +13452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1761,
     price: 18,
     row: 21,
     seat: 6,
@@ -15220,7 +13459,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1762,
     price: 18,
     row: 21,
     seat: 7,
@@ -15228,7 +13466,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1763,
     price: 18,
     row: 21,
     seat: 8,
@@ -15236,7 +13473,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1764,
     price: 18,
     row: 21,
     seat: 9,
@@ -15244,7 +13480,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1765,
     price: 18,
     row: 21,
     seat: 10,
@@ -15252,7 +13487,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1766,
     price: 18,
     row: 21,
     seat: 11,
@@ -15260,7 +13494,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1767,
     price: 18,
     row: 21,
     seat: 12,
@@ -15268,7 +13501,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1768,
     price: 18,
     row: 21,
     seat: 13,
@@ -15276,7 +13508,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1769,
     price: 18,
     row: 21,
     seat: 14,
@@ -15286,7 +13517,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1770,
     price: 18,
     row: 21,
     seat: 15,
@@ -15294,7 +13524,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1771,
     price: 18,
     row: 21,
     seat: 16,
@@ -15302,7 +13531,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1772,
     price: 18,
     row: 21,
     seat: 17,
@@ -15310,7 +13538,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1773,
     price: 18,
     row: 21,
     seat: 18,
@@ -15320,7 +13547,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1774,
     price: 18,
     row: 21,
     seat: 19,
@@ -15330,7 +13556,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1775,
     price: 18,
     row: 21,
     seat: 20,
@@ -15340,7 +13565,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1776,
     price: 18,
     row: 22,
     seat: 1,
@@ -15350,7 +13574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1777,
     price: 18,
     row: 22,
     seat: 2,
@@ -15358,7 +13581,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1778,
     price: 18,
     row: 22,
     seat: 3,
@@ -15366,7 +13588,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1779,
     price: 18,
     row: 22,
     seat: 4,
@@ -15374,7 +13595,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1780,
     price: 18,
     row: 22,
     seat: 5,
@@ -15382,7 +13602,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1781,
     price: 18,
     row: 22,
     seat: 6,
@@ -15390,7 +13609,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1782,
     price: 18,
     row: 22,
     seat: 7,
@@ -15398,7 +13616,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1783,
     price: 18,
     row: 22,
     seat: 8,
@@ -15406,7 +13623,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1784,
     price: 18,
     row: 22,
     seat: 9,
@@ -15414,7 +13630,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1785,
     price: 18,
     row: 22,
     seat: 10,
@@ -15424,7 +13639,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1786,
     price: 18,
     row: 22,
     seat: 11,
@@ -15432,7 +13646,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1787,
     price: 18,
     row: 22,
     seat: 12,
@@ -15442,7 +13655,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1788,
     price: 18,
     row: 22,
     seat: 13,
@@ -15450,7 +13662,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1789,
     price: 18,
     row: 22,
     seat: 14,
@@ -15458,7 +13669,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1790,
     price: 18,
     row: 22,
     seat: 15,
@@ -15466,7 +13676,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1791,
     price: 18,
     row: 22,
     seat: 16,
@@ -15474,7 +13683,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1792,
     price: 18,
     row: 22,
     seat: 17,
@@ -15482,7 +13690,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1793,
     price: 18,
     row: 22,
     seat: 18,
@@ -15490,7 +13697,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1794,
     price: 18,
     row: 22,
     seat: 19,
@@ -15498,7 +13704,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1795,
     price: 18,
     row: 22,
     seat: 20,
@@ -15506,7 +13711,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1796,
     price: 18,
     row: 23,
     seat: 1,
@@ -15516,7 +13720,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1797,
     price: 18,
     row: 23,
     seat: 2,
@@ -15524,7 +13727,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1798,
     price: 18,
     row: 23,
     seat: 3,
@@ -15532,7 +13734,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1799,
     price: 18,
     row: 23,
     seat: 4,
@@ -15540,7 +13741,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1800,
     price: 18,
     row: 23,
     seat: 5,
@@ -15548,7 +13748,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1801,
     price: 18,
     row: 23,
     seat: 6,
@@ -15556,7 +13755,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1802,
     price: 18,
     row: 23,
     seat: 7,
@@ -15564,7 +13762,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1803,
     price: 18,
     row: 23,
     seat: 8,
@@ -15572,7 +13769,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1804,
     price: 18,
     row: 23,
     seat: 9,
@@ -15580,7 +13776,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1805,
     price: 18,
     row: 23,
     seat: 10,
@@ -15588,7 +13783,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1806,
     price: 18,
     row: 23,
     seat: 11,
@@ -15598,7 +13792,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1807,
     price: 18,
     row: 23,
     seat: 12,
@@ -15608,7 +13801,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1808,
     price: 18,
     row: 23,
     seat: 13,
@@ -15616,7 +13808,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1809,
     price: 18,
     row: 23,
     seat: 14,
@@ -15624,7 +13815,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1810,
     price: 18,
     row: 23,
     seat: 15,
@@ -15632,7 +13822,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1811,
     price: 18,
     row: 23,
     seat: 16,
@@ -15640,7 +13829,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1812,
     price: 18,
     row: 23,
     seat: 17,
@@ -15648,7 +13836,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1813,
     price: 18,
     row: 23,
     seat: 18,
@@ -15656,7 +13843,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1814,
     price: 18,
     row: 23,
     seat: 19,
@@ -15664,7 +13850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1815,
     price: 18,
     row: 23,
     seat: 20,
@@ -15672,7 +13857,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1816,
     price: 18,
     row: 24,
     seat: 1,
@@ -15680,7 +13864,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1817,
     price: 18,
     row: 24,
     seat: 2,
@@ -15690,7 +13873,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1818,
     price: 18,
     row: 24,
     seat: 3,
@@ -15700,7 +13882,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1819,
     price: 18,
     row: 24,
     seat: 4,
@@ -15708,7 +13889,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1820,
     price: 18,
     row: 24,
     seat: 5,
@@ -15716,7 +13896,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1821,
     price: 18,
     row: 24,
     seat: 6,
@@ -15724,7 +13903,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1822,
     price: 18,
     row: 24,
     seat: 7,
@@ -15732,7 +13910,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1823,
     price: 18,
     row: 24,
     seat: 8,
@@ -15740,7 +13917,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1824,
     price: 18,
     row: 24,
     seat: 9,
@@ -15748,7 +13924,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1825,
     price: 18,
     row: 24,
     seat: 10,
@@ -15758,7 +13933,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1826,
     price: 18,
     row: 24,
     seat: 11,
@@ -15768,7 +13942,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1827,
     price: 18,
     row: 24,
     seat: 12,
@@ -15776,7 +13949,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1828,
     price: 18,
     row: 24,
     seat: 13,
@@ -15786,7 +13958,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1829,
     price: 18,
     row: 24,
     seat: 14,
@@ -15794,7 +13965,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1830,
     price: 18,
     row: 24,
     seat: 15,
@@ -15802,7 +13972,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1831,
     price: 18,
     row: 24,
     seat: 16,
@@ -15810,7 +13979,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1832,
     price: 18,
     row: 24,
     seat: 17,
@@ -15820,7 +13988,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1833,
     price: 18,
     row: 24,
     seat: 18,
@@ -15828,7 +13995,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1834,
     price: 18,
     row: 24,
     seat: 19,
@@ -15836,7 +14002,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1835,
     price: 18,
     row: 24,
     seat: 20,
@@ -15844,7 +14009,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1836,
     price: 18,
     row: 25,
     seat: 1,
@@ -15852,7 +14016,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1837,
     price: 18,
     row: 25,
     seat: 2,
@@ -15860,7 +14023,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1838,
     price: 18,
     row: 25,
     seat: 3,
@@ -15868,7 +14030,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1839,
     price: 18,
     row: 25,
     seat: 4,
@@ -15876,7 +14037,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1840,
     price: 18,
     row: 25,
     seat: 5,
@@ -15884,7 +14044,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1841,
     price: 18,
     row: 25,
     seat: 6,
@@ -15892,7 +14051,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1842,
     price: 18,
     row: 25,
     seat: 7,
@@ -15902,7 +14060,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1843,
     price: 18,
     row: 25,
     seat: 8,
@@ -15912,7 +14069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1844,
     price: 18,
     row: 25,
     seat: 9,
@@ -15920,7 +14076,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1845,
     price: 18,
     row: 25,
     seat: 10,
@@ -15928,7 +14083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1846,
     price: 18,
     row: 25,
     seat: 11,
@@ -15936,7 +14090,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1847,
     price: 18,
     row: 25,
     seat: 12,
@@ -15944,7 +14097,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1848,
     price: 18,
     row: 25,
     seat: 13,
@@ -15954,7 +14106,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1849,
     price: 18,
     row: 25,
     seat: 14,
@@ -15964,7 +14115,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1850,
     price: 18,
     row: 25,
     seat: 15,
@@ -15974,7 +14124,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1851,
     price: 18,
     row: 25,
     seat: 16,
@@ -15984,7 +14133,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1852,
     price: 18,
     row: 25,
     seat: 17,
@@ -15992,7 +14140,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1853,
     price: 18,
     row: 25,
     seat: 18,
@@ -16000,7 +14147,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1854,
     price: 18,
     row: 25,
     seat: 19,
@@ -16008,7 +14154,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1855,
     price: 18,
     row: 25,
     seat: 20,
@@ -16016,7 +14161,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1856,
     price: 12,
     row: 1,
     seat: 1,
@@ -16024,7 +14168,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1857,
     price: 12,
     row: 1,
     seat: 2,
@@ -16032,7 +14175,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1858,
     price: 12,
     row: 1,
     seat: 3,
@@ -16040,7 +14182,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1859,
     price: 12,
     row: 1,
     seat: 4,
@@ -16048,7 +14189,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1860,
     price: 12,
     row: 1,
     seat: 5,
@@ -16056,7 +14196,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1861,
     price: 12,
     row: 1,
     seat: 6,
@@ -16064,7 +14203,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1862,
     price: 12,
     row: 1,
     seat: 7,
@@ -16072,7 +14210,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1863,
     price: 12,
     row: 1,
     seat: 8,
@@ -16080,7 +14217,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1864,
     price: 12,
     row: 1,
     seat: 9,
@@ -16088,7 +14224,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1865,
     price: 12,
     row: 1,
     seat: 10,
@@ -16096,7 +14231,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1866,
     price: 12,
     row: 1,
     seat: 11,
@@ -16104,7 +14238,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1867,
     price: 12,
     row: 1,
     seat: 12,
@@ -16112,7 +14245,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1868,
     price: 12,
     row: 1,
     seat: 13,
@@ -16120,7 +14252,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1869,
     price: 12,
     row: 1,
     seat: 14,
@@ -16128,7 +14259,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1870,
     price: 12,
     row: 1,
     seat: 15,
@@ -16138,7 +14268,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1871,
     price: 12,
     row: 1,
     seat: 16,
@@ -16148,7 +14277,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1872,
     price: 12,
     row: 1,
     seat: 17,
@@ -16156,7 +14284,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1873,
     price: 12,
     row: 2,
     seat: 1,
@@ -16164,7 +14291,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1874,
     price: 12,
     row: 2,
     seat: 2,
@@ -16172,7 +14298,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1875,
     price: 12,
     row: 2,
     seat: 3,
@@ -16180,7 +14305,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1876,
     price: 12,
     row: 2,
     seat: 4,
@@ -16190,7 +14314,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1877,
     price: 12,
     row: 2,
     seat: 5,
@@ -16198,7 +14321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1878,
     price: 12,
     row: 2,
     seat: 6,
@@ -16206,7 +14328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1879,
     price: 12,
     row: 2,
     seat: 7,
@@ -16214,7 +14335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1880,
     price: 12,
     row: 2,
     seat: 8,
@@ -16222,7 +14342,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1881,
     price: 12,
     row: 2,
     seat: 9,
@@ -16232,7 +14351,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1882,
     price: 12,
     row: 2,
     seat: 10,
@@ -16242,7 +14360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1883,
     price: 12,
     row: 2,
     seat: 11,
@@ -16250,7 +14367,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1884,
     price: 12,
     row: 2,
     seat: 12,
@@ -16258,7 +14374,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1885,
     price: 12,
     row: 2,
     seat: 13,
@@ -16266,7 +14381,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1886,
     price: 12,
     row: 2,
     seat: 14,
@@ -16274,7 +14388,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1887,
     price: 12,
     row: 2,
     seat: 15,
@@ -16284,7 +14397,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1888,
     price: 12,
     row: 2,
     seat: 16,
@@ -16292,7 +14404,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1889,
     price: 12,
     row: 2,
     seat: 17,
@@ -16300,7 +14411,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1890,
     price: 12,
     row: 3,
     seat: 1,
@@ -16310,7 +14420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1891,
     price: 12,
     row: 3,
     seat: 2,
@@ -16318,7 +14427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1892,
     price: 12,
     row: 3,
     seat: 3,
@@ -16326,7 +14434,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1893,
     price: 12,
     row: 3,
     seat: 4,
@@ -16334,7 +14441,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1894,
     price: 12,
     row: 3,
     seat: 5,
@@ -16342,7 +14448,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1895,
     price: 12,
     row: 3,
     seat: 6,
@@ -16352,7 +14457,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1896,
     price: 12,
     row: 3,
     seat: 7,
@@ -16360,7 +14464,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1897,
     price: 12,
     row: 3,
     seat: 8,
@@ -16368,7 +14471,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1898,
     price: 12,
     row: 3,
     seat: 9,
@@ -16376,7 +14478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1899,
     price: 12,
     row: 3,
     seat: 10,
@@ -16384,7 +14485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1900,
     price: 12,
     row: 3,
     seat: 11,
@@ -16394,7 +14494,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1901,
     price: 12,
     row: 3,
     seat: 12,
@@ -16402,7 +14501,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1902,
     price: 12,
     row: 3,
     seat: 13,
@@ -16410,7 +14508,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1903,
     price: 12,
     row: 3,
     seat: 14,
@@ -16420,7 +14517,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1904,
     price: 12,
     row: 3,
     seat: 15,
@@ -16428,7 +14524,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1905,
     price: 12,
     row: 3,
     seat: 16,
@@ -16436,7 +14531,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1906,
     price: 12,
     row: 3,
     seat: 17,
@@ -16444,7 +14538,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1907,
     price: 12,
     row: 4,
     seat: 1,
@@ -16452,7 +14545,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1908,
     price: 12,
     row: 4,
     seat: 2,
@@ -16460,7 +14552,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1909,
     price: 12,
     row: 4,
     seat: 3,
@@ -16468,7 +14559,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1910,
     price: 12,
     row: 4,
     seat: 4,
@@ -16476,7 +14566,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1911,
     price: 12,
     row: 4,
     seat: 5,
@@ -16484,7 +14573,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1912,
     price: 12,
     row: 4,
     seat: 6,
@@ -16492,7 +14580,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1913,
     price: 12,
     row: 4,
     seat: 7,
@@ -16502,7 +14589,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1914,
     price: 12,
     row: 4,
     seat: 8,
@@ -16510,7 +14596,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1915,
     price: 12,
     row: 4,
     seat: 9,
@@ -16518,7 +14603,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1916,
     price: 12,
     row: 4,
     seat: 10,
@@ -16526,7 +14610,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1917,
     price: 12,
     row: 4,
     seat: 11,
@@ -16534,7 +14617,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1918,
     price: 12,
     row: 4,
     seat: 12,
@@ -16542,7 +14624,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1919,
     price: 12,
     row: 4,
     seat: 13,
@@ -16550,7 +14631,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1920,
     price: 12,
     row: 4,
     seat: 14,
@@ -16558,7 +14638,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1921,
     price: 12,
     row: 4,
     seat: 15,
@@ -16566,7 +14645,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1922,
     price: 12,
     row: 4,
     seat: 16,
@@ -16574,7 +14652,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1923,
     price: 12,
     row: 4,
     seat: 17,
@@ -16582,7 +14659,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1924,
     price: 12,
     row: 5,
     seat: 1,
@@ -16590,7 +14666,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1925,
     price: 12,
     row: 5,
     seat: 2,
@@ -16598,7 +14673,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1926,
     price: 12,
     row: 5,
     seat: 3,
@@ -16608,7 +14682,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1927,
     price: 12,
     row: 5,
     seat: 4,
@@ -16616,7 +14689,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1928,
     price: 12,
     row: 5,
     seat: 5,
@@ -16624,7 +14696,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1929,
     price: 12,
     row: 5,
     seat: 6,
@@ -16632,7 +14703,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1930,
     price: 12,
     row: 5,
     seat: 7,
@@ -16642,7 +14712,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1931,
     price: 12,
     row: 5,
     seat: 8,
@@ -16650,7 +14719,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1932,
     price: 12,
     row: 5,
     seat: 9,
@@ -16658,7 +14726,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1933,
     price: 12,
     row: 5,
     seat: 10,
@@ -16666,7 +14733,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1934,
     price: 12,
     row: 5,
     seat: 11,
@@ -16676,7 +14742,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1935,
     price: 12,
     row: 5,
     seat: 12,
@@ -16684,7 +14749,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1936,
     price: 12,
     row: 5,
     seat: 13,
@@ -16692,7 +14756,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1937,
     price: 12,
     row: 5,
     seat: 14,
@@ -16702,7 +14765,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1938,
     price: 12,
     row: 5,
     seat: 15,
@@ -16710,7 +14772,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1939,
     price: 12,
     row: 5,
     seat: 16,
@@ -16718,7 +14779,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1940,
     price: 12,
     row: 5,
     seat: 17,
@@ -16726,7 +14786,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1941,
     price: 12,
     row: 6,
     seat: 1,
@@ -16736,7 +14795,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1942,
     price: 12,
     row: 6,
     seat: 2,
@@ -16744,7 +14802,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1943,
     price: 12,
     row: 6,
     seat: 3,
@@ -16752,7 +14809,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1944,
     price: 12,
     row: 6,
     seat: 4,
@@ -16762,7 +14818,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1945,
     price: 12,
     row: 6,
     seat: 5,
@@ -16772,7 +14827,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1946,
     price: 12,
     row: 6,
     seat: 6,
@@ -16780,7 +14834,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1947,
     price: 12,
     row: 6,
     seat: 7,
@@ -16788,7 +14841,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1948,
     price: 12,
     row: 6,
     seat: 8,
@@ -16796,7 +14848,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1949,
     price: 12,
     row: 6,
     seat: 9,
@@ -16804,7 +14855,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1950,
     price: 12,
     row: 6,
     seat: 10,
@@ -16812,7 +14862,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1951,
     price: 12,
     row: 6,
     seat: 11,
@@ -16820,7 +14869,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1952,
     price: 12,
     row: 6,
     seat: 12,
@@ -16830,7 +14878,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1953,
     price: 12,
     row: 6,
     seat: 13,
@@ -16840,7 +14887,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1954,
     price: 12,
     row: 6,
     seat: 14,
@@ -16848,7 +14894,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1955,
     price: 12,
     row: 6,
     seat: 15,
@@ -16856,7 +14901,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1956,
     price: 12,
     row: 6,
     seat: 16,
@@ -16866,7 +14910,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1957,
     price: 12,
     row: 6,
     seat: 17,
@@ -16874,7 +14917,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1958,
     price: 12,
     row: 7,
     seat: 1,
@@ -16882,7 +14924,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1959,
     price: 12,
     row: 7,
     seat: 2,
@@ -16890,7 +14931,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1960,
     price: 12,
     row: 7,
     seat: 3,
@@ -16898,7 +14938,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1961,
     price: 12,
     row: 7,
     seat: 4,
@@ -16906,7 +14945,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1962,
     price: 12,
     row: 7,
     seat: 5,
@@ -16914,7 +14952,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1963,
     price: 12,
     row: 7,
     seat: 6,
@@ -16922,7 +14959,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1964,
     price: 12,
     row: 7,
     seat: 7,
@@ -16930,7 +14966,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1965,
     price: 12,
     row: 7,
     seat: 8,
@@ -16938,7 +14973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1966,
     price: 12,
     row: 7,
     seat: 9,
@@ -16946,7 +14980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1967,
     price: 12,
     row: 7,
     seat: 10,
@@ -16954,7 +14987,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1968,
     price: 12,
     row: 7,
     seat: 11,
@@ -16962,7 +14994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1969,
     price: 12,
     row: 7,
     seat: 12,
@@ -16970,7 +15001,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1970,
     price: 12,
     row: 7,
     seat: 13,
@@ -16980,7 +15010,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1971,
     price: 12,
     row: 7,
     seat: 14,
@@ -16988,7 +15017,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1972,
     price: 12,
     row: 7,
     seat: 15,
@@ -16996,7 +15024,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1973,
     price: 12,
     row: 7,
     seat: 16,
@@ -17004,7 +15031,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1974,
     price: 12,
     row: 7,
     seat: 17,
@@ -17012,7 +15038,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1975,
     price: 12,
     row: 8,
     seat: 1,
@@ -17020,7 +15045,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1976,
     price: 12,
     row: 8,
     seat: 2,
@@ -17028,7 +15052,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1977,
     price: 12,
     row: 8,
     seat: 3,
@@ -17036,7 +15059,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1978,
     price: 12,
     row: 8,
     seat: 4,
@@ -17046,7 +15068,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1979,
     price: 12,
     row: 8,
     seat: 5,
@@ -17056,7 +15077,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1980,
     price: 12,
     row: 8,
     seat: 6,
@@ -17064,7 +15084,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1981,
     price: 12,
     row: 8,
     seat: 7,
@@ -17072,7 +15091,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1982,
     price: 12,
     row: 8,
     seat: 8,
@@ -17080,7 +15098,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1983,
     price: 12,
     row: 8,
     seat: 9,
@@ -17090,7 +15107,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1984,
     price: 12,
     row: 8,
     seat: 10,
@@ -17098,7 +15114,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1985,
     price: 12,
     row: 8,
     seat: 11,
@@ -17108,7 +15123,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1986,
     price: 12,
     row: 8,
     seat: 12,
@@ -17116,7 +15130,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1987,
     price: 12,
     row: 8,
     seat: 13,
@@ -17126,7 +15139,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1988,
     price: 12,
     row: 8,
     seat: 14,
@@ -17136,7 +15148,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1989,
     price: 12,
     row: 8,
     seat: 15,
@@ -17144,7 +15155,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1990,
     price: 12,
     row: 8,
     seat: 16,
@@ -17152,7 +15162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1991,
     price: 12,
     row: 8,
     seat: 17,
@@ -17160,7 +15169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1992,
     price: 12,
     row: 9,
     seat: 1,
@@ -17168,7 +15176,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1993,
     price: 12,
     row: 9,
     seat: 2,
@@ -17176,7 +15183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1994,
     price: 12,
     row: 9,
     seat: 3,
@@ -17186,7 +15192,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 1995,
     price: 12,
     row: 9,
     seat: 4,
@@ -17194,7 +15199,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1996,
     price: 12,
     row: 9,
     seat: 5,
@@ -17202,7 +15206,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1997,
     price: 12,
     row: 9,
     seat: 6,
@@ -17210,7 +15213,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1998,
     price: 12,
     row: 9,
     seat: 7,
@@ -17218,7 +15220,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 1999,
     price: 12,
     row: 9,
     seat: 8,
@@ -17226,7 +15227,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2000,
     price: 12,
     row: 9,
     seat: 9,
@@ -17236,7 +15236,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2001,
     price: 12,
     row: 9,
     seat: 10,
@@ -17244,7 +15243,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2002,
     price: 12,
     row: 9,
     seat: 11,
@@ -17254,7 +15252,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2003,
     price: 12,
     row: 9,
     seat: 12,
@@ -17262,7 +15259,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2004,
     price: 12,
     row: 9,
     seat: 13,
@@ -17270,7 +15266,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2005,
     price: 12,
     row: 9,
     seat: 14,
@@ -17278,7 +15273,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2006,
     price: 12,
     row: 9,
     seat: 15,
@@ -17288,7 +15282,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2007,
     price: 12,
     row: 9,
     seat: 16,
@@ -17296,7 +15289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2008,
     price: 12,
     row: 9,
     seat: 17,
@@ -17304,7 +15296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2009,
     price: 12,
     row: 10,
     seat: 1,
@@ -17312,7 +15303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2010,
     price: 12,
     row: 10,
     seat: 2,
@@ -17320,7 +15310,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2011,
     price: 12,
     row: 10,
     seat: 3,
@@ -17330,7 +15319,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2012,
     price: 12,
     row: 10,
     seat: 4,
@@ -17338,7 +15326,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2013,
     price: 12,
     row: 10,
     seat: 5,
@@ -17346,7 +15333,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2014,
     price: 12,
     row: 10,
     seat: 6,
@@ -17354,7 +15340,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2015,
     price: 12,
     row: 10,
     seat: 7,
@@ -17362,7 +15347,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2016,
     price: 12,
     row: 10,
     seat: 8,
@@ -17372,7 +15356,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2017,
     price: 12,
     row: 10,
     seat: 9,
@@ -17382,7 +15365,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2018,
     price: 12,
     row: 10,
     seat: 10,
@@ -17390,7 +15372,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2019,
     price: 12,
     row: 10,
     seat: 11,
@@ -17398,7 +15379,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2020,
     price: 12,
     row: 10,
     seat: 12,
@@ -17406,7 +15386,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2021,
     price: 12,
     row: 10,
     seat: 13,
@@ -17414,7 +15393,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2022,
     price: 12,
     row: 10,
     seat: 14,
@@ -17424,7 +15402,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2023,
     price: 12,
     row: 10,
     seat: 15,
@@ -17432,7 +15409,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2024,
     price: 12,
     row: 10,
     seat: 16,
@@ -17442,7 +15418,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2025,
     price: 12,
     row: 10,
     seat: 17,
@@ -17450,7 +15425,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2026,
     price: 12,
     row: 11,
     seat: 1,
@@ -17458,7 +15432,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2027,
     price: 12,
     row: 11,
     seat: 2,
@@ -17466,7 +15439,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2028,
     price: 12,
     row: 11,
     seat: 3,
@@ -17476,7 +15448,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2029,
     price: 12,
     row: 11,
     seat: 4,
@@ -17484,7 +15455,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2030,
     price: 12,
     row: 11,
     seat: 5,
@@ -17492,7 +15462,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2031,
     price: 12,
     row: 11,
     seat: 6,
@@ -17500,7 +15469,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2032,
     price: 12,
     row: 11,
     seat: 7,
@@ -17508,7 +15476,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2033,
     price: 12,
     row: 11,
     seat: 8,
@@ -17516,7 +15483,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2034,
     price: 12,
     row: 11,
     seat: 9,
@@ -17524,7 +15490,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2035,
     price: 12,
     row: 11,
     seat: 10,
@@ -17532,7 +15497,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2036,
     price: 12,
     row: 11,
     seat: 11,
@@ -17542,7 +15506,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2037,
     price: 12,
     row: 11,
     seat: 12,
@@ -17552,7 +15515,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2038,
     price: 12,
     row: 11,
     seat: 13,
@@ -17560,7 +15522,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2039,
     price: 12,
     row: 11,
     seat: 14,
@@ -17568,7 +15529,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2040,
     price: 12,
     row: 11,
     seat: 15,
@@ -17576,7 +15536,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2041,
     price: 12,
     row: 11,
     seat: 16,
@@ -17584,7 +15543,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2042,
     price: 12,
     row: 11,
     seat: 17,
@@ -17594,7 +15552,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2043,
     price: 14,
     row: 1,
     seat: 1,
@@ -17604,7 +15561,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2044,
     price: 14,
     row: 1,
     seat: 2,
@@ -17614,7 +15570,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2045,
     price: 14,
     row: 1,
     seat: 3,
@@ -17624,7 +15579,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2046,
     price: 14,
     row: 1,
     seat: 4,
@@ -17632,7 +15586,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2047,
     price: 14,
     row: 1,
     seat: 5,
@@ -17640,7 +15593,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2048,
     price: 14,
     row: 1,
     seat: 6,
@@ -17650,7 +15602,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2049,
     price: 14,
     row: 1,
     seat: 7,
@@ -17658,7 +15609,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2050,
     price: 14,
     row: 1,
     seat: 8,
@@ -17668,7 +15618,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2051,
     price: 14,
     row: 1,
     seat: 9,
@@ -17678,7 +15627,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2052,
     price: 14,
     row: 1,
     seat: 10,
@@ -17686,7 +15634,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2053,
     price: 14,
     row: 1,
     seat: 11,
@@ -17694,7 +15641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2054,
     price: 14,
     row: 1,
     seat: 12,
@@ -17702,7 +15648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2055,
     price: 14,
     row: 1,
     seat: 13,
@@ -17712,7 +15657,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2056,
     price: 14,
     row: 1,
     seat: 14,
@@ -17720,7 +15664,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2057,
     price: 14,
     row: 1,
     seat: 15,
@@ -17728,7 +15671,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2058,
     price: 14,
     row: 1,
     seat: 16,
@@ -17736,7 +15678,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2059,
     price: 14,
     row: 1,
     seat: 17,
@@ -17746,7 +15687,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2060,
     price: 14,
     row: 1,
     seat: 18,
@@ -17756,7 +15696,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2061,
     price: 14,
     row: 1,
     seat: 19,
@@ -17764,7 +15703,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2062,
     price: 14,
     row: 1,
     seat: 20,
@@ -17774,7 +15712,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2063,
     price: 14,
     row: 2,
     seat: 1,
@@ -17782,7 +15719,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2064,
     price: 14,
     row: 2,
     seat: 2,
@@ -17790,7 +15726,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2065,
     price: 14,
     row: 2,
     seat: 3,
@@ -17800,7 +15735,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2066,
     price: 14,
     row: 2,
     seat: 4,
@@ -17810,7 +15744,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2067,
     price: 14,
     row: 2,
     seat: 5,
@@ -17818,7 +15751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2068,
     price: 14,
     row: 2,
     seat: 6,
@@ -17826,7 +15758,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2069,
     price: 14,
     row: 2,
     seat: 7,
@@ -17834,7 +15765,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2070,
     price: 14,
     row: 2,
     seat: 8,
@@ -17842,7 +15772,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2071,
     price: 14,
     row: 2,
     seat: 9,
@@ -17852,7 +15781,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2072,
     price: 14,
     row: 2,
     seat: 10,
@@ -17862,7 +15790,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2073,
     price: 14,
     row: 2,
     seat: 11,
@@ -17870,7 +15797,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2074,
     price: 14,
     row: 2,
     seat: 12,
@@ -17878,7 +15804,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2075,
     price: 14,
     row: 2,
     seat: 13,
@@ -17886,7 +15811,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2076,
     price: 14,
     row: 2,
     seat: 14,
@@ -17896,7 +15820,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2077,
     price: 14,
     row: 2,
     seat: 15,
@@ -17904,7 +15827,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2078,
     price: 14,
     row: 2,
     seat: 16,
@@ -17912,7 +15834,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2079,
     price: 14,
     row: 2,
     seat: 17,
@@ -17920,7 +15841,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2080,
     price: 14,
     row: 2,
     seat: 18,
@@ -17928,7 +15848,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2081,
     price: 14,
     row: 2,
     seat: 19,
@@ -17938,7 +15857,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2082,
     price: 14,
     row: 2,
     seat: 20,
@@ -17946,7 +15864,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2083,
     price: 14,
     row: 3,
     seat: 1,
@@ -17954,7 +15871,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2084,
     price: 14,
     row: 3,
     seat: 2,
@@ -17962,7 +15878,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2085,
     price: 14,
     row: 3,
     seat: 3,
@@ -17970,7 +15885,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2086,
     price: 14,
     row: 3,
     seat: 4,
@@ -17978,7 +15892,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2087,
     price: 14,
     row: 3,
     seat: 5,
@@ -17986,7 +15899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2088,
     price: 14,
     row: 3,
     seat: 6,
@@ -17994,7 +15906,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2089,
     price: 14,
     row: 3,
     seat: 7,
@@ -18002,7 +15913,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2090,
     price: 14,
     row: 3,
     seat: 8,
@@ -18010,7 +15920,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2091,
     price: 14,
     row: 3,
     seat: 9,
@@ -18018,7 +15927,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2092,
     price: 14,
     row: 3,
     seat: 10,
@@ -18026,7 +15934,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2093,
     price: 14,
     row: 3,
     seat: 11,
@@ -18034,7 +15941,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2094,
     price: 14,
     row: 3,
     seat: 12,
@@ -18042,7 +15948,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2095,
     price: 14,
     row: 3,
     seat: 13,
@@ -18050,7 +15955,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2096,
     price: 14,
     row: 3,
     seat: 14,
@@ -18058,7 +15962,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2097,
     price: 14,
     row: 3,
     seat: 15,
@@ -18066,7 +15969,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2098,
     price: 14,
     row: 3,
     seat: 16,
@@ -18076,7 +15978,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2099,
     price: 14,
     row: 3,
     seat: 17,
@@ -18086,7 +15987,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2100,
     price: 14,
     row: 3,
     seat: 18,
@@ -18094,7 +15994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2101,
     price: 14,
     row: 3,
     seat: 19,
@@ -18102,7 +16001,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2102,
     price: 14,
     row: 3,
     seat: 20,
@@ -18110,7 +16008,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2103,
     price: 14,
     row: 4,
     seat: 1,
@@ -18120,7 +16017,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2104,
     price: 14,
     row: 4,
     seat: 2,
@@ -18128,7 +16024,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2105,
     price: 14,
     row: 4,
     seat: 3,
@@ -18136,7 +16031,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2106,
     price: 14,
     row: 4,
     seat: 4,
@@ -18144,7 +16038,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2107,
     price: 14,
     row: 4,
     seat: 5,
@@ -18152,7 +16045,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2108,
     price: 14,
     row: 4,
     seat: 6,
@@ -18160,7 +16052,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2109,
     price: 14,
     row: 4,
     seat: 7,
@@ -18170,7 +16061,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2110,
     price: 14,
     row: 4,
     seat: 8,
@@ -18178,7 +16068,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2111,
     price: 14,
     row: 4,
     seat: 9,
@@ -18186,7 +16075,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2112,
     price: 14,
     row: 4,
     seat: 10,
@@ -18194,7 +16082,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2113,
     price: 14,
     row: 4,
     seat: 11,
@@ -18204,7 +16091,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2114,
     price: 14,
     row: 4,
     seat: 12,
@@ -18212,7 +16098,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2115,
     price: 14,
     row: 4,
     seat: 13,
@@ -18220,7 +16105,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2116,
     price: 14,
     row: 4,
     seat: 14,
@@ -18228,7 +16112,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2117,
     price: 14,
     row: 4,
     seat: 15,
@@ -18238,7 +16121,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2118,
     price: 14,
     row: 4,
     seat: 16,
@@ -18248,7 +16130,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2119,
     price: 14,
     row: 4,
     seat: 17,
@@ -18256,7 +16137,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2120,
     price: 14,
     row: 4,
     seat: 18,
@@ -18266,7 +16146,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2121,
     price: 14,
     row: 4,
     seat: 19,
@@ -18276,7 +16155,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2122,
     price: 14,
     row: 4,
     seat: 20,
@@ -18284,7 +16162,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2123,
     price: 14,
     row: 5,
     seat: 1,
@@ -18292,7 +16169,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2124,
     price: 14,
     row: 5,
     seat: 2,
@@ -18300,7 +16176,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2125,
     price: 14,
     row: 5,
     seat: 3,
@@ -18308,7 +16183,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2126,
     price: 14,
     row: 5,
     seat: 4,
@@ -18318,7 +16192,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2127,
     price: 14,
     row: 5,
     seat: 5,
@@ -18326,7 +16199,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2128,
     price: 14,
     row: 5,
     seat: 6,
@@ -18334,7 +16206,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2129,
     price: 14,
     row: 5,
     seat: 7,
@@ -18342,7 +16213,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2130,
     price: 14,
     row: 5,
     seat: 8,
@@ -18350,7 +16220,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2131,
     price: 14,
     row: 5,
     seat: 9,
@@ -18358,7 +16227,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2132,
     price: 14,
     row: 5,
     seat: 10,
@@ -18366,7 +16234,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2133,
     price: 14,
     row: 5,
     seat: 11,
@@ -18374,7 +16241,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2134,
     price: 14,
     row: 5,
     seat: 12,
@@ -18384,7 +16250,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2135,
     price: 14,
     row: 5,
     seat: 13,
@@ -18394,7 +16259,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2136,
     price: 14,
     row: 5,
     seat: 14,
@@ -18402,7 +16266,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2137,
     price: 14,
     row: 5,
     seat: 15,
@@ -18412,7 +16275,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2138,
     price: 14,
     row: 5,
     seat: 16,
@@ -18422,7 +16284,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2139,
     price: 14,
     row: 5,
     seat: 17,
@@ -18430,7 +16291,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2140,
     price: 14,
     row: 5,
     seat: 18,
@@ -18438,7 +16298,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2141,
     price: 14,
     row: 5,
     seat: 19,
@@ -18446,7 +16305,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2142,
     price: 14,
     row: 5,
     seat: 20,
@@ -18454,7 +16312,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2143,
     price: 14,
     row: 6,
     seat: 1,
@@ -18464,7 +16321,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2144,
     price: 14,
     row: 6,
     seat: 2,
@@ -18472,7 +16328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2145,
     price: 14,
     row: 6,
     seat: 3,
@@ -18482,7 +16337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2146,
     price: 14,
     row: 6,
     seat: 4,
@@ -18492,7 +16346,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2147,
     price: 14,
     row: 6,
     seat: 5,
@@ -18500,7 +16353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2148,
     price: 14,
     row: 6,
     seat: 6,
@@ -18508,7 +16360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2149,
     price: 14,
     row: 6,
     seat: 7,
@@ -18516,7 +16367,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2150,
     price: 14,
     row: 6,
     seat: 8,
@@ -18524,7 +16374,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2151,
     price: 14,
     row: 6,
     seat: 9,
@@ -18532,7 +16381,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2152,
     price: 14,
     row: 6,
     seat: 10,
@@ -18540,7 +16388,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2153,
     price: 14,
     row: 6,
     seat: 11,
@@ -18548,7 +16395,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2154,
     price: 14,
     row: 6,
     seat: 12,
@@ -18556,7 +16402,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2155,
     price: 14,
     row: 6,
     seat: 13,
@@ -18564,7 +16409,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2156,
     price: 14,
     row: 6,
     seat: 14,
@@ -18572,7 +16416,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2157,
     price: 14,
     row: 6,
     seat: 15,
@@ -18580,7 +16423,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2158,
     price: 14,
     row: 6,
     seat: 16,
@@ -18590,7 +16432,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2159,
     price: 14,
     row: 6,
     seat: 17,
@@ -18598,7 +16439,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2160,
     price: 14,
     row: 6,
     seat: 18,
@@ -18606,7 +16446,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2161,
     price: 14,
     row: 6,
     seat: 19,
@@ -18614,7 +16453,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2162,
     price: 14,
     row: 6,
     seat: 20,
@@ -18622,7 +16460,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2163,
     price: 14,
     row: 7,
     seat: 1,
@@ -18630,7 +16467,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2164,
     price: 14,
     row: 7,
     seat: 2,
@@ -18640,7 +16476,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2165,
     price: 14,
     row: 7,
     seat: 3,
@@ -18648,7 +16483,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2166,
     price: 14,
     row: 7,
     seat: 4,
@@ -18658,7 +16492,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2167,
     price: 14,
     row: 7,
     seat: 5,
@@ -18666,7 +16499,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2168,
     price: 14,
     row: 7,
     seat: 6,
@@ -18674,7 +16506,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2169,
     price: 14,
     row: 7,
     seat: 7,
@@ -18684,7 +16515,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2170,
     price: 14,
     row: 7,
     seat: 8,
@@ -18692,7 +16522,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2171,
     price: 14,
     row: 7,
     seat: 9,
@@ -18702,7 +16531,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2172,
     price: 14,
     row: 7,
     seat: 10,
@@ -18712,7 +16540,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2173,
     price: 14,
     row: 7,
     seat: 11,
@@ -18720,7 +16547,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2174,
     price: 14,
     row: 7,
     seat: 12,
@@ -18728,7 +16554,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2175,
     price: 14,
     row: 7,
     seat: 13,
@@ -18736,7 +16561,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2176,
     price: 14,
     row: 7,
     seat: 14,
@@ -18746,7 +16570,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2177,
     price: 14,
     row: 7,
     seat: 15,
@@ -18756,7 +16579,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2178,
     price: 14,
     row: 7,
     seat: 16,
@@ -18764,7 +16586,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2179,
     price: 14,
     row: 7,
     seat: 17,
@@ -18772,7 +16593,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2180,
     price: 14,
     row: 7,
     seat: 18,
@@ -18780,7 +16600,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2181,
     price: 14,
     row: 7,
     seat: 19,
@@ -18788,7 +16607,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2182,
     price: 14,
     row: 7,
     seat: 20,
@@ -18796,7 +16614,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2183,
     price: 14,
     row: 8,
     seat: 1,
@@ -18804,7 +16621,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2184,
     price: 14,
     row: 8,
     seat: 2,
@@ -18812,7 +16628,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2185,
     price: 14,
     row: 8,
     seat: 3,
@@ -18822,7 +16637,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2186,
     price: 14,
     row: 8,
     seat: 4,
@@ -18832,7 +16646,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2187,
     price: 14,
     row: 8,
     seat: 5,
@@ -18840,7 +16653,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2188,
     price: 14,
     row: 8,
     seat: 6,
@@ -18848,7 +16660,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2189,
     price: 14,
     row: 8,
     seat: 7,
@@ -18856,7 +16667,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2190,
     price: 14,
     row: 8,
     seat: 8,
@@ -18864,7 +16674,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2191,
     price: 14,
     row: 8,
     seat: 9,
@@ -18872,7 +16681,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2192,
     price: 14,
     row: 8,
     seat: 10,
@@ -18880,7 +16688,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2193,
     price: 14,
     row: 8,
     seat: 11,
@@ -18888,7 +16695,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2194,
     price: 14,
     row: 8,
     seat: 12,
@@ -18896,7 +16702,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2195,
     price: 14,
     row: 8,
     seat: 13,
@@ -18904,7 +16709,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2196,
     price: 14,
     row: 8,
     seat: 14,
@@ -18914,7 +16718,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2197,
     price: 14,
     row: 8,
     seat: 15,
@@ -18922,7 +16725,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2198,
     price: 14,
     row: 8,
     seat: 16,
@@ -18930,7 +16732,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2199,
     price: 14,
     row: 8,
     seat: 17,
@@ -18938,7 +16739,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2200,
     price: 14,
     row: 8,
     seat: 18,
@@ -18946,7 +16746,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2201,
     price: 14,
     row: 8,
     seat: 19,
@@ -18954,7 +16753,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2202,
     price: 14,
     row: 8,
     seat: 20,
@@ -18964,7 +16762,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2203,
     price: 14,
     row: 9,
     seat: 1,
@@ -18972,7 +16769,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2204,
     price: 14,
     row: 9,
     seat: 2,
@@ -18980,7 +16776,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2205,
     price: 14,
     row: 9,
     seat: 3,
@@ -18988,7 +16783,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2206,
     price: 14,
     row: 9,
     seat: 4,
@@ -18998,7 +16792,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2207,
     price: 14,
     row: 9,
     seat: 5,
@@ -19008,7 +16801,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2208,
     price: 14,
     row: 9,
     seat: 6,
@@ -19018,7 +16810,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2209,
     price: 14,
     row: 9,
     seat: 7,
@@ -19026,7 +16817,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2210,
     price: 14,
     row: 9,
     seat: 8,
@@ -19034,7 +16824,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2211,
     price: 14,
     row: 9,
     seat: 9,
@@ -19042,7 +16831,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2212,
     price: 14,
     row: 9,
     seat: 10,
@@ -19050,7 +16838,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2213,
     price: 14,
     row: 9,
     seat: 11,
@@ -19060,7 +16847,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2214,
     price: 14,
     row: 9,
     seat: 12,
@@ -19068,7 +16854,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2215,
     price: 14,
     row: 9,
     seat: 13,
@@ -19078,7 +16863,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2216,
     price: 14,
     row: 9,
     seat: 14,
@@ -19086,7 +16870,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2217,
     price: 14,
     row: 9,
     seat: 15,
@@ -19094,7 +16877,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2218,
     price: 14,
     row: 9,
     seat: 16,
@@ -19102,7 +16884,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2219,
     price: 14,
     row: 9,
     seat: 17,
@@ -19112,7 +16893,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2220,
     price: 14,
     row: 9,
     seat: 18,
@@ -19120,7 +16900,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2221,
     price: 14,
     row: 9,
     seat: 19,
@@ -19128,7 +16907,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2222,
     price: 14,
     row: 9,
     seat: 20,
@@ -19136,7 +16914,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2223,
     price: 14,
     row: 10,
     seat: 1,
@@ -19146,7 +16923,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2224,
     price: 14,
     row: 10,
     seat: 2,
@@ -19154,7 +16930,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2225,
     price: 14,
     row: 10,
     seat: 3,
@@ -19164,7 +16939,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2226,
     price: 14,
     row: 10,
     seat: 4,
@@ -19172,7 +16946,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2227,
     price: 14,
     row: 10,
     seat: 5,
@@ -19180,7 +16953,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2228,
     price: 14,
     row: 10,
     seat: 6,
@@ -19188,7 +16960,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2229,
     price: 14,
     row: 10,
     seat: 7,
@@ -19196,7 +16967,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2230,
     price: 14,
     row: 10,
     seat: 8,
@@ -19204,7 +16974,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2231,
     price: 14,
     row: 10,
     seat: 9,
@@ -19212,7 +16981,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2232,
     price: 14,
     row: 10,
     seat: 10,
@@ -19220,7 +16988,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2233,
     price: 14,
     row: 10,
     seat: 11,
@@ -19228,7 +16995,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2234,
     price: 14,
     row: 10,
     seat: 12,
@@ -19236,7 +17002,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2235,
     price: 14,
     row: 10,
     seat: 13,
@@ -19244,7 +17009,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2236,
     price: 14,
     row: 10,
     seat: 14,
@@ -19252,7 +17016,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2237,
     price: 14,
     row: 10,
     seat: 15,
@@ -19260,7 +17023,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2238,
     price: 14,
     row: 10,
     seat: 16,
@@ -19270,7 +17032,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2239,
     price: 14,
     row: 10,
     seat: 17,
@@ -19280,7 +17041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2240,
     price: 14,
     row: 10,
     seat: 18,
@@ -19288,7 +17048,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2241,
     price: 14,
     row: 10,
     seat: 19,
@@ -19296,7 +17055,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2242,
     price: 14,
     row: 10,
     seat: 20,
@@ -19304,7 +17062,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2243,
     price: 14,
     row: 11,
     seat: 1,
@@ -19312,7 +17069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2244,
     price: 14,
     row: 11,
     seat: 2,
@@ -19320,7 +17076,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2245,
     price: 14,
     row: 11,
     seat: 3,
@@ -19330,7 +17085,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2246,
     price: 14,
     row: 11,
     seat: 4,
@@ -19338,7 +17092,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2247,
     price: 14,
     row: 11,
     seat: 5,
@@ -19346,7 +17099,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2248,
     price: 14,
     row: 11,
     seat: 6,
@@ -19354,7 +17106,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2249,
     price: 14,
     row: 11,
     seat: 7,
@@ -19362,7 +17113,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2250,
     price: 14,
     row: 11,
     seat: 8,
@@ -19370,7 +17120,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2251,
     price: 14,
     row: 11,
     seat: 9,
@@ -19380,7 +17129,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2252,
     price: 14,
     row: 11,
     seat: 10,
@@ -19390,7 +17138,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2253,
     price: 14,
     row: 11,
     seat: 11,
@@ -19398,7 +17145,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2254,
     price: 14,
     row: 11,
     seat: 12,
@@ -19406,7 +17152,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2255,
     price: 14,
     row: 11,
     seat: 13,
@@ -19414,7 +17159,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2256,
     price: 14,
     row: 11,
     seat: 14,
@@ -19422,7 +17166,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2257,
     price: 14,
     row: 11,
     seat: 15,
@@ -19430,7 +17173,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2258,
     price: 14,
     row: 11,
     seat: 16,
@@ -19438,7 +17180,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2259,
     price: 14,
     row: 11,
     seat: 17,
@@ -19446,7 +17187,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2260,
     price: 14,
     row: 11,
     seat: 18,
@@ -19454,7 +17194,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2261,
     price: 14,
     row: 11,
     seat: 19,
@@ -19462,7 +17201,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2262,
     price: 14,
     row: 11,
     seat: 20,
@@ -19470,7 +17208,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2263,
     price: 14,
     row: 12,
     seat: 1,
@@ -19478,7 +17215,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2264,
     price: 14,
     row: 12,
     seat: 2,
@@ -19488,7 +17224,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2265,
     price: 14,
     row: 12,
     seat: 3,
@@ -19496,7 +17231,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2266,
     price: 14,
     row: 12,
     seat: 4,
@@ -19504,7 +17238,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2267,
     price: 14,
     row: 12,
     seat: 5,
@@ -19514,7 +17247,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2268,
     price: 14,
     row: 12,
     seat: 6,
@@ -19522,7 +17254,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2269,
     price: 14,
     row: 12,
     seat: 7,
@@ -19530,7 +17261,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2270,
     price: 14,
     row: 12,
     seat: 8,
@@ -19538,7 +17268,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2271,
     price: 14,
     row: 12,
     seat: 9,
@@ -19548,7 +17277,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2272,
     price: 14,
     row: 12,
     seat: 10,
@@ -19556,7 +17284,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2273,
     price: 14,
     row: 12,
     seat: 11,
@@ -19564,7 +17291,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2274,
     price: 14,
     row: 12,
     seat: 12,
@@ -19572,7 +17298,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2275,
     price: 14,
     row: 12,
     seat: 13,
@@ -19580,7 +17305,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2276,
     price: 14,
     row: 12,
     seat: 14,
@@ -19588,7 +17312,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2277,
     price: 14,
     row: 12,
     seat: 15,
@@ -19596,7 +17319,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2278,
     price: 14,
     row: 12,
     seat: 16,
@@ -19606,7 +17328,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2279,
     price: 14,
     row: 12,
     seat: 17,
@@ -19614,7 +17335,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2280,
     price: 14,
     row: 12,
     seat: 18,
@@ -19622,7 +17342,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2281,
     price: 14,
     row: 12,
     seat: 19,
@@ -19630,7 +17349,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2282,
     price: 14,
     row: 12,
     seat: 20,
@@ -19638,7 +17356,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2283,
     price: 14,
     row: 13,
     seat: 1,
@@ -19646,7 +17363,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2284,
     price: 14,
     row: 13,
     seat: 2,
@@ -19654,7 +17370,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2285,
     price: 14,
     row: 13,
     seat: 3,
@@ -19662,7 +17377,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2286,
     price: 14,
     row: 13,
     seat: 4,
@@ -19670,7 +17384,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2287,
     price: 14,
     row: 13,
     seat: 5,
@@ -19678,7 +17391,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2288,
     price: 14,
     row: 13,
     seat: 6,
@@ -19688,7 +17400,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2289,
     price: 14,
     row: 13,
     seat: 7,
@@ -19696,7 +17407,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2290,
     price: 14,
     row: 13,
     seat: 8,
@@ -19706,7 +17416,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2291,
     price: 14,
     row: 13,
     seat: 9,
@@ -19716,7 +17425,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2292,
     price: 14,
     row: 13,
     seat: 10,
@@ -19724,7 +17432,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2293,
     price: 14,
     row: 13,
     seat: 11,
@@ -19732,7 +17439,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2294,
     price: 14,
     row: 13,
     seat: 12,
@@ -19740,7 +17446,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2295,
     price: 14,
     row: 13,
     seat: 13,
@@ -19748,7 +17453,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2296,
     price: 14,
     row: 13,
     seat: 14,
@@ -19756,7 +17460,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2297,
     price: 14,
     row: 13,
     seat: 15,
@@ -19764,7 +17467,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2298,
     price: 14,
     row: 13,
     seat: 16,
@@ -19774,7 +17476,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2299,
     price: 14,
     row: 13,
     seat: 17,
@@ -19784,7 +17485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2300,
     price: 14,
     row: 13,
     seat: 18,
@@ -19792,7 +17492,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2301,
     price: 14,
     row: 13,
     seat: 19,
@@ -19802,7 +17501,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2302,
     price: 14,
     row: 13,
     seat: 20,
@@ -19812,7 +17510,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2303,
     price: 14,
     row: 14,
     seat: 1,
@@ -19822,7 +17519,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2304,
     price: 14,
     row: 14,
     seat: 2,
@@ -19832,7 +17528,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2305,
     price: 14,
     row: 14,
     seat: 3,
@@ -19840,7 +17535,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2306,
     price: 14,
     row: 14,
     seat: 4,
@@ -19848,7 +17542,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2307,
     price: 14,
     row: 14,
     seat: 5,
@@ -19856,7 +17549,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2308,
     price: 14,
     row: 14,
     seat: 6,
@@ -19864,7 +17556,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2309,
     price: 14,
     row: 14,
     seat: 7,
@@ -19874,7 +17565,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2310,
     price: 14,
     row: 14,
     seat: 8,
@@ -19882,7 +17572,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2311,
     price: 14,
     row: 14,
     seat: 9,
@@ -19890,7 +17579,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2312,
     price: 14,
     row: 14,
     seat: 10,
@@ -19898,7 +17586,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2313,
     price: 14,
     row: 14,
     seat: 11,
@@ -19906,7 +17593,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2314,
     price: 14,
     row: 14,
     seat: 12,
@@ -19914,7 +17600,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2315,
     price: 14,
     row: 14,
     seat: 13,
@@ -19922,7 +17607,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2316,
     price: 14,
     row: 14,
     seat: 14,
@@ -19932,7 +17616,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2317,
     price: 14,
     row: 14,
     seat: 15,
@@ -19940,7 +17623,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2318,
     price: 14,
     row: 14,
     seat: 16,
@@ -19948,7 +17630,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2319,
     price: 14,
     row: 14,
     seat: 17,
@@ -19958,7 +17639,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2320,
     price: 14,
     row: 14,
     seat: 18,
@@ -19968,7 +17648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2321,
     price: 14,
     row: 14,
     seat: 19,
@@ -19976,7 +17655,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2322,
     price: 14,
     row: 14,
     seat: 20,
@@ -19984,7 +17662,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2323,
     price: 14,
     row: 15,
     seat: 1,
@@ -19992,7 +17669,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2324,
     price: 14,
     row: 15,
     seat: 2,
@@ -20000,7 +17676,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2325,
     price: 14,
     row: 15,
     seat: 3,
@@ -20008,7 +17683,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2326,
     price: 14,
     row: 15,
     seat: 4,
@@ -20016,7 +17690,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2327,
     price: 14,
     row: 15,
     seat: 5,
@@ -20024,7 +17697,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2328,
     price: 14,
     row: 15,
     seat: 6,
@@ -20032,7 +17704,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2329,
     price: 14,
     row: 15,
     seat: 7,
@@ -20040,7 +17711,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2330,
     price: 14,
     row: 15,
     seat: 8,
@@ -20048,7 +17718,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2331,
     price: 14,
     row: 15,
     seat: 9,
@@ -20058,7 +17727,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2332,
     price: 14,
     row: 15,
     seat: 10,
@@ -20066,7 +17734,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2333,
     price: 14,
     row: 15,
     seat: 11,
@@ -20076,7 +17743,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2334,
     price: 14,
     row: 15,
     seat: 12,
@@ -20084,7 +17750,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2335,
     price: 14,
     row: 15,
     seat: 13,
@@ -20092,7 +17757,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2336,
     price: 14,
     row: 15,
     seat: 14,
@@ -20100,7 +17764,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2337,
     price: 14,
     row: 15,
     seat: 15,
@@ -20108,7 +17771,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2338,
     price: 14,
     row: 15,
     seat: 16,
@@ -20118,7 +17780,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2339,
     price: 14,
     row: 15,
     seat: 17,
@@ -20128,7 +17789,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2340,
     price: 14,
     row: 15,
     seat: 18,
@@ -20136,7 +17796,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2341,
     price: 14,
     row: 15,
     seat: 19,
@@ -20146,7 +17805,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2342,
     price: 14,
     row: 15,
     seat: 20,
@@ -20154,7 +17812,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2343,
     price: 14,
     row: 16,
     seat: 1,
@@ -20164,7 +17821,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2344,
     price: 14,
     row: 16,
     seat: 2,
@@ -20172,7 +17828,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2345,
     price: 14,
     row: 16,
     seat: 3,
@@ -20182,7 +17837,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2346,
     price: 14,
     row: 16,
     seat: 4,
@@ -20192,7 +17846,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2347,
     price: 14,
     row: 16,
     seat: 5,
@@ -20200,7 +17853,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2348,
     price: 14,
     row: 16,
     seat: 6,
@@ -20208,7 +17860,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2349,
     price: 14,
     row: 16,
     seat: 7,
@@ -20216,7 +17867,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2350,
     price: 14,
     row: 16,
     seat: 8,
@@ -20224,7 +17874,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2351,
     price: 14,
     row: 16,
     seat: 9,
@@ -20232,7 +17881,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2352,
     price: 14,
     row: 16,
     seat: 10,
@@ -20240,7 +17888,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2353,
     price: 14,
     row: 16,
     seat: 11,
@@ -20248,7 +17895,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2354,
     price: 14,
     row: 16,
     seat: 12,
@@ -20256,7 +17902,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2355,
     price: 14,
     row: 16,
     seat: 13,
@@ -20264,7 +17909,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2356,
     price: 14,
     row: 16,
     seat: 14,
@@ -20272,7 +17916,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2357,
     price: 14,
     row: 16,
     seat: 15,
@@ -20280,7 +17923,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2358,
     price: 14,
     row: 16,
     seat: 16,
@@ -20288,7 +17930,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2359,
     price: 14,
     row: 16,
     seat: 17,
@@ -20296,7 +17937,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2360,
     price: 14,
     row: 16,
     seat: 18,
@@ -20304,7 +17944,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2361,
     price: 14,
     row: 16,
     seat: 19,
@@ -20312,7 +17951,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2362,
     price: 14,
     row: 16,
     seat: 20,
@@ -20322,7 +17960,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2363,
     price: 14,
     row: 17,
     seat: 1,
@@ -20330,7 +17967,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2364,
     price: 14,
     row: 17,
     seat: 2,
@@ -20338,7 +17974,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2365,
     price: 14,
     row: 17,
     seat: 3,
@@ -20348,7 +17983,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2366,
     price: 14,
     row: 17,
     seat: 4,
@@ -20356,7 +17990,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2367,
     price: 14,
     row: 17,
     seat: 5,
@@ -20364,7 +17997,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2368,
     price: 14,
     row: 17,
     seat: 6,
@@ -20372,7 +18004,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2369,
     price: 14,
     row: 17,
     seat: 7,
@@ -20380,7 +18011,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2370,
     price: 14,
     row: 17,
     seat: 8,
@@ -20388,7 +18018,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2371,
     price: 14,
     row: 17,
     seat: 9,
@@ -20398,7 +18027,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2372,
     price: 14,
     row: 17,
     seat: 10,
@@ -20406,7 +18034,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2373,
     price: 14,
     row: 17,
     seat: 11,
@@ -20414,7 +18041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2374,
     price: 14,
     row: 17,
     seat: 12,
@@ -20422,7 +18048,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2375,
     price: 14,
     row: 17,
     seat: 13,
@@ -20430,7 +18055,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2376,
     price: 14,
     row: 17,
     seat: 14,
@@ -20438,7 +18062,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2377,
     price: 14,
     row: 17,
     seat: 15,
@@ -20446,7 +18069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2378,
     price: 14,
     row: 17,
     seat: 16,
@@ -20454,7 +18076,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2379,
     price: 14,
     row: 17,
     seat: 17,
@@ -20462,7 +18083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2380,
     price: 14,
     row: 17,
     seat: 18,
@@ -20472,7 +18092,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2381,
     price: 14,
     row: 17,
     seat: 19,
@@ -20480,7 +18099,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2382,
     price: 14,
     row: 17,
     seat: 20,
@@ -20488,7 +18106,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2383,
     price: 14,
     row: 18,
     seat: 1,
@@ -20496,7 +18113,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2384,
     price: 14,
     row: 18,
     seat: 2,
@@ -20504,7 +18120,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2385,
     price: 14,
     row: 18,
     seat: 3,
@@ -20512,7 +18127,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2386,
     price: 14,
     row: 18,
     seat: 4,
@@ -20522,7 +18136,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2387,
     price: 14,
     row: 18,
     seat: 5,
@@ -20532,7 +18145,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2388,
     price: 14,
     row: 18,
     seat: 6,
@@ -20540,7 +18152,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2389,
     price: 14,
     row: 18,
     seat: 7,
@@ -20550,7 +18161,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2390,
     price: 14,
     row: 18,
     seat: 8,
@@ -20558,7 +18168,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2391,
     price: 14,
     row: 18,
     seat: 9,
@@ -20568,7 +18177,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2392,
     price: 14,
     row: 18,
     seat: 10,
@@ -20576,7 +18184,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2393,
     price: 14,
     row: 18,
     seat: 11,
@@ -20584,7 +18191,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2394,
     price: 14,
     row: 18,
     seat: 12,
@@ -20592,7 +18198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2395,
     price: 14,
     row: 18,
     seat: 13,
@@ -20600,7 +18205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2396,
     price: 14,
     row: 18,
     seat: 14,
@@ -20608,7 +18212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2397,
     price: 14,
     row: 18,
     seat: 15,
@@ -20616,7 +18219,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2398,
     price: 14,
     row: 18,
     seat: 16,
@@ -20624,7 +18226,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2399,
     price: 14,
     row: 18,
     seat: 17,
@@ -20634,7 +18235,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2400,
     price: 14,
     row: 18,
     seat: 18,
@@ -20642,7 +18242,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2401,
     price: 14,
     row: 18,
     seat: 19,
@@ -20650,7 +18249,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2402,
     price: 14,
     row: 18,
     seat: 20,
@@ -20660,7 +18258,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2403,
     price: 14,
     row: 19,
     seat: 1,
@@ -20668,7 +18265,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2404,
     price: 14,
     row: 19,
     seat: 2,
@@ -20678,7 +18274,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2405,
     price: 14,
     row: 19,
     seat: 3,
@@ -20686,7 +18281,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2406,
     price: 14,
     row: 19,
     seat: 4,
@@ -20694,7 +18288,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2407,
     price: 14,
     row: 19,
     seat: 5,
@@ -20702,7 +18295,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2408,
     price: 14,
     row: 19,
     seat: 6,
@@ -20710,7 +18302,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2409,
     price: 14,
     row: 19,
     seat: 7,
@@ -20718,7 +18309,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2410,
     price: 14,
     row: 19,
     seat: 8,
@@ -20726,7 +18316,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2411,
     price: 14,
     row: 19,
     seat: 9,
@@ -20734,7 +18323,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2412,
     price: 14,
     row: 19,
     seat: 10,
@@ -20742,7 +18330,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2413,
     price: 14,
     row: 19,
     seat: 11,
@@ -20750,7 +18337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2414,
     price: 14,
     row: 19,
     seat: 12,
@@ -20760,7 +18346,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2415,
     price: 14,
     row: 19,
     seat: 13,
@@ -20768,7 +18353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2416,
     price: 14,
     row: 19,
     seat: 14,
@@ -20778,7 +18362,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2417,
     price: 14,
     row: 19,
     seat: 15,
@@ -20788,7 +18371,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2418,
     price: 14,
     row: 19,
     seat: 16,
@@ -20796,7 +18378,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2419,
     price: 14,
     row: 19,
     seat: 17,
@@ -20804,7 +18385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2420,
     price: 14,
     row: 19,
     seat: 18,
@@ -20812,7 +18392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2421,
     price: 14,
     row: 19,
     seat: 19,
@@ -20822,7 +18401,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2422,
     price: 14,
     row: 19,
     seat: 20,
@@ -20830,7 +18408,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2423,
     price: 14,
     row: 20,
     seat: 1,
@@ -20838,7 +18415,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2424,
     price: 14,
     row: 20,
     seat: 2,
@@ -20846,7 +18422,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2425,
     price: 14,
     row: 20,
     seat: 3,
@@ -20856,7 +18431,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2426,
     price: 14,
     row: 20,
     seat: 4,
@@ -20864,7 +18438,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2427,
     price: 14,
     row: 20,
     seat: 5,
@@ -20872,7 +18445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2428,
     price: 14,
     row: 20,
     seat: 6,
@@ -20880,7 +18452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2429,
     price: 14,
     row: 20,
     seat: 7,
@@ -20890,7 +18461,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2430,
     price: 14,
     row: 20,
     seat: 8,
@@ -20898,7 +18468,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2431,
     price: 14,
     row: 20,
     seat: 9,
@@ -20906,7 +18475,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2432,
     price: 14,
     row: 20,
     seat: 10,
@@ -20914,7 +18482,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2433,
     price: 14,
     row: 20,
     seat: 11,
@@ -20924,7 +18491,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2434,
     price: 14,
     row: 20,
     seat: 12,
@@ -20932,7 +18498,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2435,
     price: 14,
     row: 20,
     seat: 13,
@@ -20940,7 +18505,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2436,
     price: 14,
     row: 20,
     seat: 14,
@@ -20948,7 +18512,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2437,
     price: 14,
     row: 20,
     seat: 15,
@@ -20956,7 +18519,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2438,
     price: 14,
     row: 20,
     seat: 16,
@@ -20964,7 +18526,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2439,
     price: 14,
     row: 20,
     seat: 17,
@@ -20972,7 +18533,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2440,
     price: 14,
     row: 20,
     seat: 18,
@@ -20982,7 +18542,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2441,
     price: 14,
     row: 20,
     seat: 19,
@@ -20992,7 +18551,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2442,
     price: 14,
     row: 20,
     seat: 20,
@@ -21000,7 +18558,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2443,
     price: 14,
     row: 21,
     seat: 1,
@@ -21008,7 +18565,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2444,
     price: 14,
     row: 21,
     seat: 2,
@@ -21018,7 +18574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2445,
     price: 14,
     row: 21,
     seat: 3,
@@ -21026,7 +18581,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2446,
     price: 14,
     row: 21,
     seat: 4,
@@ -21036,7 +18590,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2447,
     price: 14,
     row: 21,
     seat: 5,
@@ -21044,7 +18597,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2448,
     price: 14,
     row: 21,
     seat: 6,
@@ -21052,7 +18604,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2449,
     price: 14,
     row: 21,
     seat: 7,
@@ -21060,7 +18611,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2450,
     price: 14,
     row: 21,
     seat: 8,
@@ -21068,7 +18618,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2451,
     price: 14,
     row: 21,
     seat: 9,
@@ -21076,7 +18625,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2452,
     price: 14,
     row: 21,
     seat: 10,
@@ -21084,7 +18632,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2453,
     price: 14,
     row: 21,
     seat: 11,
@@ -21092,7 +18639,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2454,
     price: 14,
     row: 21,
     seat: 12,
@@ -21102,7 +18648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2455,
     price: 14,
     row: 21,
     seat: 13,
@@ -21112,7 +18657,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2456,
     price: 14,
     row: 21,
     seat: 14,
@@ -21120,7 +18664,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2457,
     price: 14,
     row: 21,
     seat: 15,
@@ -21130,7 +18673,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2458,
     price: 14,
     row: 21,
     seat: 16,
@@ -21138,7 +18680,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2459,
     price: 14,
     row: 21,
     seat: 17,
@@ -21146,7 +18687,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2460,
     price: 14,
     row: 21,
     seat: 18,
@@ -21154,7 +18694,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2461,
     price: 14,
     row: 21,
     seat: 19,
@@ -21164,7 +18703,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2462,
     price: 14,
     row: 21,
     seat: 20,
@@ -21172,7 +18710,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2463,
     price: 14,
     row: 22,
     seat: 1,
@@ -21180,7 +18717,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2464,
     price: 14,
     row: 22,
     seat: 2,
@@ -21188,7 +18724,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2465,
     price: 14,
     row: 22,
     seat: 3,
@@ -21196,7 +18731,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2466,
     price: 14,
     row: 22,
     seat: 4,
@@ -21204,7 +18738,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2467,
     price: 14,
     row: 22,
     seat: 5,
@@ -21212,7 +18745,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2468,
     price: 14,
     row: 22,
     seat: 6,
@@ -21220,7 +18752,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2469,
     price: 14,
     row: 22,
     seat: 7,
@@ -21228,7 +18759,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2470,
     price: 14,
     row: 22,
     seat: 8,
@@ -21236,7 +18766,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2471,
     price: 14,
     row: 22,
     seat: 9,
@@ -21244,7 +18773,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2472,
     price: 14,
     row: 22,
     seat: 10,
@@ -21254,7 +18782,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2473,
     price: 14,
     row: 22,
     seat: 11,
@@ -21262,7 +18789,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2474,
     price: 14,
     row: 22,
     seat: 12,
@@ -21272,7 +18798,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2475,
     price: 14,
     row: 22,
     seat: 13,
@@ -21280,7 +18805,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2476,
     price: 14,
     row: 22,
     seat: 14,
@@ -21288,7 +18812,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2477,
     price: 14,
     row: 22,
     seat: 15,
@@ -21296,7 +18819,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2478,
     price: 14,
     row: 22,
     seat: 16,
@@ -21304,7 +18826,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2479,
     price: 14,
     row: 22,
     seat: 17,
@@ -21314,7 +18835,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2480,
     price: 14,
     row: 22,
     seat: 18,
@@ -21322,7 +18842,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2481,
     price: 14,
     row: 22,
     seat: 19,
@@ -21330,7 +18849,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2482,
     price: 14,
     row: 22,
     seat: 20,
@@ -21338,7 +18856,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2483,
     price: 14,
     row: 23,
     seat: 1,
@@ -21346,7 +18863,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2484,
     price: 14,
     row: 23,
     seat: 2,
@@ -21356,7 +18872,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2485,
     price: 14,
     row: 23,
     seat: 3,
@@ -21364,7 +18879,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2486,
     price: 14,
     row: 23,
     seat: 4,
@@ -21372,7 +18886,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2487,
     price: 14,
     row: 23,
     seat: 5,
@@ -21380,7 +18893,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2488,
     price: 14,
     row: 23,
     seat: 6,
@@ -21388,7 +18900,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2489,
     price: 14,
     row: 23,
     seat: 7,
@@ -21396,7 +18907,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2490,
     price: 14,
     row: 23,
     seat: 8,
@@ -21404,7 +18914,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2491,
     price: 14,
     row: 23,
     seat: 9,
@@ -21414,7 +18923,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2492,
     price: 14,
     row: 23,
     seat: 10,
@@ -21422,7 +18930,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2493,
     price: 14,
     row: 23,
     seat: 11,
@@ -21432,7 +18939,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2494,
     price: 14,
     row: 23,
     seat: 12,
@@ -21442,7 +18948,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2495,
     price: 14,
     row: 23,
     seat: 13,
@@ -21450,7 +18955,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2496,
     price: 14,
     row: 23,
     seat: 14,
@@ -21458,7 +18962,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2497,
     price: 14,
     row: 23,
     seat: 15,
@@ -21468,7 +18971,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2498,
     price: 14,
     row: 23,
     seat: 16,
@@ -21478,7 +18980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2499,
     price: 14,
     row: 23,
     seat: 17,
@@ -21486,7 +18987,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2500,
     price: 14,
     row: 23,
     seat: 18,
@@ -21494,7 +18994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2501,
     price: 14,
     row: 23,
     seat: 19,
@@ -21502,7 +19001,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2502,
     price: 14,
     row: 23,
     seat: 20,
@@ -21510,7 +19008,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2503,
     price: 14,
     row: 24,
     seat: 1,
@@ -21520,7 +19017,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2504,
     price: 14,
     row: 24,
     seat: 2,
@@ -21530,7 +19026,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2505,
     price: 14,
     row: 24,
     seat: 3,
@@ -21538,7 +19033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2506,
     price: 14,
     row: 24,
     seat: 4,
@@ -21546,7 +19040,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2507,
     price: 14,
     row: 24,
     seat: 5,
@@ -21554,7 +19047,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2508,
     price: 14,
     row: 24,
     seat: 6,
@@ -21562,7 +19054,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2509,
     price: 14,
     row: 24,
     seat: 7,
@@ -21570,7 +19061,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2510,
     price: 14,
     row: 24,
     seat: 8,
@@ -21578,7 +19068,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2511,
     price: 14,
     row: 24,
     seat: 9,
@@ -21586,7 +19075,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2512,
     price: 14,
     row: 24,
     seat: 10,
@@ -21594,7 +19082,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2513,
     price: 14,
     row: 24,
     seat: 11,
@@ -21604,7 +19091,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2514,
     price: 14,
     row: 24,
     seat: 12,
@@ -21612,7 +19098,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2515,
     price: 14,
     row: 24,
     seat: 13,
@@ -21620,7 +19105,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2516,
     price: 14,
     row: 24,
     seat: 14,
@@ -21628,7 +19112,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2517,
     price: 14,
     row: 24,
     seat: 15,
@@ -21636,7 +19119,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2518,
     price: 14,
     row: 24,
     seat: 16,
@@ -21644,7 +19126,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2519,
     price: 14,
     row: 24,
     seat: 17,
@@ -21652,7 +19133,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2520,
     price: 14,
     row: 24,
     seat: 18,
@@ -21660,7 +19140,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2521,
     price: 14,
     row: 24,
     seat: 19,
@@ -21670,7 +19149,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2522,
     price: 14,
     row: 24,
     seat: 20,
@@ -21678,7 +19156,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2523,
     price: 14,
     row: 25,
     seat: 1,
@@ -21686,7 +19163,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2524,
     price: 14,
     row: 25,
     seat: 2,
@@ -21696,7 +19172,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2525,
     price: 14,
     row: 25,
     seat: 3,
@@ -21704,7 +19179,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2526,
     price: 14,
     row: 25,
     seat: 4,
@@ -21714,7 +19188,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2527,
     price: 14,
     row: 25,
     seat: 5,
@@ -21724,7 +19197,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2528,
     price: 14,
     row: 25,
     seat: 6,
@@ -21732,7 +19204,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2529,
     price: 14,
     row: 25,
     seat: 7,
@@ -21742,7 +19213,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2530,
     price: 14,
     row: 25,
     seat: 8,
@@ -21752,7 +19222,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2531,
     price: 14,
     row: 25,
     seat: 9,
@@ -21760,7 +19229,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2532,
     price: 14,
     row: 25,
     seat: 10,
@@ -21768,7 +19236,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2533,
     price: 14,
     row: 25,
     seat: 11,
@@ -21776,7 +19243,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2534,
     price: 14,
     row: 25,
     seat: 12,
@@ -21786,7 +19252,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2535,
     price: 14,
     row: 25,
     seat: 13,
@@ -21794,7 +19259,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2536,
     price: 14,
     row: 25,
     seat: 14,
@@ -21802,7 +19266,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2537,
     price: 14,
     row: 25,
     seat: 15,
@@ -21810,7 +19273,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2538,
     price: 14,
     row: 25,
     seat: 16,
@@ -21818,7 +19280,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2539,
     price: 14,
     row: 25,
     seat: 17,
@@ -21828,7 +19289,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2540,
     price: 14,
     row: 25,
     seat: 18,
@@ -21836,7 +19296,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2541,
     price: 14,
     row: 25,
     seat: 19,
@@ -21844,7 +19303,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2542,
     price: 14,
     row: 25,
     seat: 20,
@@ -21854,7 +19312,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2543,
     price: 10,
     row: 1,
     seat: 1,
@@ -21862,7 +19319,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2544,
     price: 10,
     row: 1,
     seat: 2,
@@ -21870,7 +19326,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2545,
     price: 10,
     row: 1,
     seat: 3,
@@ -21878,7 +19333,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2546,
     price: 10,
     row: 1,
     seat: 4,
@@ -21888,7 +19342,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2547,
     price: 10,
     row: 1,
     seat: 5,
@@ -21896,7 +19349,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2548,
     price: 10,
     row: 1,
     seat: 6,
@@ -21904,7 +19356,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2549,
     price: 10,
     row: 1,
     seat: 7,
@@ -21912,7 +19363,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2550,
     price: 10,
     row: 1,
     seat: 8,
@@ -21920,7 +19370,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2551,
     price: 10,
     row: 1,
     seat: 9,
@@ -21928,7 +19377,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2552,
     price: 10,
     row: 1,
     seat: 10,
@@ -21936,7 +19384,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2553,
     price: 10,
     row: 1,
     seat: 11,
@@ -21944,7 +19391,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2554,
     price: 10,
     row: 1,
     seat: 12,
@@ -21954,7 +19400,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2555,
     price: 10,
     row: 1,
     seat: 13,
@@ -21962,7 +19407,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2556,
     price: 10,
     row: 1,
     seat: 14,
@@ -21972,7 +19416,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2557,
     price: 10,
     row: 1,
     seat: 15,
@@ -21982,7 +19425,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2558,
     price: 10,
     row: 1,
     seat: 16,
@@ -21992,7 +19434,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2559,
     price: 10,
     row: 1,
     seat: 17,
@@ -22000,7 +19441,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2560,
     price: 10,
     row: 1,
     seat: 18,
@@ -22008,7 +19448,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2561,
     price: 10,
     row: 1,
     seat: 19,
@@ -22016,7 +19455,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2562,
     price: 10,
     row: 1,
     seat: 20,
@@ -22024,7 +19462,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2563,
     price: 10,
     row: 2,
     seat: 1,
@@ -22032,7 +19469,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2564,
     price: 10,
     row: 2,
     seat: 2,
@@ -22040,7 +19476,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2565,
     price: 10,
     row: 2,
     seat: 3,
@@ -22048,7 +19483,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2566,
     price: 10,
     row: 2,
     seat: 4,
@@ -22056,7 +19490,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2567,
     price: 10,
     row: 2,
     seat: 5,
@@ -22066,7 +19499,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2568,
     price: 10,
     row: 2,
     seat: 6,
@@ -22074,7 +19506,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2569,
     price: 10,
     row: 2,
     seat: 7,
@@ -22082,7 +19513,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2570,
     price: 10,
     row: 2,
     seat: 8,
@@ -22090,7 +19520,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2571,
     price: 10,
     row: 2,
     seat: 9,
@@ -22098,7 +19527,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2572,
     price: 10,
     row: 2,
     seat: 10,
@@ -22106,7 +19534,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2573,
     price: 10,
     row: 2,
     seat: 11,
@@ -22114,7 +19541,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2574,
     price: 10,
     row: 2,
     seat: 12,
@@ -22122,7 +19548,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2575,
     price: 10,
     row: 2,
     seat: 13,
@@ -22130,7 +19555,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2576,
     price: 10,
     row: 2,
     seat: 14,
@@ -22138,7 +19562,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2577,
     price: 10,
     row: 2,
     seat: 15,
@@ -22146,7 +19569,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2578,
     price: 10,
     row: 2,
     seat: 16,
@@ -22156,7 +19578,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2579,
     price: 10,
     row: 2,
     seat: 17,
@@ -22164,7 +19585,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2580,
     price: 10,
     row: 2,
     seat: 18,
@@ -22172,7 +19592,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2581,
     price: 10,
     row: 2,
     seat: 19,
@@ -22180,7 +19599,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2582,
     price: 10,
     row: 2,
     seat: 20,
@@ -22188,7 +19606,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2583,
     price: 10,
     row: 3,
     seat: 1,
@@ -22198,7 +19615,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2584,
     price: 10,
     row: 3,
     seat: 2,
@@ -22206,7 +19622,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2585,
     price: 10,
     row: 3,
     seat: 3,
@@ -22214,7 +19629,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2586,
     price: 10,
     row: 3,
     seat: 4,
@@ -22222,7 +19636,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2587,
     price: 10,
     row: 3,
     seat: 5,
@@ -22230,7 +19643,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2588,
     price: 10,
     row: 3,
     seat: 6,
@@ -22238,7 +19650,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2589,
     price: 10,
     row: 3,
     seat: 7,
@@ -22246,7 +19657,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2590,
     price: 10,
     row: 3,
     seat: 8,
@@ -22256,7 +19666,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2591,
     price: 10,
     row: 3,
     seat: 9,
@@ -22266,7 +19675,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2592,
     price: 10,
     row: 3,
     seat: 10,
@@ -22276,7 +19684,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2593,
     price: 10,
     row: 3,
     seat: 11,
@@ -22284,7 +19691,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2594,
     price: 10,
     row: 3,
     seat: 12,
@@ -22294,7 +19700,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2595,
     price: 10,
     row: 3,
     seat: 13,
@@ -22302,7 +19707,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2596,
     price: 10,
     row: 3,
     seat: 14,
@@ -22310,7 +19714,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2597,
     price: 10,
     row: 3,
     seat: 15,
@@ -22318,7 +19721,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2598,
     price: 10,
     row: 3,
     seat: 16,
@@ -22326,7 +19728,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2599,
     price: 10,
     row: 3,
     seat: 17,
@@ -22334,7 +19735,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2600,
     price: 10,
     row: 3,
     seat: 18,
@@ -22342,7 +19742,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2601,
     price: 10,
     row: 3,
     seat: 19,
@@ -22352,7 +19751,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2602,
     price: 10,
     row: 3,
     seat: 20,
@@ -22362,7 +19760,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2603,
     price: 10,
     row: 4,
     seat: 1,
@@ -22370,7 +19767,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2604,
     price: 10,
     row: 4,
     seat: 2,
@@ -22378,7 +19774,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2605,
     price: 10,
     row: 4,
     seat: 3,
@@ -22388,7 +19783,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2606,
     price: 10,
     row: 4,
     seat: 4,
@@ -22396,7 +19790,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2607,
     price: 10,
     row: 4,
     seat: 5,
@@ -22404,7 +19797,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2608,
     price: 10,
     row: 4,
     seat: 6,
@@ -22412,7 +19804,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2609,
     price: 10,
     row: 4,
     seat: 7,
@@ -22420,7 +19811,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2610,
     price: 10,
     row: 4,
     seat: 8,
@@ -22428,7 +19818,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2611,
     price: 10,
     row: 4,
     seat: 9,
@@ -22438,7 +19827,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2612,
     price: 10,
     row: 4,
     seat: 10,
@@ -22446,7 +19834,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2613,
     price: 10,
     row: 4,
     seat: 11,
@@ -22456,7 +19843,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2614,
     price: 10,
     row: 4,
     seat: 12,
@@ -22464,7 +19850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2615,
     price: 10,
     row: 4,
     seat: 13,
@@ -22472,7 +19857,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2616,
     price: 10,
     row: 4,
     seat: 14,
@@ -22480,7 +19864,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2617,
     price: 10,
     row: 4,
     seat: 15,
@@ -22490,7 +19873,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2618,
     price: 10,
     row: 4,
     seat: 16,
@@ -22500,7 +19882,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2619,
     price: 10,
     row: 4,
     seat: 17,
@@ -22508,7 +19889,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2620,
     price: 10,
     row: 4,
     seat: 18,
@@ -22516,7 +19896,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2621,
     price: 10,
     row: 4,
     seat: 19,
@@ -22526,7 +19905,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2622,
     price: 10,
     row: 4,
     seat: 20,
@@ -22534,7 +19912,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2623,
     price: 10,
     row: 5,
     seat: 1,
@@ -22542,7 +19919,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2624,
     price: 10,
     row: 5,
     seat: 2,
@@ -22550,7 +19926,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2625,
     price: 10,
     row: 5,
     seat: 3,
@@ -22558,7 +19933,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2626,
     price: 10,
     row: 5,
     seat: 4,
@@ -22568,7 +19942,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2627,
     price: 10,
     row: 5,
     seat: 5,
@@ -22578,7 +19951,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2628,
     price: 10,
     row: 5,
     seat: 6,
@@ -22586,7 +19958,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2629,
     price: 10,
     row: 5,
     seat: 7,
@@ -22594,7 +19965,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2630,
     price: 10,
     row: 5,
     seat: 8,
@@ -22602,7 +19972,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2631,
     price: 10,
     row: 5,
     seat: 9,
@@ -22610,7 +19979,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2632,
     price: 10,
     row: 5,
     seat: 10,
@@ -22618,7 +19986,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2633,
     price: 10,
     row: 5,
     seat: 11,
@@ -22626,7 +19993,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2634,
     price: 10,
     row: 5,
     seat: 12,
@@ -22636,7 +20002,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2635,
     price: 10,
     row: 5,
     seat: 13,
@@ -22644,7 +20009,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2636,
     price: 10,
     row: 5,
     seat: 14,
@@ -22652,7 +20016,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2637,
     price: 10,
     row: 5,
     seat: 15,
@@ -22662,7 +20025,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2638,
     price: 10,
     row: 5,
     seat: 16,
@@ -22670,7 +20032,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2639,
     price: 10,
     row: 5,
     seat: 17,
@@ -22678,7 +20039,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2640,
     price: 10,
     row: 5,
     seat: 18,
@@ -22686,7 +20046,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2641,
     price: 10,
     row: 5,
     seat: 19,
@@ -22696,7 +20055,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2642,
     price: 10,
     row: 5,
     seat: 20,
@@ -22706,7 +20064,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2643,
     price: 10,
     row: 6,
     seat: 1,
@@ -22714,7 +20071,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2644,
     price: 10,
     row: 6,
     seat: 2,
@@ -22724,7 +20080,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2645,
     price: 10,
     row: 6,
     seat: 3,
@@ -22734,7 +20089,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2646,
     price: 10,
     row: 6,
     seat: 4,
@@ -22742,7 +20096,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2647,
     price: 10,
     row: 6,
     seat: 5,
@@ -22752,7 +20105,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2648,
     price: 10,
     row: 6,
     seat: 6,
@@ -22762,7 +20114,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2649,
     price: 10,
     row: 6,
     seat: 7,
@@ -22770,7 +20121,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2650,
     price: 10,
     row: 6,
     seat: 8,
@@ -22778,7 +20128,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2651,
     price: 10,
     row: 6,
     seat: 9,
@@ -22788,7 +20137,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2652,
     price: 10,
     row: 6,
     seat: 10,
@@ -22796,7 +20144,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2653,
     price: 10,
     row: 6,
     seat: 11,
@@ -22806,7 +20153,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2654,
     price: 10,
     row: 6,
     seat: 12,
@@ -22814,7 +20160,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2655,
     price: 10,
     row: 6,
     seat: 13,
@@ -22822,7 +20167,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2656,
     price: 10,
     row: 6,
     seat: 14,
@@ -22830,7 +20174,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2657,
     price: 10,
     row: 6,
     seat: 15,
@@ -22838,7 +20181,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2658,
     price: 10,
     row: 6,
     seat: 16,
@@ -22846,7 +20188,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2659,
     price: 10,
     row: 6,
     seat: 17,
@@ -22854,7 +20195,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2660,
     price: 10,
     row: 6,
     seat: 18,
@@ -22862,7 +20202,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2661,
     price: 10,
     row: 6,
     seat: 19,
@@ -22872,7 +20211,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2662,
     price: 10,
     row: 6,
     seat: 20,
@@ -22880,7 +20218,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2663,
     price: 10,
     row: 7,
     seat: 1,
@@ -22888,7 +20225,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2664,
     price: 10,
     row: 7,
     seat: 2,
@@ -22896,7 +20232,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2665,
     price: 10,
     row: 7,
     seat: 3,
@@ -22904,7 +20239,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2666,
     price: 10,
     row: 7,
     seat: 4,
@@ -22912,7 +20246,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2667,
     price: 10,
     row: 7,
     seat: 5,
@@ -22920,7 +20253,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2668,
     price: 10,
     row: 7,
     seat: 6,
@@ -22928,7 +20260,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2669,
     price: 10,
     row: 7,
     seat: 7,
@@ -22936,7 +20267,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2670,
     price: 10,
     row: 7,
     seat: 8,
@@ -22944,7 +20274,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2671,
     price: 10,
     row: 7,
     seat: 9,
@@ -22952,7 +20281,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2672,
     price: 10,
     row: 7,
     seat: 10,
@@ -22962,7 +20290,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2673,
     price: 10,
     row: 7,
     seat: 11,
@@ -22970,7 +20297,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2674,
     price: 10,
     row: 7,
     seat: 12,
@@ -22980,7 +20306,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2675,
     price: 10,
     row: 7,
     seat: 13,
@@ -22988,7 +20313,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2676,
     price: 10,
     row: 7,
     seat: 14,
@@ -22996,7 +20320,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2677,
     price: 10,
     row: 7,
     seat: 15,
@@ -23004,7 +20327,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2678,
     price: 10,
     row: 7,
     seat: 16,
@@ -23012,7 +20334,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2679,
     price: 10,
     row: 7,
     seat: 17,
@@ -23020,7 +20341,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2680,
     price: 10,
     row: 7,
     seat: 18,
@@ -23028,7 +20348,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2681,
     price: 10,
     row: 7,
     seat: 19,
@@ -23036,7 +20355,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2682,
     price: 10,
     row: 7,
     seat: 20,
@@ -23044,7 +20362,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2683,
     price: 10,
     row: 8,
     seat: 1,
@@ -23054,7 +20371,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2684,
     price: 10,
     row: 8,
     seat: 2,
@@ -23062,7 +20378,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2685,
     price: 10,
     row: 8,
     seat: 3,
@@ -23070,7 +20385,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2686,
     price: 10,
     row: 8,
     seat: 4,
@@ -23078,7 +20392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2687,
     price: 10,
     row: 8,
     seat: 5,
@@ -23086,7 +20399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2688,
     price: 10,
     row: 8,
     seat: 6,
@@ -23094,7 +20406,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2689,
     price: 10,
     row: 8,
     seat: 7,
@@ -23102,7 +20413,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2690,
     price: 10,
     row: 8,
     seat: 8,
@@ -23110,7 +20420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2691,
     price: 10,
     row: 8,
     seat: 9,
@@ -23118,7 +20427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2692,
     price: 10,
     row: 8,
     seat: 10,
@@ -23126,7 +20434,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2693,
     price: 10,
     row: 8,
     seat: 11,
@@ -23134,7 +20441,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2694,
     price: 10,
     row: 8,
     seat: 12,
@@ -23142,7 +20448,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2695,
     price: 10,
     row: 8,
     seat: 13,
@@ -23150,7 +20455,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2696,
     price: 10,
     row: 8,
     seat: 14,
@@ -23158,7 +20462,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2697,
     price: 10,
     row: 8,
     seat: 15,
@@ -23168,7 +20471,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2698,
     price: 10,
     row: 8,
     seat: 16,
@@ -23176,7 +20478,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2699,
     price: 10,
     row: 8,
     seat: 17,
@@ -23184,7 +20485,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2700,
     price: 10,
     row: 8,
     seat: 18,
@@ -23192,7 +20492,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2701,
     price: 10,
     row: 8,
     seat: 19,
@@ -23200,7 +20499,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2702,
     price: 10,
     row: 8,
     seat: 20,
@@ -23208,7 +20506,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2703,
     price: 10,
     row: 9,
     seat: 1,
@@ -23216,7 +20513,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2704,
     price: 10,
     row: 9,
     seat: 2,
@@ -23224,7 +20520,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2705,
     price: 10,
     row: 9,
     seat: 3,
@@ -23232,7 +20527,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2706,
     price: 10,
     row: 9,
     seat: 4,
@@ -23240,7 +20534,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2707,
     price: 10,
     row: 9,
     seat: 5,
@@ -23248,7 +20541,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2708,
     price: 10,
     row: 9,
     seat: 6,
@@ -23256,7 +20548,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2709,
     price: 10,
     row: 9,
     seat: 7,
@@ -23264,7 +20555,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2710,
     price: 10,
     row: 9,
     seat: 8,
@@ -23272,7 +20562,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2711,
     price: 10,
     row: 9,
     seat: 9,
@@ -23282,7 +20571,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2712,
     price: 10,
     row: 9,
     seat: 10,
@@ -23290,7 +20578,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2713,
     price: 10,
     row: 9,
     seat: 11,
@@ -23300,7 +20587,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2714,
     price: 10,
     row: 9,
     seat: 12,
@@ -23308,7 +20594,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2715,
     price: 10,
     row: 9,
     seat: 13,
@@ -23316,7 +20601,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2716,
     price: 10,
     row: 9,
     seat: 14,
@@ -23326,7 +20610,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2717,
     price: 10,
     row: 9,
     seat: 15,
@@ -23336,7 +20619,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2718,
     price: 10,
     row: 9,
     seat: 16,
@@ -23346,7 +20628,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2719,
     price: 10,
     row: 9,
     seat: 17,
@@ -23354,7 +20635,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2720,
     price: 10,
     row: 9,
     seat: 18,
@@ -23362,7 +20642,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2721,
     price: 10,
     row: 9,
     seat: 19,
@@ -23370,7 +20649,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2722,
     price: 10,
     row: 9,
     seat: 20,
@@ -23378,7 +20656,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2723,
     price: 10,
     row: 10,
     seat: 1,
@@ -23386,7 +20663,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2724,
     price: 10,
     row: 10,
     seat: 2,
@@ -23396,7 +20672,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2725,
     price: 10,
     row: 10,
     seat: 3,
@@ -23404,7 +20679,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2726,
     price: 10,
     row: 10,
     seat: 4,
@@ -23414,7 +20688,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2727,
     price: 10,
     row: 10,
     seat: 5,
@@ -23424,7 +20697,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2728,
     price: 10,
     row: 10,
     seat: 6,
@@ -23432,7 +20704,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2729,
     price: 10,
     row: 10,
     seat: 7,
@@ -23440,7 +20711,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2730,
     price: 10,
     row: 10,
     seat: 8,
@@ -23450,7 +20720,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2731,
     price: 10,
     row: 10,
     seat: 9,
@@ -23458,7 +20727,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2732,
     price: 10,
     row: 10,
     seat: 10,
@@ -23468,7 +20736,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2733,
     price: 10,
     row: 10,
     seat: 11,
@@ -23476,7 +20743,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2734,
     price: 10,
     row: 10,
     seat: 12,
@@ -23486,7 +20752,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2735,
     price: 10,
     row: 10,
     seat: 13,
@@ -23494,7 +20759,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2736,
     price: 10,
     row: 10,
     seat: 14,
@@ -23502,7 +20766,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2737,
     price: 10,
     row: 10,
     seat: 15,
@@ -23510,7 +20773,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2738,
     price: 10,
     row: 10,
     seat: 16,
@@ -23520,7 +20782,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2739,
     price: 10,
     row: 10,
     seat: 17,
@@ -23528,7 +20789,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2740,
     price: 10,
     row: 10,
     seat: 18,
@@ -23538,7 +20798,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2741,
     price: 10,
     row: 10,
     seat: 19,
@@ -23546,7 +20805,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2742,
     price: 10,
     row: 10,
     seat: 20,
@@ -23556,7 +20814,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2743,
     price: 10,
     row: 11,
     seat: 1,
@@ -23564,7 +20821,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2744,
     price: 10,
     row: 11,
     seat: 2,
@@ -23574,7 +20830,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2745,
     price: 10,
     row: 11,
     seat: 3,
@@ -23584,7 +20839,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2746,
     price: 10,
     row: 11,
     seat: 4,
@@ -23592,7 +20846,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2747,
     price: 10,
     row: 11,
     seat: 5,
@@ -23600,7 +20853,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2748,
     price: 10,
     row: 11,
     seat: 6,
@@ -23610,7 +20862,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2749,
     price: 10,
     row: 11,
     seat: 7,
@@ -23618,7 +20869,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2750,
     price: 10,
     row: 11,
     seat: 8,
@@ -23626,7 +20876,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2751,
     price: 10,
     row: 11,
     seat: 9,
@@ -23634,7 +20883,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2752,
     price: 10,
     row: 11,
     seat: 10,
@@ -23644,7 +20892,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2753,
     price: 10,
     row: 11,
     seat: 11,
@@ -23652,7 +20899,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2754,
     price: 10,
     row: 11,
     seat: 12,
@@ -23662,7 +20908,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2755,
     price: 10,
     row: 11,
     seat: 13,
@@ -23670,7 +20915,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2756,
     price: 10,
     row: 11,
     seat: 14,
@@ -23678,7 +20922,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2757,
     price: 10,
     row: 11,
     seat: 15,
@@ -23686,7 +20929,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2758,
     price: 10,
     row: 11,
     seat: 16,
@@ -23694,7 +20936,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2759,
     price: 10,
     row: 11,
     seat: 17,
@@ -23702,7 +20943,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2760,
     price: 10,
     row: 11,
     seat: 18,
@@ -23712,7 +20952,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2761,
     price: 10,
     row: 11,
     seat: 19,
@@ -23720,7 +20959,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2762,
     price: 10,
     row: 11,
     seat: 20,
@@ -23728,7 +20966,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2763,
     price: 10,
     row: 12,
     seat: 1,
@@ -23736,7 +20973,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2764,
     price: 10,
     row: 12,
     seat: 2,
@@ -23744,7 +20980,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2765,
     price: 10,
     row: 12,
     seat: 3,
@@ -23752,7 +20987,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2766,
     price: 10,
     row: 12,
     seat: 4,
@@ -23760,7 +20994,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2767,
     price: 10,
     row: 12,
     seat: 5,
@@ -23770,7 +21003,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2768,
     price: 10,
     row: 12,
     seat: 6,
@@ -23780,7 +21012,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2769,
     price: 10,
     row: 12,
     seat: 7,
@@ -23788,7 +21019,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2770,
     price: 10,
     row: 12,
     seat: 8,
@@ -23796,7 +21026,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2771,
     price: 10,
     row: 12,
     seat: 9,
@@ -23804,7 +21033,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2772,
     price: 10,
     row: 12,
     seat: 10,
@@ -23814,7 +21042,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2773,
     price: 10,
     row: 12,
     seat: 11,
@@ -23824,7 +21051,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2774,
     price: 10,
     row: 12,
     seat: 12,
@@ -23832,7 +21058,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2775,
     price: 10,
     row: 12,
     seat: 13,
@@ -23842,7 +21067,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2776,
     price: 10,
     row: 12,
     seat: 14,
@@ -23850,7 +21074,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2777,
     price: 10,
     row: 12,
     seat: 15,
@@ -23860,7 +21083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2778,
     price: 10,
     row: 12,
     seat: 16,
@@ -23870,7 +21092,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2779,
     price: 10,
     row: 12,
     seat: 17,
@@ -23880,7 +21101,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2780,
     price: 10,
     row: 12,
     seat: 18,
@@ -23888,7 +21108,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2781,
     price: 10,
     row: 12,
     seat: 19,
@@ -23898,7 +21117,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2782,
     price: 10,
     row: 12,
     seat: 20,
@@ -23906,7 +21124,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2783,
     price: 10,
     row: 13,
     seat: 1,
@@ -23916,7 +21133,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2784,
     price: 10,
     row: 13,
     seat: 2,
@@ -23924,7 +21140,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2785,
     price: 10,
     row: 13,
     seat: 3,
@@ -23932,7 +21147,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2786,
     price: 10,
     row: 13,
     seat: 4,
@@ -23940,7 +21154,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2787,
     price: 10,
     row: 13,
     seat: 5,
@@ -23950,7 +21163,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2788,
     price: 10,
     row: 13,
     seat: 6,
@@ -23958,7 +21170,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2789,
     price: 10,
     row: 13,
     seat: 7,
@@ -23966,7 +21177,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2790,
     price: 10,
     row: 13,
     seat: 8,
@@ -23974,7 +21184,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2791,
     price: 10,
     row: 13,
     seat: 9,
@@ -23982,7 +21191,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2792,
     price: 10,
     row: 13,
     seat: 10,
@@ -23990,7 +21198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2793,
     price: 10,
     row: 13,
     seat: 11,
@@ -23998,7 +21205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2794,
     price: 10,
     row: 13,
     seat: 12,
@@ -24006,7 +21212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2795,
     price: 10,
     row: 13,
     seat: 13,
@@ -24016,7 +21221,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2796,
     price: 10,
     row: 13,
     seat: 14,
@@ -24024,7 +21228,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2797,
     price: 10,
     row: 13,
     seat: 15,
@@ -24032,7 +21235,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2798,
     price: 10,
     row: 13,
     seat: 16,
@@ -24040,7 +21242,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2799,
     price: 10,
     row: 13,
     seat: 17,
@@ -24050,7 +21251,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2800,
     price: 10,
     row: 13,
     seat: 18,
@@ -24058,7 +21258,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2801,
     price: 10,
     row: 13,
     seat: 19,
@@ -24066,7 +21265,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2802,
     price: 10,
     row: 13,
     seat: 20,
@@ -24076,7 +21274,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2803,
     price: 10,
     row: 14,
     seat: 1,
@@ -24084,7 +21281,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2804,
     price: 10,
     row: 14,
     seat: 2,
@@ -24092,7 +21288,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2805,
     price: 10,
     row: 14,
     seat: 3,
@@ -24100,7 +21295,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2806,
     price: 10,
     row: 14,
     seat: 4,
@@ -24108,7 +21302,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2807,
     price: 10,
     row: 14,
     seat: 5,
@@ -24116,7 +21309,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2808,
     price: 10,
     row: 14,
     seat: 6,
@@ -24124,7 +21316,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2809,
     price: 10,
     row: 14,
     seat: 7,
@@ -24132,7 +21323,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2810,
     price: 10,
     row: 14,
     seat: 8,
@@ -24140,7 +21330,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2811,
     price: 10,
     row: 14,
     seat: 9,
@@ -24148,7 +21337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2812,
     price: 10,
     row: 14,
     seat: 10,
@@ -24158,7 +21346,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2813,
     price: 10,
     row: 14,
     seat: 11,
@@ -24166,7 +21353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2814,
     price: 10,
     row: 14,
     seat: 12,
@@ -24174,7 +21360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2815,
     price: 10,
     row: 14,
     seat: 13,
@@ -24184,7 +21369,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2816,
     price: 10,
     row: 14,
     seat: 14,
@@ -24194,7 +21378,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2817,
     price: 10,
     row: 14,
     seat: 15,
@@ -24204,7 +21387,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2818,
     price: 10,
     row: 14,
     seat: 16,
@@ -24212,7 +21394,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2819,
     price: 10,
     row: 14,
     seat: 17,
@@ -24220,7 +21401,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2820,
     price: 10,
     row: 14,
     seat: 18,
@@ -24230,7 +21410,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2821,
     price: 10,
     row: 14,
     seat: 19,
@@ -24238,7 +21417,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2822,
     price: 10,
     row: 14,
     seat: 20,
@@ -24246,7 +21424,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2823,
     price: 10,
     row: 15,
     seat: 1,
@@ -24254,7 +21431,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2824,
     price: 10,
     row: 15,
     seat: 2,
@@ -24262,7 +21438,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2825,
     price: 10,
     row: 15,
     seat: 3,
@@ -24270,7 +21445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2826,
     price: 10,
     row: 15,
     seat: 4,
@@ -24278,7 +21452,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2827,
     price: 10,
     row: 15,
     seat: 5,
@@ -24286,7 +21459,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2828,
     price: 10,
     row: 15,
     seat: 6,
@@ -24294,7 +21466,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2829,
     price: 10,
     row: 15,
     seat: 7,
@@ -24302,7 +21473,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2830,
     price: 10,
     row: 15,
     seat: 8,
@@ -24312,7 +21482,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2831,
     price: 10,
     row: 15,
     seat: 9,
@@ -24320,7 +21489,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2832,
     price: 10,
     row: 15,
     seat: 10,
@@ -24330,7 +21498,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2833,
     price: 10,
     row: 15,
     seat: 11,
@@ -24340,7 +21507,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2834,
     price: 10,
     row: 15,
     seat: 12,
@@ -24348,7 +21514,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2835,
     price: 10,
     row: 15,
     seat: 13,
@@ -24356,7 +21521,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2836,
     price: 10,
     row: 15,
     seat: 14,
@@ -24364,7 +21528,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2837,
     price: 10,
     row: 15,
     seat: 15,
@@ -24374,7 +21537,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2838,
     price: 10,
     row: 15,
     seat: 16,
@@ -24382,7 +21544,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2839,
     price: 10,
     row: 15,
     seat: 17,
@@ -24392,7 +21553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2840,
     price: 10,
     row: 15,
     seat: 18,
@@ -24400,7 +21560,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2841,
     price: 10,
     row: 15,
     seat: 19,
@@ -24408,7 +21567,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2842,
     price: 10,
     row: 15,
     seat: 20,
@@ -24416,7 +21574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2843,
     price: 10,
     row: 16,
     seat: 1,
@@ -24426,7 +21583,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2844,
     price: 10,
     row: 16,
     seat: 2,
@@ -24434,7 +21590,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2845,
     price: 10,
     row: 16,
     seat: 3,
@@ -24442,7 +21597,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2846,
     price: 10,
     row: 16,
     seat: 4,
@@ -24450,7 +21604,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2847,
     price: 10,
     row: 16,
     seat: 5,
@@ -24460,7 +21613,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2848,
     price: 10,
     row: 16,
     seat: 6,
@@ -24468,7 +21620,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2849,
     price: 10,
     row: 16,
     seat: 7,
@@ -24476,7 +21627,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2850,
     price: 10,
     row: 16,
     seat: 8,
@@ -24484,7 +21634,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2851,
     price: 10,
     row: 16,
     seat: 9,
@@ -24492,7 +21641,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2852,
     price: 10,
     row: 16,
     seat: 10,
@@ -24500,7 +21648,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2853,
     price: 10,
     row: 16,
     seat: 11,
@@ -24510,7 +21657,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2854,
     price: 10,
     row: 16,
     seat: 12,
@@ -24518,7 +21664,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2855,
     price: 10,
     row: 16,
     seat: 13,
@@ -24526,7 +21671,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2856,
     price: 10,
     row: 16,
     seat: 14,
@@ -24536,7 +21680,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2857,
     price: 10,
     row: 16,
     seat: 15,
@@ -24544,7 +21687,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2858,
     price: 10,
     row: 16,
     seat: 16,
@@ -24552,7 +21694,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2859,
     price: 10,
     row: 16,
     seat: 17,
@@ -24560,7 +21701,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2860,
     price: 10,
     row: 16,
     seat: 18,
@@ -24568,7 +21708,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2861,
     price: 10,
     row: 16,
     seat: 19,
@@ -24578,7 +21717,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2862,
     price: 10,
     row: 16,
     seat: 20,
@@ -24586,7 +21724,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2863,
     price: 10,
     row: 17,
     seat: 1,
@@ -24594,7 +21731,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2864,
     price: 10,
     row: 17,
     seat: 2,
@@ -24602,7 +21738,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2865,
     price: 10,
     row: 17,
     seat: 3,
@@ -24610,7 +21745,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2866,
     price: 10,
     row: 17,
     seat: 4,
@@ -24618,7 +21752,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2867,
     price: 10,
     row: 17,
     seat: 5,
@@ -24626,7 +21759,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2868,
     price: 10,
     row: 17,
     seat: 6,
@@ -24636,7 +21768,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2869,
     price: 10,
     row: 17,
     seat: 7,
@@ -24644,7 +21775,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2870,
     price: 10,
     row: 17,
     seat: 8,
@@ -24652,7 +21782,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2871,
     price: 10,
     row: 17,
     seat: 9,
@@ -24660,7 +21789,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2872,
     price: 10,
     row: 17,
     seat: 10,
@@ -24668,7 +21796,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2873,
     price: 10,
     row: 17,
     seat: 11,
@@ -24676,7 +21803,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2874,
     price: 10,
     row: 17,
     seat: 12,
@@ -24686,7 +21812,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2875,
     price: 10,
     row: 17,
     seat: 13,
@@ -24696,7 +21821,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2876,
     price: 10,
     row: 17,
     seat: 14,
@@ -24704,7 +21828,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2877,
     price: 10,
     row: 17,
     seat: 15,
@@ -24712,7 +21835,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2878,
     price: 10,
     row: 17,
     seat: 16,
@@ -24720,7 +21842,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2879,
     price: 10,
     row: 17,
     seat: 17,
@@ -24730,7 +21851,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2880,
     price: 10,
     row: 17,
     seat: 18,
@@ -24740,7 +21860,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2881,
     price: 10,
     row: 17,
     seat: 19,
@@ -24748,7 +21867,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2882,
     price: 10,
     row: 17,
     seat: 20,
@@ -24758,7 +21876,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2883,
     price: 10,
     row: 18,
     seat: 1,
@@ -24766,7 +21883,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2884,
     price: 10,
     row: 18,
     seat: 2,
@@ -24774,7 +21890,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2885,
     price: 10,
     row: 18,
     seat: 3,
@@ -24782,7 +21897,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2886,
     price: 10,
     row: 18,
     seat: 4,
@@ -24790,7 +21904,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2887,
     price: 10,
     row: 18,
     seat: 5,
@@ -24798,7 +21911,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2888,
     price: 10,
     row: 18,
     seat: 6,
@@ -24806,7 +21918,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2889,
     price: 10,
     row: 18,
     seat: 7,
@@ -24814,7 +21925,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2890,
     price: 10,
     row: 18,
     seat: 8,
@@ -24824,7 +21934,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2891,
     price: 10,
     row: 18,
     seat: 9,
@@ -24832,7 +21941,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2892,
     price: 10,
     row: 18,
     seat: 10,
@@ -24840,7 +21948,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2893,
     price: 10,
     row: 18,
     seat: 11,
@@ -24850,7 +21957,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2894,
     price: 10,
     row: 18,
     seat: 12,
@@ -24860,7 +21966,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2895,
     price: 10,
     row: 18,
     seat: 13,
@@ -24870,7 +21975,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2896,
     price: 10,
     row: 18,
     seat: 14,
@@ -24880,7 +21984,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2897,
     price: 10,
     row: 18,
     seat: 15,
@@ -24888,7 +21991,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2898,
     price: 10,
     row: 18,
     seat: 16,
@@ -24896,7 +21998,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2899,
     price: 10,
     row: 18,
     seat: 17,
@@ -24906,7 +22007,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2900,
     price: 10,
     row: 18,
     seat: 18,
@@ -24914,7 +22014,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2901,
     price: 10,
     row: 18,
     seat: 19,
@@ -24922,7 +22021,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2902,
     price: 10,
     row: 18,
     seat: 20,
@@ -24932,7 +22030,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2903,
     price: 10,
     row: 19,
     seat: 1,
@@ -24942,7 +22039,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2904,
     price: 10,
     row: 19,
     seat: 2,
@@ -24950,7 +22046,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2905,
     price: 10,
     row: 19,
     seat: 3,
@@ -24958,7 +22053,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2906,
     price: 10,
     row: 19,
     seat: 4,
@@ -24966,7 +22060,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2907,
     price: 10,
     row: 19,
     seat: 5,
@@ -24974,7 +22067,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2908,
     price: 10,
     row: 19,
     seat: 6,
@@ -24984,7 +22076,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2909,
     price: 10,
     row: 19,
     seat: 7,
@@ -24992,7 +22083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2910,
     price: 10,
     row: 19,
     seat: 8,
@@ -25000,7 +22090,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2911,
     price: 10,
     row: 19,
     seat: 9,
@@ -25008,7 +22097,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2912,
     price: 10,
     row: 19,
     seat: 10,
@@ -25018,7 +22106,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2913,
     price: 10,
     row: 19,
     seat: 11,
@@ -25026,7 +22113,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2914,
     price: 10,
     row: 19,
     seat: 12,
@@ -25034,7 +22120,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2915,
     price: 10,
     row: 19,
     seat: 13,
@@ -25042,7 +22127,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2916,
     price: 10,
     row: 19,
     seat: 14,
@@ -25052,7 +22136,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2917,
     price: 10,
     row: 19,
     seat: 15,
@@ -25060,7 +22143,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2918,
     price: 10,
     row: 19,
     seat: 16,
@@ -25070,7 +22152,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2919,
     price: 10,
     row: 19,
     seat: 17,
@@ -25078,7 +22159,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2920,
     price: 10,
     row: 19,
     seat: 18,
@@ -25088,7 +22168,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2921,
     price: 10,
     row: 19,
     seat: 19,
@@ -25096,7 +22175,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2922,
     price: 10,
     row: 19,
     seat: 20,
@@ -25104,7 +22182,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2923,
     price: 10,
     row: 20,
     seat: 1,
@@ -25112,7 +22189,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2924,
     price: 10,
     row: 20,
     seat: 2,
@@ -25122,7 +22198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2925,
     price: 10,
     row: 20,
     seat: 3,
@@ -25130,7 +22205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2926,
     price: 10,
     row: 20,
     seat: 4,
@@ -25138,7 +22212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2927,
     price: 10,
     row: 20,
     seat: 5,
@@ -25146,7 +22219,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2928,
     price: 10,
     row: 20,
     seat: 6,
@@ -25154,7 +22226,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2929,
     price: 10,
     row: 20,
     seat: 7,
@@ -25162,7 +22233,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2930,
     price: 10,
     row: 20,
     seat: 8,
@@ -25170,7 +22240,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2931,
     price: 10,
     row: 20,
     seat: 9,
@@ -25180,7 +22249,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2932,
     price: 10,
     row: 20,
     seat: 10,
@@ -25188,7 +22256,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2933,
     price: 10,
     row: 20,
     seat: 11,
@@ -25196,7 +22263,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2934,
     price: 10,
     row: 20,
     seat: 12,
@@ -25204,7 +22270,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2935,
     price: 10,
     row: 20,
     seat: 13,
@@ -25214,7 +22279,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2936,
     price: 10,
     row: 20,
     seat: 14,
@@ -25222,7 +22286,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2937,
     price: 10,
     row: 20,
     seat: 15,
@@ -25230,7 +22293,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2938,
     price: 10,
     row: 20,
     seat: 16,
@@ -25238,7 +22300,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2939,
     price: 10,
     row: 20,
     seat: 17,
@@ -25246,7 +22307,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2940,
     price: 10,
     row: 20,
     seat: 18,
@@ -25254,7 +22314,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2941,
     price: 10,
     row: 20,
     seat: 19,
@@ -25264,7 +22323,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2942,
     price: 10,
     row: 20,
     seat: 20,
@@ -25272,7 +22330,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2943,
     price: 10,
     row: 21,
     seat: 1,
@@ -25280,7 +22337,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2944,
     price: 10,
     row: 21,
     seat: 2,
@@ -25290,7 +22346,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2945,
     price: 10,
     row: 21,
     seat: 3,
@@ -25298,7 +22353,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2946,
     price: 10,
     row: 21,
     seat: 4,
@@ -25306,7 +22360,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2947,
     price: 10,
     row: 21,
     seat: 5,
@@ -25314,7 +22367,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2948,
     price: 10,
     row: 21,
     seat: 6,
@@ -25324,7 +22376,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2949,
     price: 10,
     row: 21,
     seat: 7,
@@ -25334,7 +22385,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2950,
     price: 10,
     row: 21,
     seat: 8,
@@ -25342,7 +22392,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2951,
     price: 10,
     row: 21,
     seat: 9,
@@ -25350,7 +22399,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2952,
     price: 10,
     row: 21,
     seat: 10,
@@ -25358,7 +22406,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2953,
     price: 10,
     row: 21,
     seat: 11,
@@ -25366,7 +22413,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2954,
     price: 10,
     row: 21,
     seat: 12,
@@ -25374,7 +22420,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2955,
     price: 10,
     row: 21,
     seat: 13,
@@ -25382,7 +22427,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2956,
     price: 10,
     row: 21,
     seat: 14,
@@ -25392,7 +22436,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2957,
     price: 10,
     row: 21,
     seat: 15,
@@ -25402,7 +22445,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2958,
     price: 10,
     row: 21,
     seat: 16,
@@ -25412,7 +22454,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2959,
     price: 10,
     row: 21,
     seat: 17,
@@ -25420,7 +22461,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2960,
     price: 10,
     row: 21,
     seat: 18,
@@ -25428,7 +22468,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2961,
     price: 10,
     row: 21,
     seat: 19,
@@ -25436,7 +22475,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2962,
     price: 10,
     row: 21,
     seat: 20,
@@ -25444,7 +22482,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2963,
     price: 10,
     row: 22,
     seat: 1,
@@ -25454,7 +22491,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2964,
     price: 10,
     row: 22,
     seat: 2,
@@ -25462,7 +22498,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2965,
     price: 10,
     row: 22,
     seat: 3,
@@ -25470,7 +22505,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2966,
     price: 10,
     row: 22,
     seat: 4,
@@ -25478,7 +22512,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2967,
     price: 10,
     row: 22,
     seat: 5,
@@ -25486,7 +22519,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2968,
     price: 10,
     row: 22,
     seat: 6,
@@ -25494,7 +22526,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2969,
     price: 10,
     row: 22,
     seat: 7,
@@ -25502,7 +22533,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2970,
     price: 10,
     row: 22,
     seat: 8,
@@ -25510,7 +22540,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2971,
     price: 10,
     row: 22,
     seat: 9,
@@ -25518,7 +22547,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2972,
     price: 10,
     row: 22,
     seat: 10,
@@ -25526,7 +22554,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2973,
     price: 10,
     row: 22,
     seat: 11,
@@ -25534,7 +22561,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2974,
     price: 10,
     row: 22,
     seat: 12,
@@ -25542,7 +22568,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2975,
     price: 10,
     row: 22,
     seat: 13,
@@ -25550,7 +22575,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2976,
     price: 10,
     row: 22,
     seat: 14,
@@ -25558,7 +22582,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2977,
     price: 10,
     row: 22,
     seat: 15,
@@ -25566,7 +22589,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2978,
     price: 10,
     row: 22,
     seat: 16,
@@ -25576,7 +22598,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2979,
     price: 10,
     row: 22,
     seat: 17,
@@ -25584,7 +22605,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2980,
     price: 10,
     row: 22,
     seat: 18,
@@ -25592,7 +22612,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2981,
     price: 10,
     row: 22,
     seat: 19,
@@ -25600,7 +22619,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2982,
     price: 10,
     row: 22,
     seat: 20,
@@ -25608,7 +22626,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2983,
     price: 10,
     row: 23,
     seat: 1,
@@ -25618,7 +22635,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2984,
     price: 10,
     row: 23,
     seat: 2,
@@ -25628,7 +22644,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 2985,
     price: 10,
     row: 23,
     seat: 3,
@@ -25636,7 +22651,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2986,
     price: 10,
     row: 23,
     seat: 4,
@@ -25644,7 +22658,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2987,
     price: 10,
     row: 23,
     seat: 5,
@@ -25652,7 +22665,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2988,
     price: 10,
     row: 23,
     seat: 6,
@@ -25660,7 +22672,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2989,
     price: 10,
     row: 23,
     seat: 7,
@@ -25668,7 +22679,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2990,
     price: 10,
     row: 23,
     seat: 8,
@@ -25676,7 +22686,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2991,
     price: 10,
     row: 23,
     seat: 9,
@@ -25684,7 +22693,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2992,
     price: 10,
     row: 23,
     seat: 10,
@@ -25694,7 +22702,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2993,
     price: 10,
     row: 23,
     seat: 11,
@@ -25702,7 +22709,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2994,
     price: 10,
     row: 23,
     seat: 12,
@@ -25710,7 +22716,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2995,
     price: 10,
     row: 23,
     seat: 13,
@@ -25718,7 +22723,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2996,
     price: 10,
     row: 23,
     seat: 14,
@@ -25726,7 +22730,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2997,
     price: 10,
     row: 23,
     seat: 15,
@@ -25734,7 +22737,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2998,
     price: 10,
     row: 23,
     seat: 16,
@@ -25742,7 +22744,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 2999,
     price: 10,
     row: 23,
     seat: 17,
@@ -25750,7 +22751,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3000,
     price: 10,
     row: 23,
     seat: 18,
@@ -25758,7 +22758,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3001,
     price: 10,
     row: 23,
     seat: 19,
@@ -25766,7 +22765,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3002,
     price: 10,
     row: 23,
     seat: 20,
@@ -25774,7 +22772,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3003,
     price: 10,
     row: 24,
     seat: 1,
@@ -25784,7 +22781,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3004,
     price: 10,
     row: 24,
     seat: 2,
@@ -25792,7 +22788,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3005,
     price: 10,
     row: 24,
     seat: 3,
@@ -25802,7 +22797,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3006,
     price: 10,
     row: 24,
     seat: 4,
@@ -25810,7 +22804,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3007,
     price: 10,
     row: 24,
     seat: 5,
@@ -25820,7 +22813,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3008,
     price: 10,
     row: 24,
     seat: 6,
@@ -25828,7 +22820,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3009,
     price: 10,
     row: 24,
     seat: 7,
@@ -25836,7 +22827,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3010,
     price: 10,
     row: 24,
     seat: 8,
@@ -25844,7 +22834,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3011,
     price: 10,
     row: 24,
     seat: 9,
@@ -25852,7 +22841,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3012,
     price: 10,
     row: 24,
     seat: 10,
@@ -25862,7 +22850,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3013,
     price: 10,
     row: 24,
     seat: 11,
@@ -25872,7 +22859,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3014,
     price: 10,
     row: 24,
     seat: 12,
@@ -25880,7 +22866,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3015,
     price: 10,
     row: 24,
     seat: 13,
@@ -25890,7 +22875,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3016,
     price: 10,
     row: 24,
     seat: 14,
@@ -25898,7 +22882,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3017,
     price: 10,
     row: 24,
     seat: 15,
@@ -25906,7 +22889,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3018,
     price: 10,
     row: 24,
     seat: 16,
@@ -25916,7 +22898,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3019,
     price: 10,
     row: 24,
     seat: 17,
@@ -25926,7 +22907,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3020,
     price: 10,
     row: 24,
     seat: 18,
@@ -25934,7 +22914,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3021,
     price: 10,
     row: 24,
     seat: 19,
@@ -25942,7 +22921,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3022,
     price: 10,
     row: 24,
     seat: 20,
@@ -25950,7 +22928,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3023,
     price: 10,
     row: 25,
     seat: 1,
@@ -25958,7 +22935,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3024,
     price: 10,
     row: 25,
     seat: 2,
@@ -25966,7 +22942,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3025,
     price: 10,
     row: 25,
     seat: 3,
@@ -25974,7 +22949,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3026,
     price: 10,
     row: 25,
     seat: 4,
@@ -25982,7 +22956,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3027,
     price: 10,
     row: 25,
     seat: 5,
@@ -25990,7 +22963,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3028,
     price: 10,
     row: 25,
     seat: 6,
@@ -25998,7 +22970,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3029,
     price: 10,
     row: 25,
     seat: 7,
@@ -26008,7 +22979,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3030,
     price: 10,
     row: 25,
     seat: 8,
@@ -26016,7 +22986,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3031,
     price: 10,
     row: 25,
     seat: 9,
@@ -26026,7 +22995,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3032,
     price: 10,
     row: 25,
     seat: 10,
@@ -26034,7 +23002,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3033,
     price: 10,
     row: 25,
     seat: 11,
@@ -26044,7 +23011,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3034,
     price: 10,
     row: 25,
     seat: 12,
@@ -26052,7 +23018,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3035,
     price: 10,
     row: 25,
     seat: 13,
@@ -26062,7 +23027,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3036,
     price: 10,
     row: 25,
     seat: 14,
@@ -26070,7 +23034,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3037,
     price: 10,
     row: 25,
     seat: 15,
@@ -26078,7 +23041,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3038,
     price: 10,
     row: 25,
     seat: 16,
@@ -26086,7 +23048,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3039,
     price: 10,
     row: 25,
     seat: 17,
@@ -26094,7 +23055,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3040,
     price: 10,
     row: 25,
     seat: 18,
@@ -26102,7 +23062,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3041,
     price: 10,
     row: 25,
     seat: 19,
@@ -26110,7 +23069,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3042,
     price: 10,
     row: 25,
     seat: 20,
@@ -26118,7 +23076,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3043,
     price: 18,
     row: 1,
     seat: 1,
@@ -26126,7 +23083,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3044,
     price: 18,
     row: 1,
     seat: 2,
@@ -26136,7 +23092,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3045,
     price: 18,
     row: 1,
     seat: 3,
@@ -26146,7 +23101,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3046,
     price: 18,
     row: 1,
     seat: 4,
@@ -26154,7 +23108,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3047,
     price: 18,
     row: 1,
     seat: 5,
@@ -26162,7 +23115,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3048,
     price: 18,
     row: 1,
     seat: 6,
@@ -26170,7 +23122,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3049,
     price: 18,
     row: 1,
     seat: 7,
@@ -26180,7 +23131,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3050,
     price: 18,
     row: 1,
     seat: 8,
@@ -26188,7 +23138,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3051,
     price: 18,
     row: 1,
     seat: 9,
@@ -26196,7 +23145,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3052,
     price: 18,
     row: 1,
     seat: 10,
@@ -26204,7 +23152,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3053,
     price: 18,
     row: 1,
     seat: 11,
@@ -26214,7 +23161,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3054,
     price: 18,
     row: 1,
     seat: 12,
@@ -26222,7 +23168,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3055,
     price: 18,
     row: 1,
     seat: 13,
@@ -26232,7 +23177,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3056,
     price: 18,
     row: 1,
     seat: 14,
@@ -26240,7 +23184,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3057,
     price: 18,
     row: 2,
     seat: 1,
@@ -26248,7 +23191,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3058,
     price: 18,
     row: 2,
     seat: 2,
@@ -26256,7 +23198,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3059,
     price: 18,
     row: 2,
     seat: 3,
@@ -26264,7 +23205,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3060,
     price: 18,
     row: 2,
     seat: 4,
@@ -26272,7 +23212,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3061,
     price: 18,
     row: 2,
     seat: 5,
@@ -26282,7 +23221,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3062,
     price: 18,
     row: 2,
     seat: 6,
@@ -26292,7 +23230,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3063,
     price: 18,
     row: 2,
     seat: 7,
@@ -26302,7 +23239,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3064,
     price: 18,
     row: 2,
     seat: 8,
@@ -26310,7 +23246,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3065,
     price: 18,
     row: 2,
     seat: 9,
@@ -26318,7 +23253,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3066,
     price: 18,
     row: 2,
     seat: 10,
@@ -26326,7 +23260,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3067,
     price: 18,
     row: 2,
     seat: 11,
@@ -26336,7 +23269,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3068,
     price: 18,
     row: 2,
     seat: 12,
@@ -26344,7 +23276,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3069,
     price: 18,
     row: 2,
     seat: 13,
@@ -26352,7 +23283,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3070,
     price: 18,
     row: 2,
     seat: 14,
@@ -26362,7 +23292,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3071,
     price: 18,
     row: 3,
     seat: 1,
@@ -26370,7 +23299,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3072,
     price: 18,
     row: 3,
     seat: 2,
@@ -26380,7 +23308,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3073,
     price: 18,
     row: 3,
     seat: 3,
@@ -26388,7 +23315,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3074,
     price: 18,
     row: 3,
     seat: 4,
@@ -26396,7 +23322,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3075,
     price: 18,
     row: 3,
     seat: 5,
@@ -26404,7 +23329,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3076,
     price: 18,
     row: 3,
     seat: 6,
@@ -26414,7 +23338,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3077,
     price: 18,
     row: 3,
     seat: 7,
@@ -26422,7 +23345,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3078,
     price: 18,
     row: 3,
     seat: 8,
@@ -26430,7 +23352,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3079,
     price: 18,
     row: 3,
     seat: 9,
@@ -26438,7 +23359,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3080,
     price: 18,
     row: 3,
     seat: 10,
@@ -26446,7 +23366,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3081,
     price: 18,
     row: 3,
     seat: 11,
@@ -26454,7 +23373,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3082,
     price: 18,
     row: 3,
     seat: 12,
@@ -26462,7 +23380,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3083,
     price: 18,
     row: 3,
     seat: 13,
@@ -26472,7 +23389,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3084,
     price: 18,
     row: 3,
     seat: 14,
@@ -26480,7 +23396,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3085,
     price: 18,
     row: 4,
     seat: 1,
@@ -26488,7 +23403,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3086,
     price: 18,
     row: 4,
     seat: 2,
@@ -26496,7 +23410,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3087,
     price: 18,
     row: 4,
     seat: 3,
@@ -26506,7 +23419,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3088,
     price: 18,
     row: 4,
     seat: 4,
@@ -26514,7 +23426,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3089,
     price: 18,
     row: 4,
     seat: 5,
@@ -26522,7 +23433,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3090,
     price: 18,
     row: 4,
     seat: 6,
@@ -26532,7 +23442,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3091,
     price: 18,
     row: 4,
     seat: 7,
@@ -26542,7 +23451,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3092,
     price: 18,
     row: 4,
     seat: 8,
@@ -26550,7 +23458,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3093,
     price: 18,
     row: 4,
     seat: 9,
@@ -26560,7 +23467,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3094,
     price: 18,
     row: 4,
     seat: 10,
@@ -26568,7 +23474,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3095,
     price: 18,
     row: 4,
     seat: 11,
@@ -26576,7 +23481,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3096,
     price: 18,
     row: 4,
     seat: 12,
@@ -26584,7 +23488,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3097,
     price: 18,
     row: 4,
     seat: 13,
@@ -26592,7 +23495,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3098,
     price: 18,
     row: 4,
     seat: 14,
@@ -26600,7 +23502,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3099,
     price: 18,
     row: 5,
     seat: 1,
@@ -26608,7 +23509,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3100,
     price: 18,
     row: 5,
     seat: 2,
@@ -26616,7 +23516,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3101,
     price: 18,
     row: 5,
     seat: 3,
@@ -26624,7 +23523,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3102,
     price: 18,
     row: 5,
     seat: 4,
@@ -26632,7 +23530,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3103,
     price: 18,
     row: 5,
     seat: 5,
@@ -26640,7 +23537,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3104,
     price: 18,
     row: 5,
     seat: 6,
@@ -26650,7 +23546,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3105,
     price: 18,
     row: 5,
     seat: 7,
@@ -26658,7 +23553,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3106,
     price: 18,
     row: 5,
     seat: 8,
@@ -26666,7 +23560,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3107,
     price: 18,
     row: 5,
     seat: 9,
@@ -26674,7 +23567,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3108,
     price: 18,
     row: 5,
     seat: 10,
@@ -26682,7 +23574,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3109,
     price: 18,
     row: 5,
     seat: 11,
@@ -26692,7 +23583,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3110,
     price: 18,
     row: 5,
     seat: 12,
@@ -26702,7 +23592,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3111,
     price: 18,
     row: 5,
     seat: 13,
@@ -26712,7 +23601,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3112,
     price: 18,
     row: 5,
     seat: 14,
@@ -26720,7 +23608,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3113,
     price: 18,
     row: 6,
     seat: 1,
@@ -26728,7 +23615,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3114,
     price: 18,
     row: 6,
     seat: 2,
@@ -26736,7 +23622,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3115,
     price: 18,
     row: 6,
     seat: 3,
@@ -26744,7 +23629,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3116,
     price: 18,
     row: 6,
     seat: 4,
@@ -26752,7 +23636,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3117,
     price: 18,
     row: 6,
     seat: 5,
@@ -26760,7 +23643,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3118,
     price: 18,
     row: 6,
     seat: 6,
@@ -26770,7 +23652,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3119,
     price: 18,
     row: 6,
     seat: 7,
@@ -26778,7 +23659,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3120,
     price: 18,
     row: 6,
     seat: 8,
@@ -26786,7 +23666,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3121,
     price: 18,
     row: 6,
     seat: 9,
@@ -26796,7 +23675,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3122,
     price: 18,
     row: 6,
     seat: 10,
@@ -26804,7 +23682,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3123,
     price: 18,
     row: 6,
     seat: 11,
@@ -26812,7 +23689,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3124,
     price: 18,
     row: 6,
     seat: 12,
@@ -26822,7 +23698,6 @@ export const tickets = [
     status: StatusTicket.SOLD,
   },
   {
-    id: 3125,
     price: 18,
     row: 6,
     seat: 13,
@@ -26830,7 +23705,6 @@ export const tickets = [
     status: StatusTicket.FREE,
   },
   {
-    id: 3126,
     price: 18,
     row: 6,
     seat: 14,

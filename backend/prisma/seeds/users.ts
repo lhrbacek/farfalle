@@ -2,16 +2,6 @@ import { Role } from '@prisma/client';
 
 export const users = [
   {
-    id: 0,
-    name: "Admin",
-    surname: "Adminovy",
-    email: "admin@farfalle.com",
-    password: "",
-    role: Role.ADMIN,
-    addressId: 0,
-  },
-  {
-    id: 1,
     name: 'Eugenio',
     surname: 'Gutiérrez',
     email: 'eugenio.gutierrez@testmail.es',
@@ -21,7 +11,6 @@ export const users = [
     addressId: 1,
   },
   {
-    id: 2,
     name: 'Luis',
     surname: 'Martínez',
     email: 'luis.martinez89@thisemaildoesnotexist.com',
@@ -31,7 +20,6 @@ export const users = [
     addressId: 2,
   },
   {
-    id: 3,
     name: 'Ariadna',
     surname: 'Sánchez',
     email: 'asanchez@testmail.es',
@@ -41,7 +29,6 @@ export const users = [
     addressId: 3,
   },
   {
-    id: 4,
     name: 'Noelia',
     surname: 'Guerrero',
     email: 'guerrero334@trabajotodaladia.es',
@@ -51,7 +38,6 @@ export const users = [
     addressId: 4,
   },
   {
-    id: 5,
     name: 'Fabiola',
     surname: 'Méndez',
     email: 'fabmen@testmail.es',
@@ -61,7 +47,6 @@ export const users = [
     addressId: 5,
   },
   {
-    id: 6,
     name: 'Daniel',
     surname: 'Montero',
     email: 'dano.montero@databaseseedmail.es',
@@ -71,7 +56,6 @@ export const users = [
     addressId: 6,
   },
   {
-    id: 7,
     name: 'Carina',
     surname: 'Gallego',
     email: 'chicagallega@santiagomail.eu',
@@ -79,5 +63,13 @@ export const users = [
       'e7155c8ae6496d973521c2559ecbe38b6c654c0d457a8203558b86a8ff68789b279346dcd87cc5e923722dc153db85ea',
     role: Role.USER,
     addressId: 7,
+  },
+  {
+    name: 'Admin',
+    surname: 'Adminovy',
+    email: 'admin@farfalle.com',
+    password: '',
+    role: Role.ADMIN,
+    addressId: 10,
   },
 ];
