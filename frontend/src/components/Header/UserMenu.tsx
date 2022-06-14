@@ -1,8 +1,9 @@
 import { Avatar, createStyles, Group, Menu, UnstyledButton, Text, Divider } from "@mantine/core";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useRecoilState } from "recoil";
 import { Home, Menu2, News, Pencil, ShoppingCart, User, UserCheck, X } from "tabler-icons-react";
-import { user } from '../../data/user';
+import { userIdState } from "../../state/UserIdState";
 
 const useStyles = createStyles((theme) => ({
   user: {
@@ -43,18 +44,14 @@ const useStyles = createStyles((theme) => ({
 
 }));
 
-interface UserMenuProps {
-  auth: boolean,
-}
-
-function UserMenu({ auth }: UserMenuProps) {
+function UserMenu() {
+  const [userId, setUserId] = useRecoilState(userIdState);
   const [userMenuOpened, setUserMenuOpened] = useState(false);
   const { classes, cx } = useStyles();
 
   const signOutUser = () => {
     // TODO: call backend
-    localStorage.removeItem("userId");
-    localStorage.setItem("isLogged", "false");
+    setUserId("")
   }
 
   const getMenu = (auth: boolean) => {
@@ -101,7 +98,7 @@ function UserMenu({ auth }: UserMenuProps) {
           <Group spacing={7}>
             <Avatar alt="user" radius="xl" className={classes.desktopMenu}>
               {
-                auth ?
+                userId != "" ?
                   <UserCheck size={24} color='red' /> :
                   <User size={24} />
               }
@@ -114,7 +111,7 @@ function UserMenu({ auth }: UserMenuProps) {
               }
             </Avatar>
             <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3} className={classes.desktopMenu}>
-              {auth ? "Signed in" : "Unsigned"}
+              {userId != "" ? "Signed in" : "Unsigned"}
             </Text>
           </Group>
         </UnstyledButton>
@@ -142,7 +139,7 @@ function UserMenu({ auth }: UserMenuProps) {
       </div>
 
 
-      {getMenu(auth)}
+      {getMenu(userId != "")}
 
     </Menu>
   )
