@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { X } from 'tabler-icons-react';
 import { API_URL } from '../../models/fetcher';
+import hash from 'hash.js'
 
 interface NewUser {
   name: string,
@@ -59,6 +60,7 @@ function CreateAccount(props: CreateAccountProps) {
 
   const handleSubmit = async (values: NewUser) => {
     setRegistrationError("");
+    const hashedPassword = hash.sha256().update(values.password).digest('hex');
 
     await fetch(`${API_URL}user`, {
       method: "POST",
@@ -66,6 +68,7 @@ function CreateAccount(props: CreateAccountProps) {
       body: JSON.stringify({
         number: values.streetNo,
         ...values,
+        password: hashedPassword,
         addressName: values.name.concat(" ", values.surname),
       }),
     }).then(response => {

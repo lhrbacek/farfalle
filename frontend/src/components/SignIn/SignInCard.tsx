@@ -6,6 +6,7 @@ import { useRecoilState } from 'recoil';
 import { X } from 'tabler-icons-react';
 import { API_URL } from '../../models/fetcher';
 import { userIdState } from '../../state/UserIdState';
+import hash from 'hash.js'
 
 interface SignUser {
   email: string,
@@ -43,9 +44,12 @@ function SignInCard(props: SignInProps) {
   }
 
   const SignUserIn = async (values: SignUser) => {
-    let hash = '';
-    let isAdmin: boolean;
     setSignError(false);
+    const hashedPassword = hash.sha256().update(values.password).digest('hex');
+    const newUser: SignUser = {
+      ...values,
+      password: hashedPassword
+    }
 
     // LOGIN, POST on url below with object {email: "", password: ""}
     // no hash, hash password must be put on login screen, TODO
@@ -54,7 +58,7 @@ function SignInCard(props: SignInProps) {
       method: "POST",
       headers: { "Content-Type": "application/json", },
       body: JSON.stringify({
-        ...values,
+        ...newUser
       }),
     }).then(response => {
       if (!(response.ok)) {
