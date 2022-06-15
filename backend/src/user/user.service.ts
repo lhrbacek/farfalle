@@ -9,15 +9,96 @@ import { ReturnUserInfoDto } from './dto/return-user-info.dto';
 export class UserService {
   constructor(private prisma: PrismaService) {}
 
-  async findOne(id?: number, email?: string): Promise<User | null> {
+  async findOne(
+    id?: number,
+    email?: string,
+  ): Promise<ReturnUserInfoDto | null> {
     if (email) {
       return await this.prisma.user.findUnique({
         where: { email: email },
+        select: {
+          email: true,
+          password: true,
+          name: true,
+          surname: true,
+          role: true,
+          address: {
+            select: {
+              city: true,
+              street: true,
+              number: true,
+              zip: true,
+            },
+          },
+          orders: {
+            select: {
+              status: true,
+              createdAt: true,
+              tickets: {
+                select: {
+                  id: true,
+                  price: true,
+                  row: true,
+                  seat: true,
+                  performance: {
+                    select: {
+                      dateTime: true,
+                      play: {
+                        select: {
+                          name: true,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
       });
     }
 
     return await this.prisma.user.findUnique({
       where: { id: id },
+      select: {
+        email: true,
+        password: true,
+        name: true,
+        surname: true,
+        role: true,
+        address: {
+          select: {
+            city: true,
+            street: true,
+            number: true,
+            zip: true,
+          },
+        },
+        orders: {
+          select: {
+            status: true,
+            createdAt: true,
+            tickets: {
+              select: {
+                id: true,
+                price: true,
+                row: true,
+                seat: true,
+                performance: {
+                  select: {
+                    dateTime: true,
+                    play: {
+                      select: {
+                        name: true,
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     });
   }
 
@@ -31,15 +112,43 @@ export class UserService {
     const { skip, take, cursor, where, orderBy } = params;
     return await this.prisma.user.findMany({
       select: {
-        id: true,
         email: true,
+        password: true,
         name: true,
         surname: true,
-        password: false,
         role: true,
-        addressId: true,
-        address: false,
-        orders: false,
+        address: {
+          select: {
+            city: true,
+            street: true,
+            number: true,
+            zip: true,
+          },
+        },
+        orders: {
+          select: {
+            status: true,
+            createdAt: true,
+            tickets: {
+              select: {
+                id: true,
+                price: true,
+                row: true,
+                seat: true,
+                performance: {
+                  select: {
+                    dateTime: true,
+                    play: {
+                      select: {
+                        name: true,
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
       },
       skip,
       take,
