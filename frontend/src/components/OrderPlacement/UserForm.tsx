@@ -2,6 +2,7 @@ import { TextInput, Checkbox, Button, Group, Box, Divider } from '@mantine/core'
 import { useForm } from '@mantine/form';
 import { useRecoilValue } from 'recoil';
 import useSWR from 'swr';
+import authorise from '../../models/authorise';
 import { userIdState } from '../../state/UserIdState';
 import { UserProfile } from '../../types/user';
 import LoadError from '../Error/LoadError';
@@ -28,7 +29,8 @@ export function UserForm(props: FormProps) {
     }
   };
 
-  if (!(userId === null)) {
+  if (authorise()) {
+    console.log("in");
     const { data, error } = useSWR(`user/${userId}`);
     if (error) return <LoadError />;
     if (!data) return <LoadingCard />;
