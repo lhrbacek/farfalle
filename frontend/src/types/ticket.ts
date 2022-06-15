@@ -29,3 +29,17 @@ export interface TicketBooking {
   status: string,
   reservedAt: Date | null,
 }
+
+// for profile
+export interface TicketProfile {
+  id: number,
+  price: number,
+  row: number,
+  seat: number,
+  performance: {
+    dateTime: Date,
+    play: {
+      name: string,
+    }
+  }
+}
