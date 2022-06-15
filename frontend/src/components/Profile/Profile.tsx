@@ -78,7 +78,7 @@ function Profile() {
         <Stack className={classes.innerGroup}>
           <Stack>
             {/* {user?.orders?.map((ticket) => <PurchasedTicket key={ticket.id} {...ticket} />)} */}
-            {user?.orders?.map((order) => order.tickets.map((ticket) => <PurchasedTicket key={ticket.id} {...ticket} />))}
+            {user.orders.map((order) => order.tickets.map((ticket) => <PurchasedTicket key={ticket.id} {...ticket} />))}
           </Stack>
           <Card.Section>
             <Button color="dark" rightIcon={<Ticket size={14} />} component={Link} to='tickets'>

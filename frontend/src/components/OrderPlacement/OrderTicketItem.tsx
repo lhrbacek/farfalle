@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Ticket } from '../../types/ticket';
 import { CircleMinus } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartStateSelector } from '../../state/CartStateSelector';
 import { cartState } from '../../state/CartState';
 import { format } from 'date-fns';
@@ -57,8 +57,7 @@ interface OrderTicketItemProps {
 
 export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
   const [time, setTime] = useState(0);
-  const cart = useRecoilValue(cartStateSelector);
-  const setCartState = useSetRecoilState(cartState);
+  const [cart, setCartState] = useRecoilState(cartState);
   const { classes } = useStyles();
 
   const reservationDate: Date = ticket.reservedAt == undefined ? new Date() : new Date(ticket.reservedAt);
@@ -68,6 +67,9 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     const timer = setInterval(() => {
       const time = (newDateObj.getTime() - new Date().getTime());
       setTime(time < 0 ? 0 : time);
+      console.log("pred", cart)
+      setCartState(filterCart(cart));
+      console.log("po", cart)
     }, 1000);
 
     return () => {
@@ -75,15 +77,6 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     };
   }, []);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCartState(filterCart(cart));
-    }, 5000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
 
   const getTimeStamp = () => {
     // print count down for reservation time
@@ -92,9 +85,9 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     return Math.floor(time / (1000 * 60)).toFixed(0) + ":" + (secondsCount > 9 ? secondsCount.toFixed(0) : "0" + secondsCount.toFixed(0));
   }
 
-  const unreserveTicket = (ticket: Ticket) => {
+  const unreserveTicket = async (ticket: Ticket) => {
 
-    fetch(`http://localhost:4000/tickets/${ticket.id}`, {
+    await fetch(`http://localhost:4000/tickets/${ticket.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json", },
       body: JSON.stringify({

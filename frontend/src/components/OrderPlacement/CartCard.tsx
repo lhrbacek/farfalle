@@ -1,9 +1,9 @@
 import { Button, Container, Divider, Group, Stack, Text, Notification, Center, Pagination } from '@mantine/core';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { Trash, X } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartState } from '../../state/CartState';
 import { cartStateSelector } from '../../state/CartStateSelector';
 import { filterCart, reservationTime } from '../../state/reservationTime';
@@ -18,8 +18,7 @@ export interface CartCardProps {
 
 export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: CartCardProps) {
   const [page, setPage] = useState(1);
-  const cart = filterCart(useRecoilValue(cartStateSelector));
-  const setCartState = useSetRecoilState(cartState);
+  const [cart, setCartState] = useRecoilState(cartState);
   const count = cart.length;
   const totalPrice = cart.reduce((sum: number, current: any) => sum + current.price, 0);
   const ticketsPerPage = 5;
@@ -35,7 +34,7 @@ export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: 
         method: "PATCH",
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify({
-          reservedAt: undefined,
+          reservedAt: new Date(new Date().getTime() - reservationTime),
         }),
       }).then((response) => {
         if (!(response.ok)) {
