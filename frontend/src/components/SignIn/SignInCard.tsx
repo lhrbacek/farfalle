@@ -66,13 +66,12 @@ function SignInCard(props: SignInProps) {
             setSignError(true);
             return;
           }
-          setUserId(data.userId)
+          setUserId(+(data.userId));
         })
       }
     });
 
     navigate(from, { replace: true }); // after login navigate where the user wanted to go
-    // what is this
     // props.setPhase(1);
   }
 

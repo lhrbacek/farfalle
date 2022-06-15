@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { Home, Menu2, News, Pencil, ShoppingCart, User, UserCheck, X } from "tabler-icons-react";
+import authorise from "../../models/authorise";
 import { userIdState } from "../../state/UserIdState";
 
 const useStyles = createStyles((theme) => ({
@@ -51,7 +52,7 @@ function UserMenu() {
 
   const signOutUser = () => {
     // TODO: call backend
-    setUserId("")
+    setUserId(-1);
   }
 
   const getMenu = (auth: boolean) => {
@@ -84,6 +85,8 @@ function UserMenu() {
       </>);
   }
 
+  let isLogged: boolean = authorise();
+
   return (
     <Menu
       size={260}
@@ -98,7 +101,7 @@ function UserMenu() {
           <Group spacing={7}>
             <Avatar alt="user" radius="xl" className={classes.desktopMenu}>
               {
-                userId != "" ?
+                userId != -1 ?
                   <UserCheck size={24} color='red' /> :
                   <User size={24} />
               }
@@ -111,7 +114,7 @@ function UserMenu() {
               }
             </Avatar>
             <Text weight={500} size="sm" sx={{ lineHeight: 1 }} mr={3} className={classes.desktopMenu}>
-              {userId != "" ? "Signed in" : "Unsigned"}
+              {userId != -1 ? "Signed in" : "Unsigned"}
             </Text>
           </Group>
         </UnstyledButton>
@@ -139,7 +142,7 @@ function UserMenu() {
       </div>
 
 
-      {getMenu(userId != "")}
+      {getMenu(userId != -1)}
 
     </Menu>
   )

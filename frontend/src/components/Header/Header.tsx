@@ -42,9 +42,6 @@ export function Header() {
   const { classes } = useStyles();
   const location = useLocation();
 
-  // auth section
-  let isLogged: boolean = authorise();
-
   return (
     <div className={classes.header}>
       <Container className={classes.mainSection}>

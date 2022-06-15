@@ -8,18 +8,27 @@ const authorise = (): boolean => {
       credentials: 'include',
       headers: { "Content-Type": "application/json", },
     }).then((response) => {
-      localStorage.setItem("isLogged", JSON.stringify(response.ok));
+      if (!(response.ok)) {
+        localStorage.setItem("userId", "-1");
+      } else {
+        localStorage.setItem("userId", userId == null ? "-1" : userId);
+      }
+      //localStorage.setItem("isLogged", JSON.stringify(response.ok));
     });
   }
   
-  if (userId != null) {
+  console.log(userId);
+  if (userId != null && userId !== "-1") {
     checkAuth();
   
-    if (localStorage.getItem("isLogged") === "true") {
+    // if (localStorage.getItem("isLogged") === "true") {
+    //   return true;
+    // }
+    if (localStorage.getItem("userId") !== "-1") {
       return true;
     }
   }
-  return false
+  return false;
 }
 
 export default authorise;
