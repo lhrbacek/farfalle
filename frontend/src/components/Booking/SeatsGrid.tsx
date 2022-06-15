@@ -35,8 +35,11 @@ function SeatsGrid({ seats, bookedSeats, bookSeat, tableStyle, columns }: Bookin
     <Container style={tableStyle}>
       {seats.map(seat => {
         const now = Date.now();
-        const isFull = (seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD";
-        const isChosen = bookedSeats.includes(seat.id);
+        let isFull = seat.reservedAt == undefined ? false : true;
+        if (isFull) {
+          isFull = (seat.reservedAt && (now - (new Date(seat.reservedAt).getTime())) < reservationTime) || seat.status == "SOLD";
+        }
+        let isChosen = bookedSeats.includes(seat.id);
 
         return (
           <ActionIcon

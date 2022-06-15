@@ -2,20 +2,43 @@ import { TextInput, Button, Group, Box, Title, Notification } from '@mantine/cor
 import { useForm } from '@mantine/form';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
+import useSWR from 'swr';
 import { Check } from 'tabler-icons-react';
+import { userIdState } from '../../state/UserIdState';
+import LoadError from '../Error/LoadError';
+import LoadingCard from '../Loading/LoadingCard';
 
 export function EditProfile() {
   const [saved, setSaved] = useState(false);
-
-  const userData = {  //TODO: Fetch data from backend and fill out this values, if logged in
-    email: 'jdoe@gmail.com',
-    name: 'Joe',
-    surname: 'Doe',
-    street: 'Blue',
-    streetNo: '98',
-    city: 'London',
-    zip: '123',
+  const userId = useRecoilValue(userIdState);
+  let user = {
+    email: '',
+    name: '',
+    surname: '',
+    address: {
+      city: '',
+      street: '',
+      number: '',
+      zip: ''
+    }
   };
+
+  const { data, error } = useSWR(`user/${userId}`);
+  if (error) return <LoadError />;
+  if (!data) return <LoadingCard />;
+  user = data;
+
+  const userData = {
+    email: user.email,
+    name: user.name,
+    surname: user.surname,
+    street: user.address.street,
+    streetNo: user.address.number,
+    city: user.address.city,
+    zip: user.address.zip,
+  };
+
   const form = useForm({
     initialValues: userData,
     validate: {

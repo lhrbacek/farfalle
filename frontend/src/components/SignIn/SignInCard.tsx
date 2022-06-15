@@ -6,18 +6,15 @@ import { useRecoilState } from 'recoil';
 import { X } from 'tabler-icons-react';
 import { API_URL } from '../../models/fetcher';
 import { userIdState } from '../../state/UserIdState';
+import hash from 'hash.js'
 
 interface SignUser {
   email: string,
   password: string
 }
 
-interface SignInProps {
-  setPhase: Function
-}
-
-function SignInCard(props: SignInProps) {
-  const [userId, setUserId] = useRecoilState(userIdState);
+function SignInCard() {
+  const [_, setUserId] = useRecoilState(userIdState);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
@@ -43,9 +40,12 @@ function SignInCard(props: SignInProps) {
   }
 
   const SignUserIn = async (values: SignUser) => {
-    let hash = '';
-    let isAdmin: boolean;
     setSignError(false);
+    const hashedPassword = hash.sha256().update(values.password).digest('hex');
+    const newUser: SignUser = {
+      ...values,
+      password: hashedPassword
+    }
 
     // LOGIN, POST on url below with object {email: "", password: ""}
     // no hash, hash password must be put on login screen, TODO
@@ -54,7 +54,7 @@ function SignInCard(props: SignInProps) {
       method: "POST",
       headers: { "Content-Type": "application/json", },
       body: JSON.stringify({
-        ...values,
+        ...newUser
       }),
     }).then(response => {
       if (!(response.ok)) {
@@ -65,14 +65,13 @@ function SignInCard(props: SignInProps) {
           if (!data.userId) {
             setSignError(true);
             return;
+          } else {
+            setUserId(+(data.userId));
+            navigate(from, { replace: true }); // after login navigate where the user wanted to go
           }
-          setUserId(+(data.userId));
         })
       }
     });
-
-    navigate(from, { replace: true }); // after login navigate where the user wanted to go
-    // props.setPhase(1);
   }
 
   return (

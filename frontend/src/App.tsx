@@ -5,7 +5,6 @@ import HomeCard from './components/HomeCard/HomeCard'
 import { OrderPlacement } from './components/OrderPlacement/OrderPlacement'
 import ProgramCard from './components/ProgramCard/ProgramCard'
 import BookingCard from './components/Booking/BookingCard'
-import SignIn from './components/SignIn/SignIn'
 import NewAccount from './components/NewAccount/NewAccount'
 import Profile from './components/Profile/Profile'
 import EditProfile from './components/Profile/EditProfile'
@@ -17,6 +16,7 @@ import { useEffect } from 'react'
 import { Header } from './components/Header/Header'
 import FooterBar from './components/Footer/FooterBar'
 import RequireAuth from './components/RequireAuth/RequireAuth'
+import SignInCard from './components/SignIn/SignInCard'
 
 function App() {
   useEffect(() => {
@@ -62,7 +62,7 @@ function App() {
 
           {/* {authenticatedUser(user)} */}
 
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signin" element={<SignInCard />} />
           <Route path="/newcommer" element={<NewAccount />} />
 
           {/* protected paths */}

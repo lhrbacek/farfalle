@@ -1,5 +1,12 @@
 import { TextInput, Checkbox, Button, Group, Box, Divider } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import { useRecoilValue } from 'recoil';
+import useSWR from 'swr';
+import authorise from '../../models/authorise';
+import { userIdState } from '../../state/UserIdState';
+import { UserProfile } from '../../types/user';
+import LoadError from '../Error/LoadError';
+import LoadingCard from '../Loading/LoadingCard';
 import { UserInfo } from './OrderPlacement';
 
 interface FormProps {
@@ -9,14 +16,35 @@ interface FormProps {
 }
 
 export function UserForm(props: FormProps) {
-  const userData = {  //TODO: Fetch data from backend and fill out this values, if logged in
-    email: 'jdoe@gmail.com',
-    name: 'Joe',
-    surname: 'Doe',
-    street: 'Blue',
-    streetNo: '98',
-    city: 'London',
-    zip: '123',
+  const userId = useRecoilValue(userIdState);
+  let user = {
+    email: '',
+    name: '',
+    surname: '',
+    address: {
+      city: '',
+      street: '',
+      number: '',
+      zip: ''
+    }
+  };
+
+  if (authorise()) {
+    console.log("in");
+    const { data, error } = useSWR(`user/${userId}`);
+    if (error) return <LoadError />;
+    if (!data) return <LoadingCard />;
+    user = data;
+  }
+
+  const userData = {
+    email: user.email,
+    name: user.name,
+    surname: user.surname,
+    street: user.address.street,
+    streetNo: user.address.number,
+    city: user.address.city,
+    zip: user.address.zip,
     termsOfService: false,
   };
   const form = useForm({
