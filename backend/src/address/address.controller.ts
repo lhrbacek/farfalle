@@ -35,7 +35,7 @@ export class AddressController {
 
   @Get(':id')
   async findOne(@Param('id') id: number) {
-    return await this.addressService.findOne(id);
+    return await this.addressService.findOne(+id);
   }
 
   // TODO

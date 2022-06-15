@@ -11,3 +11,32 @@ export interface User {
   picture: string;
   orders: Order[];
 }
+
+export interface UserProfile {
+  email: string;
+  name: string;
+  surname: string;
+  role: string;
+  address: {
+    city: string;
+    street: string;
+    number: number;
+    zip: number
+  };
+  orders: {
+    status: string;
+    createdAt: Date;
+    tickets: {
+      id: number;
+      price: number;
+      row: number;
+      seat: number;
+      performance: {
+        dateTime: Date;
+        play: {
+          name: string;
+        };
+      };
+    }[];
+  }[];
+}

@@ -1,7 +1,6 @@
 import { Group, Text, createStyles } from '@mantine/core';
 import { format } from 'date-fns';
-import React from 'react';
-import { Ticket } from '../../types/ticket';
+import { TicketProfile } from '../../types/ticket';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -13,7 +12,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function PurchasedTicket(ticket: Ticket) {
+export function PurchasedTicket(ticket: TicketProfile) {
   const { classes } = useStyles();
 
   return (

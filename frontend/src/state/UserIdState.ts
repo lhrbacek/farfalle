@@ -10,9 +10,9 @@ const localStorageEffect = (key: any) => ({setSelf, onSet}) => {
     })
   }
 
-export const userIdState = atom<string>({
+export const userIdState = atom<Number>({
     key: "userIdState",
-    default: "",
+    default: -1,
     effects_UNSTABLE: [
         localStorageEffect('userId'),
       ],
