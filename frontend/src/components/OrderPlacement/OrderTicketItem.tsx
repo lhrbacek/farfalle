@@ -75,7 +75,7 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     return () => {
       clearInterval(timer);
     };
-  }, []);
+  });
 
 
   const getTimeStamp = () => {
