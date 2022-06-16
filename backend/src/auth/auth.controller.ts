@@ -17,12 +17,15 @@ import { Request } from 'express';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
+  /* Checks for authorization after authetication through the public guard. */
   @UseGuards(JwtAuthGuard)
   @Get(':id')
   async isAllowed(@Param('id') id: number, @Req() req) {
     await this.authService.isAllowed(req, +id);
   }
 
+  /* Sets auth cookie and returns user id if login information
+  validates againts the local guard. */
   @UseGuards(AuthGuard('local'))
   @Post('login')
   async login(@Req() req, @Res({ passthrough: true }) res: Response) {
@@ -42,7 +45,8 @@ export class AuthController {
     return { userId: req.user.id };
   }
 
-  /* Wipes auth cookie from the http if it existed. Raises error otherwise. */
+  /* Wipes auth cookie from the http if it existed. Raises error otherwise.
+  This method should only be called in case when the user is logged in. */
   @UseGuards(JwtAuthGuard)
   @Post('logout')
   async logout(req: Request, @Res({ passthrough: true }) res: Response) {
