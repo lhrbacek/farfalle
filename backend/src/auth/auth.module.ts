@@ -30,3 +30,15 @@ import { PrismaService } from 'src/prisma.service';
   controllers: [AuthController],
 })
 export class AuthModule {}
+
+/*
+sources:
+
+https://wanago.io/2020/05/25/api-nestjs-authenticating-users-bcrypt-passport-jwt-cookies/
+https://tigran.tech/nestjs-cookie-based-jwt-authentication/
+https://docs.nestjs.com/techniques/cookies
+https://docs.nestjs.com/security/authentication
+https://betterprogramming.pub/nestjs-authentication-with-jwt-and-postgres-50de6341f490
+https://progressivecoder.com/how-to-implement-nestjs-jwt-authentication-using-jwt-strategy/
+https://www.learmoreseekmore.com/2021/05/nestjs-jwt-auth-cookie-series-part3-refresh-token.html
+*/
