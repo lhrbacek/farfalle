@@ -12,12 +12,20 @@ import { AuthGuard } from '@nestjs/passport';
 import { Response } from 'express';
 import { JwtAuthGuard } from './jwt-auth.guard';
 import { Request } from 'express';
+import { ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 
 @Controller('auth')
+@ApiTags('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
 
   /* Checks for authorization after authetication through the public guard. */
+  @ApiOperation({ summary: 'Check for authorization' })
+  @ApiParam({
+    name: 'id',
+    required: true,
+    type: Number,
+  })
   @UseGuards(JwtAuthGuard)
   @Get(':id')
   async isAllowed(@Param('id') id: number, @Req() req) {
@@ -26,6 +34,7 @@ export class AuthController {
 
   /* Sets auth cookie and returns user id if login information
   validates againts the local guard. */
+  @ApiOperation({ summary: 'Set cookie' })
   @UseGuards(AuthGuard('local'))
   @Post('login')
   async login(@Req() req, @Res({ passthrough: true }) res: Response) {
@@ -36,7 +45,7 @@ export class AuthController {
     const data = {
       token,
     };
-    
+
     /* set cookie expiration for current time + 30 mins */
     res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 1800000 });
 
@@ -47,6 +56,7 @@ export class AuthController {
 
   /* Wipes auth cookie from the http if it existed. Raises error otherwise.
   This method should only be called in case when the user is logged in. */
+  @ApiOperation({ summary: 'Logout' })
   @UseGuards(JwtAuthGuard)
   @Post('logout')
   async logout(req: Request, @Res({ passthrough: true }) res: Response) {
