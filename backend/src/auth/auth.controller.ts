@@ -1,16 +1,17 @@
 import {
   Controller,
   Post,
-  Request,
   UseGuards,
   Res,
   Get,
+  Req,
   Param,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthGuard } from '@nestjs/passport';
 import { Response } from 'express';
 import { JwtAuthGuard } from './jwt-auth.guard';
+import { Request } from 'express';
 
 @Controller('auth')
 export class AuthController {
@@ -18,21 +19,33 @@ export class AuthController {
 
   @UseGuards(JwtAuthGuard)
   @Get(':id')
-  async isAllowed(@Param('id') id: number, @Request() req) {
+  async isAllowed(@Param('id') id: number, @Req() req) {
     await this.authService.isAllowed(req, +id);
   }
 
   @UseGuards(AuthGuard('local'))
   @Post('login')
-  async login(@Request() req, @Res({ passthrough: true }) res: Response) {
+  async login(@Req() req, @Res({ passthrough: true }) res: Response) {
     const token = await this.authService.login(req.user);
 
+    /*
+    We created data for storing more information in the auth cookie,
+    not only token, such as refresh date of the token and more if needed.
+    */
     const data = {
       token,
-      // token end date - future-proof concept
     };
     
-    res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 18000 });
+    res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 180000 });
+    // for testing uncomment the following line, cookie valid for 5 min:
+    // res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 30000 });
     return { userId: req.user.id };
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Post('logout')
+  async logout(req: Request, @Res({ passthrough: true }) res: Response) {
+    await this.authService.logout(req);
+    res.clearCookie('auth-cookie');
   }
 }

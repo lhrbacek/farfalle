@@ -2,6 +2,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { UserService } from '../user/user.service';
 import { JwtService } from '@nestjs/jwt';
 import { jwtConstants } from '../constants';
+import { Request } from 'express';
 
 @Injectable()
 export class AuthService {
@@ -30,6 +31,18 @@ export class AuthService {
     const payload = { email: user.email, sub: user.id, admin: isAdmin };
 
     return this.jwtService.sign(payload, { secret: jwtConstants.secret });
+  }
+
+  async logout(request: Request) {
+    if (!request.cookies['auth-cookie']) {
+      throw new HttpException(
+        {
+          status: HttpStatus.BAD_REQUEST, //400
+          error: 'This operation is not possible.',
+        },
+        HttpStatus.BAD_REQUEST,
+      );
+    }
   }
 
   async isPrivileged(req: any) {
