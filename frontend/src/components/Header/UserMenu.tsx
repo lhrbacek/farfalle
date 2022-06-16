@@ -85,7 +85,7 @@ function UserMenu() {
       </>);
   }
 
-  let isLogged: boolean = authorise();
+  authorise();
 
   return (
     <Menu

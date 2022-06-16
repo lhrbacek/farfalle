@@ -17,6 +17,7 @@ export interface UserProfile {
   name: string;
   surname: string;
   role: string;
+  addressId: number;
   address: {
     city: string;
     street: string;
