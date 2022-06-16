@@ -11,7 +11,7 @@ export function HomeCard() {
   const playPerPage = 5;
 
   useEffect(() => {
-    document.title = "Farfalle | Home"
+    document.title = "Farfalle"
   }, [])
 
   const { data, error } = useSWR(`play?future=true`);

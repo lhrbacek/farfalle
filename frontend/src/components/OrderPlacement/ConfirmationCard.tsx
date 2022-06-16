@@ -10,7 +10,7 @@ export function ConfirmationCard() {
         <Text weight={700}>Your order has been confirmed</Text>
       </Center>
       <Group position="center" mt="xl">
-        <Button variant="default" color='dark' component={Link} to='/home'>Home</Button>
+        <Button variant="default" color='dark' component={Link} to='/'>Home</Button>
       </Group>
     </Container>
   );

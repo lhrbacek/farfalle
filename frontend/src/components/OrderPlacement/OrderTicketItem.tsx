@@ -67,16 +67,23 @@ export function OrderTicketItem({ ticket, removable }: OrderTicketItemProps) {
     const timer = setInterval(() => {
       const time = (newDateObj.getTime() - new Date().getTime());
       setTime(time < 0 ? 0 : time);
-      console.log("pred", cart)
-      setCartState(filterCart(cart));
-      console.log("po", cart)
     }, 1000);
 
     return () => {
       clearInterval(timer);
     };
-  });
+  }, []);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCartState(filterCart(cart));
+    }, 5000);
+
+    return () => {
+      clearInterval(timer);
+    };
+
+  });
 
   const getTimeStamp = () => {
     // print count down for reservation time

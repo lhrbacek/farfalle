@@ -92,7 +92,7 @@ export function CartCard({ nextPhase, emptyCart, setEmptyCart, setFatalError }: 
       </Group>
 
       <Group position="center" mt="xl">
-        <Button variant="default" component={Link} to='/home'>Home</Button>
+        <Button variant="default" component={Link} to='/'>Home</Button>
         <Button disabled={count == 0} onClick={() => nextStep()} color='dark'>Next step</Button>
       </Group>
     </Container>

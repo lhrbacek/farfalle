@@ -67,7 +67,7 @@ function UserMenu() {
             Return tickets
           </Menu.Item>
 
-          <Menu.Item component={Link} to='/home' color="red" onClick={() => signOutUser()}>
+          <Menu.Item component={Link} to='/' color="red" onClick={() => signOutUser()}>
             Sign out
           </Menu.Item>
         </>
