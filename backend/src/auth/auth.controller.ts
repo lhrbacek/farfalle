@@ -28,22 +28,21 @@ export class AuthController {
   async login(@Req() req, @Res({ passthrough: true }) res: Response) {
     const token = await this.authService.login(req.user);
 
-    /*
-    We created data for storing more information in the auth cookie,
-    not only token, such as refresh date of the token and more if needed.
-    */
+    /* We created data for storing more information in the auth cookie,
+    not only token, such as refresh date of the token and more if needed. */
     const data = {
       token,
     };
     
     /* set cookie expiration for current time + 30 mins */
     res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 1800000 });
-    
+
     // for testing uncomment the following line, cookie valid for 2 min:
     //res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 120000 });
     return { userId: req.user.id };
   }
 
+  /* Wipes auth cookie from the http if it existed. Raises error otherwise. */
   @UseGuards(JwtAuthGuard)
   @Post('logout')
   async logout(req: Request, @Res({ passthrough: true }) res: Response) {
