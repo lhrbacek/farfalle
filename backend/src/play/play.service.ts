@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
 import { Play } from '@prisma/client';
 import { CreatePlayDto } from './dto/create-play.dto';
@@ -92,6 +92,13 @@ export class PlayService {
   }
 
   async delete(id: number): Promise<Play> {
-    return await this.prisma.play.delete({ where: { id: id } });
+    console.log(`Delete not implemented for ${id}`);
+    throw new HttpException(
+      {
+        status: HttpStatus.NOT_IMPLEMENTED,
+        error: 'Delete not implemented!',
+      },
+      HttpStatus.NOT_IMPLEMENTED,
+    );
   }
 }
