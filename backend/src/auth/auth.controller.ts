@@ -29,9 +29,10 @@ export class AuthController {
 
     const data = {
       token,
-      // token end date TODO
+      // token end date - future-proof concept
     };
-    res.cookie('auth-cookie', data, { httpOnly: true });
+    
+    res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 18000 });
     return { userId: req.user.id };
   }
 }
