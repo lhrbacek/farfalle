@@ -1,7 +1,7 @@
-import { createStyles, Container, Group, Image, Text, Button, Burger } from '@mantine/core';
+import { createStyles, Container, Group, Image, Text, Button } from '@mantine/core';
 import { Link, useLocation } from 'react-router-dom';
-import authorise from '../../models/authorise';
 import UserMenu from './UserMenu';
+import farfalle from "../../assets/farfalle.png"
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -50,7 +50,7 @@ export function Header() {
             <Image
               width={50}
               radius="md"
-              src="src\data\farfalle.png"
+              src={farfalle}
               alt="Farfalle Logo"
             />
             <Text component={Link} to="/home" size="xl" weight={700}>
