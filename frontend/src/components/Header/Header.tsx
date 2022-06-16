@@ -53,7 +53,7 @@ export function Header() {
               src={farfalle}
               alt="Farfalle Logo"
             />
-            <Text component={Link} to="/home" size="xl" weight={700}>
+            <Text component={Link} to="/" size="xl" weight={700}>
               Farfalle
             </Text>
           </Group>
@@ -66,7 +66,7 @@ export function Header() {
         <Button
           className={location.pathname == "/" ? classes.menuButtonClicked : classes.menuButton}
           component={Link}
-          to="/home"
+          to="/"
           variant="subtle"
         >
           Home

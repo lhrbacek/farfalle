@@ -33,7 +33,7 @@ function DeleteAccount() {
         </Notification>
 
 
-        <Button color='dark' fullWidth component={Link} to='/home'>
+        <Button color='dark' fullWidth component={Link} to='/'>
           Home
         </Button>
       </Paper>
