@@ -6,6 +6,7 @@ export class ReturnUserInfoDto {
   name: string;
   surname: string;
   role: Role | null;
+  addressId: number;
   address: {
     city: string;
     street: string;
@@ -35,6 +36,7 @@ export class ReturnUserInfoNoPasswordDto {
   name: string;
   surname: string;
   role: Role | null;
+  addressId: number;
   address: {
     city: string;
     street: string;

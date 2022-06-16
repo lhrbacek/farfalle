@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { Type } from 'class-transformer';
 import {
   IsInt,
   IsNotEmpty,
@@ -26,6 +27,7 @@ export class UpdateUserDto {
   password?: string;
 
   @IsOptional()
+  @Type(() => Number)
   @IsInt()
   @IsPositive()
   @ApiProperty()
