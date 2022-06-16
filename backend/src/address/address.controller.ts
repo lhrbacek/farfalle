@@ -22,7 +22,6 @@ export class AddressController {
     private readonly authService: AuthService,
   ) {}
 
-  // TODO
   @ApiOperation({ summary: 'Create one address' })
   @ApiResponse({
     status: 200,
@@ -73,7 +72,6 @@ export class AddressController {
     return await this.addressService.findOne(+id);
   }
 
-  // TODO
   @ApiOperation({ summary: 'Update one address' })
   @ApiResponse({
     status: 200,
@@ -101,7 +99,6 @@ export class AddressController {
     return await this.addressService.update(+id, updateAddressDto);
   }
 
-  // TODO
   @ApiOperation({ summary: 'Remove one address' })
   @ApiResponse({
     status: 501,

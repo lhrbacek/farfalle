@@ -49,7 +49,7 @@ export class AddressService {
         status: HttpStatus.NOT_IMPLEMENTED,
         error: 'Delete not implemented!',
       },
-      HttpStatus.FORBIDDEN,
+      HttpStatus.NOT_IMPLEMENTED,
     );
   }
 }
