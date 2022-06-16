@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma.service';
 import { Address, Prisma } from '@prisma/client';
 import { CreateAddressDto } from './dto/create-address.dto';
@@ -7,7 +7,6 @@ import { UpdateAddressDto } from './dto/update-address.dto';
 @Injectable()
 export class AddressService {
   constructor(private prisma: PrismaService) {}
-
   async findOne(id: number): Promise<Address | null> {
     return await this.prisma.address.findUnique({ where: { id: id } });
   }
@@ -44,6 +43,13 @@ export class AddressService {
   }
 
   async delete(id: number): Promise<Address> {
-    return await this.prisma.address.delete({ where: { id: id } });
+    console.log(`Delete not implemented for ${id}`);
+    throw new HttpException(
+      {
+        status: HttpStatus.NOT_IMPLEMENTED,
+        error: 'Delete not implemented!',
+      },
+      HttpStatus.FORBIDDEN,
+    );
   }
 }
