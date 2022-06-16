@@ -36,9 +36,11 @@ export class AuthController {
       token,
     };
     
-    res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 180000 });
-    // for testing uncomment the following line, cookie valid for 5 min:
-    // res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 30000 });
+    /* set cookie expiration for current time + 30 mins */
+    res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 1800000 });
+    
+    // for testing uncomment the following line, cookie valid for 2 min:
+    //res.cookie('auth-cookie', data, { httpOnly: true, maxAge: 120000 });
     return { userId: req.user.id };
   }
 
