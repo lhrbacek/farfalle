@@ -38,13 +38,15 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
       return;
     }
 
+    const confirmedTicketsIds: Number[] = confirmedTickets.map((ticket) => ticket.id);
+
     // create order in database
     await fetch(`http://localhost:4000/order`, {
       method: "POST",
       headers: { "Content-Type": "application/json", },
       body: JSON.stringify({
         email: userInfo.email,
-        tickets: confirmedTickets,
+        tickets: confirmedTicketsIds,
         adress: 0, // TODO
         // user?: ?,
       }),
@@ -62,6 +64,7 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify({
           status: "SOLD",
+          reservedAt: confirmedTickets[i].reservedAt,
         }),
       }).then((response) => {
         if (!(response.ok)) {
