@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger';
 import {
   IsInt,
   IsNotEmpty,
@@ -10,19 +11,23 @@ export class UpdateUserDto {
   @IsOptional()
   @IsNotEmpty()
   @MaxLength(50)
+  @ApiProperty()
   name?: string;
 
   @IsOptional()
   @IsNotEmpty()
   @MaxLength(50)
+  @ApiProperty()
   surname?: string;
 
   @IsOptional()
   @IsNotEmpty()
+  @ApiProperty()
   password?: string;
 
   @IsOptional()
   @IsInt()
   @IsPositive()
+  @ApiProperty()
   address?: number;
 }
