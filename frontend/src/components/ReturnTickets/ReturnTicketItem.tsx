@@ -2,7 +2,7 @@ import { Checkbox, createStyles, Group, Text } from '@mantine/core';
 import { format } from 'date-fns';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Ticket } from '../../types/ticket';
+import { TicketProps } from './ReturnTickets';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -41,7 +41,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface ReturnTicketItemProps {
-  ticket: Ticket;
+  ticket: TicketProps;
   checkedTickets: number[];
   setTickets: Function;
 }
@@ -54,11 +54,10 @@ export function ReturnTicketItem({ ticket, checkedTickets, setTickets }: ReturnT
     <div className={classes.wrapper}>
       <Group className={classes.group}>
         <Group>
-          <Text weight={700} component={Link} to={`/program/${ticket.performance.play.id}`}>{ticket.performance.play.name}</Text>
+          <Text weight={700} >{ticket.performance.play.name}</Text>
         </Group>
         <Group className={classes.innerGroup}>
           <Text>{format(new Date(ticket.performance.dateTime), "dd.MM.yyyy, HH:mm")}</Text>
-          <Text>{ticket.performance.venue.name}</Text>
           <Group>
             <Text color="gray">Row: {ticket.row}</Text>
             <Text color="gray">Seat: {ticket.seat}</Text>
