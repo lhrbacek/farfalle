@@ -66,6 +66,10 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
       addressId = address.id;
     }
 
+    if (userInfo?.addressId) {
+      addressId = userInfo.addressId;
+    }
+
     // create order in database
     await fetch(`${API_URL}order`, {
       method: "POST",
@@ -73,7 +77,7 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
       body: JSON.stringify({
         email: userInfo.email,
         tickets: confirmedTicketsIds,
-        address: userInfo.addressId,
+        address: addressId,
         user: usedUserId,
       }),
     }).then((response) => {
