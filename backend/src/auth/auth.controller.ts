@@ -60,7 +60,7 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   @Post('logout')
   async logout(req: Request, @Res({ passthrough: true }) res: Response) {
-    await this.authService.logout(req);
-    res.clearCookie('auth-cookie');
+    //await this.authService.logout(req);
+    res.clearCookie('auth-cookie', { httpOnly: true });
   }
 }

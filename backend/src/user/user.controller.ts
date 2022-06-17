@@ -164,11 +164,16 @@ export class UserController {
   @Patch(':id')
   async update(
     @Param('id') id: number,
-    @Body() updateUserDto: UpdateUserDto,
+    @Body() { name, surname, password, address }: UpdateUserDto,
     @Request() req,
   ): Promise<UserModel> {
     await this.authService.isAllowed(req, +id);
-    return await this.userService.update(+id, updateUserDto);
+    return await this.userService.update(+id, {
+      name: name,
+      surname: surname,
+      password: password,
+      address: +address,
+    });
   }
 
   @ApiOperation({ summary: 'Delete one user' })

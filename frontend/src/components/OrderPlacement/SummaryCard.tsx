@@ -2,11 +2,14 @@ import { Button, Container, Divider, Group, Stack, Text, Notification, Center, P
 import React, { useState } from 'react';
 import OrderTicketItem from './OrderTicketItem';
 import { UserInfo } from './OrderPlacement';
-import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import { cartStateSelector } from '../../state/CartStateSelector';
 import { cartState } from '../../state/CartState';
 import { X } from 'tabler-icons-react';
 import { filterCart, reservationTime } from '../../state/reservationTime';
+import authorise from '../../models/authorise';
+import { API_URL } from '../../models/fetcher';
+import { userIdState } from '../../state/UserIdState';
 
 interface SummaryProps {
   prevPhase: Function;
@@ -19,6 +22,7 @@ interface SummaryProps {
 
 export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, userInfo, setFatalError }: SummaryProps) {
   const [page, setPage] = useState(1);
+  const loggedUserId = useRecoilValue(userIdState);
   const cart = useRecoilValue(cartStateSelector);
   const setCartState = useSetRecoilState(cartState);
   const count = cart.length;
@@ -38,15 +42,43 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
       return;
     }
 
+    const confirmedTicketsIds: Number[] = confirmedTickets.map((ticket) => ticket.id);
+
+    let addressId = undefined;
+    let usedUserId = undefined;
+
+    if (authorise()) {
+      usedUserId = loggedUserId;
+    } else {
+      // create address
+      const address = await fetch(`${API_URL}address`, {
+        credentials: 'include',
+        method: "POST",
+        headers: { "Content-Type": "application/json", },
+        body: JSON.stringify({
+          name: userInfo.name.concat(" ", userInfo.surname),
+          street: userInfo.street,
+          number: userInfo.streetNo,
+          zip: userInfo.zip,
+          city: userInfo.city,
+        }),
+      }).then(response => response.json());
+      addressId = address.id;
+    }
+
+    if (userInfo?.addressId) {
+      addressId = userInfo.addressId;
+    }
+
     // create order in database
-    await fetch(`http://localhost:4000/order`, {
+    await fetch(`${API_URL}order`, {
       method: "POST",
       headers: { "Content-Type": "application/json", },
       body: JSON.stringify({
         email: userInfo.email,
-        tickets: confirmedTickets,
-        adress: 0, // TODO
-        // user?: ?,
+        tickets: confirmedTicketsIds,
+        address: addressId,
+        user: usedUserId,
       }),
     }).then((response) => {
       if (!(response.ok)) {
@@ -57,11 +89,12 @@ export function SummaryCard({ prevPhase, nextPhase, emptyCart, setEmptyCart, use
 
     // Update database with currently confirmed tickets
     for (let i = 0; i < confirmedTickets.length; i++) {
-      await fetch(`http://localhost:4000/tickets/${confirmedTickets[i].id}`, {
+      await fetch(`${API_URL}tickets/${confirmedTickets[i].id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json", },
         body: JSON.stringify({
           status: "SOLD",
+          reservedAt: confirmedTickets[i].reservedAt,
         }),
       }).then((response) => {
         if (!(response.ok)) {

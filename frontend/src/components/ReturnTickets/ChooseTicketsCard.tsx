@@ -1,11 +1,11 @@
 import { Button, Center, Container, createStyles, Group, Pagination, Stack } from '@mantine/core';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Ticket } from '../../types/ticket';
 import ReturnTicketItem from './ReturnTicketItem';
+import { TicketProps } from './ReturnTickets';
 
 interface ChooseTicketsCardProps {
-  allTickets: Ticket[]
+  allTickets: TicketProps[]
   ticketsToReturn: number[],
   setTickets: Function,
   setPhase: Function,

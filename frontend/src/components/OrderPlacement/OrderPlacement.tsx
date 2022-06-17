@@ -15,6 +15,7 @@ export interface UserInfo {
   city: string;
   zip: string;
   termsOfService: boolean;
+  addressId: number | undefined,
 }
 
 export const OrderPlacement = () => {
@@ -30,6 +31,7 @@ export const OrderPlacement = () => {
     city: "",
     zip: "",
     termsOfService: false,
+    addressId: undefined,
   });
 
   const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));

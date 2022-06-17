@@ -23,6 +23,7 @@ export class UserService {
           name: true,
           surname: true,
           role: true,
+          addressId: true,
           address: {
             select: {
               city: true,
@@ -68,6 +69,7 @@ export class UserService {
         name: true,
         surname: true,
         role: true,
+        addressId: true,
         address: {
           select: {
             city: true,
@@ -119,6 +121,7 @@ export class UserService {
         name: true,
         surname: true,
         role: true,
+        addressId: true,
         address: {
           select: {
             city: true,

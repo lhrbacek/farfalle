@@ -9,6 +9,41 @@ export class OrderService {
   constructor(private prisma: PrismaService) {}
 
   async create(createOrderDto: CreateOrderDto): Promise<Order> {
+    if (createOrderDto.user) {
+      return await this.prisma.order.create({
+        data: {
+          ...createOrderDto,
+          status: 'UNCONFIRMED',
+          createdAt: new Date(),
+          tickets: {
+            connect: createOrderDto.tickets.map((id) => {
+              return {
+                id: id,
+              };
+            }),
+          },
+          user: { connect: { id: createOrderDto.user } },
+          address: { connect: { id: createOrderDto.address } },
+        },
+      });
+    }
+
+    return await this.prisma.order.create({
+      data: {
+        email: createOrderDto.email,
+        status: 'UNCONFIRMED',
+        createdAt: new Date(),
+        tickets: {
+          connect: createOrderDto.tickets.map((id) => {
+            return {
+              id: id,
+            };
+          }),
+        },
+        address: { connect: { id: createOrderDto.address } },
+      },
+    });
+
     return await this.prisma.order.create({
       data: {
         ...createOrderDto,

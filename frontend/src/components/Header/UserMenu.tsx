@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { Home, Menu2, News, Pencil, ShoppingCart, User, UserCheck, X } from "tabler-icons-react";
 import authorise from "../../models/authorise";
+import { API_URL } from "../../models/fetcher";
 import { userIdState } from "../../state/UserIdState";
 
 const useStyles = createStyles((theme) => ({
@@ -50,8 +51,12 @@ function UserMenu() {
   const [userMenuOpened, setUserMenuOpened] = useState(false);
   const { classes, cx } = useStyles();
 
-  const signOutUser = () => {
-    // TODO: call backend
+  const signOutUser = async () => {
+    await fetch(`${API_URL}auth/logout`, {
+      credentials: 'include',
+      method: "POST",
+      headers: { "Content-Type": "application/json", },
+    });
     setUserId(-1);
   }
 
@@ -85,7 +90,7 @@ function UserMenu() {
       </>);
   }
 
-  let isLogged: boolean = authorise();
+  authorise();
 
   return (
     <Menu

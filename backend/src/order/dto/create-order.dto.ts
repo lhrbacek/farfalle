@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { Type } from 'class-transformer';
 import {
   ArrayUnique,
   IsEmail,
@@ -18,12 +19,14 @@ export class CreateOrderDto {
   @ApiProperty()
   tickets: number[];
 
+  @Type(() => Number)
   @IsInt()
   @IsPositive()
   @ApiProperty()
   address: number;
 
   @IsOptional()
+  @Type(() => Number)
   @IsInt()
   @IsPositive()
   @ApiProperty()

@@ -1,3 +1,4 @@
+import { Type } from 'class-transformer';
 import { IsInt, IsNotEmpty, IsPositive, MaxLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
@@ -12,12 +13,15 @@ export class CreateAddressDto {
   @ApiProperty()
   street: string;
 
+  @Type(() => Number)
   @IsInt()
   @IsPositive()
   @ApiProperty()
   number: number;
 
+  @Type(() => Number)
   @IsInt()
+  @IsPositive()
   @ApiProperty()
   zip: number;
 

@@ -57,7 +57,7 @@ function Profile() {
   const { data, error } = useSWR(`user/${userId}`);
   if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
-  console.log(data); // print acquired data
+  // console.log(data); // print acquired data
   const user: UserProfile = data;
 
   let isAdmin = false;

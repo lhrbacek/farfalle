@@ -4,30 +4,33 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import useSWR from 'swr';
-import { Check } from 'tabler-icons-react';
+import { Check, X } from 'tabler-icons-react';
 import { userIdState } from '../../state/UserIdState';
 import LoadError from '../Error/LoadError';
 import LoadingCard from '../Loading/LoadingCard';
+import { UserProfile } from '../../types/user'
+import { API_URL } from '../../models/fetcher';
 
 export function EditProfile() {
   const [saved, setSaved] = useState(false);
+  const [errorOccured, setErrorOccured] = useState(false);
   const userId = useRecoilValue(userIdState);
-  let user = {
-    email: '',
-    name: '',
-    surname: '',
-    address: {
-      city: '',
-      street: '',
-      number: '',
-      zip: ''
-    }
-  };
+  // let user = {
+  //   email: '',
+  //   name: '',
+  //   surname: '',
+  //   address: {
+  //     city: '',
+  //     street: '',
+  //     number: '',
+  //     zip: ''
+  //   }
+  // };
 
   const { data, error } = useSWR(`user/${userId}`);
   if (error) return <LoadError />;
   if (!data) return <LoadingCard />;
-  user = data;
+  const user: UserProfile = data;
 
   const userData = {
     email: user.email,
@@ -62,11 +65,58 @@ export function EditProfile() {
     return (<></>);
   }
 
-  const handleSubmit = (values: any) => {
+  const errorNotification = (error: boolean) => {
+    if (error) {
+      return (
+        <Notification disallowClose icon={<X size={18} />} color="teal" title="Error">
+          Error encountered, sorry!
+        </Notification>
+      );
+    }
+    return (<></>);
+  }
+
+  const handleSubmit = async (values: any) => {
     setSaved(false);
-    console.log(values);
-    // TODO: Save into DB
-    setSaved(true);
+    setErrorOccured(false);
+
+    // create address
+    const address = await fetch(`${API_URL}address`, {
+      credentials: 'include',
+      method: "POST",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        name: values.name.concat(" ", values.surname),
+        street: values.street,
+        number: values.streetNo,
+        zip: values.zip,
+        city: values.city,
+      }),
+    }).then(response => response.json());
+
+    if (address == undefined) {
+      setErrorOccured(true);
+      return;
+    }
+
+    // update profile
+    await fetch(`${API_URL}user/${userId}`, {
+      credentials: 'include',
+      method: "PATCH",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify({
+        name: values.name,
+        surname: values.surname,
+        address: address.id,
+      }),
+    }).then(response => {
+      if (!(response.ok)) {
+        console.log("Error");
+        setErrorOccured(true);
+      } else {
+        setSaved(true);
+      }
+    });
   }
 
   return (
@@ -74,6 +124,7 @@ export function EditProfile() {
       <Title>Edit account</Title>
 
       {saveNotification(saved)}
+      {errorNotification(errorOccured)}
 
       <form onSubmit={form.onSubmit((values) => handleSubmit(values))}>
         <TextInput

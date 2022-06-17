@@ -33,9 +33,15 @@ export class AddressController {
   })
   @Post()
   async create(
-    @Body() createAddressDto: CreateAddressDto,
+    @Body() { name, street, number, zip, city }: CreateAddressDto,
   ): Promise<AddressModel> {
-    return await this.addressService.create(createAddressDto);
+    return await this.addressService.create({
+      name: name,
+      street: street,
+      number: +number,
+      zip: +zip,
+      city: city,
+    });
   }
 
   @ApiOperation({ summary: 'Find all addresses' })

@@ -34,8 +34,14 @@ export class OrderController {
     description: 'Internal error',
   })
   @Post()
-  async create(@Body() createOrderDto: CreateOrderDto) {
-    return await this.orderService.create(createOrderDto);
+  async create(@Body() { email, tickets, address, user }: CreateOrderDto) {
+    const ticketIds = tickets.map((ticket) => +ticket);
+    return await this.orderService.create({
+      email: email,
+      tickets: ticketIds,
+      address: +address,
+      user: +user,
+    });
   }
 
   @ApiOperation({ summary: 'Get all orders' })

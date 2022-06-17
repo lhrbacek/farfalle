@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Button, Center, Container, Group, Pagination, Stack, Title } from '@mantine/core';
 import ConfirmTicketItem from './ConfirmTicketItem';
 import { Link } from 'react-router-dom';
-import { Ticket } from '../../types/ticket';
+import { TicketProps } from './ReturnTickets';
 
 interface ConfirmTicketsCardProps {
-  allTickets: Ticket[],
+  allTickets: TicketProps[],
   chosenTickets: number[],
   setPhase: Function
 }
