@@ -26,14 +26,16 @@ export function UserForm(props: FormProps) {
       street: '',
       number: '',
       zip: ''
-    }
+    },
+    addressId: undefined,
   };
 
+  const { data, error } = useSWR(`user/${userId}`);
+  // if (error) return <LoadError />;
+  // if (!data) return <LoadingCard />;
+  // user = data;
+
   if (authorise()) {
-    console.log("in");
-    const { data, error } = useSWR(`user/${userId}`);
-    if (error) return <LoadError />;
-    if (!data) return <LoadingCard />;
     user = data;
   }
 
@@ -46,6 +48,7 @@ export function UserForm(props: FormProps) {
     city: user.address.city,
     zip: user.address.zip,
     termsOfService: false,
+    addressId: user.addressId,
   };
   const form = useForm({
     initialValues: userData,
